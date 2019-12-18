@@ -1,0 +1,85 @@
+{% extends "base/content.html" %}
+{% load bootstrap_pagination guardian_tags staticfiles %}
+{% load django_bootstrap_breadcrumbs breadcrumb %}
+{% load images %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Network" "consultant:list" %}
+    {% breadcrumb "Batch invitations" "consultant:bulk-list" %}
+    {% breadcrumb_for consultant:bulk-add-detail bulk_creation.pk %}
+        {{bulk_creation.created|date}}
+        {{bulk_creation.file_csv.name}}
+    {% endbreadcrumb_for %}
+{% endblock %}
+
+{% block header %}
+<div class="col-lg-10">
+    <h2>Network Batch invitations</h2>
+</div>
+<div class="col-lg-2">
+</div>
+<div class="col-xs-12 p-r-none">
+    {% render_view_breadcrumbs "base/breadcrumb.html" %}
+</div>
+{% endblock %}
+
+{% block main %}
+<div class='row customer-list-detail' data-role="list-detail" id='bulk-creation-detail'>
+    <div class='col-lg-12' data-role='list' data-list="col-lg-12" data-detail='col-lg-8'>
+        <div class='ibox float-e-margins'>
+            <div class="ibox-title">
+                <h2>Batch invitations - at {{bulk_creation.created|date}}, by {{bulk_creation.created_by.get_full_name}}</h2>
+            </div>
+            <div class="ibox-content">
+                <form action="." method='get'>
+                    <div class="input-group">
+                        {{form_filter.search}}
+                        <span class="input-group-btn">
+                                <button type="submit" class="btn btn btn-default"> <i class="fa fa-search"></i> Search</button>
+                        </span>
+                    </div>
+                </form>
+                <div class="table-responsive">
+                    <div class="pull-right text-muted m-t-md m-b-md l-h-34">{{paginator.count}} invitation{{ paginator.count|pluralize }} found</div>
+                    <table class="table table-hover list-detail customer table-l-fix">
+                        <thead>
+                            <tr>
+                                <th width="40%">Name</th>
+                                <th>Email</th>
+                                <th>Coin</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for object in object_list %}
+                            <tr >
+                                <td>
+                                    {{object.name}}
+                                </td>
+                                <td>{{object.email}}</td>
+                                <td>{{object.coins}}</td>
+                                <td>
+                                    {% if object.is_success %}
+                                        <span style='color:green'>Success</span>
+                                    {% else %}
+                                        <span style="color:red">
+                                            Error
+                                        </span>                                        <span>
+                                            <br>{{object.error_message}}
+                                        </span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <div class="pull-right">
+                        {% bootstrap_paginate page_obj range=10 %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

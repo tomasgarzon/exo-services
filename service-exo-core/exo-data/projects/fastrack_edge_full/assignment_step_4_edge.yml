@@ -1,0 +1,85 @@
+---
+name: Entrepeneur Phase assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: False
+  enabled_reflect: False
+blocks:
+  - title: Assignment Objectives
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <ul><li>Iterate and/or pivot concept/idea to emphasize the business perspective</li><li>Show viability and sustainability of your exponential business model</li><li>Involve the local ecosystem for the development and implementation of the solution</li></ul>
+  - title: Evaluation Criteria
+    subtitle:
+    order: 2
+    type: Text
+    text: |
+      <ul><li>Product-market fit has been considered</li><li>Integration of the local entrepreneurial ecosystem (co-builder, strategic customer, funding, etc) has been shown</li><li>Financial viability and sustainability of the venture or business(es) has been analyzed</li><li>Exponentiality and scalability of the venture or business(es) is clear</li></ul>
+  - title: Deliverables Checklist
+    subtitle:
+    order: 3
+    type: Tasks
+    tasks:
+      - name: Live remote 15-minute presentation by appointed team member(s)
+        order: 1
+        blocks:
+      - name: Preliminary financials with revenue projections, funding needs & milestones
+        order: 2
+        blocks:
+      - name: Updated Core conceptual document with the business perspective
+        order: 3
+        blocks:
+      - name: Upload slides (ppt, google slides, etc.) to Deliverables Folder
+        order: 4
+        blocks:
+      - name: A clear description of key business activities and their scope [what you will do and what you will not do]
+        order: 5
+        blocks:
+      - name: Improved MVP (Minimum Viable Product)
+        order: 6
+        blocks:
+      - name: Business Model Canvas (BMC) with clear distinctions between validated and unvalidated hypotheses
+        order: 7
+        blocks:
+      - name: ExO Canvas with ExQ (Exponential Quotient)
+        order: 8
+        blocks:
+      - name: Plan for leveraging the local ecosystem
+        order: 9
+        blocks:
+  - title: Scoring and Evaluation
+    subtitle:
+    order: 4
+    type: Text
+    text: |
+      <p>You will be evaluated objectively and subjectively on the criteria listed above. There are prize funds at stake as well. A combination of the regional curator, regional advisory board, FTI Board and select members of the Regional Development Community and Global Member Organization representatives will be the evaluators. They will judge your work and complete scorecards that will be a major part of the selection​ ​process. In the case of any ties, as seems to happen sometimes, a small tie breaker committee including the regional curator and 2 other qualified, non-participating but well informed, people of their choice will be convened​ ​to​ ​make​ ​the​ ​final​ ​decision.</p>
+  - title: Tips
+    subtitle:
+    order: 5
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          Join the Collaboration Meeting in this <a target='_blank' href='https://zoom.us/j/118780550'>link</a>
+      - order: 2
+        description: |
+          Upload the deliverable in this <a target='_blank' href='https://drive.google.com/drive/u/0/folders/1CjamV4QIYMVifeYxT6d1bRRe_BUcqZi0'>link</a>
+  - title: Tools
+    subtitle:
+    order: 6
+    type: Resource
+    resources:
+      - name: Google Drive
+        type: Links
+        status: Available
+        link: https://drive.google.com/drive/folders/1lhX2tPrvGovVYcoYDh-2aW6ZPhYwbq2a
+        description:
+        order: 1
+      - name: Flipboard
+        type: Links
+        status: Available
+        link: https://flipboard.com/@contentfti/justice-bogota-by-fastrack-institute-eble73bky
+        description:
+        order: 2

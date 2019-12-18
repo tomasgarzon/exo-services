@@ -1,0 +1,16 @@
+.DS_Store
+.env
+.idea
+sftp-config.json
+log/
+logs/
+backend/disable_local.sh
+
+server/exolever/*/
+
+*.sublime-*
+
+*terminator
+**/log/
+**/logs/
+acme.json

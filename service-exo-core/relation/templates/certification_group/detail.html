@@ -1,0 +1,107 @@
+
+<div class='ibox float-e-margins'>
+    <div class="ibox-title ibox-tools col-xs-12">
+        <div class="pull-left m-r-sm">
+
+        </div>
+        <div class='pull-right icons-ibox-title'>
+            <a class="close-link-detail pull-right m-r-none" data-role="close-detail">
+                <i class="fa fa-times"></i>
+            </a>
+            {% include "certification_group/action_list.html" %}
+        </div>
+        <div class="pull-left p-n t-a-left m-r-sm title with-image">
+            <h3 class="block cut-text" title="{{object.name}}">{{object.name}}</h3>
+            <p class="m-b-xs">{{object.issued_on|date}}</p>
+        </div>
+    </div>
+    <div class="ibox-content">
+        <div id="tabs-customer" class="tabs-container details">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#info">Info</a></li>
+                <li class=""><a data-toggle="tab" href="#members">Users</a></li>
+                <li class=""><a data-toggle="tab" href="#accredible">Accredible</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="info" class="tab-pane active">
+                    <div class="panel-body">
+                        <table class="table table-detail-right todo-list">
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Name</strong>
+                                </th>
+                                <td class="">
+                                    {{object.name}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Description</strong>
+                                </th>
+                                <td class="">
+                                    {{object.description}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Issued on</strong>
+                                </th>
+                                <td class="">
+                                    {{object.issued_on|date}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Type</strong>
+                                </th>
+                                <td class="">
+                                    {{object.get__type_display}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>User</strong>
+                                </th>
+                                <td class="">
+                                    {{object.created_by.get_full_name}}
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id='members' class="tab-pane">
+                    <div class="panel-body chat-activity-list">
+                        <div class="chat-element no-padding no-margins m-t-14">
+                            {% for u in object.consultant_roles.all %}
+                                <div class='m-t-xs m-b-xs'>
+                                    {% include "tags/link_user2.html" with member=u.consultant.user %}
+                                </div>
+                            {% empty %}
+                                <div class="chat-element">
+                                    <div class="row">
+                                        <div class="col-md-12">Not users yet</div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div id="accredible" class="tab-pane">
+                    <div class="panel-body">
+                        <table class="table table-detail-right todo-list">
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Accredible Group ID</strong>
+                                </th>
+                                <td class="">
+                                    {{object.accredible_group.accredible_id}}
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

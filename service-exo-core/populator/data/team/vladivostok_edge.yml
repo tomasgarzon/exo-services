@@ -1,0 +1,27 @@
+name: Poznan Edge
+uuid: c0e0b6fd-33e8-464c-a344-332864faa10d
+stream: &stream Edge Stream
+coach: !consultant Julius Emilsson
+created_by: !exo_account Quality Assurance
+project: !sprint_automated Vladivostok
+members:
+  - short_name: Igor Nekrasov
+    email: igornekrasov@example.com
+    updated_profile: true
+    image: man/33
+    uuid: 78ece490-e31e-4882-904b-700ccdf95300
+  - short_name: Dimitri Evseyev
+    email: dimitrievseyev@example.com
+    updated_profile: true
+    image: man/34
+    uuid: 18608678-b7e7-455f-911a-acfe2f609f5f
+  - short_name: Cora Kruglova
+    email: corakruglova@example.com
+    updated_profile: true
+    image: woman/28
+    uuid: ffb7c926-7b6e-4d7b-847b-cdbbafc7e4fc
+  - short_name: Lydia Artemyeva
+    email: lydiaartemyeva@example.com
+    updated_profile: true
+    uuid: f02c56f6-94d8-4280-bbee-7f1623ab8150
+    image: woman/29

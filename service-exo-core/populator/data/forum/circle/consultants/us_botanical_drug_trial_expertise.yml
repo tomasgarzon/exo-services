@@ -1,0 +1,21 @@
+title: US Botanical Drug Trial Expertise?
+user: !consultant Kunivas Devari
+circle: !circle Consultants
+date: !timedelta -2w
+description: |
+  <p>Asking for a friend in the medical cannabis space. Do you know anyone I could introduce to that team who they could coordinate with for some expert help on doing trials in the US for botanical derived drugs? Not my area of expertise but maybe you know? Thanks in advance!</p>
+
+  <p>The company is BOHECA. <a href="https://boheca.org/" target="_blank">https://boheca.org/</a></p>
+
+  <p>If you or someone you know is an expert in this area I'll be happy to make the connection. They are a good crew working mostly in industrial hemp over the last 5 years.</p>
+tags:
+  - Personalized Medicine
+  - Regenerative Medicine
+  - Nanomedicines
+activities:
+  - user: !consultant Naina Lavrova
+    date: !timedelta -13d
+  - user: !consultant Tina Weissberg
+    date: !timedelta -12d
+    reply: |
+      <p>Recommend finding <strong>Jonh James</strong> at Crrypto Lotus</p>

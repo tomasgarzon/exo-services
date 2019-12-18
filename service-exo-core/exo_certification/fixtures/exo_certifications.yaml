@@ -1,0 +1,27 @@
+- model: exo_certification.ExOCertification
+  pk: 1
+  fields:
+    name: ExO Foundations
+    level: L1
+    certification_role: 4
+
+- model: exo_certification.ExOCertification
+  pk: 2
+  fields:
+    name: ExO Consultant
+    level: L2
+    certification_role: 3
+
+- model: exo_certification.ExOCertification
+  pk: 3
+  fields:
+    name: ExO Consultant Fastrack
+    level: L2A
+    certification_role: 3
+
+- model: exo_certification.ExOCertification
+  pk: 4
+  fields:
+    name: ExO Sprint Coach
+    level: L3
+    certification_role: 5

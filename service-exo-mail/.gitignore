@@ -1,0 +1,51 @@
+# Python object files
+/media/
+/bds/
+*.pyc
+__pycache__/
+# .po compiled files
+*.mo
+*~
+# OSX meta files
+.DS_Store
+service/*.sh
+venv
+runserver.sh
+*.log
+*.sublime-*
+*.rdb
+.pytest_cache/
+pytest.txt
+*.sqlite3
+*.rdb
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+.idea/*
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+lib/
+mjml/index.html
+node_modules
+*.db
+Pipfile.lock

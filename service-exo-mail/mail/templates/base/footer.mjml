@@ -1,0 +1,30 @@
+{% load common_mails %}
+
+
+{% if public_url or disable_notification_url%}
+<mj-section padding-top="15px">
+    <mj-column>
+        {% if public_url %}
+        <mj-text align="center" padding-bottom="10px">
+            If the button above does not work, copy and paste this link into your browser:
+        </mj-text>
+        <mj-text padding="0px" css-class="sandboxexo1" align="center" font-size="14px">
+            {% load startswith %}
+            {% if public_url|startswith:'http' %}
+            <a href="{{public_url}}" class="link-nostyle">{{public_url}}</a>
+            {% else %}
+            <a href="{{domain}}{{public_url}}" class="link-nostyle">{{domain}}{{public_url}}</a>
+            {% endif %}
+        </mj-text>
+        {% endif %}
+
+        {% if disable_notification_url %}
+            <mj-text align="left" css-class="sandboxexo1" font-size="14px">
+                If you wish to stop receiving these update emails you can <a href="{{domain}}{{disable_notification_url}}" class="link-nostyle">change your notification settings</a>.
+            </mj-text>
+        {% endif %}
+    </mj-column>
+</mj-section>
+
+{% endif %}
+

@@ -1,0 +1,37 @@
+{% extends "base/base_blue_header.mjml" %}
+{% load common_mails i18n %}
+
+{% block blue-header %}
+<mj-header-title-pretitle pre-title="OpenExO Community" title="Your account information" />
+{% endblock %}
+
+{% block content %}
+    <mj-text>{% trans "Hi" %} {{name}}</mj-text>,
+    <mj-text>
+        {% trans "Welcome to OpenExO! " %}
+        {% trans "Below you will find all the information you will need to start using the platform." %}
+    </mj-text>
+    <mj-text>
+        <strong>Platform access: {{domain}}</strong>
+    </mj-text>
+    <mj-text>
+        <strong>Username: {{email}}</strong>
+    </mj-text>
+    <mj-text>{% trans "You may also recover or change your password here." %}</mj-text>
+    <mj-text>
+        {% blocktrans %}
+           If you have any questions or feedback simply reply to this email and we will get back to you as soon as possible.
+        {% endblocktrans %}
+    </mj-text>
+    <mj-text>
+        Thank you,<br>
+        OpenExO Team
+    </mj-text>
+
+{% endblock %}
+
+{% block call_to_action %}
+
+    {% trans "Recover or change your password" as CALL_TO_ACTION %}
+    {% include "base/call_to_action.mjml" with call_to_action=CALL_TO_ACTION %}
+{% endblock %}

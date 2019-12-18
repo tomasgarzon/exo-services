@@ -1,0 +1,1 @@
+FORCE_SCRIPT_NAME = ''

@@ -1,0 +1,33 @@
+{% extends "base/content.html" %}
+{% load django_bootstrap_breadcrumbs breadcrumb %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Partners" "partner:list" %}
+    {% breadcrumb "Remove" "partner-remove" object.pk %}
+{% endblock %}
+
+{% block header %}
+<div class="col-lg-10">
+    <h2>Partners</h2>
+</div>
+<div class="col-xs-12 p-r-none">
+    {% render_view_breadcrumbs "base/breadcrumb.html" %}
+</div>
+{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox">
+            <div class="ibox-content">
+                <form action="" method="post">{% csrf_token %}
+                    <p>Are you sure you want to remove "{{ object }}"?</p>
+                    <input type="submit" class='btn btn-positive-choice' value="Remove" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

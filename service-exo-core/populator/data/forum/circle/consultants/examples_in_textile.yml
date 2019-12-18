@@ -1,0 +1,22 @@
+title: EXO examples in textile and accessories industries?
+user: !consultant Tina Weissberg
+circle: !circle Consultants
+date: !timedelta -3w
+description: |
+  The fashion business is a global industry that is environmentally damaging to the extreme, and often exploitative to people.
+
+  Do you have positive examples of EXOs in the fashion industry?
+  What are the latest examples of exponential technologies that you would highlight in fields of textiles, accessories and fashion?
+tags:
+  - E-Textiles
+activities:
+  - user: !consultant Naina Lavrova
+    date: !timedelta -463h
+  - user: !consultant Gorka Arrizabalaga
+    date: !timedelta -17d
+    reply: |
+      May I humbly suggest my body scanning via smartphone camera company, <a href="http://www.quantacorp.io" target="_blank">http://www.quantacorp.io</a>
+  - user: !consultant Tina Weissberg
+    date: !timedelta -302h
+    reply: |
+      Thanks a lot for your answer, I have just written them! looking forward to knowing how integrate everyting! :)

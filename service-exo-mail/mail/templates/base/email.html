@@ -1,0 +1,234 @@
+{% load common_mails %}
+{% if not preview %}
+    <html><head>
+    </head>
+    <body>
+    <table class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; background: #e7e6e6; margin: 0; padding: 0;" bgcolor="#e7e6e6">
+    <tbody>
+    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+      <td class="center" align="center" valign="top" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;">
+        <center style="width: 100%; min-width: 580px;">
+        <!-- Email Content -->
+        <!-- Preheader -->
+        <table id="preheader" class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;">
+        <tbody>
+        <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+          <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+            <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; background: rgb(255, 152, 0); padding: 0px;" bgcolor="rgb(255, 152, 0)">
+            <tbody>
+            <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+              <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+                {% comment %}
+                <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
+                <tbody>
+                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                  <td class="right-text-pad" style="text-align: right; line-height: 4px; font-size: 12px;color: #ffffff; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; margin: 0; padding: 0px 10px 10px 0px;" align="right" valign="top">
+                     If you cannot view this email correctly, <a href="http://us7.campaign-archive2.com/?u=e43cf6236b3e2069834de93e6&amp;id=e12d790758&amp;e=8e0ad654ae" target="_blank" style="text-decoration: underline;color: #ffffff;">click here.</a>
+                  </td>
+                  <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+                  </td>
+                </tr>
+                </tbody>
+                </table>
+                {% endcomment %}
+              </td>
+            </tr>
+            </tbody>
+            </table>
+            <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; background: rgb(255, 255, 255); padding: 0px;" bgcolor="rgb(255, 255, 255)">
+            <tbody>
+            <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+              <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+                <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
+                <tbody>
+                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                  <td style="text-align: center; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0;padding: 0 10px;" align="center" valign="top">
+                    <img style="display: inline; float: none; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;width: 130px; max-width: 100%; clear: both;" src="https://s3.amazonaws.com/exolever/static/assets/openexo-logo-rgb.png" alt="What's new?" align="none" data-pin-nopin="true">
+                  </td>
+                </tr>
+                </tbody>
+                </table>
+              </td>
+            </tr>
+            </tbody>
+            </table>
+          </td>
+        </tr>
+        </tbody>
+        </table>
+        <!-- Preheader END  -->
+        <!-- Header -->
+        <table id="header" class="container" style="border-bottom-width: 1px;border-bottom-color: #ffffff; border-bottom-style: solid; border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; background: #fff;margin: 0px auto 0; padding: 0;" bgcolor="#fff">
+        <tbody>
+        <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+          <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+            <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
+            <tbody>
+            <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+              <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0 0px 0px;" align="left" valign="top">
+                <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px;margin: 7px 0px 0px 0px; padding: 0;">
+                <tbody>
+                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                    {% block image_header %}
+                      <td style="text-align: center; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px;" align="center" valign="top">
+                        
+                      </td>
+                    {% endblock %}
+                  <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+                  </td>
+                </tr>
+                </tbody>
+                </table>
+              </td>
+            </tr>
+            </tbody>
+            </table>
+            <table class="space" style="height: 30px; border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; padding: 0;">
+            </table>
+          </td>
+        </tr>
+        </tbody>
+        </table>
+        <!--  Header END  -->
+        <!--  Content -->
+        <table id="content" class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;">
+        <tbody>
+        <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+          <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+            <!--  Divider features  -->
+            <!--  Divider features END  -->
+            <!--  Module type 1  -->
+            <table mc:hideable="hideable_2" class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;" mchideable="hideable_2">
+            <tbody>
+            <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+              <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px;" align="left" valign="top">
+                <table class="twelve columns" style="border-bottom-color: #d2d1d1; border-bottom-width: 1px; border-bottom-style: solid; border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; background: #fff; margin: 0 auto; padding: 0;border-top-color: #d2d1d1;border-top-width: 1px;border-top-style: solid;" bgcolor="#fff">
+                <tbody>
+                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                  <td class="text-pad" style="text-align: center; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0;padding: 0px 10px;border-top: 1px solid transparent;" align="center" valign="top">
+                    <h3 style="color: #523e87; font-weight: bold; font-size: 28px; font-family: 'Helvetica', 'Arial', sans-serif; line-height: 1.3; word-break: normal;margin: 20px 0 0; padding: 0;"> ExO Platform</h3>
+                    <p style="color: #555555; font-size: 18px; line-height: 24px; font-weight: lighter; font-family: 'Helvetica', 'Arial', sans-serif; margin: 10px 0 25px; padding: 0;">
+                      <strong>{% block subtitle %}{% endblock %}</strong><br>
+                       {% block subtitle_description %}{% endblock %}
+                    </p>
+                  </td>
+                  <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+                  </td>
+                </tr>
+                </tbody>
+                </table>
+              </td>
+            </tr>
+            </tbody>
+            </table>
+            <!--  Module type 1 END  -->
+            <!--  Module type 2  -->
+            <table mc:hideable="hideable_14" class="row" style="border-bottom-color: #d2d1d1; border-bottom-width: 1px; border-bottom-style: solid; border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; background: #fff; padding: 0px;" bgcolor="#fff" mchideable="hideable_14">
+            <tbody>
+            <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+              <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+                <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
+                <tbody>
+                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                  <td class="text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px;font-size: 14px; margin: 0;padding: 20px 40px 30px;border-bottom: 1px solid transparent;border: none;" align="left" valign="top">
+                    <p style="color: #555555; line-height: 20px; font-weight: lighter;font-size: 14px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 3px 0 10px; padding: 0;">
+    {% endif %}
+                      {% block main %}{% endblock %}
+    {% if not preview %}
+                    </p>
+                  </td>
+                  <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+                  </td>
+                </tr>
+                </tbody>
+                </table>
+              </td>
+            </tr>
+            </tbody>
+            </table>
+            <!--  Module type 2 END -->
+          </td>
+        </tr>
+        </tbody>
+        </table>
+        <!--  Content END -->
+        <!--  Footer -->
+        <table class="row footer" style=" border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; padding: 0px;">
+        <tbody>
+        <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+          <td class="center" align="center" valign="top" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;">
+            <center style="width: 100%; min-width: 580px;">
+            <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px;background: rgb(245, 243, 243); margin: 0 auto; padding: 0;" bgcolor="#1a1a1a">
+            <tbody>
+            <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+              <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+                <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
+                <tbody>
+                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                  <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0 0px 0px;" align="left" valign="top">
+                    <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
+                    <tbody>
+                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                      <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left;color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0;padding: 0px;background-image: url({% server_asset %}assets/images/email/background-footer.jpg);border: none;background-size: contain;" align="left" valign="top">
+                        <p style="text-align: center; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px;font-size: 15px;margin: 28px 0 30px; padding: 0;" align="center">
+                          <a href="{{domain}}" target="_ blank" style="color: #ff9800; text-decoration: none;">{{domain}}</a>
+                        </p>
+
+                        <p style="text-align: center; font-size: 11px; line-height: 12px;color: #999999; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal;margin: 30px 0 30px; padding: 0;" align="center">
+                          <em>Copyright © 2019 OpenExO, All rights reserved.</em>
+                          <br>
+                        </p>
+                      </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                  </td>
+                </tr>
+                </tbody>
+                </table>
+                <table class="row social_links" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
+                <tbody>
+                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                  <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0;padding: 0px;" align="left" valign="top">
+                    <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; background: rgb(255, 152, 0); padding: 0px;" bgcolor="rgb(255, 152, 0)">
+                    <tbody>
+                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                      <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+                        <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
+                        <tbody>
+                        <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                          <td class="right-text-pad" style="text-align: right; line-height: 4px; font-size: 12px;color: #ffffff; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; margin: 0; padding: 0px 10px 10px 0px;" align="right" valign="top">
+                            {% block footer_link %}
+                             If you cannot view this email correctly, <a href="http://us7.campaign-archive2.com/?u=e43cf6236b3e2069834de93e6&amp;id=e12d790758&amp;e=8e0ad654ae" target="_blank" style="text-decoration: underline;color: #ffffff;">click here.</a>
+                            {% endblock %}
+                          </td>
+                          <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+                          </td>
+                        </tr>
+                        </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                  </td>
+                </tr>
+                </tbody>
+                </table>
+              </td>
+            </tr>
+            </tbody>
+            </table>
+            </center>
+          </td>
+        </tr>
+        </tbody>
+        </table>
+        </center>
+      </td>
+    </tr>
+    </tbody>
+    </table>
+
+    </body></html>
+{% endif %}

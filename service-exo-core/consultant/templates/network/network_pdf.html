@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+{% load images %}
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>OpenExO Ecosystem </title>
+    <!-- Custom styling plus plugins -->
+
+</head>
+<body>
+<div class="row">
+    <div class="col-lg-12">
+        <table  valign='middle' align="center" class="table table-bordered table-striped" id='network-list'>
+            <thead>
+                <tr  valign='middle' align="center">
+                    <th>Name</th>
+                    <th>Picture</th>
+                    <th>Location</th>
+                    <th>Languages</th>
+                    <th>LinkedIN Link</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for consultant in object_list %}
+                <tr valign='middle' align="center">
+                    <th scope="row">
+                        {{consultant.name}}
+                    </th>
+                    <td>
+                        <img src="{% image_thumbnail_url consultant.object.user.profile_picture 24 24 %}" alt="..." class="img-circle profile_img">
+                    </td>
+                    <td>
+                        {{consultant.user.location|default:""}}
+                    </td>
+                    <td>
+                        {{consultant.languages|join:", "}}
+                    </td>
+                    <td>
+                        {% if consultant.object.social_network_linkedin %}<a href="{{consultant.object.social_network_linkedin}}">LinkedIN</a>{% endif %}
+                    </td>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>

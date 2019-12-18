@@ -1,0 +1,13 @@
+title: Urban Mobility
+user: !consultant Julius Emilsson
+date: !timedelta -6d
+circle: !circle Consultants
+description: |
+  What are the <strong>key technologies</strong> powering the shift in urban mobility? Which challenges (technologic and social) should society face in order to achieve a more efficient and greener transportation in cities?
+activities:
+  - user: !consultant Tina Weissberg
+    date: !timedelta -5d
+  - user: !consultant Amy Finch
+    date: !timedelta -89h
+  - user: !consultant Gorka Arrizabalaga
+    date: !timedelta -76h

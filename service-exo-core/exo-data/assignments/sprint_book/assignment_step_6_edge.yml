@@ -1,0 +1,155 @@
+---
+name: Share assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: share_main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/286226836
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/286226836" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:   
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Experimentation is crucial to any innovative project. Steve Blank was right when he said that “No business plan survives first contact with customers.” In fact, any innovative business plan is just a set of hypotheses, so instead of executing them, we must first evaluate them. Innovative business plans start by defining the problem you want to solve and then moving on to the solution you intend to build for that problem. So the first set of hypotheses to evaluate are the problem/solution pairs defined last week. This is what is called the Problem/Solution Fit.</p>
+      <p>This week, you will focus on running experiments to evaluate your hypotheses—the ExO equivalent of Steve Blank’s “Get out of the building!”— so you will gain experience exercising the Experiment ExO Attribute. Finally, based on the learnings, your team will select the four most promising ideas to keep developing them further in the upcoming weeks.</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Define the key (crux) hypotheses and design experiments
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>The problems and solutions you have previously defined are a set of hypotheses, which will need to be evaluated. However, you won’t have time to evaluate all of them, so focus on those key hypotheses that are decisive for your ExO Initiative to succeed. These are your ‘crux’ hypotheses. As we know, we are trying to build Exponential Organizations that leverage cutting-edge technologies and the ExO Attributes to become exponential. However, the first step is to find a real problem to solve for it. So, the next step of experiments will be focused on value generation, and in later stages we will focus on scaling the organization. So, at this early stage of the project, the best thing you can do is to run a version of Steve Blank’s Customer Development technique, which calls for asking people whether or not they have a specific problem and whether or not they like your solution (Product/Solution Fit).</p>
+              <p><strong>Identify the key hypotheses (crux) to evaluate at this stage:</strong> Most of them will be around whether our clients/users have the problem we think they have and whether they like the solution we are thinking to implement. But we could also have other kind of hypotheses, such as whether the market is big enough, whether it’s technically feasible to build the solution we are thinking of or not, etc.</p>
+              <p><strong>Design an experiment to evaluate the key hypotheses:</strong> Usually we will design an interview for gathering real data about the previously defined hypotheses and the evaluation criteria we will use in order to either validate or invalidate each hypothesis.</p>
+          - title: Resources
+            subtitle:
+            order: 2
+            type: Text
+            text: |
+              <p>Rob Fitzpatrick’s book The Mom Test and Steve Blank’s book The Startup Owner’s Manual: The Step-By-Step Guide for Building a Great Company outline how to conduct interviews with potential customers. In short, ask people about a problem (without mentioning the solution), and then explain the solution in order to elicit feedback. We recommend focusing in particular on the section of the book that discusses the Customer Discovery phase.</p>
+          - title: Tips
+            subtitle:
+            order: 3
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                Think through the design of your experiments before beginning them. Results should allow you to uncover real needs, not just answer the question “Is this a good idea?” How you construct the interview questions is very important. How will the results allow you to improve the initiative? How can you ask the question creatively? Clearly define what will determine the success of an experiment, including what thresholds need to be met.
+            - order: 2
+              description: |
+                Prioritizing experiments is key since you may have so many hypotheses to evaluate that you won’t have time to run all of them. Usually, you have to focus on evaluating the key hypotheses that are critical for the success of your business, such as technology viability, customer segments, value proposition and revenue sources.
+          - title: Tools
+            subtitle:
+            order: 4
+            type: Resource
+            resources:
+              - name: Define and run experiments
+                type: PDF
+                status: Available
+                link: /medialibrary/resource/redirect/24S7bHQTTmGPuUGofzzA/Define_and_run_experiments_template.pdf/
+                order: 1
+                description: Template
+      - name: Run experiments to evaluate the ExO Initiatives
+        order: 2
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>Next step is to run the experiments that you have defined. At this stage, most of these experiments will consist of interviewing potential clients (to evaluate problems/solutions) or tech people (to evaluate product feasibility), so reach them to arrange calls or meetings, talk to them and gather real data from these interviews. After running experiments, it’s important to spend time analyzing and learning from the results. You will evaluate all hypotheses, improve the ExO Initiatives based on the learnings and make a final evaluation of the improved ExO Initiatives. Complementary to the Customer Development process, the Build-Measure-Learn loop provides a set of useful guidelines to evaluate your hypotheses and learn, which is the main goal at this stage.</p>
+        - title: Resources
+          subtitle:
+          order: 2
+          type: Text
+          text: |
+            <p>Eric Ries’ The Lean Startup introduces the Build-Measure-Learn loop and is a great reference for how to run these processes.</p>
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              The best asset at this point is real data, since the goal of the Build-Measure- Learn loop is to make all your decisions based on solid data and not on opinions or intuition
+          - order: 2
+            description: |
+              Ask for honest feedback. Invalidating a hypothesis is not bad; it’s just part of the innovation process. Remember that the main goal is to learn!
+          - order: 3
+            description: |
+              Remember that most (if not all) ExOs should always implement the ExO Attribute. One great to do it is by following the Lean Startup principles and the Build- Measure-Learn loop. It will allows your organization to always be focused on learning
+        - title: Tools
+          subtitle:
+          order: 4
+          type: Resource
+          resources:
+            - name: Define and run experiments
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/24S7bHQTTmGPuUGofzzA/Define_and_run_experiments_template.pdf/
+              order: 1
+              description: Template
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          Interviews are always preferable to surveys, since they provide greater insight (especially when you ask open questions). But if you want to evaluate multiple ideas or get a large number of people, surveys are often the only way to do it.
+      - order: 2
+        description: |
+          The idea is to run experiments for all the problem/solution pairs you have defined. If you have two (or fewer) problem/solution pairs per team member, we recommend assigning one or two initiatives per team member. If you have more than two initiatives per team member, consider running a much bigger but more superficial experiment by sending surveys to potential clients rather than conducting direct interviews.
+      - order: 3
+        description: |
+          Remember that you may also need to reach external advisors who are specialists in your industry or in a specific technology or methodology to evaluate different types of hypotheses.
+      - order: 4
+        description: |
+          You may have different ExO Edge Initiatives that share the same customer segment. In that case, remember that you can group the experiment execution by asking about multiple ExO Edge Initiatives at the same time.
+      - order: 5
+        description: |
+          Always remember that getting out of the building and talking to real customers is the best way to turn your hypotheses into facts.
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Define and run experiments
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/24S7bHQTTmGPuUGofzzA/Define_and_run_experiments_template.pdf/
+        description: Example
+        order: 1
+      - name: Define and run experiments Eco Spaces
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/tTRglgqiTdqyj6UtAtHD/Define_and_run_experiments_template_example.pdf/
+        description: Template
+        order: 2
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

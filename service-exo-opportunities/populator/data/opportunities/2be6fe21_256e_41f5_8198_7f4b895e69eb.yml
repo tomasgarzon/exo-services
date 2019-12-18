@@ -1,0 +1,46 @@
+title: ExO Consultant for Validating ExO Model - Consultant Certification Program
+uuid: 2be6fe21-256e-41f5-8198-7f4b895e69eb
+description: |
+  As part of ExO Consultant Certification we need to validate the ExO model for a local construction company.
+status: Requested
+created: !timedelta -3d
+created_by: !account &created_by 0737a9f9-22a0-4286-8be3-34a3e19d92dc  #Naina
+keywords:
+  - Construction
+start_date: !timedelta 30d
+deadline_date: !timedelta 25d
+mode: S
+location: Madrid, Spain
+place_id: ChIJgTwKgJcpQg0RaSKMYcHeNsQ
+duration_unity: D
+duration_value: 1
+exo_role: OCN
+certification_required: CCO
+entity: Company under construction
+budget: 1000
+budget_currency: EUR
+num_positions: 2
+target: F
+users_tagged:
+  - !account 1cd07dd7-4883-4838-9b5a-303ef0d6580c  # Amy
+  - !account 299c8c8a-4e4a-4c6b-904a-1b801b7227f1  # Philip
+  - !account 5d640164-b7a3-4936-b37e-3ad5a23a2036  # Tina
+  - !account 0effb797-b439-4139-aaae-61bdb9cf5a79  # Kunivas
+applicants:
+  - user: !account 1cd07dd7-4883-4838-9b5a-303ef0d6580c  # Amy
+    status: Selected
+    summary: |
+      I have strong background in ExO Model and I'm already a certified Consultant!
+    sow:
+      applicant_name: Amy Finch
+      requester_name: Naina Lavrova
+      title: ExO Consultant for Validating ExO Model
+      entity: Company under construction
+      start_date: !timedelta 30d
+      end_date: !timedelta 31d
+      location: Madrid, Spain
+      mode: S
+  - user: !account 299c8c8a-4e4a-4c6b-904a-1b801b7227f1  # Philip
+    status: Rejected
+    summary: |
+      This opportunity suits me fine, looking forward to participating in it.

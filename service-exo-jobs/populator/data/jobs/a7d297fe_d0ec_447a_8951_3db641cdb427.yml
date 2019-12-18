@@ -1,0 +1,9 @@
+uuid: a7d297fe-d0ec-447a-8951-3db641cdb427
+user: !account 299c8c8a-4e4a-4c6b-904a-1b801b7227f1 # Philip Robson
+title: 10-week ExO Sprint in the Cybersecurity Space
+start: !timedelta 15d
+end: !timedelta 29d
+category: SP
+exo_role: SAD
+status: CO
+url: /ecosystem/opportunities/4/

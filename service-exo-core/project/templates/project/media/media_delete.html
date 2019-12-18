@@ -1,0 +1,16 @@
+{% extends "project/base_delete.html" %}
+{% load bootstrap3 django_bootstrap_breadcrumbs %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Media" "project:project:media" project.id %}
+    {% breadcrumb "Remove" "" %}
+{% endblock %}
+
+{% block delete_msg %}
+    Are you sure you want to remove the resource "{{ object.name }}"?
+{% endblock %}
+
+{% block cancel_url_delete_form %}
+    {% url 'project:project:media' project.id %}
+{% endblock %}

@@ -1,0 +1,89 @@
+---
+definitions:
+  services:
+    docker:
+      memory: 7128 # Set maximium available memory to docker service
+
+
+stepdefinitions:
+  - build: &build
+      name: Image build
+      size: 2x # 8GB RAM
+      services:
+        - docker
+      script:
+        - export SERVICE_NAME=service-exo-core
+
+        - export SOURCE_BRANCH=$BITBUCKET_BRANCH
+        - export SOURCE_TAG=$BITBUCKET_TAG
+        - export SOURCE_NAME=$(echo $SOURCE_BRANCH$SOURCE_TAG | sed "s/\//_/g")
+        - export IMAGE_NAME=exolever/$SERVICE_NAME:$SOURCE_NAME
+
+        - curl -s "https://59a7w4lqt7.execute-api.us-east-1.amazonaws.com/prod/stopper?key=WveH2wB4s7u79pTm&repo_slug=$BITBUCKET_REPO_SLUG&source_branch=$BITBUCKET_BRANCH&commit=$BITBUCKET_COMMIT"
+        - docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD
+        - docker pull $IMAGE_NAME || docker pull exolever/service-exo-core:devel || true
+        - docker build
+            --compress
+            --cache-from $IMAGE_NAME
+            --cache-from exolever/$SERVICE_NAME:devel
+            --tag $IMAGE_NAME
+            --build-arg AWS_KEY=$AWS_KEY
+            --build-arg AWS_SECRET=$AWS_SECRET
+            --build-arg SOURCE_NAME=$SOURCE_NAME
+            --build-arg SOURCE_TAG=$SOURCE_TAG
+            --build-arg SOURCE_BRANCH=$SOURCE_BRANCH
+            .
+        - echo "Running tests..."
+        - docker pull $IMAGE_NAME-dev || docker pull exolever/service-exo-core:devel-dev || true
+        - docker build
+            --compress
+            --file Dockerfile.test
+            --cache-from $IMAGE_NAME-dev
+            --cache-from exolever/$SERVICE_NAME:devel-dev
+            --tag $IMAGE_NAME-dev
+            --build-arg SOURCE_NAME=$SOURCE_NAME
+            --build-arg AWS_KEY=$AWS_KEY
+            --build-arg AWS_SECRET=$AWS_SECRET
+          .
+        - docker push $IMAGE_NAME
+        - docker push $IMAGE_NAME-dev
+
+  - runtestsmanual: &runtestsmanual
+      name: Unit tests
+      trigger: manual
+      size: 2x # 8GB RAM
+      services:
+        - docker
+      script:
+        - export SERVICE_NAME=service-exo-core
+        - export SOURCE_BRANCH=$BITBUCKET_BRANCH
+        - export SOURCE_TAG=$BITBUCKET_TAG
+        - export SOURCE_NAME=$(echo $SOURCE_BRANCH$SOURCE_TAG | sed "s/\//_/g")
+        - export IMAGE_NAME=exolever/$SERVICE_NAME:$SOURCE_NAME
+
+        - docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD
+        - docker pull $IMAGE_NAME-dev || docker pull exolever/$SERVICE_NAME-dev || true
+        - docker build
+            --cache-from $IMAGE_NAME
+            --file Dockerfile.test
+            --build-arg SOURCE_NAME=$SOURCE_NAME
+            --build-arg AWS_KEY=$AWS_KEY
+            --build-arg AWS_SECRET=$AWS_SECRET
+            --build-arg FORCE_TESTS=1
+          .
+
+pipelines:
+  default:
+    - step: *build
+    - step: *runtestsmanual
+
+  branches:
+    devel:
+      - step: *build
+    release-*:
+      - step: *build
+
+  tags:
+    '*':
+      - step: *build
+      - step: *runtestsmanual

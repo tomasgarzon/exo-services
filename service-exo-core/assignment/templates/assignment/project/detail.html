@@ -1,0 +1,83 @@
+{% extends 'base/master_detail_detail_view.html' %}
+{% load images permission_tags %}
+
+{% block detail_actions %}
+    {% include "assignment/project/action_list.html" with assignment=object %}
+{% endblock %}
+
+{% block detail_object %}
+    <h3 class="block cut-text">{{object.name}}</h3>
+    <p class="m-b-xs">{{object.get_stream_display}}</p>
+{% endblock %}
+
+{% block detail_content %}
+    <div class="ibox-content no-padding">
+        <div class="tabs-container">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#info">Info</a></li>
+                {% if assignment.is_enabled %}
+                <li><a data-toggle="tab" href="#teams">Teams</a></li>
+                {% endif %}
+            </ul>
+            <div class="tab-content">
+                <div id="info" class="tab-pane active">
+                    <div class="panel-body">
+                        <div class="m-t-8">
+                            <div class="chat-element p-b-none">
+                                  <p class="border-bottom p-b-5">
+                                    <strong>Name</strong>
+                                  </p>
+                                  <p class="m-b-xs l-h-20">
+                                      {{ object.name }}
+                                  </p>
+                             </div>
+                             <div class="chat-element p-b-none">
+                                  <p class="border-bottom p-b-5">
+                                    <strong>Stream</strong>
+                                  </p>
+                                  <p class="m-b-xs l-h-20">
+                                      {{ object.get_stream_display }}
+                                  </p>
+                             </div>
+                             <div class="chat-element p-b-none">
+                                  <p class="border-bottom p-b-5">
+                                    <strong>{{project.get_lapse_display}}</strong>
+                                  </p>
+                                  <p class="m-b-xs l-h-20">
+                                      {{ object.day|default:"Not assigned yet" }}
+                                  </p>
+                             </div>
+                             <div class="chat-element p-b-none">
+                                  <p class="border-bottom p-b-5">
+                                    <strong>Type</strong>
+                                  </p>
+                                  <p class="m-b-xs l-h-20">
+                                      {{ object.get_type_display }}
+                                  </p>
+                             </div>
+                             <div class="chat-element p-b-none">
+                                  <p class="border-bottom p-b-5">
+                                    <strong>Status</strong>
+                                  </p>
+                                  <p class="m-b-xs l-h-20">
+                                      {{ object.get_status_display }}
+                                  </p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                {% if assignment.is_enabled %}
+                <div id="teams" class="tab-pane">
+                    <div class="panel-body">
+                        <div class="m-t-9">
+                            {% for assignment_team in object.teams.all %}
+                                <p>{{assignment_team.team}}: {{assignment_team.get_status_display}}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

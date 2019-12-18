@@ -1,0 +1,10 @@
+title: Welcome to Alumni circle
+user: !exo_account Quality Assurance
+date: !timedelta -4w
+circle: !circle Alumni
+description: |
+  Hello ExO Alumni,
+
+  This forum is intended to allow ExO Alumni to exchange ideas.
+
+  We're looking forward to sharing your success stories!

@@ -1,0 +1,52 @@
+<mjml>
+  <mj-head>
+    <mj-style>
+      <mj-include path="email.mjml.css" />
+    </mj-style>
+  </mj-head>
+  <mj-body>
+
+    <!-- The first component, mj-basic-component renders as a column child -->
+    <mj-section>
+      <mj-column>
+        <mj-basic-component color="green">
+          I'm among stars
+        </mj-basic-component>
+        <mj-tag-list>
+            <mj-tag-element font-weight="regular" border-radious="0px">eeee</mj-tag-element>
+            <mj-tag-element>Keyword2</mj-tag-element>
+            <mj-tag-element>Keyword2</mj-tag-element>
+            <mj-tag-element>Keyword3</mj-tag-element>
+        </mj-tag-list>
+      </mj-column>
+    </mj-section>
+    <mj-header-title-pretitle pre-title="OpenExO Community" title="Sign Up Invitation"/>
+    
+    
+    <!-- The second component, mj-image-text renders as a section -->
+    <mj-image-text background-color="#DD685B" image-src="https://mjml.io/assets/img/mjml-logo.png" image-width="100px" font-size="24px" image-position="left">
+      MJML rules!
+    </mj-image-text>
+    <mj-wrapper>
+      <mj-header-ticket pre-title="ExO Advisor Request" title="New response"/>
+      <mj-wrapper>
+        <mj-section>
+          <mj-column>
+            <mj-text>Primero</mj-text>
+          </mj-column>
+          <mj-column>
+            <mj-text>Segundo</mj-text>
+          </mj-column>
+        </mj-section>
+        <mj-section>
+          <mj-column>
+            <mj-text>Primero22</mj-text>
+          </mj-column>
+          <mj-column>
+            <mj-text>Segundo22</mj-text>
+          </mj-column>
+        </mj-section>
+      </mj-wrapper>
+    </mj-wrapper>
+  </mj-body>
+</mjml>

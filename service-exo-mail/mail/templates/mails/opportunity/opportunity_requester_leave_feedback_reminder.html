@@ -1,0 +1,30 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="{% trans 'PROJECT COMPLETION' %}" title="{{title}}" />
+{% endblock %}
+
+{% block wrapper-extra-class %}white{% endblock %}
+
+{% block wrapper-title %}{% endblock %}
+
+{% block content %}
+    <mj-text>Hello {{created_by_name}},</mj-text>
+    <mj-text>
+        <strong>We would like to remind you that you haven't left any feedback about {{applicant_name}}'s work yet. You have 2 more days to share your feedback.</strong>
+    </mj-text>
+    <mj-text>
+    The system is double-blind, which means that the feedback won’t be visible until both parties provide it for each other.
+    </mj-text>
+    <mj-text>
+        Kind regards,<br>
+        <strong>OpenExO Team</strong>
+    </mj-text>
+
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "LEAVE FEEDBACK" as see_details %}
+    {% include "base/call_to_action.mjml" with call_to_action=see_details %}
+{% endblock %}

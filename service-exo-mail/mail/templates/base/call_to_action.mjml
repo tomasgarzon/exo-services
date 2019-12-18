@@ -1,0 +1,18 @@
+{% load common_mails %}
+
+<mj-button
+    font-family="Roboto,Helvetica"
+    font-size="16px"
+    background-color="#6F23FF"
+    font-weight="700"
+    color="white"
+    text-transform="uppercase"
+    border-radius="20px"
+    {% if absolute_url %}
+    href="{{public_url}}">
+    {% else %}
+    href="{{domain}}{{public_url}}">
+    {% endif %}
+    {{call_to_action}}
+
+</mj-button>

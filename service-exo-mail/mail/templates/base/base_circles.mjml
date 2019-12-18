@@ -1,0 +1,79 @@
+{% load mjml common_mails i18n %}
+
+{% mjml %}
+    <mjml>
+
+      <mj-head>
+          <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto" />
+
+          <mj-attributes>
+              <mj-text align="left" color="#46464b" font-family="Roboto,Helvetica" font-size="16px" line-height="24px"/>
+          </mj-attributes>
+
+          <mj-style inline="inline">
+              {% include "base/base_mjml.css" %}
+          </mj-style>
+      </mj-head>
+
+      <mj-body css-class="exo-body">
+        {% include "base/header.mjml" %}
+        <mj-wrapper background-color="#fff" padding="0px 25px 25px 25px" border="1px solid rgba(70, 70, 75, 0.16)" css-class="exo-wrapper" >
+
+          {% block circle-header %}
+          {% endblock %}
+
+          {% block pre-content %}
+          {% endblock %}
+
+          <mj-wrapper css-class="exo-wrapper {% block wrapper-extra-class %}dark{% endblock %}" padding="0px">
+
+            {% block wrapper-image %}
+            {% endblock %}
+
+            {% block wrapper-title %}
+              <mj-section>
+                  <mj-column >
+                      <mj-text font-weight="700" line-height="39px" font-size="26px" color="#46464b">
+                        {% trans "Swarm Session" %}
+                      </mj-text>
+                  </mj-column>
+              </mj-section>
+            {% endblock %}
+
+            {% block container %}
+            <mj-section padding-top="0px">
+                <mj-column>
+                    {% block content %}
+                    {% endblock %}
+                </mj-column>
+            </mj-section>
+            {% endblock %}
+
+            {% if public_url %}
+            <mj-section padding-top="20px">
+                <mj-column>
+                    {% block call_to_action %}{% endblock %}
+                </mj-column>
+            </mj-section>
+            {% endif %}
+
+            {% block after-call-to-action %}{% endblock %}
+
+          </mj-wrapper>
+
+          {% block call_to_action_out %}{% endblock %}
+
+          {% block post-content %}{% endblock %}
+
+        </mj-wrapper>
+
+        {% include "base/logo.mjml" %}
+
+        {% if public_url or disable_notification_url %}
+          {% include "base/footer.mjml" %}
+        {% endif %}
+
+      </mj-body>
+
+    </mjml>
+{% endmjml %}

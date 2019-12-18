@@ -1,0 +1,16 @@
+uuid: de535c88-42de-4c14-9261-bd3760f291e8
+origin: E
+related_uuid: 79a01e61-7c19-478d-b7da-f0d59ba8f2e1
+total: 10
+exo_role: SAD
+certification_required: CFO
+duration_value: 1
+duration_unity: H
+entity: Dickinson-Lane
+budgets:
+  - budget: 500.0
+    currency: D
+managers:
+  - user: !account ef70053f-755b-4b40-bb73-6832d16488e7 # Gorka Arrizabalaga
+  - user: !account 5d640164-b7a3-4936-b37e-3ad5a23a2036 # Tina
+  - user: !account 85227667-5866-4567-b820-57806d00932c

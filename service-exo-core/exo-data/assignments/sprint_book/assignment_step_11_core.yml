@@ -1,0 +1,155 @@
+---
+name: Improve assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/287870347
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287870347" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:   
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Last week we learned so much about our ExO Core Initiatives by testing our MVPs. Actually, we will keep developing our MVPs further and running experiments with them during this week. At some point of this week, once we have enough data to make decisions, it will be time to embrace the truth and make the changes in our ExO Core Initiatives we should in order to maximize our opportunities for success. Let’s improve our ExO Core Initiatives in order to launch them in the right direction!</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Keep further developing your ExO Core Initiatives
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>We are aware that building and testing a MVP in two weeks may be too little time. Although we know you have already seen that it’s possible!</p>
+              <p>We can still use a few days of this week to keep running experiments and developing further and iterating our MVP according to the learnings we are obtaining.</p>
+          - title: Tips
+            subtitle:
+            order: 2
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                Notice that you may learn and get new insights from the experiments with early adopters that will provide you new ideas so new hypotheses. Keep the hypothesis definition and evaluation process dynamic, so you can redefine your experiments continually based on your learnings.
+            - order: 2
+              description: |
+                We recommend you to check out Agile Development Methodologies, such as Scrum, which are the basic techniques behind developing and evolving an MVP. The main idea behind these methodologies is to continually redefine features and development priorities for your product so you can iterate it in a few days/weeks. You may not be able to use these techniques during the course of the ExO Sprint, but it’s always good to get to know them in order to use them in the future if needed.
+          - title: Tools
+            subtitle:
+            order: 3
+            type: Resource
+            resources:
+              - name: Identify and evaluate key hypotheses 
+                type: PDF
+                status: Available
+                link: /medialibrary/resource/redirect/mCRyNOkRxaCJr4GdfFQw/Identify_and_evaluate_key_hypotheses_step_2_template.pdf/
+                description: Template 
+                order: 1
+      - name: Improve and proceed!
+        order: 2
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>Once we have gathered enough information (or we don’t have time to keep running more experiments and developing further our MVPs), it’s time to make key decisions! Based on the learnings we got, we should keep improving our ExO Core Initiatives. Depending on the type of ExO Core Initiative, we will apply learnings in different ways:</p>
+            <p><strong>For Pure Core and Edge Core Initiative:</strong><br>We will update the previous elements we defined, such as the ExO Canvas, the MVP’s requirements and any other element or canvas we may have used, asking ourselves how to improve the ExO Initiative in a way that fits better the needs of users and stakeholders. Also, it will be very important to make it in a way that it’s worth for the organization to make the investment on it.</p>
+            <p><strong>For Blue Core Initiatives:</strong><br>We will update the previous elements we defined, such as the ExO Canvas, Blue Ocean Strategy Canvas, the MPV’s requirements and any other element or canvas we may have used. We need to ask to ourselves how to improve the product/service in a way that fits the (real) needs of customers and how to improve the pricing model so customers are willing to pay for it.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              For Blue Core Initiatives, there are several types of product/service iteration you can do, here you have some of them:<br><strong>Customer needs:</strong> You may discover a new need that it’s better to solve than the one you were thinking at the beginning.<br><strong>Features:</strong> You may find out that the set of features you defined for your product should be a different one.<br><strong>Pricing:</strong> You may need to change pricing structure of your product/service.
+          - order: 2
+            description: |
+              Listen to your clients, users and stakeholders and re-prioritize the features of your MVP based on their input. Don’t forget the build-measure- learn loop, it’s applicable to everything!         
+        - title: Tools
+          subtitle:
+          order: 3
+          type: Resource
+          resources:
+            - name: ExO Canvas
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/Z3YuJNiRJyaMgQSEn5BR/ExO_Canvas_template.pdf/
+              description: Template
+              order: 1
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+    - order: 1
+      description: |
+        Remember that making changes to your ExO Initiatives will be hard, but don’t become your own immune system! Just follow the key learnings you are getting and build the best ExOInitiative possible.
+    - order: 2
+      description: |
+        Remember to make data-based decisions, so you will need to avoid your own ego (sometimes it’s difficult to change your initial ideas).
+    - order: 3
+      description: |
+        Remember that may also need to reach external advisors who are specialists in your industry or in a specific technology or methodology to evaluate different types of hypotheses.
+    - order: 4
+      description: |
+        Decisions shouldn’t be made according to the real roles that the different ExO Participants have in the real organization, remember that within the ExO Sprint process everyone is the same!
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Identify and evaluate key hypotheses
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/mCRyNOkRxaCJr4GdfFQw/Identify_and_evaluate_key_hypotheses_step_2_template.pdf/
+        description: Template
+        order: 1
+      - name: ExO Canvas
+        type: Link
+        status: Available
+        link: /medialibrary/resource/redirect/FBOeuGINRweUHoiXZqUc/ExO_Canvas_example.png/
+        description: Example
+        order: 2
+      - name: ExO Canvas
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/Z3YuJNiRJyaMgQSEn5BR/ExO_Canvas_template.pdf/
+        description: Template
+        order: 3
+      - name: Business model canvas
+        type: Link
+        status: Available
+        link: /medialibrary/resource/redirect/eBRrqX8KTzynWcdalzGI/BMC_example.png/
+        description: Example
+        order: 4
+      - name: Business model canvas
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/Ux2X02v5T82nehL6GHGV/BMC_template.pdf/
+        description: Template
+        order: 5
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

@@ -1,0 +1,17 @@
+version: '2'
+services:
+  nginx:
+    image: nginx:stable
+    labels:
+      - "traefik.enable=true"
+      - "traefik.backend=nginx"
+      - "traefik.frontend.rule=Host:nginx.qa.exolever.com"
+      - "traefik.port=80"
+      - "traefix.port=443"
+    restart: always
+    networks:
+      - traefik_default
+networks:
+  traefik_default:
+    external:
+      name: traefik_default

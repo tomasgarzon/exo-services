@@ -1,0 +1,90 @@
+{% load bootstrap3 customer %}
+
+<h1>General</h1>
+<fieldset>
+    <p class="text_step_wizard m-r-none">General Information</p>
+    <div class="row">
+        <div class="col-lg-7 m-l-md">
+            {% bootstrap_field form.name %}
+            {% url 'customer:add' as the_url %}
+            {% link_add_customer the_url as link %}
+            {% bootstrap_field form.customer addon_after=link %}
+            {% bootstrap_field form.start %}
+            {% bootstrap_field form.goals %}
+            {% bootstrap_field form.challenges %}
+        </div>
+        <div class="col-lg-4 pull-right">
+            <div class="text-center">
+                <div>
+                    <i class="fa fa-circle"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<h1>ExO Consultants</h1>
+<fieldset>
+    <div id="consultants">
+        <p class="text_step_wizard m-r-none">ExO Consultants</p>
+        <div class="row">
+            <div class="col-xs-4">
+                {% bootstrap_field form.project_manager %}
+            </div>
+        </div>
+        <div class="row p-b-20">
+            <div class="col-xs-7">
+                <p>Other ExO Consultants who participate in the Sprint:</p>
+            </div>
+            <div class="col-xs-5">
+                <div class='pull-right btn btn-default orange border-orange' id='add-new'>Assign ExO Consultant</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <input type='hidden' id='id_managers' name='managers' value="" required="required">
+                <table class="table table-responsive table-mail all-border table-hover list-detail exo-list">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Rol</th>
+                            <th>Email</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<h1>Customer members</h1>
+<fieldset>
+    <div id="members">
+        <p class="text_step_wizard m-r-none">Customer members</p>
+        <div class="row p-b-20">
+            <div class="col-xs-7">
+                <p>Customer members who participate in the Sprint:</p>
+            </div>
+            <div class="col-xs-5">
+                <div class='pull-right btn btn-default orange border-orange' id='add-new'>Add new member</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <table class="table table-responsive table-mail all-border table-hover list-detail members-list">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</fieldset>

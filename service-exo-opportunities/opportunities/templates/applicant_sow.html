@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin" rel="stylesheet" type="text/css">
+        <style>
+            body {
+                color: #46464b;
+                font-family: Roboto;
+                font-size: 14px;
+                line-height: 1.5;
+                margin-left: 75px;
+                margin-right: 75px;
+            }
+        </style>
+    </head>
+    <body>
+    <img align='right' src="https://s3.amazonaws.com/exolever/static/assets/openexo-logo-rgb.png" width='100'>
+    <br>
+    <p style='font-size: 21px;line-height: 1'>STATEMENT OF WORK</p>
+    <p>Statement of Work in connection with the ExO Marketplace Conditions Agreement accepted inside the OpenExO Platform by and between <strong>{{sow.applicant_name}}</strong> (Applicant), <strong>{{sow.requester_name}}</strong> (Creator) and OpenExO acting as facilitator.</p>
+    <p>Dear User,<br>
+    Please note that by accepting this opportunity, this form will be deemed as a Statement of Work between Creator and Applicant. The services will be delivered as follows: </p>
+    <p>
+        <span style="text-decoration:underline">1. Transformation Project Details</span><br>
+        Title: <strong>{{sow.title}}</strong><br>
+        Client: <strong>{{sow.entity}}</strong><br>
+        Role:<strong> {{sow.exo_role.name}}</strong><br>
+        Description:<strong> {{sow.description}}</strong><br>
+        Location: <strong>{{sow.location_string}}</strong><br>
+        Start date: <strong>{{sow.start_date|date}}</strong><br>
+        End date: <strong>{{sow.end_date|date}}</strong><br>
+    </p>
+    <p>
+        <span style="text-decoration:underline">2. Compensation</span><br>
+        Payable amount: <strong> {{sow.budget_string}}</strong><br>
+        {% if not sow.is_online %}
+            Expenses info:
+            {% if sow.reimbursable_expenses %}
+                <strong>Opportunity Creator will reimburse or directly pay the agreed expenses</strong><br>
+            {% else %}
+                <strong>Opportunity Creator will not pay any expenses related to the opportunity</strong><br>
+            {% endif %}
+            {% if sow.extra_expenses %}
+            Expenses agreed: <strong>{{sow.extra_expenses|linebreaksbr|safe}}</strong><br>
+            {% endif %}
+        {% endif %}
+    </p>
+    <p>
+        <span style="text-decoration:underline">3. Invoicing and Terms</span><br>
+        Applicant must provide a detailed invoice to OpenExO with these guidelines.<br>
+    </p>
+    <p><strong>What do you need to include:</strong><br>
+            ExO Works Europe SLU<br>
+            Calle Parque de las Ciencias, 1, ofic. B-E</br>
+            18006 Granada, Spain<br>
+            B-19634187
+            <ul>
+                <li>Invoicing from a <span style="text-decoration:underline">company</span>: include your company's data identification, that is, complete address, legal name and tax identification number to comply with the Spanish Tax Authorities requirements.</li>
+                <li>Invoicing as an <span style="text-decoration:underline">individual</span>: include your passport number (non-EU members) or identity card number (EU members), full name and address. Additionally, attach a copy of this document as this is required by the Spanish tax authorities.</li>
+            </ul>
+        <strong>When to issue the invoice: </strong>After the successful completion of the Services.<br>
+        <strong>Who must receive the invoice: </strong> You have to send your invoice to <a href="mailto:finance@openexo.com">finance@openexo.com</a><br>
+        <strong>Payment terms: </strong>Payment terms are Net 30, shared charges. Please note that Company cannot control any fees that may be charged to the Consultant by his or her bank related to payments, and Company disclaims all liability in this regard.<br>
+        <strong>Note: </strong>The date of the invoice shall not be older than 5 days from the sending date.
+    </p>
+    <p>
+        In case your payment includes EXOS, please, invoice as follows:
+        <ul>
+            <li>Include, on the one hand, the amount to be paid in Euros and, on the other hand, the amount to be paid in EXOS.</li>
+            <li>Include in your invoice the sentence "I accept EXOS as invoice payment”.</li>
+            <li>Provide your EXOS address.</li>
+            For security reasons, when you provide us your EXOS address we will make a test transaction.<br>
+        </ul>
+    </p>
+    <p>
+        Receipt or use of cryptographic tokens may generate tax or recordkeeping obligations, which differ by country and region. OpenExO does not provide individual tax advice, so please consult with a local tax advisor to answer questions as appropriate relative to individual circumstances.
+    </p>
+    {% if sow.applicant.is_sow_accepted %}
+        <p style='color: #ff7273;'>
+            <strong>
+            Accepted by {{sow.applicant_name}} on the {{sow.date_sow_accepted|date:"DATETIME_FORMAT"}}
+            </strong>
+        </p>
+    {% endif %}
+    </body>
+</html>

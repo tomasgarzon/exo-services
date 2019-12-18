@@ -1,0 +1,9 @@
+uuid: 61ba5c10-ad06-4fb5-8ca7-cbfa1dcca18f
+user: !account ef70053f-755b-4b40-bb73-6832d16488e7 # Gorka
+title: Looking for a virtual Speaker for the Hayward LLC Online ExO Sprint
+start: !timedelta 5d
+end: !timedelta 3w
+category: TA
+exo_role: TAS
+status: UP
+url: /ecosystem/opportunities/5/

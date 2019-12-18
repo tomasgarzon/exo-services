@@ -1,0 +1,13 @@
+{% extends "base/base_blue_header.mjml" %}
+{% load common_mails i18n %}
+
+{% block blue-header %}
+    <mj-header-title-pretitle pre-title="OpenExO Community" title="Invite to ExO Application" />
+{% endblock %}
+
+
+{% block content %}
+    <mj-text>Hi {{user_name}}</mj-text>
+    <mj-text>You have been invited to the next ExO Application</mj-text>
+    {% if description %} <mj-text>{{description}}</mj-text> {% endif %}
+{% endblock %}

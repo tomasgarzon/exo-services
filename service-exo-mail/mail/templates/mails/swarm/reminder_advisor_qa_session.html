@@ -1,0 +1,65 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n tz common_dates %}
+
+{% block circle-header %}
+    {% if one_day %}
+        <mj-header-ticket pre-title="Swarm Session" title="{% trans 'Swarm Session Tomorrow' %}" />
+    {% else %}
+        <mj-header-ticket pre-title="Swarm Session" title="{% trans 'Swarm Session in 1 hour' %}" />
+    {% endif %}
+{% endblock %}
+
+{% block wrapper-title %}
+    <mj-section>
+      <mj-column >
+          <mj-text font-weight="700" line-height="39px" font-size="26px" color="#46464b">
+            {% blocktrans %}
+                Swarm Session with {{project_name}}
+            {% endblocktrans %}
+          </mj-text>
+      </mj-column>
+    </mj-section>
+{% endblock %}
+
+{% block pre-content %}
+    <mj-section>
+        <mj-column>
+            <mj-text>
+                {% trans "Hello" %} {{ short_name|capfirst}},
+            </mj-text>
+            <mj-text>
+                {% if one_day %}
+                    {% blocktrans %}
+                        Your <strong>Swarm Session with {{project_name}} is scheduled for tomorrow</strong>. In Swarm Sessions, you’ll be part of a group of ExO Advisors decending upon questions in real time.
+                    {% endblocktrans %}
+                {% else %}
+                    {% blocktrans %}
+                    Your <strong>Swarm Session with {{project_name}} will begin in 1 hour</strong>. In Swarm Sessions, you’ll be part of a group of ExO Advisors decending upon questions in real time.
+                    {% endblocktrans %}
+                {% endif %}
+            </mj-text>
+        </mj-column>
+    </mj-section>
+{% endblock %}
+
+{% block content %}
+    <mj-text>
+     {{location}}  (UTC {{timezone_utc}})
+    </mj-text>
+    {% include "mails/circles/common/qa_slot.html" %}
+    <mj-text font-style='italic'>
+    {% blocktrans %}
+        Prior to the session, you may have access to information on the transformation project you will be addressing. These documents will enable you to be prepared for the session.<br>
+        <p>During the session:</p>
+        <ul>
+            <li>You will be asked questions from multiple teams at once. </li>
+            <li>Answer the questions that interest you.</li>
+            <li>The others ExO Advisors will be answering the same questions. You will be able to see their responses and build on what they say.</li>
+        </ul>
+        Access this Swarm Session from <a href="{{domain}}{{my_jobs_url}}" class="link-nostyle" style="color:#1E88E5">My jobs</a>.
+    {% endblocktrans %}
+    </mj-text>
+{% endblock %}
+
+{% block call_to_action %}
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base/content.html" %}
+
+{% block main %}
+
+{% load replace_underscore %}
+
+<table class="table table-bordered">
+  <tbody>
+    {% regroup mail_views by section as views_list %}
+
+    {% for section in views_list %}
+        <tr>
+            <td>
+              <strong>{{ section.grouper|upper|replace_underscore }}</strong>
+            </td>
+        </tr>
+        {% for mail_view in section.list %}
+        <tr>
+            <td>
+                <a target="_blank" href="{% url 'mail:mail-view' mail_view.elem %}">
+                {{ mail_view.subject }} - {{ mail_view.elem }}
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

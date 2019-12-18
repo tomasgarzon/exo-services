@@ -1,0 +1,25 @@
+name: Checker INC Edge
+uuid: ea7e332e-8814-4570-8279-66b8d2aad587
+stream: Edge Stream
+coach: !consultant Ann Baldwin
+created_by: !exo_account Quality Assurance
+project: !sprint_automated Checker INC
+members:
+  - short_name: Marco Zimmerman
+    email: marczim@example.com
+    uuid: adca86ab-ccf2-41c8-92f5-60fb7e210962
+    image: man/16
+  - short_name: Manuela Farber
+    email: manuelafar@example.com
+    uuid: 7cfd4b60-2865-4df3-a275-de72220566e8
+    image: woman/13
+  - short_name: Laura Nadel
+    email: nadellau@example.com
+    updated_profile: true
+    uuid: 33d4f666-87de-4154-9bd9-cebe445ff65d
+    image: woman/30
+  - short_name: Mike Cole
+    email: mikco@example.com
+    updated_profile: true
+    uuid: 1781d0df-313d-4a38-9348-fe545b605e51
+    image: man/17

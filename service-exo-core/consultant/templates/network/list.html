@@ -1,0 +1,96 @@
+{% extends "base/content.html" %}
+{% load bootstrap_pagination guardian_tags staticfiles %}
+{% load django_bootstrap_breadcrumbs breadcrumb %}
+{% load bootstrap3 entity_role %}
+{% load consultant %}
+{% load exotemplates consultant_table %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Network" "consultant:list" %}
+{% endblock %}
+
+{% block header %}
+<div class="col-lg-8">
+    <h2>Network</h2>
+</div>
+<div class="col-lg-4">
+    {% if perms.consultant.add_consultant %}
+        <a href="{% url 'consultant:bulk-add' %}" class="btn btn-primary pull-right m-t-8 m-r-md">Batch invitation</a>
+        <a href="{% url 'consultant:add' %}" class="btn btn-primary pull-right m-t-8 m-r-md">Invite New Member</a>
+    {% endif %}
+</div>
+<div class="col-xs-12 p-r-none">
+    {% render_view_breadcrumbs "base/breadcrumb.html" %}
+</div>
+{% endblock %}
+
+{% block main %}
+<div class='row' data-role="list-detail" id='dev__network-list-detail'>
+    <div class='col-lg-12' data-role='list' data-list="col-lg-12" data-detail='col-lg-8'>
+        <div class='ibox float-e-margins'>
+            <div class="ibox-title">
+                <h2>Network</h2>
+            </div>
+            <div class="ibox-content m-xs m-t-none p-t-none row content clearfix">
+                <div class="row p-m filter m-t-n m-l-rest-lg m-r-rest-lg">
+                    {% include "network/search_form.html" with form_filter=form_filter %}
+                </div>
+                <div class='row p-r-20 p-l-20 filter m-b-md m-l-rest-lg m-r-rest-lg'>
+                    <div class="dropdown pull-right no-padding btn btn-white l-h-30 m-r-sm" id='filter-actions'>
+                        <a class="dropdown-toggle text-default" data-toggle="dropdown" href="#" title="Export">
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#" data-href="{% url 'consultant:export-csv' %}" id="dev__export-csv" class="content-vertical-align">CSV</a></li>
+                            <li><a href="#" data-href="{% url 'consultant:export-contracting-csv' %}" id="dev__export-csv" class="content-vertical-align">Contracting CSV</a></li>
+                            <li><a href="#" data-href="{% url 'consultant:export-certification-csv' %}" id="dev__export-csv" class="content-vertical-align">Certification </a></li>
+                            <li><a href="#" data-href="{% url 'consultant:export-bio-packages' %}" id="dev__export-bio" class="content-vertical-align">Bio packages</a></li>
+                        </ul>
+                    </div>
+                    <div class='pull-right l-h-34 m-r-md'>{{paginator.count}} Network Members found</div>
+                    <div class='pull-left l-h-34'>{{form_filter.show_description}}</div>
+                </div>
+                <div class="">
+                    {% if object_list %}
+                    <div class="table-responsive">
+                        <table class="table table-hover network list-detail">
+                            {% render_header %}
+                            <tbody>
+                                {% for consultant in object_list %}
+                                    {% render_row consultant %}
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                        {% if is_paginated %}
+                            <div class="pull-right">
+                                {% bootstrap_paginate page_obj range=10 %}
+                            </div>
+                        {% endif %}
+                    </div>
+                    {% else %}
+                        {% if perms.consultant.add_consultant %}
+                            <div class="text-center full-width pull-left m-b-md">
+                                You don't have network members yet.<br>
+                                <a href="{% url 'consultant:add' %}" class="btn btn-primary m-t-sm">Invite New Member</a>
+                            </div>
+                        {% else %}
+                            <div class="text-center full-width pull-left m-b-md">
+                                <i class="fa fa-users f-24" aria-hidden="true"></i><br>
+                                You don't have network members yet.
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='col-lg-0' data-role='detail' data-list="col-lg-0" data-detail='col-lg-4'></div>
+</div>
+
+{% endblock %}
+{% block js %}
+<script src="{% static 'network/js/consultant_list.js' %}"></script>
+<script src="{% static 'network/js/consultant_actions.js' %}"></script>
+<script src="{% static 'network/js/consultant_detail.js' %}"></script>
+{% endblock %}

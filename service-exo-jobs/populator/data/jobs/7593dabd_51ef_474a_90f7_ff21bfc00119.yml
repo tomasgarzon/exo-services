@@ -1,0 +1,9 @@
+uuid: 7593dabd-51ef-474a-90f7-ff21bfc00119
+user: !account 1cd07dd7-4883-4838-9b5a-303ef0d6580c # Amy Finch
+title: Educational Futures in Spain
+start: !timedelta -1d
+end: !timedelta -1d
+category: SP
+exo_role: SAD
+status: CO
+url: /ecosystem/opportunities/1/

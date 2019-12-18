@@ -1,0 +1,45 @@
+# Fastrack
+---
+roles:
+- name: FT Team Leader
+  level: admin
+  code: FTL
+- name: FT Team Member
+  level: basic
+  code: FTM
+- name: FT Curator
+  level: admin
+  code: FCU
+- name: FT Co-Curator
+  level: admin
+  code: FCC
+- name: FT Solution Accelerator
+  level: basic
+  code: FSA
+- name: FT Observer/Evaluator
+  level: basic
+  code: FOE
+- name: FT Local Team Member
+  level: basic
+  code: FLT
+- name: Participant
+  level: basic
+  code: PAR
+roles_team:
+- name: Coach
+  level: admin
+  code: COA
+- name: Participant
+  level: basic
+  code: PAR
+settings:
+  team_communication: False
+  ask_to_ecosystem: True
+  send_welcome_consultant: True
+  send_welcome_participant: True
+  default_password: 12345
+steps: null
+assignments: null
+streams:
+  - name: Core Stream
+  - name: Edge Stream

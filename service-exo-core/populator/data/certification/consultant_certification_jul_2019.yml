@@ -1,0 +1,42 @@
+name: ExO Consultant Certification - Virtual
+course_name: ExO Consultant
+description: ---
+type: consultantrole-consultant
+certification_role: CCO
+created_by: !exo_account Quality Assurance
+instructor_name: Quality Assurance
+issued_on: !datetime Jul 17 2019
+certifications:
+  - consultant: !consultant Alice LaGrande
+    accredible_id: 11769542
+    accredible_url: https://sandbox.credential.net/9l7janrj
+  - consultant: !consultant Amy Finch
+    accredible_id: 11769542
+    accredible_url: https://sandbox.credential.net/9l7janrj
+  - consultant: !consultant Gorka Arrizabalaga
+    accredible_id: 11769542
+    accredible_url: https://sandbox.credential.net/9l7janrj
+  - consultant: !consultant Julius Emilsson
+    accredible_id: 11769542
+    accredible_url: https://sandbox.credential.net/9l7janrj
+  - consultant: !consultant Kunivas Devari
+    accredible_id: 11769542
+    accredible_url: https://sandbox.credential.net/9l7janrj
+  - consultant: !consultant Lewis Carol
+    accredible_id: 11769542
+    accredible_url: https://sandbox.credential.net/9l7janrj
+  - consultant: !consultant Naina Lavrova
+    accredible_id: 11769542
+    accredible_url: https://sandbox.credential.net/9l7janrj
+  - consultant: !consultant Najwa Jannah Saliba
+    accredible_id: 11769542
+    accredible_url: https://sandbox.credential.net/9l7janrj
+  - consultant: !consultant Philip Robson
+    accredible_id: 11769542
+    accredible_url: https://sandbox.credential.net/9l7janrj
+  - consultant: !consultant Tina Weissberg
+    accredible_id: 11769542
+    accredible_url: https://sandbox.credential.net/9l7janrj
+  - consultant: !consultant Wilhelm Muller
+    accredible_id: 11769542
+    accredible_url: https://sandbox.credential.net/9l7janrj

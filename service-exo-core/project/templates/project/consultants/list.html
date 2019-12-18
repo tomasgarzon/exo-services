@@ -1,0 +1,89 @@
+{% extends "project/master_detail_base.html" %}
+
+{% load django_bootstrap_breadcrumbs staticfiles %}
+{% load permission_tags guardian_tags profile customize invitation %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "ExO Consultants" "project:project:consultants" project.id %}
+{% endblock %}
+
+{% block header_action %}
+    {% get_obj_perms user for project as "project_obj" %}
+    {% if "project_manager" in project_obj %}
+    <div class="col-lg-3">
+        <a href="#" class="btn btn-primary pull-right m-t-8 m-r-md dev__assign_exo_consultant" data-project="{{project.pk}}">Assign ExO Consultant</a>
+    </div>
+    {% endif %}
+{% endblock %}
+
+{% block section_title %}
+    ExO Consultants who works on this {{project.type_project|lower}}
+{% endblock %}
+{% block master_view %}
+    {% get_obj_perms user for project as "project_obj" %}
+    <table class="table table-hover list-detail table-team">
+        <thead>
+            <tr>
+                {% if form_bulk %}<th style="width: 50px;"></th>{% endif %}
+                <th>ExO Consultant</th>
+                <th>Role</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for object in object_list %}
+            <tr>
+                {% if form_bulk %}
+                    <td><input type="checkbox" id="{{object.pk}}" class="i-checks" data-action="stop"></td>
+                {% endif %}
+                <td>
+                    {% include "tags/link_user.html" with member=object.consultant.user %}
+                </td>
+                <td>
+                    {{object.exo_role.name}}
+                </td>
+                <td>
+                    {% public_email object.consultant.user as exo_email %}
+                    {{exo_email}}
+                </td>
+                <td>
+                    {% get_invitation_object object as invitation %}
+                    {{invitation.get_status_display}}<br>
+                    {% if invitation %}
+                        {% get_email_send invitation as invitation_log %}
+                        {% if invitation_log %}
+                            Sent: {{invitation_log.created|date}}
+                        {% endif %}
+                    {% endif %}
+                </td>
+                <td data-action='stop'>
+                    {% if "project_manager" in project_obj %}
+                        {% if object.can_be_deleted %}
+                            <i class="fa fa-trash dev__delete_role pull-right" title="Remove role" data-url="{% url 'api:relation:project:consultantprojectrole-detail' project.pk object.pk %}" data-role="{{object.exo_role.name}}"></i>
+                        {% endif %}
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
+{% block empty_view %}
+    {% get_obj_perms user for project as "project_obj" %}
+    {% if "project_manager" in project_obj %}
+        <div class="text-center full-width pull-left m-b-md">
+            You don't have ExO Consultants yet.<br>
+            <a href="#" class="btn btn-primary m-t-sm dev__assign_exo_consultant" data-project="{{project.pk}}">Assign ExO Consultant</a>
+        </div>
+    {% else %}
+        {{block.super}}
+    {% endif %}
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'project/js/consultant_list.js' %}"></script>
+{% endblock %}

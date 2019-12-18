@@ -1,0 +1,347 @@
+version: '3.3'
+services:
+
+  service-exo-companies:
+    image: exolever/service-exo-companies:${TAG}
+    environment:
+      DOMAIN_NAME: ${DOMAIN_NAME}
+      REDIS_HOST: ${REDIS_HOST}
+      DB_HOST: ${DB_HOST}
+      BITBUCKET_BRANCH: ${BITBUCKET_BRANCH}
+      IS_PRODUCTION: 'True'
+      SENTRY_DSN: ${SENTRY_DSN}
+      SEGMENT_WRITE_KEY: ${SEGMENT_WRITE_KEY}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY}
+      SECRET_KEY: ${SERVICE_EXO_COMPANIES_KEY}
+    volumes:
+      - ./logs/service-exo-companies:/var/log
+      - ./.root/service-exo-companies/:/root/
+      - ./data_exchange:/projects/service-exo-companies/data_exchange
+    restart: unless-stopped
+
+  service-exo-jobs:
+    image: exolever/service-exo-jobs:${TAG}
+    environment:
+      DOMAIN_NAME: ${DOMAIN_NAME}
+      REDIS_HOST: ${REDIS_HOST}
+      DB_HOST: ${DB_HOST}
+      BITBUCKET_BRANCH: ${BITBUCKET_BRANCH}
+      IS_PRODUCTION: 'True'
+      SENTRY_DSN: ${SENTRY_DSN}
+      SEGMENT_WRITE_KEY: ${SEGMENT_WRITE_KEY}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY}
+      SECRET_KEY: ${SERVICE_EXO_JOBS_KEY}
+    volumes:
+      - ./logs/service-exo-jobs:/var/log
+      - ./.root/service-exo-jobs/:/root/
+      - ./data_exchange:/projects/service-exo-jobs/data_exchange
+    restart: unless-stopped
+
+  service-exo-exq:
+    image: exolever/service-exo-exq:${TAG}
+    environment:
+      DOMAIN_NAME: ${DOMAIN_NAME}
+      REDIS_HOST: ${REDIS_HOST}
+      DB_HOST: ${DB_HOST}
+      BITBUCKET_BRANCH: ${BITBUCKET_BRANCH}
+      IS_PRODUCTION: 'True'
+      SENTRY_DSN: ${SENTRY_DSN}
+      SEGMENT_WRITE_KEY: ${SEGMENT_WRITE_KEY}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY}
+      SECRET_KEY: ${SERVICE_EXO_EXQ_KEY}
+    volumes:
+      - ./logs/service-exo-exq:/var/log
+      - ./.root/service-exo-exq/:/root/
+      - ./data_exchange:/projects/service-exo-exq/data_exchange
+    restart: unless-stopped
+
+  service-exo-events:
+    image: exolever/service-exo-events:${TAG}
+    environment:
+      DOMAIN_NAME: ${DOMAIN_NAME}
+      REDIS_HOST: ${REDIS_HOST}
+      DB_HOST: ${DB_HOST}
+      IS_PRODUCTION: 'True'
+      BITBUCKET_BRANCH: ${BITBUCKET_BRANCH}
+      SENTRY_DSN: ${SENTRY_DSN}
+      SEGMENT_WRITE_KEY: ${SEGMENT_WRITE_KEY}
+      ACCREDIBLE_ENABLED: 'True'
+      ACCREDIBLE_SANDBOX: 'False'
+      ACCREDIBLE_API_KEY: ${ACCREDIBLE_API_KEY}
+      FILTER_EVENTS: 'True'
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY}
+      SECRET_KEY: ${SERVICE_EXO_EVENTS_KEY}
+    volumes:
+      - ./logs/service-exo-events:/var/log
+      - ./.root/service-exo-events/:/root/
+      - ./data_exchange:/projects/service-exo-events/data_exchange
+    restart: unless-stopped
+
+  service-exo-projects:
+    image: exolever/service-exo-projects:${TAG}
+    environment:
+      DOMAIN_NAME: ${DOMAIN_NAME}
+      REDIS_HOST: ${REDIS_HOST}
+      METRIC_URL: ${METRIC_URL}
+      DB_HOST: ${DB_HOST}
+      IS_PRODUCTION: 'True'
+      BITBUCKET_BRANCH: ${BITBUCKET_BRANCH}
+      SENTRY_DSN: ${SENTRY_DSN}
+      SEGMENT_WRITE_KEY: ${SEGMENT_WRITE_KEY}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      ACCREDIBLE_ENABLED: 'True'
+      ACCREDIBLE_SANDBOX: 'False'
+      FILESTACK_KEY: ${FILESTACK_KEY}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY}
+      SECRET_KEY: ${SERVICE_EXO_PROJECTS_KEY}
+    volumes:
+      - ./logs/service-exo-projects:/var/log
+      - ./.root/service-exo-projects/:/root/
+      - ./data_exchange:/projects/service-exo-projects/data_exchange
+    restart: unless-stopped
+
+  service-exo-conversations:
+    image: exolever/service-exo-conversations:${TAG}
+    environment:
+      DOMAIN_NAME: ${DOMAIN_NAME}
+      REDIS_HOST: ${REDIS_HOST}
+      DB_HOST: ${DB_HOST}
+      IS_PRODUCTION: 'True'
+      BITBUCKET_BRANCH: ${BITBUCKET_BRANCH}
+      SENTRY_DSN: ${SENTRY_DSN}
+      SEGMENT_WRITE_KEY: ${SEGMENT_WRITE_KEY}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY}
+      SECRET_KEY: ${SERVICE_EXO_CONVERSATIONS_KEY}
+    volumes:
+      - ./logs/service-exo-conversations:/var/log
+      - ./.root/service-exo-conversations/:/root/
+      - ./data_exchange:/projects/service-exo-conversations/data_exchange
+    restart: unless-stopped
+
+  service-exo-broker:
+    image: exolever/service-exo-broker:${TAG}
+    environment:
+      DOMAIN_NAME: ${DOMAIN_NAME}
+      REDIS_HOST: ${REDIS_HOST}
+      DB_HOST: ${DB_HOST}
+      IS_PRODUCTION: 'True'
+      BITBUCKET_BRANCH: ${BITBUCKET_BRANCH}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY}
+    volumes:
+      - ./logs/service-exo-broker:/var/log
+      - ./.root/service-exo-broker/:/root/
+      - ./data_exchange:/projects/service-exo-broker/data_exchange
+      - media:/projects/service-exo-broker/media
+      - static:/projects/service-exo-broker/static
+    restart: unless-stopped
+    ports:
+      - 8000:80
+
+  service-exo-auth:
+    image: exolever/service-exo-auth:${TAG}
+    environment:
+      DOMAIN_NAME: ${DOMAIN_NAME}
+      REDIS_HOST: ${REDIS_HOST}
+      METRIC_URL: ${METRIC_URL}
+      DB_HOST: ${DB_HOST}
+      IS_PRODUCTION: 'True'
+      BITBUCKET_BRANCH: ${BITBUCKET_BRANCH}
+      SENTRY_DSN: ${SENTRY_DSN}
+      SEGMENT_WRITE_KEY: ${SEGMENT_WRITE_KEY}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      SECRET_KEY: ${SERVICE_EXO_AUTH_KEY}
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY}
+    volumes:
+      - ./logs/service-exo-auth:/var/log
+      - ./.root/service-exo-auth/:/root/
+      - ./data_exchange:/projects/service-exo-auth//data_exchange
+    restart: unless-stopped
+
+  service-exo-payments:
+    image: exolever/service-exo-payments:${TAG}
+    environment:
+      DOMAIN_NAME: ${DOMAIN_NAME}
+      REDIS_HOST: ${REDIS_HOST}
+      DB_HOST: ${DB_HOST}
+      IS_PRODUCTION: 'True'
+      BITBUCKET_BRANCH: ${BITBUCKET_BRANCH}
+      SENTRY_DSN: ${SENTRY_DSN}
+      SEGMENT_WRITE_KEY: ${SEGMENT_WRITE_KEY}
+      STRIPE_PUBLIC_KEY: ${STRIPE_PUBLIC_KEY}
+      STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY}
+      SECRET_KEY: ${SERVICE_EXO_PAYMENTS_KEY}
+      PAYMENT_SECRET_KEY: ${PAYMENT_SECRET_KEY}
+    volumes:
+      - ./logs/service-exo-payments:/var/log
+      - ./.root/service-exo-payments/:/root/
+      - media-payments:/projects/service-exo-payments/media
+      - ./data_exchange:/projects/service-exo-payments/data_exchange
+    restart: unless-stopped
+
+  service-exo-opportunities:
+    image: exolever/service-exo-opportunities:${TAG}
+    environment:
+      DOMAIN_NAME: ${DOMAIN_NAME}
+      REDIS_HOST: ${REDIS_HOST}
+      METRIC_URL: ${METRIC_URL}
+      DB_HOST: ${DB_HOST}
+      IS_PRODUCTION: 'True'
+      BITBUCKET_BRANCH: ${BITBUCKET_BRANCH}
+      SENTRY_DSN: ${SENTRY_DSN}
+      SEGMENT_WRITE_KEY: ${SEGMENT_WRITE_KEY}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY}
+      SECRET_KEY: ${SERVICE_EXO_OPPORTUNITIES_KEY}
+    volumes:
+      - ./logs/service-exo-opportunities:/var/log
+      - ./.root/service-exo-opportunities/:/root/
+      - ./data_exchange:/projects/service-exo-opportunities/data_exchange
+    restart: unless-stopped
+
+  service-exo-mail:
+    image: exolever/service-exo-mail:${TAG}
+    environment:
+      DOMAIN_NAME: ${DOMAIN_NAME}
+      REDIS_HOST: ${REDIS_HOST}
+      MAILER_AUTOSEND: 'True'
+      DB_HOST: ${DB_HOST}
+      IS_PRODUCTION: 'True'
+      BITBUCKET_BRANCH: ${BITBUCKET_BRANCH}
+      SENTRY_DSN: ${SENTRY_DSN}
+      SEGMENT_WRITE_KEY: ${SEGMENT_WRITE_KEY}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY}
+      SENDGRID_API_KEY: ${SENDGRID_API_KEY}
+      SECRET_KEY: ${SERVICE_EXO_MAIL_KEY}
+    volumes:
+      - ./logs/service-exo-mail:/var/log
+      - ./.root/service-exo-mail/:/root/
+      - ./data_exchange:/projects/service-exo-mail/data_exchange
+    restart: unless-stopped
+
+  service-exo-website:
+    image: exolever/service-exo-website:${TAG}
+    environment:
+      DOMAIN_NAME: ${DOMAIN_NAME}
+      DB_HOST: ${DB_HOST}
+      IS_PRODUCTION: 'True'
+      BITBUCKET_BRANCH: ${BITBUCKET_BRANCH}
+      SENTRY_DSN: ${SENTRY_DSN}
+      SEGMENT_WRITE_KEY: ${SEGMENT_WRITE_KEY}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY}
+      SECRET_KEY: ${SERVICE_EXO_WEBSITE_KEY}
+    volumes:
+      - ./logs/service-exo-website:/var/log
+      - ./.root/service-exo-website/:/root/
+      - ./data_exchange:/projects/service-exo-website/data_exchange
+    restart: unless-stopped
+
+  service-exo-medialibrary:
+    image: exolever/service-exo-medialibrary:${TAG}
+    environment:
+      DOMAIN_NAME: ${DOMAIN_NAME}
+      REDIS_HOST: ${REDIS_HOST}
+      UPLOAD_REAL: 'True'
+      DB_HOST: ${DB_HOST}
+      IS_PRODUCTION: 'True'
+      BITBUCKET_BRANCH: ${BITBUCKET_BRANCH}
+      SENTRY_DSN: ${SENTRY_DSN}
+      SEGMENT_WRITE_KEY: ${SEGMENT_WRITE_KEY}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY}
+      SECRET_KEY: ${SERVICE_EXO_MEDIALIBRARY_KEY}
+    volumes:
+      - ./logs/service-exo-medialibrary:/var/log
+      - ./.root/service-exo-medialibrary/:/root/
+      - ./data_exchange:/projects/service-exo-medialibrary/data_exchange
+    restart: unless-stopped
+
+  exo-backoffice:
+    image: exolever/exo-backoffice:${TAG}
+    volumes:
+      - exo-backoffice:/exo-backoffice
+    command: cp -r /projects/service-exo-core/exo-backoffice /
+
+  service-exo-core:
+    image: exolever/service-exo-core:${TAG}
+    depends_on:
+      - exo-backoffice
+    environment:
+      DEBUG: 'False'
+      DEBUG_GRAPHQL: 'False'
+      ALLOWED_HOSTS: '127.0.0.1,service-exo-broker,service-exo-core,production,backend,localhost,www.exolever.com,tool.exolever.com,www.openexo.com,platform.openexo.com'
+      MASTER_PASSWORD: ${MASTER_PASSWORD}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      DOMAIN_NAME: ${DOMAIN_NAME}
+      INTERCOM_SECRET_KEY: ${INTERCOM_SECRET_KEY}
+      REPO_SLUG: 'exolever'
+      IS_PRODUCTION: 'True'
+      REDIS_HOST: ${REDIS_HOST}
+      ACCREDIBLE_ENABLED: 'True'
+      ACCREDIBLE_SANDBOX: 'False'
+      ACCREDIBLE_API_KEY: ${ACCREDIBLE_API_KEY}
+      DB_HOST: ${DB_HOST}
+      SENTRY_DSN: ${SENTRY_DSN}
+      SEGMENT_WRITE_KEY: ${SEGMENT_WRITE_KEY}
+      TYPEFORM_APIKEY: ${TYPEFORM_APIKEY}
+      FILESTACK_KEY: ${FILESTACK_KEY}
+      PLACE_KEY: ${PLACE_KEY}
+      PLACE_TIMEZONE_URL: ${PLACE_TIMEZONE_URL}
+      ZOOM_URL: ${ZOOM_URL}
+      ZIPPED_FILES_PASSWORD: ${ZIPPED_FILES_PASSWORD}
+      PROJECT_CERTIFICATION_LEVEL_1_EN: ${PROJECT_CERTIFICATION_LEVEL_1_EN}
+      PROJECT_CERTIFICATION_LEVEL_1_ES: ${PROJECT_CERTIFICATION_LEVEL_1_ES}
+      HAPIKEY: ${HAPIKEY}
+      HS_PIPELINE_PREFIX: 'prod_'
+      GOOGLE_ANALYTIC_ID: ${GOOGLE_ANALYTIC_ID}
+      RECAPTCHA_ENABLED: 'True'
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY}
+      PAYMENT_SECRET_KEY: ${PAYMENT_SECRET_KEY}
+      SECRET_KEY: ${SERVICE_EXO_CORE_KEY}
+    volumes:
+      - ./logs/service-exo-core:/var/log
+      - ./data_exchange:/projects/service-exo-core/data_exchange
+      - media:/projects/service-exo-core/media
+      - static:/projects/service-exo-core/static
+      - exo-backoffice:/projects/service-exo-core/exo-backoffice
+      - ./.root/service-exo-core/:/root/
+    restart: unless-stopped
+
+volumes:
+  static: null
+  media-payments: null
+  media: null
+  exo-backoffice: null

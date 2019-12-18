@@ -1,0 +1,18 @@
+<header id="header" class="alt">
+  <span class="logo"><a href="https://www.openexo.com" target="_blank"><img src= "images/logo-openexo-white.png" alt="" /></a></span>
+  <p>Official OpenExO Workshop</p>
+  <h1>{{ .Site.Data.sections.name }}</h1>
+  <p>{{ .Site.Data.sections.comments}}</p>
+   <h1>
+   {{ $start := dateFormat "2 Jan"  .Site.Data.sections.start }}
+   {{ $end := dateFormat "2 Jan"  .Site.Data.sections.end }}
+   {{ $start }}
+   {{ if ne $start $end }}
+        - {{ $end }}
+    {{ end }}
+   </h1>
+  <h2>{{ .Site.Data.sections.location }}</h2>
+  {{ if ne .Site.Data.sections.signUpApi "" }}
+    {{ partial "join.html" . }}
+  {{ end }}
+</header>

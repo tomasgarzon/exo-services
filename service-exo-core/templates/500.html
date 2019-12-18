@@ -1,0 +1,32 @@
+{% extends "exo-backoffice/base.html" %}
+
+{% block content %}
+<div id="not-found">
+  <div class="logo"></div>
+  <div class="not-found-container">
+    <div class="not-found-details">
+      <span class="error-message">
+        Something went wrong :(
+      </span>
+      <span class="error-description">
+      Sorry, this page is not available
+      </span>
+      <p>&nbsp;</p>
+      <span class="map_content">
+        If you are wondering "what can I do?"
+        <ul class="map_title">
+          <li>You can try refreshing the page, the problem may be temporary.</li>
+          <li>If you entered the URL by hand, double check it is correct.</li>
+          <li>We have automatically been notified of this issue and will do our best to solve it as soon as possible.</li>
+        </ul>
+      </span>
+      <p>&nbsp;</p>
+      <span class="map_title">
+        <a href="/" class="map_content" onclick="history.back(-1)">
+          Go Back
+        </a>
+      </span>
+    </div>
+  </div>
+</div>
+{% endblock %}

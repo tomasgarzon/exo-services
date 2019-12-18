@@ -1,0 +1,11 @@
+{% load guardian_tags consultant_table %}
+
+{% get_obj_perms user for consultant as "perms_obj" %}
+<tr data-role='trigger' data-pk="{{object_pk}}" data-url="{% url 'consultant:detail' object_pk %}">
+    {% for field in fields %}
+        <td>{% show_picture consultant field %}</td>
+    {% endfor %}
+    <td data-action='stop'>
+        {% include "network/consultant_action_list.html" with perms=perms_obj global_perms=perms object=consultant %}
+    </td>
+</tr>

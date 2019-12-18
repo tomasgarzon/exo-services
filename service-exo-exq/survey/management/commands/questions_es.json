@@ -1,0 +1,619 @@
+{
+  "data": {
+    "questions": [
+      {
+        "order": 0,
+        "value": "¿Qué le da sentido o dirección a la organización?",
+        "options": [
+            {
+                "order": 0,
+                "value": "Una misión y/o una declaración de principios"
+            },{
+                "order": 1,
+                "value": "Crecimiento/ objetivos estratégicos y/o el cambio tecnológico y la competencia"
+            },{
+                "order": 2,
+                "value": "Generar valor para el mundo"
+            },{
+                "order": 3,
+                "value": "Un propósito de transformar el mundo (expresado en una declaración corta y potente; no es un eslogan, sino un proceso transformador masivo)"
+            }
+        ]
+    },{
+        "order": 1,
+        "value": "¿La gente y las partes implicadas entienden el propósito transformador masivo (MTP) de la organización?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable (la organización no tiene un MTP)"
+            },{
+                "order": 1,
+                "value": "Nadie"
+            },{
+                "order": 2,
+                "value": "Algunos"
+            },{
+                "order": 3,
+                "value": "Todos"
+            }
+        ]
+    },{
+        "order": 2,
+        "value": "¿Cuántas iniciativas en la organización están conectadas con el MTP?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable (la organización no tiene un MTP)"
+            },{
+                "order": 1,
+                "value": "Ninguna"
+            },{
+                "order": 2,
+                "value": "Algunas"
+            },{
+                "order": 3,
+                "value": "Todas"
+            }
+        ]
+    },{
+        "order": 3,
+        "value": "¿Hasta qué punto utiliza la organización personal bajo demanda para desarrollar sus actividades principales?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable/nunca (la organización no utiliza personal bajo demanda)"
+            },{
+                "order": 1,
+                "value": "Raramente (a veces se externalizan algunos proyectos)"
+            },{
+                "order": 2,
+                "value": "Parcialmente (a veces se externalizan actividades principales)"
+            },{
+                "order": 3,
+                "value": "Casi siempre, para la mayoría de las actividades principales (p. ej., Waze, Uber)"
+            }
+        ]
+    },{
+        "order": 4,
+        "value": "¿Cómo gestiona o hace crecer la organización la participación de personal bajo demanda en sus actividades principales?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No se aplica"
+            },{
+                "order": 1,
+                "value": "Mediante el uso de redes sociales"
+            },{
+                "order": 2,
+                "value": "Mediante el uso de una base de datos y a través de correo electrónico u otros canales de comunicación directa"
+            },{
+                "order": 3,
+                "value": "Mediante una plataforma/marketplace completamente automatizado (p. ej., Fivver, Lyft)"
+            }
+        ]
+    },{
+        "order": 5,
+        "value": "¿Cómo se gestiona y se organiza la base de datos de personal bajo demanda?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable"
+            },{
+                "order": 1,
+                "value": "Mediante seguimiento manual"
+            },{
+                "order": 2,
+                "value": "Mediante certificaciones"
+            },{
+                "order": 3,
+                "value": "De modo automatizado mediante valoraciones de clientes y compañeros y gamificación de logros"
+            }
+        ]
+    },{
+        "order": 6,
+        "value": "¿Hasta qué punto se implica la comunidad en actividades clave de la organización?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable/Nunca (la organización no incluye a una comunidad de fans o seguidores directos ni indirectos)"
+            },{
+                "order": 1,
+                "value": "Raramente (la organización ha realizado campañas esporádicas incluyendo a la comunidad)"
+            },{
+                "order": 2,
+                "value": "A veces (por ejemplo, la organización escucha el feedback o las ideas de la comunidad para nuevos productos)"
+            },{
+                "order": 3,
+                "value": "Casi siempre, para la mayoría de las actividades principales (p. ej., la comunidad desarrolla el contenido en Wikipedia)"
+            }
+        ]
+    },{
+        "order": 7,
+        "value": "¿La organización aprovecha la participación de la comunidad para actuar de forma más hábil y/o más con mayor velocidad?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable"
+            },{
+                "order": 1,
+                "value": "Apenas"
+            },{
+                "order": 2,
+                "value": "A veces"
+            },{
+                "order": 3,
+                "value": "Casi siempre (p. Ej., para ideas colaborativas, valoraciones y/o productos, nuevas oportunidades, contactos y/o para lo que sea posible)"
+            }
+        ]
+    },{
+        "order": 8,
+        "value": "¿La comunidad siente claramente que pertenece al ecosistema o a la marca de la organización?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable"
+            },{
+                "order": 1,
+                "value": "Apenas"
+            },{
+                "order": 2,
+                "value": "Parcialmente (sí, pero no es un vínculo potente)"
+            },{
+                "order": 3,
+                "value": "Sí, completamente (p. ej., los usuarios de la comunidad son «embajadores» de la organización, se sienten orgullosos y entusiasmados por formar parte de ella, se sienten representados y/o conectados al ecosistema casi a diario porque representa una parte de su rutina, como puede ser el caso de los usuarios de Instagram)"
+            }
+        ]
+    },{
+        "order": 9,
+        "value": "¿Hasta qué punto se utilizan algoritmos o aprendizaje automático para procesos de toma de decisiones o actividades repetitivas clave que consumen mucho tiempo?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable"
+            },{
+                "order": 1,
+                "value": "Raramente"
+            },{
+                "order": 2,
+                "value": "Parcialmente"
+            },{
+                "order": 3,
+                "value": "Para la mayoría de actividades principales (p. ej., Netflix o Spotify usan algoritmos para recomendar qué ver o qué oír según las propias preferencias o las de otros usuarios)"
+            }
+        ]
+    },{
+        "order": 10,
+        "value": "¿Cómo obtienen información los algoritmos o los modelos de aprendizaje automático?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable"
+            },{
+                "order": 1,
+                "value": "Manualmente (p. Ej., consultores o trabajadores contratados para compilar información y/o mediante herramientas de la organización)"
+            },{
+                "order": 2,
+                "value": "De manera semiautomática con la interacción de los usuarios y/o mediante una infraestructura propiedad de terceros (con un seguimiento parcial interno de la información)"
+            },{
+                "order": 3,
+                "value": "Se compila la información de manera automática (p. ej. mediante la comunidad y seguidores expertos y con la utilización de abundantes sensores y canales de información)"
+            }
+        ]
+    },{
+        "order": 11,
+        "value": "¿Cómo contribuye la utilización de algoritmos y aprendizaje automático a que el producto o los servicios de la organización destaquen en el mercado/constituyan una ventaja competitiva?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable"
+            },{
+                "order": 1,
+                "value": "Raramente (el uso que se hace es común)"
+            },{
+                "order": 2,
+                "value": "Otorga a la organización una clara «ventaja injusta»"
+            },{
+                "order": 3,
+                "value": "Hace que los productos y los servicios sean considerablemente mejores que los del resto"
+            }
+        ]
+    },{
+        "order": 12,
+        "value": "¿Hasta qué punto es clave el acceso gratuito o con bajo coste a recursos de terceros para desarrollar las actividades principales de la organización o crear propuestas de valor para clientes?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable (todas las actividades clave se desarrollan usando recursos internos)"
+            },{
+                "order": 1,
+                "value": "Raramente (A veces se usan recursos externos, pero no son vitales para el desarrollo del negocio)"
+            },{
+                "order": 2,
+                "value": "Parcialmente (A veces la organización utiliza recursos externos)"
+            },{
+                "order": 3,
+                "value": "La mayoría de las actividades principales de la organización incluyen recursos externos (p. ej., Waze aprovecha los teléfonos de los usuarios, Airbnb aprovecha las habitaciones de los usuarios, Wikipedia aprovecha el conocimiento de los usuarios, Github aprovecha el código de los usuarios)"
+            }
+        ]
+    },{
+        "order": 13,
+        "value": "¿Existe una relación lineal entre el aumento en la capacidad del servicio o en el suministro de productos y el aumento en la posesión de recursos?",
+        "options": [
+            {
+                "order": 0,
+                "value": "Sí, absolutamente. Si la organización quiere aumentar su capacidad de suministro, necesita ampliar los recursos que posee."
+            },{
+                "order": 1,
+                "value": "Sí, en su mayoría. Hay rendimiento por escalación del cual la organización puede beneficiarse (p. ej., ventajas económicas según volumen)"
+            },{
+                "order": 2,
+                "value": "No, la organización puede aumentar su suministro la mayor parte de las veces sin necesidad de adquirir recursos adicionales"
+            },{
+                "order": 3,
+                "value": "No, la capacidad de la organización puede aumentar de forma rápida y considerable sin apenas tener que comprar recursos adicionales"
+            }
+        ]
+    },{
+        "order": 14,
+        "value": "¿El modelo de recursos de la organización limita de forma considerable la flexibilidad para dinamizar el modelo de negocio?",
+        "options": [
+            {
+                "order": 0,
+                "value": "Absolutamente"
+            },{
+                "order": 1,
+                "value": "Considerablemente"
+            },{
+                "order": 2,
+                "value": "Solo parcialmente. La organización está replanteando la mayoría de recursos que posee o se vale de los recursos de terceros que resultan relevantes para la dinamización."
+            },{
+                "order": 3,
+                "value": "Apenas. Poseer pocos o ningún recurso en propiedad otorga mucha flexibilidad a la organización para dinamizarse y explorar otros mercados."
+            }
+        ]
+    },{
+        "order": 15,
+        "value": "¿La organización crea o posee recursos efectivos (p. ej., gamificación, mecanismos de presión social, etc.) para aumentar la implicación emocional y el compromiso y/o condicionar el nivel de compromiso de clientes/partes implicadas?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable"
+            },{
+                "order": 1,
+                "value": "Raramente"
+            },{
+                "order": 2,
+                "value": "Sí, parcialmente"
+            },{
+                "order": 3,
+                "value": "Sí, recursos muy efectivos"
+            }
+        ]
+    },{
+        "order": 16,
+        "value": "¿Hay algún sistema de reputación para segmentos de clientes y socios clave para que estén comprometidos y conectados con la actividad de la organización?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No, nada"
+            },{
+                "order": 1,
+                "value": "Hay un canal de feedback, pero solo lo puede ver la organización"
+            },{
+                "order": 2,
+                "value": "Hay un sistema de reputación público que todos pueden ver, pero la organización aún no ha logrado que clientes y socios clave conecten del todo con él"
+            },{
+                "order": 3,
+                "value": "Hay un sistema de reputación público que todos pueden ver y que es muy efectivo para lograr altos niveles de compromiso"
+            }
+        ]
+    },{
+        "order": 17,
+        "value": "¿Con qué frecuencia muestran las partes dirigentes del negocio grandes niveles de motivación y/o acciones que contribuyan al progreso de la organización?",
+        "options": [
+            {
+                "order": 0,
+                "value": "Nunca"
+            },{
+                "order": 1,
+                "value": "Muy raramente"
+            },{
+                "order": 2,
+                "value": "Con regularidad"
+            },{
+                "order": 3,
+                "value": "Constantemente"
+            }
+        ]
+    },{
+        "order": 18,
+        "value": "¿Cómo valoran clientes y socios la experiencia de usuario (UX) que del producto y los servicios de la organización?",
+        "options": [
+            {
+                "order": 0,
+                "value": "Es una experiencia pobre"
+            },{
+                "order": 1,
+                "value": "La organización no recibe muchas quejas al respecto"
+            },{
+                "order": 2,
+                "value": "La organización ofrece una experiencia de usuario por encima de la media"
+            },{
+                "order": 3,
+                "value": "A los usuarios les encanta utilizar los productos y servicios de la organización constantemente"
+            }
+        ]
+    },{
+        "order": 19,
+        "value": "¿Las interfaces se adaptan a perfiles o necesidad específicas del usuario?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable"
+            },{
+                "order": 1,
+                "value": "No"
+            },{
+                "order": 2,
+                "value": "Sí, en algunas partes/hay customizaciones manuales"
+            },{
+                "order": 3,
+                "value": "Sí, siempre y de manera efectiva"
+            }
+        ]
+    },{
+        "order": 20,
+        "value": "Con las interfaces actuales que la organización ofrece, ¿las partes dirigentes del negocio se pueden conectar a todas horas, gestionar e intercambiar información relevante y realizar otras acciones relacionadas con los productos o servicios?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable"
+            },{
+                "order": 1,
+                "value": "Raramente"
+            },{
+                "order": 2,
+                "value": "Sí, en la mayoría de los casos o en la mayor parte del proceso"
+            },{
+                "order": 3,
+                "value": "Sí, siempre y de un modo muy efectivo"
+            }
+        ]
+    },{
+        "order": 21,
+        "value": "¿La organización tiene paneles de control o seguimiento con información relevante en tiempo real que apoye en el aprendizaje y en tomas de decisiones efectivas?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable (la organización no utiliza paneles de instrumentos)"
+            },{
+                "order": 1,
+                "value": "No, la información se compila y se analiza de forma individual para cada caso, dependiendo de la decisión en cuestión"
+            },{
+                "order": 2,
+                "value": "La organización ha identificado indicadores clave (la mayoría están en paneles de instrumentos) que se actualizan al menos cada semana o cada dos"
+            },{
+                "order": 3,
+                "value": "Sí, los paneles de instrumentos son esenciales en las operaciones de la organización y proporcionan indicadores clave que se actualizan en su mayoría en tiempo real o, en su defecto a diario o semanalmente"
+            }
+        ]
+    },{
+        "order": 22,
+        "value": "¿Cómo se actualizan los paneles/indicadores/informes?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable (la organización no utiliza paneles de instrumentos)"
+            },{
+                "order": 1,
+                "value": "Manualmente"
+            },{
+                "order": 2,
+                "value": "Semimanualmente"
+            },{
+                "order": 3,
+                "value": "Automáticamente y en tiempo real (p. ej., sensores, registros de interacción con usuarios, etc.)"
+            }
+        ]
+    },{
+        "order": 23,
+        "value": "¿A quién de dentro de la organización le permiten los paneles de instrumentos tomar decisiones informadas?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable (la organización no utiliza paneles de instrumentos)"
+            },{
+                "order": 1,
+                "value": "Al CEO o al equipo directivo"
+            },{
+                "order": 2,
+                "value": "Al CEO, al equipo directivo y a los mandos intermedios"
+            },{
+                "order": 3,
+                "value": "A casi todos los trabajadores, los paneles de instrumentos son clave en todos los niveles de la organización"
+            }
+        ]
+    },{
+        "order": 24,
+        "value": "¿La organización plantea sus actividades innovadoras como experimentos con hipótesis específicas que requieren ser probadas y/o como obtención de información y aprendizaje?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable (la organización no tiene un proceso/cultura de experimentación)"
+            },{
+                "order": 1,
+                "value": "No, la organización realiza esfuerzos innovadores sin un proceso de experimentación"
+            },{
+                "order": 2,
+                "value": "Sí, hay varios equipos o proyectos estructurados/guiados por procesos de experimentación"
+            },{
+                "order": 3,
+                "value": "Sí, totalmente, cada equipo dentro de la organización aplica procesos de experimentación"
+            }
+        ]
+    },{
+        "order": 25,
+        "value": "¿La organización utiliza como referencia los resultados o la información obtenida mediante investigaciones basadas en experimentación?",
+        "options": [
+            {
+                "order": 0,
+                "value": "Nunca"
+            },{
+                "order": 1,
+                "value": "Raramente"
+            },{
+                "order": 2,
+                "value": "Regularmente, las decisiones fundamentadas en datos son más relevantes que las fundamentadas en opiniones"
+            },{
+                "order": 3,
+                "value": "Constantemente, hay una gran cultura de experimentar y obtener información real antes de tomar decisiones"
+            }
+        ]
+    },{
+        "order": 26,
+        "value": "¿Cómo genera la organización y cómo prueba nuevas iniciativas, productos y servicios?",
+        "options": [
+            {
+                "order": 0,
+                "value": "Mediante debates internos y su posterior validación"
+            },{
+                "order": 1,
+                "value": "Contratando a consultores que generen un informe de análisis de mercado"
+            },{
+                "order": 2,
+                "value": "Mediante la creación de prototipos de prueba rápidos que son evaluados internamente"
+            },{
+                "order": 3,
+                "value": "Mediante la creación de prototipos de prueba rápidos que son evaluados por usuarios pioneros"
+            }
+        ]
+    },{
+        "order": 27,
+        "value": "¿Hay una cultura de microgestión en la organización?",
+        "options": [
+            {
+                "order": 0,
+                "value": "Sí, absolutamente"
+            },{
+                "order": 1,
+                "value": "Sí, parcialmente"
+            },{
+                "order": 2,
+                "value": "No, en la mayoría de los casos se insta a los empleados y a los equipos a actuar con autonomía"
+            },{
+                "order": 3,
+                "value": "En absoluto, a los empleados y a los equipos se les insta a actuar con total autonomía"
+            }
+        ]
+    },{
+        "order": 28,
+        "value": "¿La organización tiene equipos multidisciplinares que se organizan a sí mismos sin una autoridad centralizada?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable"
+            },{
+                "order": 1,
+                "value": "En absoluto"
+            },{
+                "order": 2,
+                "value": "Sí, una parte de la organización trabaja de este modo"
+            },{
+                "order": 3,
+                "value": "Sí, prácticamente la organización al completa trabaja de este modo"
+            }
+        ]
+    },{
+        "order": 29,
+        "value": "¿La organización otorga autonomía a segmentos de clientes y socios clave para que operen estableciendo sus propias condiciones?",
+        "options": [
+            {
+                "order": 0,
+                "value": "En absoluto"
+            },{
+                "order": 1,
+                "value": "No de manera automática, pero se puede negociar"
+            },{
+                "order": 2,
+                "value": "Sí, parcialmente"
+            },{
+                "order": 3,
+                "value": "Sí, totalmente"
+            }
+        ]
+    },{
+        "order": 30,
+        "value": "¿La organización facilita y fomenta la comunicación instantánea (mensajes instantáneos, boletines de noticias internos, etc.)?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable"
+            },{
+                "order": 1,
+                "value": "No, solo mediante correos y llamadas"
+            },{
+                "order": 2,
+                "value": "Sí, los empleados en ocasiones utilizan mensajes en tiempo real y herramientas de colaboración en tiempo real para comunicarse entre sí y con los dirigentes del negocio"
+            },{
+                "order": 3,
+                "value": "Sí, la organización utiliza constantemente mensajes en tiempo real y herramientas de colaboración en tiempo real para comunicarse entre sí y con los dirigentes del negocio"
+            }
+        ]
+    },{
+        "order": 31,
+        "value": "¿La organización facilita y fomenta la comunicación instantánea para conectar segmentos de clientes y/o socios estratégicos entre ellos (mensajes instantáneos, boletines de noticias internos, etc.)?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable"
+            },{
+                "order": 1,
+                "value": "Solo a través de personal de la organización, de modo que la organización siempre está presente para dirigir las conversaciones"
+            },{
+                "order": 2,
+                "value": "Sí, los segmentos de clientes y los socios estratégicos a veces usan servicios de mensajería instantánea para comunicarse entre ellos y con dirigentes del negocio"
+            },{
+                "order": 3,
+                "value": "Sí, la organización proporciona tecnologías sociales para favorecer la mensajería instantánea y herramientas de colaboración en tiempo real para segmentos de clientes y socios estratégicos"
+            }
+        ]
+    },{
+        "order": 32,
+        "value": "¿Cómo implementa la organización tecnologías sociales para conectar empleados y/o segmentos de clientes y socios estratégicos entre sí?",
+        "options": [
+            {
+                "order": 0,
+                "value": "No aplicable"
+            },{
+                "order": 1,
+                "value": "Con herramientas de terceros que cubren parcialmente las necesidades de comunicación"
+            },{
+                "order": 2,
+                "value": "Con herramientas de terceros que cubren todas las necesidades de comunicación"
+            },{
+                "order": 3,
+                "value": "Con plataforma/tecnologías propias de la organización que cubren todas las necesidades de comunicación"
+            }
+        ]
+    },{
+        "order": 33,
+        "value": "¿Cuál es el tipo de modelo de negocio actual de la organización?",
+        "options": [
+            {
+                "order": 0,
+                "value": "Responsables de producto/servicios: La organización desarrolla/manufactura sus propios productos o define/ejecuta sus propios servicios y los suministra directamente a sus clientes. Ejemplo: BMW."
+            },{
+                "order": 1,
+                "value": "Distribución: La organización suministra productos y servicios de otros a sus clientes. La organización selecciona la oferta para sus segmentos de clientes y negocia con proveedores las mejores condiciones. Ejemplo: Walmart."
+            },{
+                "order": 2,
+                "value": "Plataforma: La organización conecta a productores (de producto/servicios) con consumidores (clientes) utilizando una plataforma en medio del proceso, la cual permite equilibrar automáticamente la oferta/demanda teniendo en cuenta las preferencias de los clientes y de los proveedores. Ejemplo: Airbnb."
+            },{
+                "order": 3,
+                "value": "Ecosistema/modelo de negocio de red: La organización tiene un modelo de negocio basado en una plataforma complementada con un conjunto de entidades que proporcionan servicios adicionales y productos a sus clientes. Ejemplo: Google."
+            }
+        ]
+    }
+    ]
+}
+}

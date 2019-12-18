@@ -1,0 +1,34 @@
+created_by: !account 299c8c8a-4e4a-4c6b-904a-1b801b7227f1
+created_by_full_name: Philip Robson
+status: H
+title: ExO Talks Event
+sub_title: OpenExO Talk
+description: ExO Talk Japan
+start: !timedelta 1d
+end: !timedelta 1d
+category: TA
+follow_type: V
+location: Tokyo, Japan
+url: http://openexo.com
+languages:
+  - Japanese
+show_price: True
+amount: 1500
+currency: D
+organizers:
+  - name: Workshop Organizer
+    email: workshop@openexo.com
+    url: http://www.openexo.com/organizer
+participants:
+  - user: !account 0737a9f9-22a0-4286-8be3-34a3e19d92dc
+    user_name: Naina Lavrova
+    user_email: nainalavrova@example.com
+    order: 0
+    role: TAS
+    status: A
+  - user: !account 1cd07dd7-4883-4838-9b5a-303ef0d6580c
+    user_name: Amy Finch
+    user_email: amyfinch@example.com
+    order: 1
+    role: TAS
+    status: A

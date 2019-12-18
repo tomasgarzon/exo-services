@@ -1,0 +1,54 @@
+name: ExO Foundations Certification - Virtual
+course_name: ExO Foundations
+description: Discover the basics of ExOs and how to build one
+type: consultantrole-foundations
+certification_role: CFO
+created_by: !exo_account Quality Assurance
+instructor_name: Quality Assurance
+issued_on: !datetime Jul 17 2019
+certifications:
+  - consultant: !consultant Alice LaGrande
+    accredible_id: 11769542
+    accredible_url: https://sandbox.credential.net/9l7janrj
+  - consultant: !consultant Amy Finch
+    accredible_id: 11769543
+    accredible_url: https://sandbox.credential.net/jih0obur
+  - consultant: !consultant Ann Baldwin
+    accredible_id: 11769544
+    accredible_url: https://sandbox.credential.net/3bcz2c6i
+  - consultant: !consultant Cerdic Roper
+    accredible_id: 11769545
+    accredible_url: https://sandbox.credential.net/aw02crwq
+  - consultant: !consultant Gorka Arrizabalaga
+    accredible_id: 11769547
+    accredible_url: https://sandbox.credential.net/fptf9rmm
+  - consultant: !consultant Julius Emilsson
+    accredible_id: 11769548
+    accredible_url: https://sandbox.credential.net/r4dtuo0g
+  - consultant: !consultant Kunivas Devari
+    accredible_id: 11769549
+    accredible_url: https://sandbox.credential.net/ss484dao
+  - consultant: !consultant Leticia Ferreira Dias
+    accredible_id: 11769550
+    accredible_url: https://sandbox.credential.net/bmu1x6fq
+  - consultant: !consultant Lewis Carol
+    accredible_id: 11769551
+    accredible_url: https://sandbox.credential.net/cydzd5xf
+  - consultant: !consultant Lindsey Allen
+    accredible_id: 11769559
+    accredible_url: https://sandbox.credential.net/ple0yn5q
+  - consultant: !consultant Naina Lavrova
+    accredible_id: 11769558
+    accredible_url: https://sandbox.credential.net/1fo0d16g
+  - consultant: !consultant Najwa Jannah Saliba
+    accredible_id: 11769557
+    accredible_url: https://sandbox.credential.net/t0us8yro
+  - consultant: !consultant Philip Robson
+    accredible_id: 11769555
+    accredible_url: https://sandbox.credential.net/07dfcusv
+  - consultant: !consultant Tina Weissberg
+    accredible_id: 11769554
+    accredible_url: https://sandbox.credential.net/ldcr4jmx
+  - consultant: !consultant Wilhelm Muller
+    accredible_id: 11769553
+    accredible_url: https://sandbox.credential.net/c12fdfgo

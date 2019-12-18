@@ -1,0 +1,32 @@
+uuid: b76c0a9d-a6f8-4c0f-a87d-a56cafe20402
+name: Gorka Arrizabalaga
+uuid_related_object: 768466f1-3d10-468a-83ad-43fa1badefb7
+created_by: !account &gorka ef70053f-755b-4b40-bb73-6832d16488e7  # Gorka Arrizabalaga
+_type: O
+icon: /media/avatars/48_48/gorka-arrizabalaga.jpg
+users:
+  - user: *gorka
+    name: Gorka Arrizabalaga
+    profile_url: /public/profile/gorka-arrizabalaga/
+    profile_picture: /media/avatars/48_48/gorka-arrizabalaga.jpg
+  - user: !account &quality 7749ad25-5128-4644-895f-6b9a70b605bd
+    name: Quality Assurance
+    profile_url: /public/profile/quality-assurance/
+    profile_picture: /media/avatars/48_48/quality-assurance.jpg
+messages:
+  - created_by: *quality
+    message: Molestiae similique nulla labore recusandae. Illum voluptatibus quo dolor. Minima consectetur inventore fugit odio quaerat.\nRepudiandae exercitationem fuga voluptate ipsam omnis tempora
+    readed:
+        - user: *gorka
+  - created_by: *gorka
+    message: Molestias suscipit perspiciatis. Maxime doloribus iste autem inventore rerum.
+    readed:
+        - user: *quality
+  - created_by: *gorka
+    message: Mollitia eaque voluptate adipisci doloribus aliquid tempora. Alias excepturi rem aliquam eum autem molestiae. Inventore hic tempore provident eum itaque exercitationem.
+    readed:
+        - user: *quality
+  - created_by: *quality
+    message: Aspernatur repudiandae ex occaecati voluptatem autem incidunt. Est optio aliquid ipsum soluta magnam quos. Sed veniam minus quo eaque. Quibusdam aliquid facere iste doloribus
+    readed:
+        - user: *gorka

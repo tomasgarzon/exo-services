@@ -1,0 +1,269 @@
+---
+name: Explore assignment 
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: explore_main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/287437749
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287437749" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:   
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p><strong>The world changes every day. Exploring it can be an exciting learning experience—one that may even surprise you!</strong></p>
+      <p>Many executives spend most of their time dealing with internal issues and never look at what’s happening beyond the organization. Don’t be one of them!</p>
+      <p>The biggest opportunities can be found at the intersection of global challenges (problems that need to be solved), exponential technologies (which can solve these needs) and business models (which monetize and grow your organization).</p>
+      <p>This week’s assignment sets the foundation for the Edge Stream. It helps you gain a strategic overview of the world’s greatest challenges along with the most important technologies that may disrupt your industry now or in the future. How is your industry already being reshaped?</p>
+      <p>By looking “outside the building” you will gain an understanding of non-traditional and disruptive business models coming into use.</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Explore global issues and trends
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>Think about and research the social issues the world is facing and the global trends related to the scope of your project (either specific to an industry or in general) Research social needs and trends such as:</p>
+              <p><strong>Social issues</strong></p>
+              <p>- Education<br>- Poverty<br>- Energy<br>- Environment<br>- Health<br>- Peace<br>- Human Rights<br>- Children<br>- Justice</p>
+              <p><strong>Trends</strong></p>
+              <p>- Market<br>- Consumer behaviour<br>- Competitors<br>- Suppliers<br>- Social changes<br>- Politics</p>
+          - title: Resources
+            subtitle: |
+              You can find information about social issues in international institutions and on non-governmental organization websites such as:
+            order: 2
+            type: Resource
+            resources:
+            - name: United Nations
+              type: Link
+              status: Available
+              link: http://www.un.org
+              order: 1
+              description:
+            - name: top100ngos
+              type: Link
+              status: Available
+              link: https://www.ngoadvisor.net/top100ngos/
+              order: 2
+              description:
+          - title: Tips
+            subtitle:
+            order: 3
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                Pay attention to the news! It will highlight some of the main trends in the world in general, and your industry in particular, are facing.
+          - title: Tools
+            subtitle:
+            order: 4
+            type: Resource  
+            resources:
+            - name: Trends/Issues research
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/BSpWkiJrRzC3BDShpipg/Global_trends_and_issues_template.pdf/
+              description: Example
+              order: 1
+      - name: Learn about exponential technologies
+        order: 2
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>Most exponential technologies will impact your industry, either directly or indirectly. At the same time, disruption will bring new opportunities that you can and should leverage. Consider how some of the following emerging/exponential technologies may impact (or have already impacted) your industry. Keep in mind that the list is not conclusive, since new technologies emerge every day.</p>
+            <p>- Artifical Intelligence<br>- Robotics<br>- 3D Printing<br>- Virtual & Augmented Reality<br>- Biotechnology & Bioinformatics<br>- Blockchain & Bitcoin<br>- Nanotechnology<br>- Drones<br>- Internet of Things<br>- Quantum Computing</p>
+            <p>Search the Internet for terms and phrases such as “disruptive technologies for [X] Industry”, which will yield lots of great examples.</p>
+        - title: Resources
+          subtitle: |
+            "Look for recent articles on tech-focused websites. Even if the articles don’t address your industry specifically, you may find connections and potential applications. Websites to review include:
+          order: 2
+          type: Resource
+          resources:
+          - name: Review
+            type: Link
+            status: Available
+            link: http://www.technologyreview.com
+            order: 1
+            description:
+          - name: Singularity University Hub
+            type: Link
+            status: Available
+            link: http://www.singularityhub.com
+            order: 2
+            description:
+          - name: Disruption Hub
+            type: Link
+            status: Available
+            link: http://www.disruptionhub.com
+            order: 3
+            description:
+          - name: Wired
+            type: Link
+            status: Available
+            link: http://www.wired.com
+            order: 4
+            description:
+          - name: Tech Crunch
+            type: Link
+            status: Available
+            link: http://www.techcrunch.com
+            order: 5
+            description:
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Subscribe to the weekly newsletters offered by these sites. They will keep you apprised of the latest developments in emerging technologies. A quick scan each week keeps you informed and allows you to research further if a particular topic catches your eye.
+          - order: 2
+            description: |
+              Avoid (or at least don’t only focus on) reports coming out of your own industry. They are usually geared toward improving an existing industry rather than re-inventing it, which is what you are trying to do!
+          - order: 3
+            description: |
+              Create Google Alerts to receive news from specific keywords.
+          - order: 4
+            description: |
+              The technologies you research will be in various stages of moving into the mainstream. Some will be already in active use, while others will still be in development. Consider timing in terms of market impact, and remember that “experts” generally make forecasts based on linear projections. Don’t overlook exponential doubling patterns when they are in the early stages. They can be deceptive, since at the very beginning the exponential curve may be too flat.
+        - title: Tools
+          subtitle:
+          order: 4
+          type: Resource
+          resources:
+            - name: Exponential technologies research
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/cet6V9QHQ8qHSDqhwyh7/Exponential_technology_template.pdf/
+              order: 1
+              description: Example
+      - name: Learn about disruptive startups
+        order: 3
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>Technology by itself doesn’t have any value to users. To be successful, organizations need to implement the right business model, which is the way to create, deliver and retain value.</p>
+            <p>Research new startups in your industry and other industries that are successfully executing new disruptive business models in order to discover new ways of doing business in your target industry. Look for disruptive startups and new business models both within your industry and outside of it. The next big thing could come from anywhere. Search the Internet for terms and phrases such as “disruptive startups for [X] Industry.” We found lots of great examples!</p>
+        - title: Resources
+          subtitle: |
+            Go to startup-focused websites where you will find articles about different new startups. Remember that you are not looking for startups focused just on your industry. Instead, you’re looking for new business models that could be applied to your industry. Good websites to check out:
+          order: 2
+          type: Resource
+          resources:
+            - name: TechCrunch
+              type: Link
+              status: Available
+              link: https://techcrunch.com
+              order: 1
+              description:
+            - name: AngelList
+              type: Link
+              status: Available
+              link: https://angel.co
+              order: 2
+              description:
+            - name: Gust
+              type: Link
+              status: Available
+              link: http://www.gust.com
+              order: 3
+              description:
+            - name: Entrepreneur
+              type: Link
+              status: Available
+              link: http://www.entrepreneur.com
+              order: 4
+              description:
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              There are countless startups finding new ways to disrupt industries. Many of these approaches can be applied to your industry as well. Get inspiration from all of them for your industry!
+          - order: 2
+            description: |
+              Ask yourself the following questions without being constrained by a specific industry:<br>- What new and different ways of doing business are shaking things up?<br>- How are traditional businesses being bypassed as startups increasingly connect directly with consumers?
+        - title: Tools
+          subtitle:
+          order: 4
+          type: Resource
+          resources:
+            - name: Disruptive startups research
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/GPzkJzVDScGLdUisNJXc/Disruptive_Startups_template.pdf/
+              order: 1
+              description: Example
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          Start all your research with an open mind. No preconceived ideas allowed!
+      - order: 2
+        description: |
+          Step outside your comfort and knowledge zones and explore unknown areas.
+      - order: 3
+        description: |
+          Never stop researching and learning, even when the ExO Sprint is over.
+      - order: 4
+        description: |
+          Talk to people to discover new insights. Make connections outside your usual circle to gain a broader perspective.
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Global trends and issues research
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/8wkOQ9AoTqW6GmmlssGI/Global_trends_and_issues_template.pdf/
+        description: Template
+        order: 1
+      - name: Exponential technology research
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/geZddn0XRXiNjkHS1Yn2/Exponential_technology_template.pdf/
+        description: Template
+        order: 2
+      - name: Disruptive startups research
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/RA33LZIQ2yRu2KXTfUPA/Disruptive_Startups_template.pdf/
+        description: Template
+        order: 3
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

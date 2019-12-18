@@ -1,0 +1,9 @@
+uuid: 7fdd5db4-0433-4abb-9073-7bffbc102db8
+user: !account eb926b17-634c-477d-847c-eda5f35026a2 # Alice
+title: Educational Futures in Spain
+start: !timedelta -1d
+end: !timedelta -1d
+category: SP
+exo_role: SAD
+status: CO
+url: /ecosystem/opportunities/1/

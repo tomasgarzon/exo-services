@@ -1,0 +1,47 @@
+{% extends "exo-backoffice/base.html" %}
+{% load django_bootstrap_breadcrumbs %}
+
+{% block body_class %}
+    {% if not user.display_leftmenu %} mini-navbar {% endif %}
+{% endblock %}
+
+{% block content %}
+    {% block breadcrumbs %}
+        {% clear_breadcrumbs %}
+    {% endblock %}
+    <!-- Wrapper-->
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        {% include "base/navigation.html" %}
+
+
+        <!-- Page wraper -->
+        <div id="page-wrapper" class="gray-bg">
+            <!-- Page wrapper -->
+            {% include "base/topnavbar.html" %}
+
+            {% block wrapper_header %}
+            <div class="row wrapper border-bottom white-bg page-heading p-r-none {% if user.is_customer %}p-b-none{% endif %} {% if hide_header %}hide{% endif %}">
+                {% block header %}{% endblock %}
+            </div>
+            {% endblock %}
+            <!-- Main view  -->
+            <div class="wrapper wrapper-content">
+                {% block main %}{% endblock %}
+            </div>
+
+            <!-- Footer -->
+            {% include "base/footer.html" %}
+
+        </div>
+        <!-- End page wrapper-->
+
+        <!-- Right Sidebar -->
+        {% comment %}
+        {% include "base/right_sidebar.html" %}
+        {% endcomment %}
+        {% include "base/feedback.html" %}
+    </div>
+    <!-- End wrapper-->
+{% endblock %}

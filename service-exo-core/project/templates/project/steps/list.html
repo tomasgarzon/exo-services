@@ -1,0 +1,61 @@
+{% extends "project/master_detail_base.html" %}
+{% load l10n %}
+{% load django_bootstrap_breadcrumbs staticfiles %}
+{% load permission_tags guardian_tags profile customize invitation %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Steps" "project:project:steps" project.id %}
+{% endblock %}
+
+{% block header_action %}
+{% endblock %}
+{% block section_title %}
+{{project.get_lapse_display}}s
+{% endblock %}
+{% block master_view %}
+    <table class="table table-hover list-detail table-team">
+        <thead>
+            <tr>
+                <th>Order</th>
+                <th>Name</th>
+                <th>Short Name</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Status</th>
+                <th>Guideline (core)</th>
+                <th>Guideline (edge)</th>
+                <th>Feedback (core)</th>
+                <th>Feedback (edge)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for object in object_list %}
+            <tr data-role='trigger' data-url="{% url 'project:project:steps-detail' project.pk object.pk %}">
+                <td>{{object.index}}</td>
+                <td>{{object.name}}</td>
+                <td>{{object.short_name}}</td>
+                <td>{{object.start|default:'-'|localize|capfirst}}</td>
+                <td>{{object.end|default:'-'|localize|capfirst}}</td>
+                <td><span class="label label-status badge {{object.get_status_display|slugify}}">{{object.get_status_display}}</span></td>
+                <td>
+                    {% include "project/steps/step_stream_guidelines.html" with streams=object.streams.filter_by_stream_core_stream %}
+                </td>
+                <td>
+                    {% include "project/steps/step_stream_guidelines.html" with streams=object.streams.filter_by_stream_edge_stream %}
+                <td>
+                    {% include "project/steps/step_stream_feedback_url.html" with streams=object.streams.filter_by_stream_core_stream %}
+                </td>
+                <td>
+                    {% include "project/steps/step_stream_feedback_url.html" with streams=object.streams.filter_by_stream_edge_stream %}
+                </td>
+
+                <td data-action='stop'>
+                    {% include "project/steps/actions.html" with step=object %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

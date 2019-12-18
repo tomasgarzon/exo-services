@@ -1,0 +1,189 @@
+---
+name: Launch assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/287806292
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287806292" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:   
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>The big day is here!</p>
+      <p>This week you will present your ExO Edge Initiatives to the company leadership, who will then make a final decision about which initiatives will be funded and further developed. The selection process is not the end. Far from it. The development of your ExO Edge initiatives marks the beginning of an industry revolution!</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Prepare the scenario and logistics
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>Create the right environment and set up the logistics for the presentations.</p>
+              <p>Presentations can be done either in-person or online, depending on where people are located, the budget, etc. If you present in person, consider decorating the space to create a special atmosphere. If you conduct the presentation online, test the videoconferencing system in advance.</p>
+          - title: Tips
+            subtitle:
+            order: 2
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                Time management is key to presenting effectively. Communicate your agenda in advance, including the order of the ExO Initiatives presentations            
+          - title: Tools
+            subtitle:
+            order: 3
+            type: Resource
+            resources:
+              - name: Final day presentation agenda
+                type: Link
+                status: Available
+                link: /medialibrary/resource/redirect/38cfNYd2SSKxZ3inkaFZ/Final_day_presentation_agenda_template.png/
+                description: Template
+                order: 1
+      - name: Presentations and discussion
+        order: 2
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>Teams will present their ideas to the leadership team and other relevant stakeholders (the board of directors, etc.). In contrast to the disruption presentations, the team will receive feedback and answer questions. The presentation format is longer than the disruption session (which used the elevator pitch technique).</p>
+        - title: Resources
+          subtitle:
+          order: 2
+          type: Text
+          text: |
+            <p>Two books that can help you improve your presentation are The Presentation Secrets of Steve Jobs: How to Be Insanely Great in Front of Any Audience and Talk Like Ted: The 9 Public-Speaking Secrets of the World’s Top Minds, both by by Carmine Gallo.</p>
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              We recommend 10 minutes per initiative for a Q&A session
+      - name: Final evaluation
+        order: 3
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>After the presentations are done, the leadership team and advisors will get together to make a final decision about which ExO Edge Initiatives will move forward and how much funding to allocate to each. Remember that the initiatives must be evaluated from the point of view of disruption.</p>
+            <p>The current way the industry operates may not apply here, even when it comes to existing regulations. In addition, the leadership team must also be careful not to take on the role of the corporate immune system.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              In order to deal with the immune system from the leadership of the organization (that may not be participating in the ExO Sprint), we recommend again bringing ExO Disruptors with the focus of evaluating the final presentations and providing honest feedback. The ExO Disruptors’ feedback (that will be independent of the leadership of the company) will help the organization to get an external and honest feedback, free of internal biases.
+          - order: 2
+            description: |
+              Remember that old-school or traditional thinking doesn’t apply here, so avoid input and recommendations that come from that mindset. This can prove challenging if you are an industry insider!
+          - order: 3
+            description: |
+              Remember that the ExO Edge Initiatives are still in the early stage of development, which means they’re likely to change over the coming months. It’s important to focus on the high-level view at this point— the purpose and specific vision of the ExO Edge Initiatives—rather than the details.
+          - order: 4
+            description: |
+              The leadership doesn’t need to fund the chosen initiatives in full; it can follow a lean approach, allocating only enough funding to achieve the next key milestone.
+          - order: 5
+            description: |
+              It’s generally a good idea to determine the total amount of money you want to spend in the phase following the ExO Sprint. Split the sum among the different initiatives according to your expectations for each of them.
+          - order: 6
+            description: |
+              A key decision to make is to specify the team in charge of further developing each ExO Edge Initiatives. Usually, we will have an external team of entrepreneurs (or maybe just one) with some ExO Sprint participants who developed the ExO Initiative as external advisors (although some of them may be willing to jump into the new ExO on the Edge!).
+        - title: Tools
+          subtitle:
+          order: 4
+          type: Resource
+          resources:
+            - name: Evaluate, select and fund initiatives
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/fKIgTbxtR9yQh4rc1zez/Evaluate_select_and_fund_initiatives_template.pdf/
+              description: Template
+              order: 1
+      - name: Announcements
+        order: 4
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>Letting the ExO participants know which ExO Initiatives will be funded is key to keeping the momentum going.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Remember that it’s important to keep all ExO participants engaged, whether or not their initiatives have been selected. Be sure to communicate your appreciation of the great job everyone has done. They have done an incredible amount of work in a very short time!
+          - order: 2
+            description: |
+              One way to keep everyone engaged and have everyone share in the outcome is to provide all ExO participants (and ExO Core teams, if applicable) some equity in the ExO Edge Initiatives.      
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+    - order: 1
+      description: |
+        Practice as much as possible and keep working to improve the presentation.
+    - order: 2
+      description: |
+        It’s important to make a final announcement about the selected initiatives and the funds allocated to them.
+    - order: 3
+      description: |
+        At the final presentation, relax and enjoy the moment as you share your awesome ExO Initiatives with everyone!
+    - order: 4
+      description: |
+        Pay attention to any personal transformation ExO participants may have experienced during the ExO Sprint. Some of them will be ready (and willing) to jump into one of the ExO Edge Initiatives selected. Be open to supporting new career paths!    
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Final day presentation agenda
+        type: Link
+        status: Available
+        link: /medialibrary/resource/redirect/38cfNYd2SSKxZ3inkaFZ/Final_day_presentation_agenda_template.png/
+        description: Template
+        order: 1
+      - name: Evaluate, select and fund initiatives
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/fKIgTbxtR9yQh4rc1zez/Evaluate_select_and_fund_initiatives_template.pdf/
+        description: Template
+        order: 2
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

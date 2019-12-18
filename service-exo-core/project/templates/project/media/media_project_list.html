@@ -1,0 +1,67 @@
+{% extends "project/master_detail_base.html" %}
+{% load bootstrap_pagination guardian_tags staticfiles django_bootstrap_breadcrumbs breadcrumb images %}
+{% load project l10n %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Media" "project:resources" project.id %}
+{% endblock %}
+
+{% block search_form %}{% endblock %}
+
+
+{% block header_action %}
+    <div class="col-lg-3">
+        <a href="{% url 'project:project:add-media' project.pk %}" class="btn btn-primary pull-right m-t-8 m-r-md">Add media</a>
+        <a href="{% url 'project:project:populate-media' project.pk %}" class="btn btn-primary pull-right m-t-8 m-r-md">Populate media</a>
+    </div>
+{% endblock %}
+
+
+{% block master_view %}
+<table class="table table-hover list-detail sprints projects table-l-fix">
+    <thead>
+        <tr>
+        	<th>Name</th>
+        	<th>Link</th>
+        	<th>Tags</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for resource in object_list %}
+		<tr>
+			<td>
+				<div class='cut-text'>
+					{{ resource.name }}</td>
+				</div>
+			</td>
+			<td>
+				<div class='cut-text'>
+					<a href="{{resource.link}}" target="_blank">{{resource.link}}</a>
+				</div>
+			</td>
+			<td>
+				{% if resource.tags %}
+					{% for tag in resource.tags %}
+					<li>{{ tag.name }}</li>
+					{% endfor %}
+				{% endif %}
+			</td>
+			<td>
+				<div class="ibox-tools pull-right l-h-34">
+			        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			            <i class="fa fa-ellipsis-v"></i>
+			        </a>
+			        <ul class="dropdown-menu dropdown-user">
+			            <li>
+			            	<a href="{% url 'project:project:remove-media' project.pk resource.pk %}">Eliminar recurso</a>
+			            </li>
+			        </ul>
+    			</div>
+			</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+{% endblock %}

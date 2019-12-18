@@ -1,0 +1,55 @@
+uuid: 299c8c8a-4e4a-4c6b-904a-1b801b7227f1
+short_name: Philip
+full_name: Philip Robson
+status: Active
+image: man/13
+bio_me: |
+  Philip Robson is Chief Marketing Officer at ABC Technologies, with responsibility for marketing programs, brand management, and corporate sponsorships. Before joining ABC Technologies, he worked at several companies building his skills in strategic business development and marketing. Prior to that Philip served as an officer in the U.S. Navy for six years. During his 3 years as marketing director for Acme Inc, he initiated several programs that resulted in an annual average 27 percent increase in sales. Creativity, drive and leadership are Roberts’s greatest strengths. He thrives on all kinds of challenges, especially those that expand the company’s reach. His most recent project involved breaking into the Southeast Asian Market through a strategic partnership with SEA International, bringing ABC Technologies core services into a rapidly expanding market ahead of its competitors. This resulted in annual revenue of $27 million.
+
+  In 2001 Philip was recognized with the Outstanding Business Person of the Year Award by the National Marketing Association for outstanding achievements in the field. Other honors include being named one of the Phoenix Business Journals Top Young Achievers. Philip is a frequent and highly rated speaker on industry-related topics. He has also had numerous papers published in industry journals.
+
+  Philip has served on the board of directors of the National Technology Marketing Association and is a member of the advisory board of the Emerging Media Forum. He has also done volunteer work for several charities including the United Way and Habitat for the Homeless among others.
+
+  Philip holds a bachelors degree from UCLA and an MBA from Harvard. He lives in Harrogate with his wife, their two children and two dogs. In his free time, Philip likes to hang-glide and is a member of a local skydiving group.
+place:
+  name: Harrogate, UK
+  place_id: ChIJAb11cSNOeUgR_6TeqvuEwAM
+time_zone: Europe/London
+languages:
+  - English
+  - Dutch
+  - French
+exo_areas:
+  - Organizations
+  - Peoples
+industries:
+  - name: Military
+    level: Thought leader
+  - name: Employment
+    level: Advanced
+  - name: Health
+    level: Thought leader
+  - name: Medical
+    level: Thought leader
+exo_attributes:
+  - attribute: Experimentation
+    level: I’m considered a thought leader in this domain
+  - attribute: Social Technologies
+    level: I’m considered a thought leader in this domain
+  - attribute: Autonomy
+    level: I have implemented this several times
+  - attribute: Leveraged Assets
+    level: I have implemented this several times
+  - attribute: Staff on Demand
+    level: I have implemented this several times
+exo_activities:
+  - Advising
+  - Consulting
+  - Speaking
+  - Content Generation
+  - Training
+personal_mtp: Accelerate the transition to sustainable transportation
+mtp_mastery: I have implemented this several times, and I’ve published articles/papers about it
+availability: Fulltime
+marketplace_agreement_signed: true
+last_activity: !timedelta -12h

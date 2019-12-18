@@ -1,0 +1,13 @@
+id: 11
+uuid: 3df987d5-ee4d-432e-ba7e-76446403a6b4
+name: OpenExO
+customer: !customer OpenExO
+start: !timedelta 0d
+place:
+  name: Granada, Spain
+  place_id: ChIJfcIyLeb8cQ0Rcg1g0533WJI
+created_by: !exo_account Quality Assurance
+launched_by: !exo_account Quality Assurance
+lapse: Day
+template_assignments: Sprint Book
+password: exoleverpass

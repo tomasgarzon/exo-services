@@ -1,0 +1,49 @@
+{% extends "base/content.html" %}
+{% load bootstrap_pagination bootstrap3 staticfiles django_bootstrap_breadcrumbs breadcrumb %}
+{% load images %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Badges" "tools:badge:list" %}
+{% endblock %}
+
+{% block header %}
+<div class="col-lg-10">
+    <h2>Add Badge</h2>
+</div>
+<div class="col-xs-12 p-r-none">
+    {% render_view_breadcrumbs "base/breadcrumb.html" %}
+</div>
+{% endblock %}
+
+{% block js %}
+<script>
+    $('form select').select2();
+</script>
+{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class='ibox float-e-margins'>
+            <div class="ibox-title">
+                <h2>{% if object %}Edit{% else %}Add{% endif %} badge</h2>
+            </div>
+            <div class="ibox-content">
+                {% if object %}
+                <p><strong>User:</strong> {{ object.user_badge.user }}</p>
+                <p><strong>Badge:</strong> {{ object.user_badge.badge.get_code_display }}</p>
+                <br>
+                {% endif %}
+                <form action="." method="post" class="wizard-big wizard-step-3 styles-form">
+                    {% csrf_token %}
+                    {% bootstrap_form form %}
+                    
+                    <input type="submit" class='btn btn-positive-choice' value="Submit" />
+                    <a href="{% url 'tools:badge:list' %}" class='btn btn-default m-r-sm'>Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,84 @@
+uuid: 5d640164-b7a3-4936-b37e-3ad5a23a2036
+short_name: Tina
+full_name: Tina Weissberg
+status: Active
+image: woman/10
+bio_me: |
+  Tina Weissberg is the NY Times, Wall Street Journal, and USA Today Bestselling Author of the Fixed Trilogy. She’s a sucker for a good romance and gets giddy anytime there’s kissing, much to the embarrassment of her three daughters. Her husband doesn’t seem to complain, however. When she isn’t reading or writing sexy stories, she’s probably singing, watching Game of Thrones and the Walking Dead, or dreaming of Michael Fassbender. She’s also a proud member of Mensa International though she doesn’t do anything with the organization except use it as material for her bio. You can connect with Tina on Facebook at facebook.com/TinaWeissberg or on twitter @tinaweissberg. You can also visit her website, tinaweissberg.com, to sign up for emails about new releases and a chance to win a $100 Amazon Gift Certificate in a monthly drawing.
+website: https://www.tinaweissberg.de/
+place:
+  name: Vienna, Austria
+  place_id: ChIJn8o2UZ4HbUcRRluiUYrlwv0
+time_zone: Europe/Vienna
+languages:
+  - English
+  - German
+industries:
+  - name: Telecommunications
+    level: Thought leader
+  - name: Energy
+    level: Thought leader
+  - name: Big Data
+    level: Intermediate
+  - name: Computer
+    level: Intermediate
+  - name: Accommodations
+    level: Intermediate
+  - name: Employment
+    level: Advanced
+  - name: Health
+    level: Thought leader
+  - name: Medical
+    level: Thought leader
+exo_areas:
+  - Organizations
+  - Peoples
+  - Institutions
+exo_attributes:
+  - attribute: Interfaces
+    level: I have implemented this several times
+  - attribute: Community & Crowd
+    level: I’m considered a thought leader in this domain
+  - attribute: Dashboards
+    level: I’m considered a thought leader in this domain
+  - attribute: Social Technologies
+    level: I’m considered a thought leader in this domain
+  - attribute: Staff on Demand
+    level: I have implemented this several times
+  - attribute: Algorithms
+    level: I’m considered a thought leader in this domain
+  - attribute: Experimentation
+    level: I have studied it in some detail
+  - attribute: Autonomy
+    level: I’m considered a thought leader in this domain
+  - attribute: Leveraged Assets
+    level: I have studied it in some detail
+  - attribute: Engagement
+    level: I have studied it in some detail
+keywords:
+  - name: Agile Framework
+    level: Can speak
+  - name: Zero-Energy Building
+    level: Can inspire
+  - name: A/B Testing
+    level: Can inspire
+  - name: Tissue Engineering
+    level: Can speak
+  - name: Head Transplant
+    level: Can teach
+exo_activities:
+  - Advising
+  - Coaching
+  - Consulting
+personal_mtp: Improving the world's knowledge through digitalistaion
+mtp_mastery: I’m considered a thought leader in this domain, and I’ve published articles/papers about it
+availability: Fulltime
+user_notifications:
+  - weekly_update
+marketplace_agreement_signed: true
+last_activity: !timedelta -13h
+contracting_data:
+  name: Christina Honecker von Weissberg
+  tax_id: ATU00000024
+  address: Getreidemarkt 6, 1010 Wien, Osterreich
+  company_name: Weissberg Consulting GmbH.

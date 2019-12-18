@@ -1,0 +1,15 @@
+name: ExO Trainer Certification - Madrid
+course_name: ExO Training
+description: Deliver a suite of in-person and virtual ExO Workshops and other services
+type: consultantrole-exo-trainer
+certification_role: CTR
+created_by: !exo_account Quality Assurance
+instructor_name: Quality Assurance
+issued_on: !datetime May 12 2018
+certifications:
+  - consultant: !consultant Kunivas Devari
+    accredible_id: 11598991
+    accredible_url: https://sandbox.credential.net/h47eq29o
+  - consultant: !consultant Tina Weissberg
+    accredible_id: 11598992
+    accredible_url: https://sandbox.credential.net/xdzo08sz

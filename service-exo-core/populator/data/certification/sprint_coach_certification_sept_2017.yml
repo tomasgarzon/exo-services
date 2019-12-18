@@ -1,0 +1,21 @@
+name: ExO Sprint Coach Certification - Virtual
+course_name: ExO Sprint Coach Training
+description: Guide clients seeking transformation processes through the ExO Model
+type: consultantrole-sprint-coach
+certification_role: CSC
+created_by: !exo_account Quality Assurance
+instructor_name: Quality Assurance
+issued_on: !datetime Sept 1 2017
+certifications:
+  - consultant: !consultant Naina Lavrova
+    accredible_id: 11598977
+    accredible_url: https://sandbox.credential.net/vdbocrmd
+  - consultant: !consultant Ann Baldwin
+    accredible_id: 11598978
+    accredible_url: https://sandbox.credential.net/jd8em68n
+  - consultant: !consultant Gorka Arrizabalaga
+    accredible_id: 11598979
+    accredible_url: https://sandbox.credential.net/qe7yojwt
+  - consultant: !consultant Tina Weissberg
+    accredible_id: 11598980
+    accredible_url: https://sandbox.credential.net/13v0ehuu

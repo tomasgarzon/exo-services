@@ -1,0 +1,22 @@
+{% extends "base/base_blue_header.mjml" %}
+{% load common_mails i18n %}
+
+{% block blue-header %}
+    <mj-header-title-pretitle pre-title="OpenExO TypeForms" title="New TypeForm response" />
+{% endblock %}
+
+
+{% block content %}
+    <mj-text>{% blocktrans %}Hi,{% endblocktrans %}</mj-text>
+    <mj-text>
+    {% blocktrans %}
+        Here you can check a new response for the user {{ username }} related to {{ response_related }}, please review all questions and proceed to validate if needed.
+    {% endblocktrans %}
+    </mj-text>
+    {% include "mails/typeform/typeform_response_body.html" with questions=user_response %}
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "VALIDATE" as CALL_TO_ACTION %}
+    {% include "base/call_to_action.mjml" with call_to_action=CALL_TO_ACTION absolute_url=True %}
+{% endblock %}

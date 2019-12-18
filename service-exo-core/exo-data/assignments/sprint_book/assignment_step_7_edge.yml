@@ -1,0 +1,341 @@
+---
+name: Select assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: select_main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/286227099
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/286227099" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:   
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Up to now, we have been working on several ExO Edge Initiatives in order to explore as many opportunities as possible. Now, it’s time to start selecting the best ones (after the experiments we ran and the key learnings we got).</p>
+      <p>Also, take into account that next week you will present your best ideas to a panel that will include disruptors (people from outside the organization who have experience either in your industry or with innovation in general) for feedback on the work you’ve done so far.</p>
+      <p>So, this week’s main assignment is to work on the presentations for the upcoming Disruption Session, which entails a five-minute pitch for each of four initiatives. You will present to your project leadership, the other members of the ExO Sprint and to a select panel of ExO Disruptors, all who will provide feedback.</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Select the four most promising ideas
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>Your first task is to pick the best four ideas to present at the disruption session. In order to do that we will evaluate them according to the previous week’s results (experiments and key learnings) and the following criteria:</p>
+              <p>- The MTP: Is it really massive? Does it inspire people? Did we learn something about it during the previous experiments?<br>- The problem we are trying to solve: Is it global? Did we validate it during the previous experiment?<br>- The solution we are thinking to build: Is it scalable? Is it disruptive? Is it feasible (or will it be in the future due to exponentials)? Did we validate it during the previous experiment?</p>
+          - title: Tips
+            subtitle:
+            order: 2
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                Remember to make data-based decisions, so select those projects where data coming from experiments provide you a real argument to pick it.
+            - order: 2
+              description: |
+                All non-selected ExO Initiatives should be filed away for possible development in the future. Also, if the initiatives are not real ExO Edge, other parts of the organization may value your research work and want to take over implementation. This can be beneficial for quelling the immune system.
+            - order: 3
+              description: |
+                To test how disruptive your Initiative is, ask yourself the following: if someone else were enacting this ExO Edge Initiative now, how would our organization be impacted?
+            - order: 4
+              description: |
+                Give each initiative a compelling title that makes it easy to understand. You should also include a one-line description.
+            - order: 5
+              description: |
+                To test how scalable your Initiative is, ask yourself the following: In a favorable scenario, would it be possible to scale this new company to reach $1B valuation within the next five years?
+      - name: Design the ExO Canvas
+        order: 2
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>In order to ensure your organization will become exponential by reaching and managing abundance, fill out an ExO Canvas that will make you think about how to leverage each of the ten ExO Attributes. You will design an ExO Canvas for each of the problem/solution pairs defined in the previous step. Each is a potential ExO! Run a brainstorming session using the blocks in the ExO Canvas as steps for the ideation process.</p>
+        - title: Resources
+          subtitle:
+          order: 2
+          type: Resource
+          resources:
+            - name: Review Salim's video summarising all the ExO Attributes
+              type: Link
+              status: Available
+              link: https://www.youtube.com/watch?v=JmATyVgLFVU
+              order: 1
+              description:
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Remember to include the MTP in your ExO Canvas. Each of the problem/solution pairs you defined in the second step should be connected to one of the MTPs generated in the first step.
+          - order: 2
+            description: |
+              Remember to use the ExO SCALE Attributes to reach abundance and the ExO IDEAS Attributes to manage abundance.
+        - title: Tools
+          subtitle:
+          order: 4
+          type: Resource
+          resources:
+            - name: ExO Canvas AirEco example
+              type: Link
+              status: Available
+              link: /medialibrary/resource/redirect/3p1hZ1eiT3WVJFlcVDKg/ExO_Canvas_AirEco_example.png/
+              order: 1
+              description:
+            - name: ExO Canvas example
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/Z3YuJNiRJyaMgQSEn5BR/ExO_Canvas_template.pdf/
+              order: 1
+              description:
+      - name: Define your business model (optional)
+        order: 3
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>A business model is defined as the way that an organization creates, delivers and retains value. If you have enough time, it’s a good idea to start thinking about and designing the business model for your ExO Edge Initiatives. If you can’t do it now, there will be time for this project in a few weeks.</p>
+            <p>Since you are working on early-stage ExO Initiatives that will change very quickly as you learn more about them, use the Business Model Canvas to define your business model.</p>
+        - title: Resources
+          subtitle:
+          order: 2
+          type: Text
+          text: |
+            <p>Go to the Align section and check the exercise about business model design.</p>
+            <p>The book Business Model Generation, by Alex Osterwalder, will help with your Business Model Canvas.</p>
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Remember when you researched disruptive business models in the first week? Review them for inspiration!
+          - order: 2
+            description: |
+              Start defining your customer segments with sticky notes, using a different color for each customer segment. Next, define the value proposition for each customer segment, continuing with the same color-coding. Finally, define and color-code your revenue model, making sure that you include a clear way to make money. Continue the process for the remaining canvas blocks. Use a separate color for generic items (related to the business as a whole and all customer segments)
+          - order: 3
+            description: |
+              Defining the business model is optional at this stage, so don’t feel any pressure if time is an issue. If you can manage it, however, we recommend defining the three main blocks of the Business Model Canvas: Customer Segments, Value Proposition and Revenue Model
+          - order: 4
+            description: |
+              Both for-profit and nonprofit organizations need to have a Business Model
+          - order: 5
+            description: |
+              Remember that everything included in the Business Model Canvas should be considered as a hypothesis that can change at any point in the future
+          - order: 6
+            description: |
+              For ExO Linked Edge Initiative, remember that you may need to include your organization (and maybe other similar ones) as a Key Partner
+        - title: Tools
+          subtitle:
+          order: 4
+          type: Resource
+          resources:
+            - name: Business Model Canvas AirEco 
+              type: Link
+              status: Available
+              link: /medialibrary/resource/redirect/8ee3dUb9Txialnk0LmF4/BMC_AirEco_example.png/
+              order: 1
+              description: Example
+            - name: Business Model Canvas Honda
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/fYiTwbRITb6skZyyiIaW/BMC_Honda_example.pdf/
+              order: 2
+              description: Example 
+            - name: Business Model Canvas Singtel
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/25kg0j69QNOVGizgFQdz/BMC_Singtel_example.pdf/
+              order: 3
+              description: Example
+            - name: Business Model Canvas Visa
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/x9Fl41CVRJqYgtyJGIiO/BMC_Visa_example.pdf/
+              order: 4
+              description: Example
+            - name: Business Model Canvas
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/Ux2X02v5T82nehL6GHGV/BMC_template.pdf/
+              order: 5
+              description: Template
+      - name: Create an extended elevator pitch for each ExO Edge Initiative
+        order: 4
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>You will create a five-minute pitch for each of the ExO Initiatives that will be presented. You will also develop a presentation in support of each pitch. At this stage of the process (idea-stage ExO Initiatives), we recommend composing an “Elevator Pitch”—a summary of your idea that could conceivably be delivered in the time it would take for a short elevator ride. An elevator pitch is usually delivered in 60 to 90 seconds, but in this case you’re going to a write a five-minute version. The elevator pitch should include the following items (we recommend following this order too):</p>
+            <p><strong>MTP</strong></p>
+            <p>Explain the problem you want to solve.</p>
+            <p><strong>Solution</strong></p>
+            <p>Present the solution’s differentiating factors and discuss how your solution will both disrupt the industry and be scalable.</p>
+            <p><strong>ExO Attributes</strong></p>
+            <p>Discuss the ExO Attributes you will be using the most, including those that will help you reach abundance and those that will help you to manage it.</p>
+            <p><strong>Business Model (optional)</strong></p>
+            <p>If you have had the chance to think about it, explain how you aim to generate, deliver and retain value. In other words, how you are going to make money.</p>
+        - title: Resources
+          subtitle:
+          order: 2
+          type: Text
+          text: |
+            <p>There are countless websites dedicated to describing how to prepare and deliver elevator pitches.</p>
+            <p>Check out on the Internet the Pitch Canvas, a brainstorming tool for entrepreneurs that helps you visualize your whole pitch on one page.</p>
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+            - order: 1
+              description: |
+                Include real data from the experiments in your pitch. Awesome ideas are valuable but validated ones are even better
+            - order: 2
+              description: |
+                Storytelling is a great way to present an having to rush. elevator pitch
+            - order: 3
+              description: |
+                Get your pitch down on paper so you can practice it over and over
+            - order: 4
+              description: |
+                Time management is important, so create a pitch you can deliver in five minutes without having to rush
+      - name: Create a presentation in support of the pitch
+        order: 5
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>Consider creating slides to accompany your extended elevator pitch. If you do a presentation, keep it simple, using only a few inspiring and informative images and graphs.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+            - order: 1
+              description: |
+                A good book to read is Presentation Zen: Simple Ideas on Presentation Design and Delivery, by Garr Reynolds, which describes using simplicity and storytelling to reach an audience
+            - order: 2
+              description: |
+                Whenever possible, use pictures instead of text for your slides. You want people to listen to you rather than read your slides
+            - order: 3
+              description: |
+                Using the ExO Canvas and the Business Model Canvas to design your ExO is helpful. However, you don’t need these canvases to describe the pieces during your presentation. Instead, explain them in other, more visual and creative ways
+        - title: Tools
+          subtitle:
+          order: 3
+          type: Resource
+          resources:
+            - name: Disruption presentation preparation
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/8lkqjh6SMquewU1JpqRE/Disruption_presentation_preparation_template.pdf/
+              description: Template
+              order: 1
+      - name: Practice your pitch!
+        order: 6
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>You will be presenting a large number of ideas, so your delivery must be concise and to the point. The more you practice, the better you will do. Practice, practice, practice!</p>
+        - title: Resources
+          subtitle:
+          order: 2
+          type: Text
+          text: |
+            <p>Your pitch, your voice and your passion!</p>
+            <p>External feedback is great at this point, so share your presentation with your team and anyone else you can.</p>
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+            - order: 1
+              description: |
+                Time management is important, so practice as much as possible
+            - order: 2
+              description: |
+                A relaxed and natural delivery is key, so again, practice as much as possible
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          Add real data from your completed experiments to the presentations. A great performance is always a plus, but in the end it’s only a nice deck. There is always much more value in providing data and insights (e.g., quotes) from actual clients or users to illustrate what you have learned
+      - order: 2
+        description: |
+          If you have time, running further experiments is always a good idea. The more data you have, the better— especially in the case of any ExO Initiatives that were iterated during previous week after some of your hypotheses were invalidated. You now have the opportunity to run more experiments on the new ExO Initiatives (which are actually new hypotheses).
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: ExO Canvas AirEco
+        type: Link
+        status: Available
+        link: /medialibrary/resource/redirect/3p1hZ1eiT3WVJFlcVDKg/ExO_Canvas_AirEco_example.png/
+        description: Example
+        order: 1
+      - name: ExO Canvas
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/Z3YuJNiRJyaMgQSEn5BR/ExO_Canvas_template.pdf/
+        description: Template
+        order: 2
+      - name: Business Model Canvas AirEco
+        type: Link
+        status: Available
+        link: /medialibrary/resource/redirect/8ee3dUb9Txialnk0LmF4/BMC_AirEco_example.png/
+        description: Example
+        order: 3
+      - name: Business Model Canvas
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/Ux2X02v5T82nehL6GHGV/BMC_template.pdf/
+        description: Template
+        order: 4
+      - name: Disruption presentation preparation
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/8lkqjh6SMquewU1JpqRE/Disruption_presentation_preparation_template.pdf/
+        description: Template
+        order: 5
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

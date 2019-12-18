@@ -1,0 +1,35 @@
+{% extends "base/content.html" %}
+
+{% block main %}
+
+<h2>Information:</h2>
+<hr>
+<p><strong>Date:</strong> {{ object.created }}</p>
+<p><strong>Subject:</strong> {{ object.subject }}</p>
+<p><strong>Category:</strong> {{ object.category }}</p>
+<p><strong>Body:</strong> {% autoescape off %}{{ object.body }}{% endautoescape %}</p>
+
+<div class="row">
+    <div class="col-md-6 col-sm-12">
+        <p><strong>To Addresses:</strong> {{ object.to_addresses_as_list|join:", "}}</p>
+        <p><strong>Status:</strong> {{ object.status|capfirst }}</p>
+        <form action="." method="POST">
+	        {% csrf_token %}
+
+	        {{ form }}
+	        <br>
+	        <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <p><strong>Actions history</strong></p>
+        <ul>
+            {% for item in object.history %}
+                <li>[{{ item.created|date:"Y-m-d H:i:s" }}] {{ item.get_action_display }} {{ item.message|default:"" }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
+

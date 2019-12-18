@@ -1,0 +1,9 @@
+name: ExO Foundations
+uuid: 14070bcb-0ddb-4bbc-b24d-7d5ea4e21e5e
+stream: Edge Stream
+coach: !consultant Alice LaGrande
+created_by: !exo_account Quality Assurance
+project: !generic_project Certification Level 1 ExO Foundations
+members:
+  - short_name: Cerdic Roper
+    email: cerdicroper@example.com

@@ -1,0 +1,52 @@
+---
+id: 2
+uuid: 1f587423-7802-48d3-99d9-285cce18c1b2
+customer: Dickinson-Lane
+name: Dickinson Lane
+content_template: automated
+start: !timedelta -2w
+status: S
+place:
+  name: Granada, Spain
+  place_id: ChIJfcIyLeb8cQ0Rcg1g0533WJI
+password: sutonpass
+created_by: !account ef70053f-755b-4b40-bb73-6832d16488e7 # gorka
+members:
+  - user: !account ef70053f-755b-4b40-bb73-6832d16488e7 # Gorka Arrizabalaga
+    role: Head Coach
+  - user: !account 0737a9f9-22a0-4286-8be3-34a3e19d92dc # Naina Lavrova
+    role: Sprint Coach
+  - user: !account 5d640164-b7a3-4936-b37e-3ad5a23a2036 # Tina
+    role: Sprint Coach
+  - user: !account ef70053f-755b-4b40-bb73-6832d16488e7 # Gorka Arrizabalaga
+    role: Awake Speaker
+  - user: !account 5d640164-b7a3-4936-b37e-3ad5a23a2036 # Tina Weissberg
+    role: Advisor
+  - user: !account ef70053f-755b-4b40-bb73-6832d16488e7 # Gorka Arrizabalaga
+    role: Advisor
+  - user: !account fce099d0-d70d-4c3e-bb6e-4056708f8808 # Leticia Ferreira Dias
+    role: Advisor
+  - user: !account 47b10a71-d011-48c2-b359-2a2027191fd8 # Lindsey Allen
+    role: Advisor
+  - user: !account 0737a9f9-22a0-4286-8be3-34a3e19d92dc # Naina Lavrova
+    role: Advisor
+  - user: !account 1da6e073-a525-4311-ab7e-ec8748d76100 # Cerdic Roper
+    role: Advisor
+participants:
+  - name: Julian Williams
+    email: julianwilliams@example.com
+    uuid: a71654e1-ff04-458a-b869-af2eaa710e83
+  - name: Edward Bradshaw
+    email: edwardbradshaw@example.com
+    uuid: 0be1c853-284a-4754-b5cf-7d4549da2351
+  - name: Amanda Woodward
+    email: amandawoodward@example.com
+    uuid: 85227667-5866-4567-b820-57806d00932c
+advisor_settings:
+  total: 10
+  budgets:
+    - budget: 100
+      currency: D
+    - budget: 500
+      currency: X
+

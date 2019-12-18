@@ -1,0 +1,30 @@
+name: Mason LLC Core
+uuid: a0a8df86-64fb-4576-a227-84f9118f228e
+stream: &stream Core Stream
+coach: !consultant Philip Robson
+created_by: !exo_account Quality Assurance
+project: !sprint_automated Mason LLC Sprint
+members:
+  - short_name: Kevin Miller
+    email: &kevin kevinmiller@example.com
+    uuid: 5c197c35-5e7e-4006-b272-0fb1e8628404
+    image: man/25
+    microlearnings:
+      - step: 4
+        score: 8
+  - short_name: Paige Johnson
+    email: paigejohnson@example.com
+    uuid: 805c0755-6a8d-4780-8aa8-e23e596c1c0a
+    image: man/26
+    microlearnings:
+      - step: 4
+        score: 2
+  - short_name: Mary Coonely
+    email: marycoonely@example.com
+    uuid: b163d23e-af92-472d-adde-182099a45592
+    image: woman/20
+    updated_profile: true
+    microlearnings:
+      - step: 4
+        score: 5
+group_uuid: 9ba7895e-a845-4523-b47a-9ccb22e0ccc5

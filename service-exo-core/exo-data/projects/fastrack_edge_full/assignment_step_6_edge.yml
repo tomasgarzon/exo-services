@@ -1,0 +1,82 @@
+---
+name: Final Presentation assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: False
+  enabled_reflect: False
+blocks:
+  - title: Assignment Objectives
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <ul><li>Proposals that aim for an exponential solution that contributes to solving the problem space for the citizens of the region.</li><li>Seamlessly integrate Conceptual, Social, Entrepreneurial and - -- Technological phases of the Fastrack effort while articulating the Abundance mindset.</li><li>Exponential technologies and disruptive innovation (new business & social models) in a scalable low fidelity MVP with enough features to validate the value proposition.</li></ul>
+  - title: Evaluation Criteria
+    subtitle:
+    order: 2
+    type: Text
+    text: |
+      <ul><li>Team showed clearly that they have developed solutions to the original problem statement.</li><li>Team demonstrated the projected positive and negative impact of their solutions on society with a plan to mitigate potential negative impacts.</li><li>Team has shown agility and scalability of their exponential business model including a clear financial path to initiation and funding of the solution.</li><li>Team showed how the proposed solution can be accelerated while considering existing regional initiatives and applying exponential technologies.</li><li>How likely are you to recommend this as a solution to your mobility problems in the Region?</li></ul>
+  - title: Deliverables Checklist
+    subtitle:
+    order: 3
+    type: Tasks
+    tasks:
+      - name: Live in-person 20 minute presentation by appointed team member(s)
+        order: 1
+        blocks:
+      - name: Rebuttal round 7-minute presentation to follow-up on questions
+        order: 2
+        blocks:
+      - name: A plan describing how to implement applicable ExO attributes, IDEAS & SCALE
+        order: 3
+        blocks:
+      - name: A tangible, flexible and scalable Low Fidelity MVP with experiments evidencing short-term (1 year) results
+        order: 4
+        blocks:
+      - name: Exponential business model showing anticipated results for medium-term (3 to 5 years) and long-term (5 to 10 years)
+        order: 5
+        blocks:
+      - name: Evidence of commitment/interest from strategic partners and investors (Letter of Intent or MOU with incubators co-builder, strategic customer, funding, etc)
+        order: 6
+        blocks:
+      - name: A well-thought-out, ready-to-accelerate or implement solution pitch deck and pitch video
+        order: 7
+        blocks:
+      - name: Final core conceptual whitepaper, including Business Model Canvas, Go-to-Market strategy/plan and financial plan. Upload slides (ppt, google slides, report, etc.) to Team Deliverables Folder
+        order: 8
+        blocks:
+      - name: Show how you are including the Regional Development Community in your plans
+        order: 9
+        blocks:
+  - title: Scoring and Evaluation
+    subtitle:
+    order: 4
+    type: Text
+    text: |
+      <p>You will be evaluated objectively and subjectively on the criteria listed above. There are prize funds at stake as well. A combination of the regional curator, regional advisory board, FTI Board and select members of the Regional Development Community and Global Member Organization representatives will be the evaluators. They will judge your work and complete scorecards that will be a major part of the selection process. In the case of any ties, as seems to happen sometimes, a small tie breaker committee including the regional curator and 2 other qualified, non-participating but well informed, people of their choice will be convened to​ ​make​ ​the​ ​final​ ​decision.</p>
+  - title: Tips
+    subtitle:
+    order: 5
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          Upload the deliverable in this <a target='_blank' href='https://drive.google.com/drive/u/0/folders/1CjamV4QIYMVifeYxT6d1bRRe_BUcqZi0'>link</a>
+  - title: Tools
+    subtitle:
+    order: 6
+    type: Resource
+    resources:
+      - name: Google Drive
+        type: Links
+        status: Available
+        link: https://drive.google.com/drive/folders/1lhX2tPrvGovVYcoYDh-2aW6ZPhYwbq2a
+        description:
+        order: 1
+      - name: Flipboard
+        type: Links
+        status: Available
+        link: https://flipboard.com/@contentfti/justice-bogota-by-fastrack-institute-eble73bky
+        description:
+        order: 2

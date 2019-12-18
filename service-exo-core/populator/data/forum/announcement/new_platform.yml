@@ -1,0 +1,21 @@
+title: New OpenExO Platform comming soon
+user: !exo_account Quality Assurance
+date: !timedelta -5d
+description: |
+  Hey all - ExO community!!!
+
+  We're proud to announce that our new OpenExO Platform will be launched in a few days.
+  Hope all the new features and improvements create an awesome experience in all of our users!
+tags:
+  - Blockchain
+activities:
+  - user: !consultant Naina Lavrova
+    date: !timedelta -116h
+  - user: !consultant Gorka Arrizabalaga
+    date: !timedelta -4d
+    reply: |
+      Great news!!
+  - user: !consultant Cerdic Roper
+    date: !timedelta -118m
+    reply: |
+      Thanks!! Looking forward to see these amazing changes!

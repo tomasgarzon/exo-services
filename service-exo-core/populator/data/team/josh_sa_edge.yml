@@ -1,0 +1,25 @@
+name: Josh SA Edge
+uuid: 2a8a206c-a0a8-4922-a9a6-3d6dc4adb76f
+stream: Edge Stream
+coach: !consultant Leticia Ferreira Dias
+created_by: !exo_account Quality Assurance
+project: !sprint_automated Josh SA
+members:
+  - short_name: Guy John
+    email: guyjohn@example.com
+    uuid: 854c83c5-bce9-488a-bf13-b187bed7f831
+    image: man/23
+  - short_name: Vanessa Benson
+    email: vanessabenson@example.com
+    uuid: 42b2912d-45d6-4729-8767-f59449a188f1
+    image: woman/19
+    updated_profile: true
+  - short_name: Sophie Ross
+    email: sophieross@example.com
+    uuid: 53917a6a-fbd8-4d33-a827-685e397251ef
+    updated_profile: true
+    image: woman/20
+  - short_name: Albert Wright
+    email: albertwright@example.com
+    uuid: c59eba54-652c-409e-81bb-4a681f77e4ae
+    image: man/24

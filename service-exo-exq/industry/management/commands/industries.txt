@@ -1,0 +1,95 @@
+Accommodations,Alojamientos
+Accounting,Contabilidad
+Advertising,Publicidad
+Aerospace,Aeroespacial
+Agriculture & Agribusiness,Agricultura y Agroindustria
+Air Transportation,Transporte aéreo
+Aircraft,Aeronaves
+Alcohol,Alcohol
+Apparel & Accessories,Ropa y accesorios
+Auto,Auto
+Aviation,Aviación
+Banking,Banca
+Beauty & Cosmetics,Belleza y cosmética
+Big Data,Big Data
+Biotechnology,Biotecnología
+Chemical,Química
+Communications,Comunicaciones
+Computer,Ordenadores
+Construction,Construcción
+Consulting,Consultoría
+Consumer Products,Productos de consumo
+Cosmetic,Cosmética
+Cybersecurity,Seguridad cibernética
+Diamond,Diamantes
+Economy,Economía
+Education,Educación
+Electronics,Electrónica
+Employment,Empleo
+Energy,Energía
+Entertainment & Recreation,Entretenimiento y recreación
+Ethics,Ética
+Fashion,Moda
+Financial Services,Servicios financieros
+Food & Beverage,Alimentación
+Future,Futuro
+Glass,Vidrio
+Health,Salud
+Information,Información
+Inspiration,Inspiración
+Insurance,Seguros
+Internet of Things,Internet de las cosas
+Journalism & News,Periodismo y noticias
+Legal Services,Servicios legales
+Life Sciences,Ciencias de la vida
+Manufacturing,Fabricación
+Media & Broadcasting,Media & Broadcasting
+Medical,Medicina
+Metal,Metal
+Military,Militar
+Motion Pictures & Video,Video e imagen
+Music,Música
+Nanotechnology,Nanotecnología
+Neuroscience,Neurociencia
+Nuclear,Nuclear
+Packaging,Embalaje
+Paint & Coatings,Pinturas y revestimientos
+Petrochemicals,Petroquímica
+Pharmaceutical,Farmacéutica
+Plastics,Plástica
+Privacy,Privacidad
+Private Spaceflight,Aviación espacial privada
+Publishing,Editorial
+Pulp & Paper,Pasta y papel
+Rail,Ferroviaria
+Real Estate,Inmobiliaria
+Recycling,Reciclaje
+Retail,Al por menor
+Robotics,Robótica
+Security,Seguridad
+Service,Servicio
+Shipping,Envíos
+Shipyards,Astilleros navales
+Society,Sociedad
+Solar,Solar
+Space,Espacio
+Space-based Economy,Economía basada en el espacio
+Specialty Drugs,Medicamentos especializados
+Sporting Goods,Artículos deportivos
+Sports,Deportes
+Steel,Acero
+Sustainability,Sostenibilidad
+Telecommunications,Telecomunicaciones
+Television,Televisión
+Textile,Textil
+Tire,Neumáticos
+Tobacco,Tabaco
+Toy,Juguete
+Transport,Transporte
+Utilities,Servicios públicos
+Video Game,Videojuegos
+Waste,Residuos
+Web Services,Servicios web
+Investment and Trading,Comercio e inversión
+Oil and Gas,Petróleo y gas
+Hospitality,Hospitalidad

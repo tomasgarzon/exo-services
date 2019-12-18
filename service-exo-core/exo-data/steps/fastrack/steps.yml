@@ -1,0 +1,28 @@
+---
+lapse: P
+total: 6
+steps:
+- name: Conceptual Phase
+  index: 1
+  core_quiz_url: ""
+  edge_quiz_url: ""
+- name: Social Phase
+  index: 2
+  core_quiz_url: ""
+  edge_quiz_url: ""
+- name: Technology Phase
+  index: 3
+  core_quiz_url: ""
+  edge_quiz_url: ""
+- name: Entrepreneurial Phase
+  index: 4
+  core_quiz_url: ""
+  edge_quiz_url: ""
+- name: Disruption Session
+  index: 5
+  core_quiz_url: ""
+  edge_quiz_url: ""
+- name: Final Presentation
+  index: 6
+  core_quiz_url: ""
+  edge_quiz_url: ""

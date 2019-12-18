@@ -1,0 +1,32 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="New opportunities" title="Marketplace" />
+{% endblock %}
+
+{% block wrapper-extra-class %}white{% endblock %}
+
+{% block wrapper-title %}
+{% endblock %}
+
+{% block content %}
+    <mj-text>Hello {{name}},</mj-text>
+    <mj-text>
+        there are {{total}} new opportunities in the OpenExO Marketplace:
+        <ul>
+            {% for role in roles %}
+                <li>{{role.total}} {{role.name}} opportunities</li>
+            {% endfor %}
+        </ul>
+    </mj-text>
+    <mj-text>
+        Want to check them out and see if they can be a fit for you? You just need to accept the ExO Marketplace Conditions and you'll be set to view all the details.
+    </mj-text>
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "Go to marketplace" as see_details %}
+    {% include "base/call_to_action.mjml" with call_to_action=see_details %}
+{% endblock %}
+

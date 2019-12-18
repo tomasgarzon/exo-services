@@ -1,0 +1,37 @@
+{% if display %}
+    <div class="p-t-10 invitation invitation_status_{{ invitation_status }}{% if invitation.is_pending %} m-t-25 {% endif %}">
+
+        <div class="row no-margins p-xxs p-r-none p-b-none content-vertical-align-left">
+            <div class="pull-left">
+                {% if log_text %}
+                    <span class="p-r-5 fa fa-check-circle"></span>
+                {% else %}
+                    <span class="p-r-5 fa {% if invitation.is_active %} fa-check-circle {% elif invitation.is_cancelled %} fa-minus-circle {% else %} fa-exclamation-circle {% endif %}"></span>
+                {% endif %}
+            </div>
+            <div class="pull-left p-l-0 description">
+                <p class="no-margins p-5 p-b-none {% if invitation.is_pending %}title{% endif %}">
+                    {% if log_text %}
+                        {{ log_text }}
+                    {% else %}
+                        {{ invitation_type_name }} {{ invitation.get_status_display|lower }} from {{ validation.modified|date|capfirst }}
+                    {% endif %}
+                </p>
+                {% if invitation.is_pending %}
+                    <p class="no-margins p-xxs p-l-0 subtitle">Waiting for {{ pending_text }}</p>
+                {% endif %}
+            </div>
+        </div>
+
+        {% if display_button %}
+            <div class="row no-margins p-xxs p-r-none {% if invitation.is_cancelled %}m-t-25 {% endif %}">
+                <div class="col-md-12 text-center no-padding">
+                    <span class="btn btn-default border-orange form-group m-t-xs col-md-12">
+                    <a href="" data-pk="{{invitation.pk}}" class="dev__resend_invitation_btn" data-href="">Re-send {{ invitation_type_name }}</a>
+                    </span>
+                </div>
+            </div>
+        {% endif %}
+
+    </div>
+{% endif %}

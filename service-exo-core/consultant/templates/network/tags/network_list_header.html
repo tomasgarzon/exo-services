@@ -1,0 +1,10 @@
+<thead>
+    <tr data-role="order">
+        {% for field in fields %}
+            <th data-field="{{field.instance_name}}" class="cursor-pointer">
+                {{field.label|capfirst}} <i class="fa fa-sort text-dark-gray"></i>
+            </th>
+        {% endfor %}
+        <th></th>
+    </tr>
+</thead>

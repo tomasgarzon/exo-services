@@ -1,0 +1,15 @@
+{% load user_project %}
+
+<div class="chat-element no-padding no-margins">
+{% for consultant_project_role in object.roles.all %}
+    <div class='m-t-sm m-b-sm'>
+        {% include "tags/link_badge.html" with consultant_project_role=consultant_project_role project=consultant_project_role.project %}
+    </div>
+{% empty %}
+    <div class="chat-element">
+        <div class="row">
+            <div class="col-md-12">Not roles yet</div>
+        </div>
+    </div>
+{% endfor %}
+</div>

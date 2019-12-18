@@ -1,0 +1,18 @@
+<mj-section padding-bottom="0px" css-class="user-information">
+    <mj-column width="56px">
+        {% if not image %}
+            <mj-image padding="5px" border-radius="50%" align="left" src="https://cdn.filestackcontent.com/p6Ww4CeSomEaHPC2QDGD" />
+        {% else %}
+            <mj-image padding="5px" border-radius="50%" align="left" src="{{domain}}{{image}}" />
+        {% endif %}
+    </mj-column>
+    <mj-column width="455px">
+
+      <mj-text padding-bottom="0px" css-class="name">{{name}}</mj-text>
+
+      {% if user_title %}
+      <mj-text padding-top="0px">{{user_title}}</mj-text>
+      {% endif %}
+      
+    </mj-column>
+</mj-section>

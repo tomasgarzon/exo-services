@@ -1,0 +1,22 @@
+#
+# This Dockerfile is intended to run the manage.py test command for TDD testing
+#
+ARG SOURCE_NAME=$SOURCE_NAME
+
+FROM exolever/service-exo-broker:${SOURCE_NAME} as service-exo-broker
+
+ENV DEBUG='True'
+
+RUN apk add --no-cache \
+    python3-dev \
+    build-base
+
+# Install devel requirements
+RUN pipenv install --system --dev --skip-lock
+
+# Force copy to avoid cache
+COPY . .
+
+# Running linter and tests
+RUN flake8 --config ./scripts/flake8.cfg .
+RUN pycodestyle --config ./scripts/pep8.cfg .

@@ -1,0 +1,13 @@
+---
+uuid: 79a01e61-7c19-478d-b7da-f0d59ba8f2e1
+name: Torchback
+stream: Edge Stream
+image: https://cdn.filestackcontent.com/zmVW1DkCRzuWwYMWSO9Y
+project: !project Dickinson Lane
+created_by: !account ef70053f-755b-4b40-bb73-6832d16488e7
+members:
+  - user: !account 5d640164-b7a3-4936-b37e-3ad5a23a2036 # Tina
+    role: Coach
+  - user: !account 85227667-5866-4567-b820-57806d00932c
+    role: Participant
+group_uuid: de535c88-42de-4c14-9261-bd3760f291e8

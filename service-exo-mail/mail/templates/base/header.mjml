@@ -1,0 +1,6 @@
+<mj-section>
+    <mj-column width="33%">
+        <mj-spacer height="20px" />
+        <mj-image src="https://s3.amazonaws.com/exolever/static/assets/openexo-logo-rgb.png"/>
+    </mj-column>
+</mj-section>

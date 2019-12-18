@@ -1,0 +1,53 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n tz common_dates %}
+
+{% block circle-header %}
+    {% if one_day %}
+        <mj-header-ticket pre-title="Swarm Session" title="{% trans 'Swarm Session Tomorrow' %}" />
+    {% else %}
+        <mj-header-ticket pre-title="Swarm Session" title="{% trans 'Swarm Session in 1 hour' %}" />
+    {% endif %}
+{% endblock %}
+
+{% block pre-content %}
+    <mj-section>
+        <mj-column>
+            <mj-text>
+                {% trans "Hello" %} {{ short_name|capfirst}},
+            </mj-text>
+            <mj-text>
+                {% if one_day %}
+                    {% blocktrans %}
+                    Your team’s <strong>Swarm Session is scheduled for tomorrow</strong>. In Swarm Sessions, your questions will be decended upon by a group of ExO Advisors working on the problem in real time.
+                    {% endblocktrans %}
+                {% else %}
+                    {% blocktrans %}
+                    Your team’s <strong>Swarm Session will begin in 1 hour</strong>. In Swarm Sessions, your questions will be decended upon by a group of ExO Advisors working on the problem in real time.
+                    {% endblocktrans %}
+                {% endif %}
+            </mj-text>
+        </mj-column>
+    </mj-section>
+{% endblock %}
+
+{% block content %}
+    <mj-text>
+     {{location}}  (UTC {{timezone_utc}})
+    </mj-text>
+    {% include "mails/circles/common/qa_slot.html" %}
+    <mj-text font-style='italic'>
+    {% blocktrans %}
+        Once the clock starts, your time is limited. To get the most out of this experience, you can prepare by:<br>
+        <ul>
+            <li>Adding your questions in advance prior to your session.</li>
+            <li>Asking more questions during the session</li>
+        </ul>
+        After the session, you will continue to have access to it.
+    {% endblocktrans %}
+    </mj-text>
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "Add question" as see_details %}
+    {% include "base/call_to_action.mjml" with call_to_action=see_details %}
+{% endblock %}

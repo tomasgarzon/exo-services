@@ -1,0 +1,49 @@
+uuid: c2cb2a8d-d0b5-44da-8794-50a327857ae3
+short_name: Najwa
+full_name: Najwa Jannah Saliba
+status: Active
+place:
+  name: Mumbai, India
+  place_id: ChIJwe1EZjDG5zsRaYxkjY_tpF0
+time_zone: Asia/Calcutta
+image: woman/9
+languages:
+  - English
+  - Tamil
+  - Hindi
+  - German
+exo_areas:
+  - Institutions
+  - Peoples
+industries:
+  - name: Military
+    level: Thought leader
+exo_activities:
+  - Advising
+  - Consulting
+  - Training
+  - Coaching
+exo_attributes:
+  - attribute: Interfaces
+    level: I’m considered a thought leader in this domain
+  - attribute: Social Technologies
+    level: I’m considered a thought leader in this domain
+  - attribute: Staff on Demand
+    level: I’m considered a thought leader in this domain
+  - attribute: Algorithms
+    level: I have studied it in some detail
+  - attribute: Experimentation
+    level: I have implemented this several times
+  - attribute: Autonomy
+    level: I have implemented this several times
+keywords:
+  - name: Tissue Engineering
+    level: Can speak
+  - name: Nanomedicines
+    level: Can speak
+  - name: Head Transplant
+    level: Can teach
+personal_mtp: Democratizing healthcare
+mtp_mastery: I’m considered a thought leader in this domain, and I’ve published articles/papers about it
+availability: Fulltime
+last_activity: !timedelta -22h

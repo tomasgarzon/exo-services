@@ -1,0 +1,11 @@
+{% extends "base/base_blue_header.mjml" %}
+{% load common_mails i18n %}
+
+{% block blue-header %}
+    <mj-header-title-pretitle pre-title="OpenExO" title="{{ mail_title }}" />
+{% endblock %}
+
+
+{% block content %}
+    <mj-text>{{ mail_content }}</mj-text>
+{% endblock %}

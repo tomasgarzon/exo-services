@@ -1,0 +1,53 @@
+{% extends "project/master_detail_base.html" %}
+
+{% load django_bootstrap_breadcrumbs staticfiles l10n %}
+{% load permission_tags guardian_tags profile customize invitation %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Swarm Sessions" "project:project:swarm-session" project.id %}
+{% endblock %}
+
+{% block header_action %}
+    <div class="col-lg-3">
+        <a href="{% url 'project:project:swarm-session-add' project.pk %}" class="btn btn-primary pull-right m-t-8 m-r-md">Add Swarm Session</a>
+    </div>
+{% endblock %}
+{% block section_title %}
+Swarm Sessions
+{% endblock %}
+{% block search_form %}{% endblock %}
+{% block master_view %}
+    <table class="table table-hover list-detail table-team">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Advisors</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for object in object_list %}
+            <tr data-role='trigger' data-url="{% url 'project:project:swarm-session-detail' project.pk object.pk %}">
+                <td>{{object.name}}</td>
+                <td>
+                    {{object.normalized_start_at|unlocalize }} ({{object.project.timezone}})
+                </td>
+                <td>
+                    {{object.normalized_end_at|unlocalize }} ({{object.project.timezone}})
+                </td>
+                <td>
+                    {% for relation in object.members.all %}
+                        {{relation.consultant}}<br>
+                    {% endfor %}
+                </td>
+                <td data-action='stop'>
+                    {% include "project/qa_sessions/actions.html" with qasession=object %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

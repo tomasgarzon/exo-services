@@ -1,0 +1,64 @@
+title: Automotive manufacturing trends
+user: !consultant Philip Robson
+team: !team Sutton Inc Core
+date: !timedelta -3d
+qa_session: !qa_session Sutton First Swarm session
+description: |
+  <p>What are the key transformational trends for <strong>Automotive</strong> in the next <em>5 years</em>?</p>
+activities:
+  - user: !consultant Gorka Arrizabalaga
+    date: !timedelta -3600m
+    reply: |
+      <p>Based on a recent study by “Industry Focus”, the key trends are affecting the following fields:</p>
+      <ul>
+      <li>Lightweighting</li>
+      <li>Powertrain innovations</li>
+      <li>Safety systems</li>
+      <li>Electronics</li>
+      <li>Autonomous vehicles (AVs)</li>
+      </ul>
+      <p>See the report here: <a href="http://www.fastener-world.com.tw/0_magazine/ebook/pdf_download/FW_165_E_301.pdf" target="_blank">http://www.fastener-world.com.tw/0_magazine/ebook/pdf_download/FW_165_E_301.pdf</a></p>
+  - user: !consultant Leticia Ferreira Dias
+    date: !timedelta -3577m
+    reply: |
+      <p><strong>Next-gen automotive materials & processes:</strong></p>
+      <p><br></p>
+      <p>Innovative manufacturing processes what will redefine automotive parts include:</p>
+      <ul>
+      <li>Hot Formed Steel</li>
+      <li>Warm Formed Aluminum</li>
+      <li>High Pressure Thin Walled Aluminum Die Casting</li>
+      <li>Resin Transfer Molding</li>
+      <li>3D Printing</li>
+      </ul>
+  - user: !consultant Naina Lavrova
+    date: !timedelta -3574m
+    reply: |
+      <p>In terms of manufacturing:</p>
+      <p><a href="https://startupheretoronto.com/partners/mentor-works/next-generation-automotive-manufacturing-materials-processes/" target="_blank">https://startupheretoronto.com/partners/mentor-works/next-generation-automotive-manufacturing-materials-processes</a></p>
+  - user: !consultant Lindsey Allen
+    date: !timedelta -3574m
+    reply: |
+      <p>This one might be interesting for new applications/getting into new sectors & markets:</p>
+      <ul>
+      <li>Researchers created an etching process that gives stainless steel antibacterial properties</li>
+      <li>Potential applications: food preparation surfaces, medical implants,…</li>
+      </ul>
+      <p><br></p>
+      <p><a href="https://phys.org/news/2017-12-nanotexturing-bacteria-killing-spikes-stainless-steel.html" target="_blank">https://phys.org/news/2017-12-nanotexturing-bacteria-killing-spikes-stainless-steel.html</a></p>
+  - user: !consultant Lindsey Allen
+    date: !timedelta -3574m
+    reply: |
+      <p>BMW’s shape-shifting concept car with artificial intelligence</p>
+      <p><a href="https://www.dezeen.com/2016/03/07/bmw-vision-next-100-shape-shifting-driverless-artficial-intelligence-car-design/" target="_blank">https://www.dezeen.com/2016/03/07/bmw-vision-next-100-shape-shifting-driverless-artficial-intelligence-car-design/</a></p>
+  - user: !consultant Cerdic Roper
+    date: !timedelta -3551m
+    reply: |
+      <ul>
+      <li>connected</li>
+      <li>autonomous</li>
+      <li>lightweight</li>
+      <li>self aware (predictive maintenance and self-healing)</li>
+      </ul>
+      <p><br></p>
+      <p>The question is …are we going to see a personalization in this industry as in many others? it seems that cost drops and digital orchestration would support this in the long run…</p>

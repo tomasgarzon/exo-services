@@ -1,0 +1,29 @@
+created_by: !account 0737a9f9-22a0-4286-8be3-34a3e19d92dc
+uuid: 45ded106-f980-440d-accf-2b4cb22ca108
+status: H
+created_by_full_name: Naina Lavrova
+title: ExO Workshop Corporate Innovation Summit
+sub_title: OpenExO Workshop
+description: 90min ExO Workshop at Asias First Experiential Conference focusing on Corporate Innovation.
+start: !timedelta 15d
+end: !timedelta 15d
+category: WO
+follow_type: P
+location: Madrid, Spain
+url: http://openexo.com
+languages:
+  - spanish
+show_price: True
+amount: 1500
+currency: E
+organizers:
+  - name: Workshop Organizer
+    email: workshop@openexo.com
+    url: http://www.openexo.com/organizer
+participants:
+  - user: !account 0737a9f9-22a0-4286-8be3-34a3e19d92dc
+    user_name: Naina Lavrova
+    user_email: nainalavrova@example.com
+    order: 0
+    role: WSP
+    status: A

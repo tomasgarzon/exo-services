@@ -1,0 +1,56 @@
+image: docker:stable
+
+services:
+  - docker:dind
+
+variables:
+  CONTAINER_IMAGE: registry.gitlab.com/$CI_PROJECT_PATH
+  DOCKER_HOST: tcp://docker:2375
+  DOCKER_DRIVER: overlay2
+
+before_script:
+  - echo $CI_JOB_TOKEN | docker login -u gitlab-ci-token --password-stdin registry.gitlab.com
+  - export SOURCE_BRANCH=$(echo $CI_COMMIT_REF_NAME | sed "s/\//_/g")
+  - export IMAGE_NAME=$CONTAINER_IMAGE
+  - export BITBUCKET_BRANCH=$CI_COMMIT_REF_NAME
+  - export BITBUCKET_TAG=$CI_COMMIT_TAG
+
+build:
+  stage: build
+  script:
+    - docker pull $IMAGE_NAME:$SOURCE_BRANCH || docker pull $IMAGE_NAME:devel || true
+    - docker build
+        --cache-from $IMAGE_NAME:$SOURCE_BRANCH
+        --cache-from $IMAGE_NAME:devel
+        --tag $IMAGE_NAME:$SOURCE_BRANCH
+        --build-arg AWS_KEY=$AWS_KEY
+        --build-arg AWS_SECRET=$AWS_SECRET
+        --build-arg REPO_SLUG=$CI_PROJECT_NAME
+        --build-arg SOURCE_BRANCH=$SOURCE_BRANCH
+        --build-arg SOURCE_TAG=$CI_COMMIT_TAG
+        .
+    - echo "Running tests..."
+    - sed -i "s/FROM exolever\/service-exo-core/FROM ${IMAGE_NAME//\//\\/}/" Dockerfile.test
+    - docker build --cache-from $IMAGE_NAME:$SOURCE_BRANCH --file Dockerfile.test --build-arg SOURCE_BRANCH=$SOURCE_BRANCH --target linter .
+    - docker push $IMAGE_NAME:$SOURCE_BRANCH
+    #- sh trigger-populator-build.sh
+
+test-manual:
+  stage: test
+  script:
+    - docker pull $IMAGE_NAME:$SOURCE_BRANCH || docker pull $IMAGE_NAME:devel || true
+    - sed -i "s/FROM exolever\/service-exo-core/FROM ${IMAGE_NAME//\//\\/}/" Dockerfile.test
+    - docker build --cache-from $IMAGE_NAME:$SOURCE_BRANCH --file Dockerfile.test --build-arg SOURCE_BRANCH=$SOURCE_BRANCH .
+  when: manual
+
+test:
+  stage: test
+  script:
+    - docker pull $IMAGE_NAME:$SOURCE_BRANCH || docker pull $IMAGE_NAME:devel || true
+    - sed -i "s/FROM exolever\/service-exo-core/FROM ${IMAGE_NAME//\//\\/}/" Dockerfile.test
+    - docker build --cache-from $IMAGE_NAME:$SOURCE_BRANCH --file Dockerfile.test --build-arg SOURCE_BRANCH=$SOURCE_BRANCH .
+
+  only:
+    refs:
+      - master
+      - devel

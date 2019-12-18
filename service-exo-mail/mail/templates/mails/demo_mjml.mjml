@@ -1,0 +1,22 @@
+{% load mjml %}
+
+
+{% mjml %}
+    <mjml>
+
+      <mj-head>
+          <mj-attributes>
+              <mj-text align="left" color="black" font-family="helvetica" font-size="16px" line-height="25px"/>
+            </mj-attributes>
+      </mj-head>
+
+      <mj-body>
+        <mj-header-ticket pre-title="ExO Advisor Request" title="New response"/>
+        <mj-section>
+            <mj-column>
+                <mj-text>{{message}}</mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+    </mjml>
+{% endmjml %}

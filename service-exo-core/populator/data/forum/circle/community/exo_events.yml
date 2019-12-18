@@ -1,0 +1,27 @@
+title: ExO Events
+user: !consultant Leticia Ferreira Dias
+date: !timedelta -5d
+circle: !circle Community
+description: |
+  <p>POST YOUR ExO EVENTS HERE!</p>
+
+  <p>This is a thread dedicated to any & all ExO Events that are happening globally within the OpenExO Community.</p>
+
+  <p>Please share the details of your event below - example ExO events:</p>
+
+  <ul>
+    <li>book launches, workshops, ExQ rankings, speaking engagements, panels, Sprints etc.</li>
+  <ul>
+activities:
+  - user: !consultant Tina Weissberg
+    date: !timedelta -3d
+  - user: !consultant Amy Finch
+    date: !timedelta -3d
+    reply: |
+      <p><strong>Exponential Transformation</strong>: Madrid Book Launch!</p>
+      <p><strong>Where</strong>: Universidad Pontificia Comillas (ICAI-ICADE)</p>
+  - user: !consultant Naina Lavrova
+    date: !timedelta -4d
+    reply: |
+      <p><strong>Exponential Transformation</strong>: London Book Launch!</p>
+      <p><strong>Where</strong>: London conference center</p>

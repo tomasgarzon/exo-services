@@ -1,0 +1,23 @@
+id: 1
+uuid: 9c3bdaef-40fd-4ddc-add4-6810910705e5
+name: Harris LTD
+customer: !customer Harris Ltd
+start: !timedelta -9w
+place:
+  name: Aberdeen, UK
+  place_id: ChIJSXXXH0wFhEgRcsT0XNoFu-g
+created_by: !exo_account Quality Assurance
+launched_by: !exo_account Quality Assurance
+duration: 10
+lapse: Week
+feedback: true
+microlearnings: true
+template_assignments: Sprint Book
+password: harrispass
+roles:
+  - consultant: !consultant Lindsey Allen
+    code: SHC
+  - consultant: !consultant Philip Robson
+    code: SSH
+  - consultant: !consultant Amy Finch
+    code: SSH

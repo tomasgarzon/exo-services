@@ -1,0 +1,67 @@
+#
+# This Dockerfile is intended to run the manage.py test command for TDD testing
+#
+ARG SOURCE_NAME=$SOURCE_NAME
+
+FROM exolever/service-exo-opportunities:${SOURCE_NAME} as service-exo-opportunities
+
+ARG AWS_KEY
+ARG AWS_SECRET
+
+ENV DEBUG='True'\
+    FORCE_SCRIPT_NAME='' \
+    DB_HOST=localhost \
+    DB_USER=postgres \
+    POPULATOR_MODE='True' \
+    REDIS_HOST=localhost
+
+RUN apk add --no-cache \
+    python3-dev \
+    build-base \
+    postgresql 	\
+    openrc \
+    git \
+    redis
+
+# Install devel requirements
+RUN pipenv install --system --dev --skip-lock
+
+# Force copy to avoid cache
+COPY . .
+
+# Running linter and tests
+RUN flake8 --config ./scripts/flake8.cfg .
+RUN pycodestyle --config ./scripts/pep8.cfg .
+
+# Running postgresql inside alpine (TODO, find a better way to do this without openrc)
+RUN mkdir -p /run/openrc/ /run/postgresql
+RUN touch /run/openrc/softlevel
+RUN chmod 777 /run/postgresql
+
+RUN /etc/init.d/postgresql setup 2> /dev/null
+RUN su - postgres -c 'pg_ctl -D /var/lib/postgresql/11/data/ start' \
+    && redis-server --daemonize yes \
+    && python3 manage.py test --parallel=8 \
+    && psql -U postgres -c "CREATE DATABASE ${DB_NAME};" \
+    && python3 manage.py migrate \
+    && python3 manage.py populate \
+    && pg_dump --username=postgres --dbname=$DB_NAME --no-owner --format=custom --create --quote-all-identifiers | gzip > $DB_NAME.dump.gz \
+    && python3 manage.py anonymize_db --soft_mode \
+    && psql -U postgres -c "DROP DATABASE $DB_NAME;" \
+    && psql -U postgres -c "CREATE DATABASE ${DB_NAME};" \
+    && s3cmd --access_key=$AWS_KEY --secret_key=$AWS_SECRET get s3://exoleverbackup/backup/exolever_anonymized/latest/$DB_NAME.dump.gz $DB_NAME.anonymized.dump.gz \
+    && zcat $DB_NAME.anonymized.dump.gz | PGPASSWORD=$DB_PASS pg_restore --username=$DB_USER --host=$DB_HOST --dbname=$DB_NAME --no-owner --role=postgres --no-privileges --single-transaction \
+    && python3 manage.py migrate \
+    && timeout 10 python3 manage.py applychange
+
+# Upload dump to s3
+RUN s3cmd \
+    --access_key=$AWS_KEY \
+    --secret_key=$AWS_SECRET \
+    --force \
+    --delete-removed \
+    --human-readable-sizes \
+    --stop-on-error \
+    --acl-public \
+    put $DB_NAME.dump.gz \
+    s3://openexo/bundles/populator/$SOURCE_NAME/

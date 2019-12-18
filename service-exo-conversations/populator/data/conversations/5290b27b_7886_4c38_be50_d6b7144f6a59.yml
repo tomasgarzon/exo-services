@@ -1,0 +1,20 @@
+uuid: 5290b27b-7886-4c38-be50-d6b7144f6a59
+name: Gorka Arrizabalaga
+uuid_related_object: b7775ee3-2512-4671-8eff-5cfff6905fe5
+created_by: !account &gorka ef70053f-755b-4b40-bb73-6832d16488e7  # Gorka Arrizabalaga
+_type: O
+icon: /media/avatars/48_48/gorka-arrizabalaga.jpg
+users:
+  - user: *gorka
+    name: Gorka Arrizabalaga
+    profile_url: /public/profile/gorka-arrizabalaga/
+    profile_picture: /media/avatars/48_48/gorka-arrizabalaga.jpg
+  - user: !account &quality 7749ad25-5128-4644-895f-6b9a70b605bd
+    name: Quality Assurance
+    profile_url: /public/profile/quality-assurance/
+    profile_picture: /media/avatars/48_48/quality-assurance.jpg
+messages:
+  - created_by: *quality
+    message: Impedit adipisci debitis doloremque facilis voluptate. Exercitationem culpa culpa assumenda neque. Voluptatibus animi harum amet.\nVoluptates vitae illo odio beatae soluta. Laboriosam nostrum aut in
+    readed:
+        - user: *gorka

@@ -1,0 +1,50 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="Circles" title="{% trans 'This week in your circles' %}" />
+{% endblock %}
+
+{% block wrapper-extra-class %}white{% endblock %}
+
+{% block wrapper-title %}
+{% endblock %}
+
+{% block container %}
+    <mj-section padding-top="0px" padding-bottom="0px" css-class="weekly-update">
+        <mj-column>
+            
+            {% for circle in circles %}
+            
+            <mj-text css-class="circle-name" font-size="26px">
+                <img src='{{ circle.image }}' width='56' height='56' alt='image'/>
+                <span>{{circle.name}} {% trans "Circle" %}</span>
+            </mj-text>
+            <mj-text css-class="weekly-title" color="#6f23ff" font-size="14px">{{circle.new_topics}} {% trans "New topics" %}</mj-text>
+            <mj-text css-class="weekly-title" color="#6f23ff" font-size="14px">{{circle.new_replies}} {% trans "New comments" %}</mj-text>
+            {% endfor %}
+
+            {% if new_announcements %}
+                <mj-text css-class="circle-name" font-size="26px">
+                    <img src='https://s3.amazonaws.com/exolever/static/assets/public/hubs/announcements.png' width='56' height='56' alt='image'/>
+                    <span>{% trans "Announcements" %}</span>
+                </mj-text>
+                <mj-text css-class="weekly-title" color="#6f23ff" font-size="14px">{{new_announcements}} {% trans "New announcements" %}</mj-text>
+            {% endif %}
+
+            {% if new_questions %}
+                <mj-text css-class="circle-name" font-size="26px">
+                    <img src='https://s3.amazonaws.com/exolever/static/assets/public/hubs/questions_from_projects.png' width='56' height='56' alt='image'/>
+                    <span>{% trans "Questions from projects" %}</span>
+                </mj-text>
+                <mj-text css-class="weekly-title" color="#6f23ff" font-size="14px">{{new_questions}} {% trans "New questions" %}</mj-text>
+            {% endif %}
+            
+        </mj-column>
+    </mj-section>
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "Go to circles" as see_details %}
+    {% include "base/call_to_action.mjml" with call_to_action=see_details %}
+{% endblock %}

@@ -1,0 +1,8 @@
+title: Domestic robots
+user: !exo_account Yelenia Nazarova
+team: !team Vladivostok Core
+date: !timedelta -27m
+description: |
+  <p>How does exponential technologies can help to solve the urban mobility problem? We're looking for some insights!</p>
+tags:
+  - Blockchain

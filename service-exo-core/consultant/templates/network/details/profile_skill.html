@@ -1,0 +1,97 @@
+{% load guardian_tags %}
+{% load profile %}
+{% load rating %}
+{% load split %}
+{% load partition %}
+{% if object.is_consultant %}
+    {% get_obj_perms request.user for object.consultant as "consultant_perms" %}
+
+    {% if "consultant_view_full_profile" in consultant_perms %}
+        <div class="border-bottom col-xs-12 no-padding">
+            <h3 class="m-t-none m-b-xs">Languages: </h3>
+        </div>
+        <div class='col-xs-12 no-padding m-t-10'>
+            {{object.consultant.languages.all|join:", "}}
+        </div>
+        <div class="border-bottom col-xs-12 no-padding m-t-30">
+            <h3 class="m-t-none m-b-xs">Experience: </h3>
+        </div>
+        <div class='col-xs-12 no-padding m-t-10'>
+            <span class="label label-info m-r-xs">{{object.consultant.exo_profile.get_experience_consulting_display}}</span>
+        </div>
+
+        <div class="border-bottom col-xs-12 no-padding m-t-30">
+            <h3 class="m-t-none m-b-xs">Time for ExO Works: </h3>
+        </div>
+        <div class='col-xs-12 no-padding m-t-10'>
+            <span class="label label-info m-r-xs">{{object.consultant.exo_profile.get_time_for_exo_display}}</span>
+        </div>
+    {% endif %}
+    {% if "consultant_view_full_profile" in consultant_perms %}
+        <div class="border-bottom col-xs-12 no-padding m-t-30">
+            <h3 class="m-t-none m-b-xs">Areas of expertise:</h3>
+        </div>
+        <div class="col-xs-12 m-t-xs no-padding">
+            <ul class="unstyled p-l-0">
+            {% for area in object.consultant.exo_profile.get_areas_expertise_display|default:""|split:"," %}
+                <li class='p-t-5'>{{area}}</li>
+            {% empty %}
+                <li class='p-t-5'>No areas</li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="border-bottom col-xs-12 no-padding m-t-30">
+            <h3 class="m-t-none m-b-xs">Activities: </h3>
+        </div>
+        <div class="col-xs-12 m-t-10 no-padding">
+            {% for activity in object.consultant.exo_profile.exo_activities.actives %}
+                <span class="label label-info m-r-xs">{{activity.exo_activity.name}}</span>
+            {% endfor %}
+        </div>
+
+        <div class="border-bottom col-xs-12 no-padding m-t-30">
+            <h3 class="m-b-xs">ExO Attributes:</h3>
+        </div>
+
+        <div class="row m-t-10 col-xs-12 no-padding m-l-none content-exo-attributes">
+            <ul>
+            {% for attr in object.consultant.exo_attributes.all %}
+                <li><strong>{{attr.exo_attribute}}</strong>: {{attr.get_level_display}} ({{attr.level}})</li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="border-bottom col-xs-12 no-padding m-t-30">
+            <h3 class="m-b-xs">Industries:</h3>
+        </div>
+        {% regroup object.consultant.industries.all by level as grouped_industries %}
+        {% for industry_group in grouped_industries %}
+            {% if industry_group.list|length > 0 %}
+            <table class="table {% if forloop.last %}m-b-md{% else %}m-b-xs{% endif %} ranking" align='left'>
+                <tbody>
+                    <tr class='section border-bottom'>
+                        <td class="">
+                            <h4 class="m-b-none m-t-sm m-l-n-xs">
+                                {{industry_group.list.0.get_level_display}}
+                            </h4>
+                        </td>
+                        <td colspan="2">
+                            {% rating_star '' industry_group.list.0.level %}
+                        </td>
+                    </tr>
+                    {% for row in industry_group.list|columns:3 %}
+                        <tr class="data">
+                        {% for industry in row %}
+                            <td>
+                                <div class="m-t-8 l-h-20">
+                                    {{industry.industry}}
+                                </div>
+                            </td>
+                        {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endif %}

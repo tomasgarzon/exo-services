@@ -1,0 +1,79 @@
+- model: exo_activity.ExOActivity
+  pk: 18
+  fields:
+    name: Advising
+    code: advising
+    description: Provide micro-consulting sessions to clients and fellow OpenExO Community members about topics within your subject matter expertise.
+    order: 1
+
+- model: exo_activity.ExOActivity
+  pk: 17
+  fields:
+    name: Coaching
+    code: coaching
+    description: Guide those seeking transformation through ExO methodology transformation models and frameworks. This role requires certification.
+    order: 2
+
+- model: exo_activity.ExOActivity
+  pk: 19
+  fields:
+    name: Speaking
+    code: speaking
+    description: Give lectures and talks to teach and inspire others on ExO related topics.
+    order: 3
+
+- model: exo_activity.ExOActivity
+  pk: 10
+  fields:
+    name: Consulting
+    code: consulting
+    description: Develop and implement solutions for clients based on your knowledge and expertise.
+    order: 4
+
+- model: exo_activity.ExOActivity
+  pk: 11
+  fields:
+    name: Leading Business Development
+    code: business_development
+    description: Generate market demand and sell official OpenExO related services. This role requires certification.
+    order: 5
+
+- model: exo_activity.ExOActivity
+  pk: 12
+  fields:
+    name: Content Generation
+    code: content_generation
+    description: Contribute to official OpenExO content by generating articles and other educational media.
+    order: 6
+
+- model: exo_activity.ExOActivity
+  pk: 13
+  fields:
+    name: Investing
+    code: investor
+    description: Invest capital into ExO related projects and startups.
+    order: 7
+
+- model: exo_activity.ExOActivity
+  pk: 14
+  fields:
+    name: Entrepreneurship
+    code: entrepreneurship
+    description: Take a leadership role in launching and accelerating new ExO initiatives that emerge from various program deliveries.
+    order: 8
+
+- model: exo_activity.ExOActivity
+  pk: 15
+  fields:
+    name: Training
+    code: training
+    description: Train and certify members of the OpenExO Community to run programs and use methodologies. This role requires certification.
+    order: 9
+
+- model: exo_activity.ExOActivity
+  pk: 16
+  fields:
+    name: Building Local Community
+    code: company_development
+    description: Contribute to the growth and development of your local ExO Community to support the global ExO movement.
+    order: 10

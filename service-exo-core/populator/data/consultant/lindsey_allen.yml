@@ -1,0 +1,30 @@
+uuid: 47b10a71-d011-48c2-b359-2a2027191fd8
+short_name: Lindsey
+full_name: Lindsey Allen
+status: Active
+place:
+  name: Vancouver, Canada
+  place_id: ChIJs0-pQ_FzhlQRi_OBm-qWkbs
+time_zone: America/Vancouver
+image: woman/6
+languages:
+  - English
+  - Bulgarian
+  - French
+exo_areas:
+  - Institutions
+  - Organizations
+  - Peoples
+exo_attributes:
+  - attribute: Staff on Demand
+    level: I have implemented this several times
+exo_activities:
+  - Advising
+mtp_mastery: I have implemented this several times
+marketplace_agreement_signed: true
+last_activity: !timedelta -15h
+badges:
+  - code: 'SUO'
+    category: 'SU'
+    item_name: 'Summit organizer'
+    item_date: !datetime Aug 30 2019

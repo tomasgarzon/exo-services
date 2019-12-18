@@ -1,0 +1,20 @@
+name: Josh SA Core
+uuid: cec77c17-3420-4e53-ad60-1d5ab2bb69d4
+stream: Core Stream
+coach: !consultant Kunivas Devari
+created_by: !exo_account Quality Assurance
+project: !sprint_automated Josh SA
+members:
+  - short_name: Piren Saavedra Saldivar
+    email: pi.sa.sal@example.com
+    uuid: aefa2b49-3bbe-4516-a7a4-4baac64475ea
+    image: man/21
+  - short_name: Bobbi McGregor
+    email: bobbimcgregor@example.com
+    uuid: 5164e2ba-90ae-4ad7-a307-516641f539e0
+    image: man/22
+  - short_name: Aden Cameron
+    email: adencameron@example.com
+    updated_profile: true
+    uuid: f986400f-f162-4e42-929b-78c417843f1a
+    image: woman/18

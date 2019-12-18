@@ -1,0 +1,64 @@
+uuid: a233a171-e7c0-4df3-bcfb-686d29885922
+short_name: Dirk
+full_name: Dirk Eichelberger
+status: Active
+image: man/7
+bio_me: |
+  Dirk Eichelberger came to East Carolina University after nearly twenty years of service to Rensselaer Polytechnic Institute. At RPI he developed many unique academic programs that relied on the impact of emerging technologies on the communication process; he also served as the Director of the Technical Writers Institute and the Director of Graduate Studies. Before joining the RPI faculty he directed undergraduate and associate degrees at Michigan Technological University and William Rainey Harper College. He is a Fellow of the Society for Technical Communication, as well as a former board member and director-sponsor, and has received numerous awards for his contributions to the profession. His Science and Technical Writing called 'A Manual of Style' will soon be released in a 2nd edition from Routledge.
+
+  His professional career outside of academia includes writing for the Wall Street Journal, the Democratic National Committee, LTV Aerospace, Braniff International, Woodall Publishing, and various government agencies, as well as a considerable career in freelance writing. He has applied this combination of practical and academic experience to a variety of consultancies for major corporations and political agencies throughout the world. These professional efforts have been recognized by the Society for Technical Communication and the IEEE Professional Communication Society.
+
+  He is active in a variety of civic and cultural organizations including Habitat for Humanity, Sierra Club, the Women's Philharmonic, and the National Museum of Women in the Arts. Outside of professional interests, he travels widely, reads, writes, sails, and enjoys living in Cary with his family and cats.
+place:
+  name: Innsbruck, Austria
+  place_id: ChIJc8r44c9unUcRDZsdKH0cIJ0
+time_zone: Europe/Vienna
+languages:
+  - English
+  - German
+  - Italian
+exo_areas:
+  - Peoples
+industries:
+  - name: Telecommunications
+    level: Thought leader
+  - name: Nanotechnology
+    level: Thought leader
+  - name: Big Data
+    level: Thought leader
+  - name: Computer
+    level: Intermediate
+exo_attributes:
+  - attribute: Interfaces
+    level: I have implemented this several times
+  - attribute: Community & Crowd
+    level: I’m considered a thought leader in this domain
+  - attribute: Dashboards
+    level: I’m considered a thought leader in this domain
+  - attribute: Social Technologies
+    level: I’m considered a thought leader in this domain
+  - attribute: Staff on Demand
+    level: I have implemented this several times
+  - attribute: Algorithms
+    level: I’m considered a thought leader in this domain
+  - attribute: Experimentation
+    level: I have studied it in some detail
+  - attribute: Autonomy
+    level: I’m considered a thought leader in this domain
+  - attribute: Leveraged Assets
+    level: I have studied it in some detail
+  - attribute: Engagement
+    level: I have studied it in some detail
+keywords:
+  - name: Nanomaterials
+    level: Can speak
+  - name: Molecular Nanotechnology
+    level: Can speak
+  - name: Nanoelectromechanical Systems
+    level: Can teach
+personal_mtp: Nanoengineering
+mtp_mastery: I’m considered a thought leader in this domain, and I’ve published articles/papers about it
+availability: Fulltime
+exo_activities:
+  - Coaching
+last_activity: !timedelta -21h

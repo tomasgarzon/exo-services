@@ -1,0 +1,51 @@
+{% extends "project/base.html" %}
+{% load bootstrap_pagination bootstrap3 staticfiles django_bootstrap_breadcrumbs breadcrumb %}
+{% load images %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Certification Group" "tools:relation:group-list" %}
+    {% if object.pk %}
+        {% breadcrumb "Edit" "tools:relation:group-update" object.pk %}
+    {% else %}
+        {% breadcrumb "Add" "tools:relation:group-create" %}
+    {% endif %}
+{% endblock %}
+
+{% block header %}
+<div class="col-lg-10">
+    <h2>Certification Group</h2>
+</div>
+<div class="col-xs-12 p-r-none">
+    {% render_view_breadcrumbs "base/breadcrumb.html" %}
+</div>
+{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class='ibox float-e-margins'>
+            <div class="ibox-title">
+                <h2>{% if object.pk %}Edit{% else %}Add{% endif %} group</h2>
+            </div>
+            <div class="ibox-content">
+                <form id='group-form' action="." method="post" class="
+                styles-form" enctype='multipart/form-data'>
+                    {% csrf_token %}
+                    <div class="content clearfix p-m m-t-none col-lg-6 col-xs-12">
+                        <div class='row'>
+                            <div class='col-xs-12'>
+                                {% bootstrap_field form.content %}
+                                <div style='display:none'>{% bootstrap_field form.description %}</div>
+                            </div>
+                            <div class="full-width pull-right m-r-xs text-right">
+                                <button class="btn btn-positive-choice" type="submit">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

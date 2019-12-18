@@ -1,0 +1,7 @@
+POPULATE_ALLOWED_DATA_FOLDERS = [
+    'exo_auth',
+]
+
+POPULATE_ALLOWED_POPULATE_ENTITIES = [
+    'exo_auth',
+]

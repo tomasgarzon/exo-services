@@ -1,0 +1,91 @@
+{% extends "project/master_detail_base.html" %}
+
+{% load django_bootstrap_breadcrumbs breadcrumb invitation %}
+{% load bootstrap_pagination images permission_tags staticfiles user_project %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Members" "" %}
+    {% breadcrumb "Teams" "project:project:team:list" project.id %}
+{% endblock %}
+
+{% block header_action %}
+    {% has_project_perms user "crud_team" project=project as team_perms %}
+    {% if team_perms %}
+    <div class="col-lg-3">
+        <a href="{% url 'project:project:team:add' project.pk %}" class="btn btn-primary pull-right m-t-8 m-r-md">Add team</a>
+    </div>
+    {% endif %}
+{% endblock %}
+
+{% block master_view %}
+    <table class="table table-hover list-detail table-team table-l-fix" data-project="{{project.pk}}">
+        <thead>
+            <tr>
+                {% if form_bulk %}<th style="width: 50px;"></th>{% endif %}
+                <th>Team</th>
+                <th>Stream</th>
+                <th width="30%">{{project.team_manager_label}}</th>
+                <th class="team-members" width="30%">Team members</th>
+                <td>Status</td>
+                <th width="5%"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for object in object_list %}
+            <tr data-role='trigger' data-url="{% url 'project:project:team:detail' project.pk object.pk %}">
+                {% if form_bulk %}
+                    <td><input type="checkbox" id="{{object.pk}}" class="i-checks" data-action="stop"></td>
+                {% endif %}
+                <td><div class='cut-text'>{{object.name}}</div></td>
+                <td>{{object.get_stream_display}}</td>
+                <td class="team-members text-center">
+                    {% include "tags/link_user.html" with member=object.coach.user %}
+                </td>
+                <td class="team-members text-center">
+                    {% for member in object.team_members.all %}
+                        <div class='m-t-xs m-b-xs'>
+                            {% include "tags/link_user.html" with member=member %}
+                        </div>
+                    {% empty %}
+                        No members
+                    {% endfor %}
+                </td>
+                <td>
+                    {% if object.team_members.first %}
+                        {% get_project_role object.team_members.all|first project as role %}
+                        {% get_invitation_object role as invitation %}
+                        {% if invitation %}
+                            {{invitation.get_status_display}}<br>
+                            {% get_email_send invitation as invitation_log %}
+                             {% if invitation_log %}
+                                Sent: {{invitation_log.created|date}}
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                </td>
+                <td data-action='stop'>
+                    {% has_project_perms user "crud_team" project=project as team_perms %}
+                    {% include "team/team_action_list.html" with perms=team_perms team=object %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
+{% block empty_view %}
+    {% has_project_perms user "crud_team" project=project as team_perms %}
+    {% if team_perms %}
+        <div class="text-center full-width pull-left m-b-md">
+            You don't have teams yet.<br>
+            <a href="{% url 'project:project:team:add' project.pk %}" class="btn btn-primary m-t-sm">Add team</a>
+        </div>
+    {% else %}
+        {{block.super}}
+    {% endif %}
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'team/js/team_list.js' %}"></script>
+{% endblock %}

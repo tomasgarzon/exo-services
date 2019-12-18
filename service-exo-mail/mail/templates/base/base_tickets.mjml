@@ -1,0 +1,67 @@
+{% load mjml common_mails %}
+
+{% mjml %}
+    <mjml>
+
+      <mj-head>
+          <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto" />
+          <mj-attributes>
+              <mj-text align="left" color="#46464b" font-family="Roboto,Helvetica" font-size="16px" line-height="24px"/>
+          </mj-attributes>
+          <mj-style inline="inline">
+              {% include "base/base_mjml.css" %}
+          </mj-style>
+      </mj-head>
+
+      <mj-body css-class="exo-body">
+        {% include "base/header.mjml" %}
+        <mj-wrapper background-color="#fff" border="1px solid #DEE1E2" padding="20px 25px" border-radius="6px" border="1px solid rgba(70, 70, 75, 0.16)">
+          {% block ticket-header %}{% endblock %}
+          {% block pre-content %}
+          {% endblock %}
+          <mj-wrapper css-class="exo-wrapper" padding="0px">
+            <mj-section>
+              <mj-column>
+              {% block header-image %}
+                <mj-image border-radius="50%" width="84px" align="left" src="{{domain}}{{customer_image_url}}" />
+              {% endblock %}
+              </mj-column>
+            </mj-section>
+            <mj-section padding="0px">
+                <mj-column >
+                    <mj-text font-weight="700" line-height="39px" font-size="26px" color="#46464b">
+                      {% block box-title %}
+                      {% if public_url %}
+                        <a href="{{domain}}{{public_url}}" class="link-nostyle " style="text-decoration:none">
+                          {{ticket_subject}}
+                        </a>
+                      {% else %}
+                        {{ticket_subject}}
+                      {% endif %}
+                        {% endblock %}
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section padding-top="0px">
+                <mj-column>
+                    {% block content %}{% endblock %}
+                </mj-column>
+            </mj-section>
+            {% if public_url %}
+            <mj-section padding-top="0px">
+                <mj-column>
+                    {% block call_to_action %}{% endblock %}
+                </mj-column>
+            </mj-section>
+            {% endif %}
+            {% block after-call-to-action %}{% endblock %}
+          </mj-wrapper>
+          {% block post-content %}{% endblock %}
+        </mj-wrapper>
+        {% if public_url %}
+          {% include "base/footer.mjml" %}
+        {% endif %}
+      </mj-body>
+
+    </mjml>
+{% endmjml %}

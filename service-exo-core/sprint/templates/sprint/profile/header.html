@@ -1,0 +1,25 @@
+{% load images %}
+{% load guardian_tags %}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="pull-left m-t-12">
+            <h2 class="m-b-xs m-t-7">{{object.name|capfirst}}</h2>
+        </div>
+        <div class='pull-right m-t'>
+            {% get_obj_perms request.user for object as "sprint_perms" %}
+            {% if "edit_project" in sprint_perms %}
+            <div class="ibox-tools pull-right">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-ellipsis-v"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li>
+                        <a href="{% url 'project:sprint-edit' project.id %}">Edit Sprint</a>
+                    </li>
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+{% extends "project/base.html" %}
+{% load bootstrap_pagination bootstrap3 staticfiles django_bootstrap_breadcrumbs breadcrumb %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Assignments" "project:project:assignment:list" project.pk %}
+    {% if object.pk %}
+        {% breadcrumb "Edit" "project:project:assignment:edit" project.pk object.pk %}
+    {% else %}
+        {% breadcrumb "Add assignment" "project:assigment:add" project.pk %}
+    {% endif %}
+{% endblock %}
+
+{% block main_project %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class='ibox float-e-margins'>
+            <div class="ibox-title">
+                <h2>{% if object.pk %}Edit{% else %}Add{% endif %} assignment</h2>
+            </div>
+            <div class="ibox-content">
+                <form id='form' action="." method="post"
+                        class="styles-form"
+                        enctype='multipart/form-data'
+                        >
+                            <div class="content clearfix p-m m-t-none">
+                                <div class='col-xs-12 col-lg-8 col-md-12'>
+                                {% csrf_token %}
+                                {% bootstrap_field form.name %}
+                                {% bootstrap_field form.stream %}
+                                {% bootstrap_field form.day %}
+                                {% if object %}
+                                    {% bootstrap_field form.order %}
+                                {% endif %}
+                                {% bootstrap_field form.type %}
+                                {% bootstrap_field form.generic_obj %}
+                                {% bootstrap_field form.content %}
+                                {% bootstrap_field form.tips %}
+                                </div>
+                                {% if object %}
+                                <div class='col-xs-12 col-lg-12 col-md-12' id="dev__resources" data-slug="{{object.slug}}">
+                                    <h3>Resources</h3>
+                                    <div class='pull-right btn btn-default orange border-orange' id="dev__add_resource" data-slug="{{object.slug}}" data-project="{{project.slug}}">
+                                        Add resource
+                                    </div>
+                                    <div class='full-width pull-left m-t-md' id="dev__resource_container">
+                                        <div class='row border-bottom border-top p-t-10 p-b-10'>
+                                            <div class='col-lg-1 col-xs-2'></div>
+                                            <div class='col-lg-5 col-xs-4'><strong>Name</strong></div>
+                                            <div class='col-lg-5 col-xs-4'><strong>Details</strong></div>
+                                            <div class='col-lg-1 col-xs-2 text-center'><strong>Actions</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="full-width pull-right m-r-xs m-b-xs text-right">
+                                <button class="btn btn-positive-choice" type="submit">Save</button>
+                            </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'assignment/js/assignment_form.js' %}"></script>
+<script src="{% static 'files/js/resource.js' %}"></script>
+{% endblock %}

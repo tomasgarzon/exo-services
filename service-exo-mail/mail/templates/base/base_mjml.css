@@ -1,0 +1,126 @@
+.link-nostyle {
+    color: inherit;
+}
+
+.table-title {
+    font-weight: bold !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    color: white !important;
+    background-color: #1E88E5 !important;
+}
+
+.table-content {
+    font-weight: bold !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+    color: #7F898F !important;
+}
+
+.text-blue{
+    color: #1E88E5 !important;
+}
+
+a.link, a.link:hover, a.link:visited {
+    color: #1E88E5 !important;
+    text-decoration: none !important;
+    font-weight: medium !important;
+}
+
+a{
+  font-weight: bold;
+}
+.exo-pretitle {
+  font-family: HKGrotesk;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  color: #6f23ff;
+}
+
+.exo-title{
+  font-family: HKGrotesk;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  color: #46464b;
+}
+
+.exo-body{
+    background-color: rgba(70, 70, 75, 0.04);
+    padding-top: 25px;
+}
+
+.exo-wrapper{
+    border-radius: 6px;
+}
+
+.exo-wrapper.white{
+    background-color: white;
+}
+
+.exo-wrapper.dark{
+    background-color: rgba(70, 70, 75, 0.08);
+}
+
+.sandboxexo1 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(70, 70, 75, 0.75);
+}
+
+
+.post-body-content img {
+    max-width: 100%;
+}
+
+.user-information img {
+  width: 56px !important;
+}
+
+.user-information .name {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #46464b;
+}
+
+.weekly-update .circle-name {
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #46464b;
+}
+
+.weekly-update img {
+  min-height:56px;
+  min-width:56px;
+}
+
+.weekly-update .circle-name span {
+  position:relative;
+}
+
+.weekly-update .weekly-title {
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 4px;
+}

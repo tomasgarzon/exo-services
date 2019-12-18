@@ -1,0 +1,74 @@
+name: Ana Fortune 500
+organization: Webster LLC
+email: robinstorey@taylor.org
+industry: Alcohol
+survey: !survey Fortune 500
+answers:
+  - order: 0
+    option: 3
+  - order: 1
+    option: 1
+  - order: 2
+    option: 1
+  - order: 3
+    option: 2
+  - order: 4
+    option: 2
+  - order: 5
+    option: 0
+  - order: 6
+    option: 1
+  - order: 7
+    option: 1
+  - order: 8
+    option: 3
+  - order: 9
+    option: 2
+  - order: 10
+    option: 0
+  - order: 11
+    option: 0
+  - order: 12
+    option: 2
+  - order: 13
+    option: 2
+  - order: 14
+    option: 3
+  - order: 15
+    option: 1
+  - order: 16
+    option: 1
+  - order: 17
+    option: 0
+  - order: 18
+    option: 0
+  - order: 19
+    option: 3
+  - order: 20
+    option: 0
+  - order: 21
+    option: 2
+  - order: 22
+    option: 2
+  - order: 23
+    option: 3
+  - order: 24
+    option: 3
+  - order: 25
+    option: 2
+  - order: 26
+    option: 3
+  - order: 27
+    option: 1
+  - order: 28
+    option: 3
+  - order: 29
+    option: 2
+  - order: 30
+    option: 0
+  - order: 31
+    option: 2
+  - order: 32
+    option: 3
+  - order: 33
+    option: 2

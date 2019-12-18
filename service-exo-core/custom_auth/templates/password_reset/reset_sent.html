@@ -1,0 +1,9 @@
+{% extends "register/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Password recovery" %}{% endblock %}
+
+{% block main %}
+    <p>Your password has successfully been reset. You can use it right now on the login page.</p>
+    <a class='btn btn-positive-choice' href="/" >Login</a>
+{% endblock %}

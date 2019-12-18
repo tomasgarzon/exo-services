@@ -1,0 +1,43 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="{% trans 'New Opportunity' %}" title="{{title}}" />
+{% endblock %}
+
+{% block wrapper-extra-class %}white{% endblock %}
+
+{% block wrapper-title %}
+    {% include "base/user_information.mjml" with image=created_by_profile_picture name=created_by_name user_title=created_by_role %}
+{% endblock %}
+
+{% block content %}
+    <mj-text>{% autoescape off %}{{description|linebreaksbr|safe}} {% endautoescape %}</mj-text>
+    <mj-text>
+        {% if entity_name %}
+            <strong>Entity:</strong> {{entity_name}}<br>
+        {% endif %}
+        <strong>Role: </strong> {{role}}<br>
+        <strong>Open positions: </strong> {{num_positions}}<br>
+        {% if location_string %}
+            <strong>Location:</strong> {{location_string}}<br>
+        {% endif %}
+        {% if start_date %}
+            <strong>Start date:</strong> {{start_date}}<br>
+        {% endif %}
+        {% if duration %}
+            <strong>Duration:</strong> {{duration}}<br>
+        {% endif %}
+        {% if budget_string %}
+            <strong>Budget: </strong> {{budget_string}}<br>
+        {% endif %}
+
+    </mj-text>
+    {% include "mails/opportunity/keywords.html" with keywords=tags %}
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "Go to the opportunity" as see_details %}
+    {% include "base/call_to_action.mjml" with call_to_action=see_details %}
+{% endblock %}
+

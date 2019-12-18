@@ -1,0 +1,76 @@
+title: Looking for a virtual Speaker for the Hayward LLC Online ExO Sprint
+uuid: b7775ee3-2512-4671-8eff-5cfff6905fe5
+description: |
+  We're looking for a speaker for this awesome customer based on Rusia.
+
+  Hayward LLC is an industry leader in the retail of commercial drone products, unmanned aerial vehicles, and drone kits for both the hobbyist and experienced professional.
+status: Requested
+created: !timedelta -2h
+created_by: !account &created_by 5d640164-b7a3-4936-b37e-3ad5a23a2036  # tina
+keywords:
+  - Drones
+start_date: !timedelta 5d
+deadline_date: !timedelta 4d
+mode: L
+location: Madrid, Spain
+location_url: https://zoom.us
+duration_unity: M
+duration_value: 2
+exo_role: TAS
+certification_required: CFO
+entity: Hayward LLC
+virtual_budget: 1500
+num_positions: 3
+applicants:
+  - user: !account 1cd07dd7-4883-4838-9b5a-303ef0d6580c # Amy Finch
+    summary: |
+      I'm expert in flight monitoring and fuel consumption applied to flightplan.
+    status: Selected
+    question_extr_info: |
+      I'm your best option!
+    sow:
+      applicant_name: Amy Finch
+      requester_name: Tina
+      title: Looking for a virtual Speaker
+      entity: Hayward LLC
+      start_date: !timedelta 5d
+      end_date: !timedelta 3w
+      location: Madrid, Spain
+      mode: L
+  - user: !account ef70053f-755b-4b40-bb73-6832d16488e7 # Gorka Arrizabalaga
+    summary: |
+      I have 10 years of experience in this sector, working with the largest companies in the US.
+    status: Selected
+    question_extr_info: |
+      I'm an Astronaut!
+    sow:
+      applicant_name: Gorka Arrizabalaga
+      requester_name: Tina
+      title: Looking for a virtual Speaker
+      entity: Hayward LLC
+      start_date: !timedelta 5d
+      end_date: !timedelta 3w
+      location: Madrid, Spain
+      mode: L
+  - user: !account 1eae2bfa-3b44-4e3a-8bb7-89f5e24c71a6 # Julius Emilsson
+    status: Rejected
+    summary: |
+      I'm an engineer with a background in aerospace. I have a strong expertise in drone development, both hard- and software.
+    question_extr_info: |
+      I'm just certified.
+  - user: !account 1da6e073-a525-4311-ab7e-ec8748d76100 # Cerdic Roper
+    status: Requested
+    summary: |
+      I am a technology hobbyist with experience in drones and multispectral imaging, and an increasing interest in camera trapping, LIDAR and bioacoustics.
+    question_extr_info: |
+      I have all the licenses availables.
+    sow:
+      applicant_name: Cerdic Roper
+      requester_name: Tina
+      title: Looking for a virtual Speaker
+      entity: Hayward LLC
+      start_date: !timedelta 5d
+      end_date: !timedelta 3w
+      location: Madrid, Spain
+      mode: L
+assigned_by: *created_by

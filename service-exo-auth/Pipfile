@@ -1,0 +1,67 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+install-local = "pip install -r local_requirements.txt"
+
+[dev-packages]
+autopep8 = "*"
+coverage = "*"
+django-debug-toolbar = "*"
+django-nose = "*"
+django-pdb = "*"
+factory-boy = "*"
+flake8 = "*"
+flake8-debugger = "*"
+flake8-print = "*"
+flake8-todo = "*"
+ipdb = "*"
+mock = "*"
+pep8 = "*"
+pycodestyle = "*"
+pylint = "*"
+pylint-django = "*"
+s3cmd = "*"
+tblib = "*"
+
+[packages]
+boto =  "*"
+celery = {version = "*", extras = ["redis"]}
+dj_anonymizer = "*"
+Django = "<3.0"
+django-activity-stream = "*"
+django-appconf = "*"
+django-celery-results = "*"
+django-cors-headers = "*"
+django-extensions = "*"
+django-guardian = "*"
+django-model-utils = "*"
+django-password-reset = "*"
+django-redis-sessions = "*"
+django-storages = "*"
+djangorestframework = "*"
+djangorestframework-camel-case =  "*"
+djangorestframework-jwt =  "*"
+drf-nested-routers = "*"
+drf-yasg = {version = "*", extras = ["validation"]}
+exo-changelog = "*"
+Faker = "*"
+gunicorn = "*"
+health-check = "*"
+lib-exo-populator = "*"
+pyyaml = "*"
+redis = "*"
+requests =  "*"
+requests-mock = "*"
+requests-toolbelt = "*"
+schedule =  "*"
+sentry-sdk = "*"
+service_identity = "*"
+singleton-decorator = "*"
+stringcase = "*"
+whitenoise = "*"

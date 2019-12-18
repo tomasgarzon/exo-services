@@ -1,0 +1,41 @@
+id: 9
+uuid: 0d2dbf27-8015-40e8-bf85-3cb111b68b57
+name: Sutton Inc
+customer: !customer Sutton Inc
+start: !timedelta -4w
+place:
+  name: Granada, Spain
+  place_id: ChIJfcIyLeb8cQ0Rcg1g0533WJI
+password: sutonpass
+created_by: !exo_account Quality Assurance
+launched_by: !exo_account Quality Assurance
+zoom_api_key: jIHkuhFPSQmJHpBQpUOCJg
+zoom_secret_key: mxLxiDYu23K1DCI40E0ZYuPQsBpzd6HMD6KE
+duration: 10
+lapse: Week
+feedback: true
+microlearnings: true
+template_assignments: Sprint Book
+num_tickets_per_team: 15
+price: 450
+roles:
+  - consultant: !consultant Naina Lavrova
+    code: SHC
+  - consultant: !consultant Philip Robson
+    code: SSH
+  - consultant: !consultant Amy Finch
+    code: SSH
+  - consultant: !consultant Gorka Arrizabalaga
+    code: SAS
+  - consultant: !consultant Tina Weissberg
+    code: SAD
+  - consultant: !consultant Leticia Ferreira Dias
+    code: SAD
+  - consultant: !consultant Gorka Arrizabalaga
+    code: SAD
+  - consultant: !consultant Lindsey Allen
+    code: SAD
+  - consultant: !consultant Naina Lavrova
+    code: SAD
+  - consultant: !consultant Cerdic Roper
+    code: SAD

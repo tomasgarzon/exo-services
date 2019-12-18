@@ -1,0 +1,7 @@
+{% for step_stream in streams %}
+	{% if step_stream.exists_typeform_feedback and step_stream.typeform_feedback.first.typeform_url %}
+	    <i class="fa fa-check" aria-hidden="true"></i><br>
+	{% else %}
+	    <i class="fa fa-close" aria-hidden="true"></i><br>
+	{% endif %}
+{% endfor %}

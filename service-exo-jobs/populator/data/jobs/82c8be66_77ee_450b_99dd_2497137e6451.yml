@@ -1,0 +1,9 @@
+uuid: 82c8be66-77ee-450b-99dd-2497137e6451
+user: !account 1cd07dd7-4883-4838-9b5a-303ef0d6580c # Amy Finch
+title: Looking for a virtual Speaker for the Hayward LLC Online ExO Sprint
+start: !timedelta 5d
+end: !timedelta 3w
+category: TA
+exo_role: TAS
+status: UP
+url: /ecosystem/opportunities/5/

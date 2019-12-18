@@ -1,0 +1,23 @@
+title: Bioclimatism
+uuid: 17f93892-095e-4ab8-b890-76a945ed0b68
+group: !group 38faac18-49cd-4b8c-9fa4-afd8617344dc
+description: Sustainability and energy saving throughout architecture
+status: Requested
+created: !timedelta -2d
+created_by: !account &created_by a71654e1-ff04-458a-b869-af2eaa710e83
+keywords:
+  - Industry
+  - Zero-energy building
+due_date: !timedelta 1w
+deadline_date: !timedelta 1w
+exo_role: SAD
+certification_required: CFO
+mode: L
+num_positions: 1
+applicants:
+  - user: !account ef70053f-755b-4b40-bb73-6832d16488e7 # Gorka
+    summary: I'm an expert in bioconstruction and bioclimatism
+    status: Requested
+  - user: !account 0737a9f9-22a0-4286-8be3-34a3e19d92dc # Naina
+    summary: I have a strong background in this field
+    status: Requested

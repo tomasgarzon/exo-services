@@ -1,0 +1,15 @@
+{% load common_mails %}
+
+{% for question in questions %}
+    <mj-text><strong>{{ question.title }}</strong></mj-text>
+    {% if question.options %}
+        {% for option in question.options %}
+            <mj-text>
+                <input type="checkbox" {% if option in question.responses %}checked{% endif %}>{{ option }}</input>
+            </mj-text>
+        {% endfor %}
+    {% else %}
+        <mj-text>{{ question.responses.0 }}</mj-text>
+    {% endif %}
+    <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" />
+{% endfor %}

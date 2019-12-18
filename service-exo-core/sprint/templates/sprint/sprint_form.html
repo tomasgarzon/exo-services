@@ -1,0 +1,43 @@
+{% extends "base/content.html" %}
+{% load bootstrap_pagination staticfiles django_bootstrap_breadcrumbs breadcrumb %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Sprints" "project:service-list" %}
+    {% breadcrumb "Add sprint" "sprint:add" %}
+{% endblock %}
+
+{% block header %}
+    <div class="col-lg-10">
+        <h2>Sprints</h2>
+    </div>
+    <div class="col-xs-12 p-r-none">
+        {% render_view_breadcrumbs "base/breadcrumb.html" %}
+    </div>
+{% endblock %}
+
+{% block main %}
+    <div class="row">
+        <div class="col-lg-12">
+            <div class='ibox float-e-margins'>
+                <div class="ibox-title">
+                    <h2>Add sprint</h2>
+                </div>
+                <div class="ibox-content">
+                    <form id='form' action="." method="post"
+                        class="wizard-big wizard-step-3 styles-form wizard clearfix"
+                        enctype='multipart/form-data'
+                        data-url-cancel="{% url 'project:service-list' %}"
+                        data-url-success="{% url 'project:service-list' %}">
+                        {% csrf_token %}
+                        {% include 'sprint/sprint_form_base.html' %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'sprint/js/sprint_form.js' %}"></script>
+{% endblock %}

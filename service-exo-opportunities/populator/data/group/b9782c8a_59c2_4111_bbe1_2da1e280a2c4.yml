@@ -1,0 +1,12 @@
+uuid: b9782c8a-59c2-4111-bbe1-2da1e280a2c4
+origin: T
+related_uuid: 3692f876-5743-4ae2-beae-31aa109ec740
+total: 10
+exo_role: SAD
+certification_required: CFO
+duration_value: 1
+duration_unity: H
+entity: Mason LLC
+budgets:
+  - budget: 500.0
+    currency: D

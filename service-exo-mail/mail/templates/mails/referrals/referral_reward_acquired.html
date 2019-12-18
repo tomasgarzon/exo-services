@@ -1,0 +1,16 @@
+{% extends "base/base_blue_header.mjml" %}
+{% load common_mails %}
+
+{% block blue-header %}
+    <mj-header-title-pretitle pre-title="OpenExO Community" title="New referral reward" />
+{% endblock %}
+
+{% block content %}
+	<mj-text>
+		<p><strong>Name:</strong> {{user_full_name}}</p>
+		<p><strong>Email:</strong> {{user_email}}</p>
+		<p><strong>Reward name:</strong> {{reward_name}}</p>
+		<p><strong>Reward description:</strong> {{reward_description}}</p>
+	</mj-text>
+{% endblock %}
+

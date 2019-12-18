@@ -1,0 +1,180 @@
+version: '2.2'
+services:
+
+  postgres:
+    image: postgres:11
+    environment:
+      POSTGRES_DB: exolever
+      POSTGRES_USER: exolever
+      POSTGRES_PASSWORD: exolever
+    volumes:
+      - postgres:/var/lib/postgresql/data
+
+  pgweb:
+    image: sosedoff/pgweb
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgres://exolever:exolever@postgres:5432/service_exo_core?sslmode=disable
+    depends_on:
+      - postgres
+    networks:
+      - default
+
+  redis:
+    image: redis:5-alpine
+
+  # astrako:
+  #   image: exolever/astrako:latest
+  #   shm_size: 128m
+  #   environment:
+  #     DOMAIN_NAME: ${SUBDOMAIN}:8000
+  #     MASTER_PASSWORD: '${MASTER_PASSWORD}'
+
+  service-exo-companies:
+    image: exolever/service-exo-companies:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: http://${SUBDOMAIN}:8000
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      DEBUG: 'False'
+
+  service-exo-jobs:
+    image: exolever/service-exo-jobs:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: http://${SUBDOMAIN}:8000
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      DEBUG: 'False'
+
+  service-exo-exq:
+    image: exolever/service-exo-exq:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: http://${SUBDOMAIN}:8000
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      DEBUG: 'False'
+
+  service-exo-events:
+    image: exolever/service-exo-events:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: http://${SUBDOMAIN}:8000
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      DEBUG: 'False'
+
+  service-exo-projects:
+    image: exolever/service-exo-projects:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: http://${SUBDOMAIN}:8000
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      DEBUG: 'False'
+
+  service-exo-conversations:
+    image: exolever/service-exo-conversations:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: http://${SUBDOMAIN}:8000
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      DEBUG: 'False'
+
+  service-exo-broker:
+    image: exolever/service-exo-broker:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: http://${SUBDOMAIN}:8000
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      DEBUG: 'False'
+
+    ports:
+      - 8000:80
+    volumes:
+      - media:/projects/service-exo-broker/media
+      - static:/projects/service-exo-broker/static
+
+  service-exo-auth:
+    image: exolever/service-exo-auth:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: http://${SUBDOMAIN}:8000
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      DEBUG: 'False'
+
+  service-exo-payments:
+    image: exolever/service-exo-payments:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: http://${SUBDOMAIN}:8000
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      DEBUG: 'False'
+
+    volumes:
+      - media-payments:/projects/service-exo-payments/media
+
+  service-exo-opportunities:
+    image: exolever/service-exo-opportunities:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: http://${SUBDOMAIN}:8000
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      DEBUG: 'False'
+
+  service-exo-mail:
+    image: exolever/service-exo-mail:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: http://${SUBDOMAIN}:8000
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      DEBUG: 'False'
+
+  service-exo-website:
+    image: exolever/service-exo-website:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      EXO_WEBSITE_DOMAIN: ${SUBDOMAIN}:8000/website
+      DOMAIN_NAME: http://${SUBDOMAIN}:8000
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      DEBUG: 'False'
+
+  service-exo-medialibrary:
+    image: exolever/service-exo-medialibrary:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: http://${SUBDOMAIN}:8000
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      DEBUG: 'False'
+
+  exo-backoffice:
+    image: exolever/exo-backoffice:${TAG}
+    volumes:
+      - exo-backoffice:/exo-backoffice
+    command: cp -r /projects/service-exo-core/exo-backoffice /
+
+  service-exo-core:
+    image: exolever/service-exo-core:${TAG}
+    depends_on:
+      - postgres
+      - redis
+      - exo-backoffice
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      DEBUG: 'False'
+      DEBUG_GRAPHQL: 'True'
+      ALLOWED_HOSTS: '*'
+      MASTER_PASSWORD: '${MASTER_PASSWORD}'
+      ADMIN_EMAIL: '${ADMIN_EMAIL}'
+      DOMAIN_NAME: http://${SUBDOMAIN}
+      INTERCOM_SECRET_KEY: '${INTERCOM_SECRET_KEY}'
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+    volumes:
+      - media:/projects/service-exo-core/media
+      - static:/projects/service-exo-core/static
+      - exo-backoffice:/projects/service-exo-core/exo-backoffice
+    restart: unless-stopped
+
+volumes:
+  static: null
+  media-payments: null
+  media: null
+  exo-backoffice: null
+  postgres: null

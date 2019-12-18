@@ -1,0 +1,32 @@
+uuid: 66d809bc-e4fd-11e9-81b4-2a2ae2dbcce4
+name: Amy Finch
+uuid_related_object: 2be6fe21-256e-41f5-8198-7f4b895e69eb
+created_by: !account &amy 1cd07dd7-4883-4838-9b5a-303ef0d6580c  # Amy Finch
+_type: O
+icon: /media/avatars/48_48/amy-finch.jpg
+users:
+  - user: *amy
+    name: Amy Finch
+    profile_url: /public/profile/amy-finch/
+    profile_picture: /media/avatars/48_48/amy-finch.jpg
+  - user: !account &naina 0737a9f9-22a0-4286-8be3-34a3e19d92dc
+    name: Naina Lavrova
+    profile_url: /public/profile/naina-lavrova/
+    profile_picture: /media/avatars/48_48/naina-lavrova.jpg
+messages:
+  - created_by: *amy
+    message: Hi Naina! I would like to have more details about it.
+    readed:
+        - user: *naina
+  - created_by: *amy
+    message: could it be an online session?
+    readed:
+        - user: *naina
+  - created_by: *naina
+    message: Sure! no problem... we could use Zoom!
+    readed:
+        - user: *amy
+  - created_by: *naina
+    message: Anyway, let me ask it during the today's session.
+    readed:
+        - user: *amy

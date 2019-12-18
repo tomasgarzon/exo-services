@@ -1,0 +1,33 @@
+{{ object.user.short_name }}
+{{ object.user.full_name }}
+{{ object.user.email }}
+{{ object.user.email_contact }}
+
+{{ object.user.location }}
+{{ object.user.short_me }}
+{{ object.user.bio_me }}
+{{ object.user.about_me }}
+
+{% for l in object.languages.all %}
+    {{l.name}}
+{% endfor %}
+
+{{ object.exo_profile.personal_mtp }}
+
+{% for consultant_industry in object.industries.all %}
+    {% if consultant_industry.level == 3 %}
+        {{ consultant_industry.industry.name }}
+    {% endif %}
+{% endfor %}
+
+{% for keyword in object.keywords.all %}
+    {% if keyword.level == 3 %}
+        {{ keyword.keyword.name }}
+    {% endif %}
+{% endfor %}
+
+{% for exo_attribute in object.exo_attributes.all %}
+    {% if exo_attribute.level == 5 %}
+        {{ exo_attribute.exo_attribute.name }}
+    {% endif %}
+{% endfor %}

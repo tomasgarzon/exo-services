@@ -1,0 +1,16 @@
+uuid: 7749ad25-5128-4644-895f-6b9a70b605bd
+email: qa@openexo.com
+short_name: Quality
+full_name: Quality Assurance
+is_superuser: true
+is_staff: true
+groups:
+  - registration
+  - delivery-manager
+  - Opportunities
+  - Financial List Email
+  - tools
+place:
+  name: Granada, Spain
+  place_id: ChIJfcIyLeb8cQ0Rcg1g0533WJI
+image: man/3

@@ -1,0 +1,101 @@
+{% load staticfiles images guardian_tags user  %}
+{% load user_tags %}
+
+{% block navigation %}
+
+{% if user.display_leftmenu %}
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse" data-current="{{section_name}}" id='left-menu'>
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                        <img alt="image" class="img-circle circle-border small" src="{% image_thumbnail_url user.profile_picture 48 48 %}" />
+                         </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">{{user.get_full_name}}</strong>
+                         </span> <span class="text-muted text-xs block">{{user.get_full_name}} <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="{% user_profile_url user %}">Profile</a></li>
+                            <li><a href="/auth/logout">Logout</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="logo-element">
+                        OpenExO
+                    </div>
+                </li>
+                <li data-viewname="dashboard:home">
+                    <a href="{% url 'dashboard:home' %}"><i class="fa fa-dashboard"></i> <span class="nav-label">Dashboard</span></a>
+                </li>
+                {% if perms.consultant.consultant_list %}
+                    <li>
+                        <a href="{% url 'consultant:list' %}"><i class="fa fa-users"></i> <span class="nav-label">Network</span></a>
+                        <ul class="nav nav-second-level ui-sortable collapse">
+                            <li data-viewname="consultant:list"><a href="{% url 'consultant:list' %}">Network</a></li>
+                            <li data-viewname="consultant:bulk-list"><a href="{% url 'consultant:bulk-list' %}">Batch invitations</a></li>
+                        </ul>
+                    </li>
+                {% endif %}
+                {% if perms.customer.list_customer %}
+                    <li data-viewname="customer:list">
+                        <a href="{% url 'customer:list' %}"><i class="fa fa-building"></i> <span class="nav-label">Clients</span> </a>
+                    </li>
+                {% endif %}
+                {% if perms.partner.list_partner %}
+                    <li data-viewname="partner:list">
+                        <a href="{% url 'partner:list' %}"><i class="fa fa-building"></i> <span class="nav-label">Partners</span> </a>
+                    </li>
+                {% endif %}
+                {% if user|has_group:"tools" %}
+                <li>
+                    <a><i class="fa fa-cogs"></i> <span class="nav-label">Tools</span></a>
+                    <ul class="nav nav-second-level ui-sortable collapse">
+                        {% if perms.relation.list_consultantrolecertificationgroup %}
+                        <li data-viewname="tools:relation:group-list">
+                            <a href="{% url 'tools:relation:group-list' %}">
+                                <span class="nav-label">Certification Groups</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if perms.exo_certification.list_coupon %}
+                        <li data-viewname="tools:exo-certification:coupon-list">
+                            <a href="{% url 'tools:exo-certification:coupon-list' %}">
+                                <span class="nav-label">Certification Coupons</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if perms.badge.list_badge %}
+                        <li data-viewname="tools:badge:list">
+                            <a href="{% url 'tools:badge:list' %}">
+                                <span class="nav-label">Badges</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </li>
+                {% endif %}
+                <li data-viewname="project:service-list">
+                    <a href="{% url 'project:service-list' %}">
+                        <i class="fa fa-circle"></i> Projects
+                    </a>
+                </li>
+                {% if user|has_group:"Financial List Email" %}
+                <li data-viewname="payments">
+                    <a href="{{service_exo_payment_host}}RPQ5j3T1MyfN0exiwOUZ/" target="_blank">
+                        <i class="fa fa-dollar"></i> Payments
+                    </a>
+                </li>
+                {% endif %}
+                {% if user.is_superuser and user.is_staff %}
+                <li>
+                    <a href="{{service_exo_mail_host}}" target="_blank">
+                        <i class="fa fa-inbox"></i>
+                        <span class="nav-label">Mail</span>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+{% endif %}
+{% endblock %}

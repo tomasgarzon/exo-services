@@ -1,0 +1,137 @@
+---
+name: Learn
+settings:
+  enabled_learn: True
+  enabled_deliver: False
+  enabled_reflect: False
+blocks:
+  - title: 1. Course Introduction
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: video_level1_00
+      type: Video
+      status: Available
+      link: https://vimeo.com/347423348
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/347423348" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title: 2. Exponential World
+    subtitle:
+    order: 1
+    type: Resource
+    resources:
+    - name: video_level1_01
+      type: Video
+      status: Available
+      link: https://vimeo.com/347423673
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/347423673" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title: 3. 4Ds Introduction
+    subtitle:
+    order: 2
+    type: Resource
+    resources:
+    - name: video_level1_02
+      type: Video
+      status: Available
+      link: https://vimeo.com/347423648
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/347423648" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title: 4. Digitize and Disrupt
+    subtitle:
+    order: 3
+    type: Resource
+    resources:
+    - name: video_level1_03
+      type: Video
+      status: Available
+      link: https://vimeo.com/347423621
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/347423621" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title: 5. Demonetize and Democratize
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+    - name: video_level1_04
+      type: Video
+      status: Available
+      link: https://vimeo.com/347423538
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/347423538" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title: 6. Exponential Organizations
+    subtitle:
+    order: 5
+    type: Resource
+    resources:
+    - name: video_level1_05
+      type: Video
+      status: Available
+      link: https://vimeo.com/347423505
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/347423505" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title: 7. ExO Attributes
+    subtitle:
+    order: 6
+    type: Resource
+    resources:
+    - name: video_level1_06
+      type: Video
+      status: Available
+      link: https://vimeo.com/347423474
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/347423474" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title: 8. Nine Implications of ExOs
+    subtitle:
+    order: 7
+    type: Resource
+    resources:
+    - name: video_level1_07
+      type: Video
+      status: Available
+      link: https://vimeo.com/347423438
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/347423438" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title: 9. Transforming into an ExO
+    subtitle:
+    order: 8
+    type: Resource
+    resources:
+    - name: video_level1_09
+      type: Video
+      status: Available
+      link: https://vimeo.com/347423410
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/347423410" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title: 10. Defining your MTP
+    subtitle:
+    order: 9
+    type: Resource
+    resources:
+    - name: video_level1_10
+      type: Video
+      status: Available
+      link: https://vimeo.com/347505581
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/347505581" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:

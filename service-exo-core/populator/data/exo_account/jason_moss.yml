@@ -1,0 +1,12 @@
+uuid: 03214e9c-1f6b-4b52-8080-c7b0103a5755
+email: jsonmoss@example.com
+short_name: Jason
+full_name: Jason Moss
+is_superuser: false
+is_staff: true
+internal_organization:
+  name: FTI
+  position: Office manager
+  role: Regular
+  status: Active
+image: man/2

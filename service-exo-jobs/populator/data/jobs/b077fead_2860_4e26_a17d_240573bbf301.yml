@@ -1,0 +1,9 @@
+uuid: b077fead-2860-4e26-a17d-240573bbf301
+user: !account 1da6e073-a525-4311-ab7e-ec8748d76100 # Cerdic
+title: Looking for a virtual Speaker for the Hayward LLC Online ExO Sprint
+start: !timedelta 5d
+end: !timedelta 3w
+category: TA
+exo_role: TAS
+status: UP
+url: /ecosystem/opportunities/5/

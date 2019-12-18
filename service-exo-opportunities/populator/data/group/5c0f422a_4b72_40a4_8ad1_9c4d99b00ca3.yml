@@ -1,0 +1,12 @@
+uuid: 5c0f422a-4b72-40a4-8ad1-9c4d99b00ca3
+origin: T
+related_uuid: cec77c17-3420-4e53-ad60-1d5ab2bb69d4
+total: 10
+exo_role: SAD
+certification_required: CFO
+duration_value: 1
+duration_unity: H
+entity: Josh SA
+budgets:
+  - budget: 500.0
+    currency: D

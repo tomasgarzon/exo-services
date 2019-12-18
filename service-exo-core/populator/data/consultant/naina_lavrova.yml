@@ -1,0 +1,82 @@
+uuid: 0737a9f9-22a0-4286-8be3-34a3e19d92dc
+short_name: Naina
+full_name: Naina Lavrova
+image: woman/8
+internal_organization:
+  name: OpenExO
+  position: Chief Executive Officer
+  status: Active
+groups:
+  - registration
+  - delivery-manager
+bio_me: |
+  Naina Lavrova is a Human Resources specialist with a decade of successful experience in hiring and employee management. Naina specializes in Human Resource technologies and regularly attends national training sessions to showcase new HR tech trends, such as self-service, wellness apps, and people analytics tools. A strong believer in the power of positive thinking in the workplace, Naina regularly develops internal wellness campaigns to assist employees with effective mental health techniques.
+
+  Naina enjoys a good Netflix binge but can also be found on long bike rides on hilly country roads.
+place:
+  name: Novosibirsk, Russia
+  place_id: ChIJl03MkOHl30IRhenT4XMGOps
+time_zone: Asia/Novosibirsk
+languages:
+  - English
+  - Russian
+exo_areas:
+  - Organizations
+permissions:
+  - exq_access
+  - exo_projects_access
+industries:
+  - name: Aerospace
+    level: Thought leader
+  - name: Aviation
+    level: Thought leader
+  - name: Air Transportation
+    level: Intermediate
+  - name: Aircraft
+    level: Thought leader
+exo_activities:
+  - Advising
+  - Consulting
+  - Training
+  - Coaching
+  - Investing
+exo_attributes:
+  - attribute: Interfaces
+    level: I have studied it in some detail
+  - attribute: Community & Crowd
+    level: I have implemented this several times
+  - attribute: Dashboards
+    level: I have implemented this several times
+  - attribute: Social Technologies
+    level: I’m considered a thought leader in this domain
+  - attribute: Staff on Demand
+    level: I’m considered a thought leader in this domain
+  - attribute: Algorithms
+    level: I have studied it in some detail
+  - attribute: Experimentation
+    level: I have implemented this several times
+  - attribute: Autonomy
+    level: I’m considered a thought leader in this domain
+  - attribute: Leveraged Assets
+    level: I have implemented this several times
+  - attribute: Engagement
+    level: I have implemented this several times
+keywords:
+  - name: Anti-Gravity
+    level: Can speak
+  - name: Artificial Gravity
+    level: Can speak
+  - name: Prototyping
+    level: Can speak
+personal_mtp: Explore the universe beyond our limits
+mtp_mastery: I’m considered a thought leader in this domain, and I’ve published articles/papers about it
+availability: Fulltime
+user_notifications:
+  - weekly_update
+marketplace_agreement_signed: true
+last_activity: !timedelta -10h
+badges:
+  - code: 'CCC'
+    category: 'CC'
+    item_name: 'Book content creator'
+    item_date: !datetime Jul 17 2018

@@ -1,0 +1,45 @@
+id: 12
+name: Vladivostok
+version: 2
+customer: !customer City of Vladivostok
+start: !timedelta -29w
+password: vladivostokpass
+created_by: !exo_account Bruce Harding
+launched_by: !exo_account Quality Assurance
+place:
+  name: Vladivostok, Russia
+  place_id: ChIJhdRJUrqcs18RNX6W3dQEZxg
+roles:
+  - consultant: !consultant Wilhelm Muller
+    code: SHC
+  - consultant: !consultant Tina Weissberg
+    code: SSH
+  - consultant: !consultant Julius Emilsson
+    code: SSH
+  - consultant: !consultant Naina Lavrova
+    code: SAD
+  - consultant: !consultant Amy Finch
+    code: SAD
+  - consultant: !consultant Gorka Arrizabalaga
+    code: SAD
+  - consultant: !consultant Alice LaGrande
+    code: SAD
+periods:
+  - order: 1
+    start: !timedelta -29w
+    end: !timedelta -28w
+  - order: 2
+    start: !timedelta -28w
+    end: !timedelta -27w
+  - order: 3
+    start: !timedelta -27w
+    end: !timedelta -26w
+  - order: 4
+    start: !timedelta -26w
+    end: !timedelta -25w
+  - order: 5
+    start: !timedelta -25w
+    end: !timedelta -24w
+  - order: 6
+    start: !timedelta -24w
+    end: !timedelta -23w

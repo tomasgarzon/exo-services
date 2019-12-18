@@ -1,0 +1,148 @@
+---
+name: Assemble assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/287919755
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287919755" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:   
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Time to prepare for the final presentation! You will present your best ideas to the leadership next week, with a goal of eliciting more feedback and the funding you need to further develop your ExO Core Initiatives. This week, then, is dedicated to creating a comprehensive presentation to showcase the awesome work you’ve done throughout the ExO Sprint.</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Narrow the number of initiatives down to two
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>Select the most promising initiatives in advance of the final presentations. Given what you’ve learned from running the experiments, you should be able to discard some of the ExO Initiatives and focus on the two most promising options.</p>          
+      - name: Extend your ExO Core Initiatives DESCRIPTION with key milestones and budge
+        order: 2
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>Anticipate the evolution of your ExO Core Initiative and define key milestones for the upcoming 12 to18 months. You’ll also want to estimate your budget and associate key milestones with investment.</p>
+            <p>Also, if you can, try to calculate the ROI (Return of Investment) of your ExO Initiative. But take into account that is very difficult to accurately calculate ROI for innovative projects (as your ExO Core Initiatives are), so whenever you present these numbers you will always need to clarify that this is just an indicative number.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              <strong>Key milestones may include:<strong><br>- Finding the right area to pilot the initiative.<br>- Finding the right team to execute the initiative.<br>- Running further experiments to evaluate hypotheses.<br>- Building an MVP and upcoming iterations of it.<br>- First early adopters, internal funding and external revenues.<br>- Pursuing partnership relationships, where applicable.
+          - order: 2
+            description: |
+              For estimating the revenues, create a set of business parameters that take into account the innovation accounting metrics you defined (and start experimenting with) the previous week.
+          - order: 3
+            description: |
+              When it comes to estimating costs, be realistic about the resources and external help you will need to achieve your milestones. Milestones should align with easy-to-approve funding amounts.
+          - order: 4
+            description: |
+              If your ExO Core Initiative is heavily dependent on an emerging technology, your milestones may represent interim steps that will allow you to intercept the technology when it becomes mature enough.
+          - order: 5
+            description: |
+              Create a sequence of manageable milestones. For example, a milestone might test the concept with a small market segment, or it could test an individual component of the initiative.
+      - name: Build a final presentation for the ExO Core Initiatives
+        order: 3
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>In order to prepare next week’s final presentations, develop a deck for each of your ExO Core Initiatives. For this round, we won’t use a short Elevator Pitch format, we will produce longer, more comprehensive presentations for each of the ExO Initiatives. Follow the outline in the templates found later in this section.</p>
+        - title: Resources
+          subtitle:
+          order: 2
+          type: Text
+          text: |
+            <p>Presentation Zen by Garr Reynolds is a good reference for these presentations.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              To the extent possible, use pictures instead of text for your slides to avoid having people read your slides rather than listening to you.
+          - order: 2
+            description: |
+              Craft a story that makes a compelling case for the initiative, beginning with the problem space and including a clear definition of the value proposition for the initiative. Is the concept easy to understand? Is its value easy to understand?
+          - order: 3
+            description: |
+              Provide as much data as you can (i.e., MVPs, etc.). The idea is to validate your initiative.
+          - order: 4
+            description: |
+              Don’t worry if, for any reason, you decide to kill more than one of your current ExO Initiatives. Although you should present at least two ExO Core Initiatives at the launch session, you can always resurrect any of the ExO Core Initiatives you were working on prior to the Disruption Workshop. Be sure to develop any new additions as much as you can, following the process outlined over the previous weeks. The goal is to present more evolved versions.
+          - order: 5
+            description: |
+              Consider that you will have 15 minutes to present each initiative.
+          - order: 6
+            description: |
+              Start practicing as soon as possible!
+        - title: Tools
+          subtitle:
+          order: 4
+          type: Resource
+          resources:
+            - name: Final presentation preparation
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/IQap2AOIRN2E03PsjdYN/Final_presentation_preparation_template.pdf/
+              description: Template
+              order: 1
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+    - order: 1
+      description: |
+        Be creative with your presentation format. Teams may want to augment their standard presentation with sound or videos, for example.
+    - order: 2
+      description: |
+        Add real data from the executed experiments to the presentations. A great performance is always a plus, but in the end it’s only a nice deck. There is always much more value in providing data and insights (e.g., quotes) from actual clients to illustrate what you’ve learned.
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Final presentation preparation
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/IQap2AOIRN2E03PsjdYN/Final_presentation_preparation_template.pdf/
+        description: Template
+        order: 1
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

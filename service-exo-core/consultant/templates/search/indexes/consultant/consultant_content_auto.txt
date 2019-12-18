@@ -1,0 +1,27 @@
+{{ object.user.location }}
+
+{% for l in object.languages.all %}
+    {{l.name}}
+{% endfor %}
+
+{% for consultant_industry in object.industries.all %}
+    {% if consultant_industry.level == 3 %}
+        {{ consultant_industry.industry.name }}
+    {% endif %}
+{% endfor %}
+
+{% for keyword in object.keywords.all %}
+    {% if keyword.level == 3 %}
+        {{ keyword.keyword.name }}
+    {% endif %}
+{% endfor %}
+
+{% for exo_attribute in object.exo_attributes.all %}
+    {% if exo_attribute.level == 5 %}
+        {{ exo_attribute.exo_attribute.name }}
+    {% endif %}
+{% endfor %}
+
+{% for exo_activity in object.exo_profile.exo_activities.all %}
+    {{exo_activity}}
+{% endfor %}

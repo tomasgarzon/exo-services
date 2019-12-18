@@ -1,0 +1,71 @@
+# Automated
+---
+roles:
+- name: Head Coach
+  level: admin
+  code: SHC
+  team_communication_groups: General,Collaborators,Teams
+- name: Sprint Coach
+  level: basic
+  team_communication_groups: General,Collaborators,Team
+  code: SSH
+- name: Awake Speaker
+  level: basic
+  code: SAS
+- name: Align Trainer
+  level: basic
+  code: SAT
+- name: Reporter
+  level: readonly
+  code: SRE
+  team_communication_groups: General,Collaborators,Teams
+- name: Advisor
+  level: basic
+  code: SAD
+- name: Disruptor
+  level: basic
+  code: SDI
+- name: Disruptor Speaker
+  level: basic
+  code: SDS
+- name: Delivery Manager
+  level: admin
+  code: SDM
+  team_communication_groups: General,Collaborators,Teams
+- name: Sprint Contributor
+  level: basic
+  code: SCO
+- name: Observer
+  level: readonly
+  code: SOB
+  team_communication_groups: General,Collaborators,Teams
+- name: Account Manager
+  level: admin,notification
+  code: SAM
+- name: Sprint Participant
+  level: basic
+  code: SPA
+  team_communication_groups: General,Team
+- name: Shadow Coach
+  level: readonly
+  code: SSC
+roles_team:
+- name: Coach
+  level: admin
+  code: SSH
+- name: Participant
+  level: basic
+  code: SPA
+settings:
+  team_communication: False
+  ask_to_ecosystem: False
+  send_welcome_consultant: True
+  send_welcome_participant: True
+  default_password: 12345
+steps: 'sprint_book'
+assignments: 'sprint_book'
+streams:
+  - name: Core Stream
+    num_team: 2
+  - name: Edge Stream
+    num_team: 2

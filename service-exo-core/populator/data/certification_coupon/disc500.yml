@@ -1,0 +1,6 @@
+code: DISC500
+certification: L3
+max_uses: 10
+uses: 0
+discount: 500
+type: Fixed Amount

@@ -1,0 +1,24 @@
+uuid: 03c0cafb-10e6-4b62-be2c-c0f0ba93809f
+name: Lindsey Allen
+uuid_related_object: 768466f1-3d10-468a-83ad-43fa1badefb7
+created_by: !account &lindsey 47b10a71-d011-48c2-b359-2a2027191fd8 # Lindsey Allen
+_type: O
+icon: /media/avatars/48_48/lindsey-allen.jpg
+users:
+  - user: *lindsey
+    name:  Lindsey Allen
+    profile_url: /public/profile/lindsey-allen/
+    profile_picture: /media/avatars/48_48/lindsey-allen.jpg
+  - user: !account &quality 7749ad25-5128-4644-895f-6b9a70b605bd
+    name: Quality Assurance
+    profile_url: /public/profile/quality-assurance/
+    profile_picture: /media/avatars/48_48/quality-assurance.jpg
+messages:
+  - created_by: *lindsey
+    message: Quia quidem suscipit quibusdam dolorum possimus. Nemo quia maiores.\nMaxime nemo laborum sit. Voluptatibus porro libero vero. Cupiditate sed error quisquam aut placeat sunt.
+    readed:
+        - user: *quality
+  - created_by: *lindsey
+    message: Exercitationem corrupti accusantium qui. Cumque ex quo adipisci assumenda delectus.\nIure qui corporis animi quae. Alias dignissimos omnis ipsum. Dolore officia nihil
+  - created_by: *lindsey
+    message: expedita

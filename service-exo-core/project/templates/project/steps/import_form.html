@@ -1,0 +1,42 @@
+{% extends "project/base.html" %}
+{% load bootstrap_pagination bootstrap3 staticfiles django_bootstrap_breadcrumbs breadcrumb l10n %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Steps" "project:project:steps" project.pk %}
+    {% breadcrumb "Edit" "project:project:steps-edit" project.pk object.pk %}
+{% endblock %}
+
+{% block main_project %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class='ibox float-e-margins'>
+            <div class="ibox-title">
+                <h2>
+                    {% if object.pk %}
+                        Step: "{{object.short_name}}"
+                    {% endif %}
+                </h2>
+                <p>
+                    {% include 'project/steps/step_dates.html' with object=object %}
+                </p>
+            </div>
+            <div class="ibox-content">
+                <form id='form' action="." method="post" class="styles-form" enctype='multipart/form-data'>
+                    <div class="content clearfix p-m m-t-none">
+                        <div class='col-xs-12 col-lg-8 col-md-12'>
+                            {% csrf_token %}
+
+                            {% bootstrap_field form.streams %}
+                            {% bootstrap_field form.file %}
+                        </div>
+                    </div>
+                    <div class="full-width pull-right m-r-xs m-b-xs text-right">
+                        <button class="btn btn-positive-choice" type="submit">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

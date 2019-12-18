@@ -1,0 +1,47 @@
+title: Looking for a virtual Disruptor for the Robertson - Lewis Online ExO Sprint
+uuid: 768466f1-3d10-468a-83ad-43fa1badefb7
+description: |
+  We are currently taking Robertson-Lewis in Madrid through the 10 week Online ExO Sprint.
+
+  The ExO Sprint focuses on Blockchain section of Robertson-Lewis, where the ExO Sprint participants are employed. For this reason, the teams are looking into finding exponential answers.
+
+  Three core teams and one edge team will present outcomes of their work and we are looking for 1 virtual disruptors to join us. The time slot of the Disrupt Workshop is 9 a.m. Madrid time zone.
+
+  We ask the selected disruptors to provide feedback, challenge and support to their initiatives. As a disruptor, you will have a great knowledge of the ExO framework as well as experience in incubating and commercializing disruptive ideas.  If you get selected, you will get access to our Guidelines for ExO Disruptors.
+status: Closed
+created: !timedelta -3d
+created_by: !account &created_by 0737a9f9-22a0-4286-8be3-34a3e19d92dc  # Naina
+keywords:
+  - Blockchain
+start_date: !timedelta 30d
+deadline_date: !timedelta 29d
+mode: S
+location: Madrid, Spain
+place_id: ChIJgTwKgJcpQg0RaSKMYcHeNsQ
+duration_unity: D
+duration_value: 4
+exo_role: DSD
+certification_required: CFO
+entity: Robertson-Lewis
+budget: 4200
+budget_currency: EUR
+num_positions: 1
+applicants:
+  - user: !account &applicant 47b10a71-d011-48c2-b359-2a2027191fd8  # Lindsey Allen
+    status: Selected
+    summary: |
+      I have participate in several disruption sessions. So I have a strong background in that.
+    sow:
+      applicant_name: Lindsey Allen
+      requester_name: Naina Lavrova
+      title: Looking for a virtual Disruptor for the Robertson
+      entity: Robertson-Lewis
+      start_date: !timedelta -10d
+      end_date: !timedelta -6d
+      location: Madrid, Spain
+      mode: S
+  - user: !account ef70053f-755b-4b40-bb73-6832d16488e7  # Gorka Arrizabalaga
+    status: Rejected
+    summary: |
+      I am a Certified Blockchain Expert focuses on the in-depth understanding of what is Blockchain and how it works.
+assigned_by: *created_by

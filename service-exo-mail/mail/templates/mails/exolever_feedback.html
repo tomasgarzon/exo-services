@@ -1,0 +1,12 @@
+{% extends "base/email.html" %}
+{% load common_mails %}
+{% block subtitle %}
+New feedback from ExoLever
+{% endblock %}
+
+{% block main %}
+<p>Hi, you have received a new feedback:</p>
+<p>User: {{name}}</p>
+<p>Email: {{email}}</p>
+<p>Message: {{message}}</p>
+{% endblock %}

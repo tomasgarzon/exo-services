@@ -1,0 +1,20 @@
+{% load staticfiles %}
+<div class="row border-bottom">
+    <nav class="navbar navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a href="/"><img alt="logo" class="logoExO" src="{% static 'assets/images/logo-openexo-white.png' %}"></a>
+        </div>
+        {% if user.display_leftmenu %}
+            <div class="navbar-header">
+                <a class="navbar-minimalize minimalize-styl-2 btn" href="#"><i class="fa fa-bars"></i> </a>
+            </div>
+        {% endif %}
+        <ul class="nav navbar-top-links navbar-right">
+            <li>
+                <a href="/auth/logout" class='text-white'>
+                    <i class="fa fa-sign-out media-middle"></i> Log out
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

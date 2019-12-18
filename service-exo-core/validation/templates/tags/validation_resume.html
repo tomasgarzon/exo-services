@@ -1,0 +1,8 @@
+<div style="float:right; padding-left: 5px; font-size:12px;">
+    {% if errors %}
+        <span class="badge toast-error">{{errors}}</span>
+    {% endif %}
+    {% if not errors and warnings %}
+        <span class="badge toast-warning">{{warnings}}</span>
+    {% endif %}
+</div>

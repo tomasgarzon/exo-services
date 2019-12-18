@@ -1,0 +1,325 @@
+---
+name: Explore assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: explore_main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/287869922
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287869922" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:   
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p><strong>The world changes every day. Exploring how it may affect your organization is an exciting learning experience, which will surprise you!</strong></p>
+      <p>Many executives spend most of their time dealing with internal issues, never looking beyond what’s happening in the organization. Don’t be one of them!</p>
+      <p>The biggest threats and opportunities for your organization are found in the emergence of new technologies, business models and changes in the environment beyond your current industry.</p>
+      <p>All these elements represent external disruption that may be relevant for the future of your organization in both the long- and short-term. So let’s find them!</p>
+      <p>This week’s assignment sets the foundations for the Core Stream. It helps you gain a strategic overview of the most important technologies that may disrupt your industry now or in the future. How is your industry already being reshaped? By looking “outside of the building” you will gain an understanding of how your current organization needs to be reshaped, not only to survive, but also to leverage existing opportunities.</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Learn about exponential technologies
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>Most exponential technologies will impact your industry, either directly or indirectly. These technologies may disrupt the industry as it is today, but they will also bring new opportunities that can be leveraged.</p>
+              <p>Think about how some of these emerging/exponential technologies may impact or have already impacted your industry: </p>
+              <p>Artificial Intelligence<br>Robotics<br>3D Printing<br>Virtual & Augmented Reality<br>Biotechnology & Bioinformatics<br>Blockchain & Bitcoin<br>Nanotechnology<br>Drones<br>Internet of Things</p>
+              <p>Search the Internet for terms and phrases such as “disruptive technologies for [X] Industry.”</p>
+          - title: Resources
+            subtitle: |
+              Explore tech-focused websites for articles on different new technologies. Even if the articles aren’t specific to your industry, you will find connections and potential applications. Helpful websites include:
+            order: 2
+            type: Resource
+            resources:
+            - name: MIT Technology Review
+              type: Link
+              status: Available
+              link: http://www.technologyreview.com
+              order: 1
+              description:
+            - name: Singularity University Hub
+              type: Link
+              status: Available
+              link: https://www.singularityhub.com
+              order: 2
+              description:
+            - name: Disruption Hub
+              type: Link
+              status: Available
+              link: https://www.disruptionhub.com
+              order: 3
+              description:
+            - name: Wired
+              type: Link
+              status: Available
+              link: https://www.wired.com
+              order: 4
+              description:
+            - name: Futurism
+              type: Link
+              status: Available
+              link: https://www.futurism.com
+              order: 5
+              description:
+          - title: Tips
+            subtitle:
+            order: 3
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                Subscribe to the weekly newsletters these sites offer. They will keep you apprised of the latest developments in emerging technologies. A quick scan each week keeps you informed and allows you to research further when a particular topic catches your eye.
+            - order: 2
+              description: |
+                Have a look at the Gartner Hype Cycle for emerging technologies.
+          - title: Tools
+            subtitle:
+            order: 4
+            type: Resource  
+            resources:
+            - name: Exponential technologies research
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/MC2kNxOxTQS3Fxr7i81P/Exponential_technologies_research_template.pdf/
+              description: Template
+              order: 1
+            - name: Exponential technologies research
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/LqyWHBYQ3Sbzbrdm0q9F/Exponential_technologies_research_example.pdf/
+              description: Example
+              order: 2
+      - name: Find out about new business models that can disrupt your industry
+        order: 2
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>New business models and startups from inside or outside your industry may disrupt your existing business. You need to find these before it’s too late to catch up with them. Search the Internet for terms and phrases such as “startups for [X] Industry.</p>
+        - title: Resources
+          subtitle: |
+            "Go to startup-focused websites where you will find articles about different new startups. Remember that you are not looking for startups focused just on your industry, but for new business models that could be applied to your industry. Helpful websites include::
+          order: 2
+          type: Resource
+          resources:
+          - name: TechCrunch
+            type: Link
+            status: Available
+            link: http://www.techcrunch.com
+            order: 1
+            description:
+          - name: AngelList
+            type: Link
+            status: Available
+            link: http://angel.co
+            order: 2
+            description:
+          - name: Gust
+            type: Link
+            status: Available
+            link: https://www.gust.com
+            order: 3
+            description:
+          - name: Entrepreneur
+            type: Link
+            status: Available
+            link: http://www.entrepreneur.com
+            order: 4
+            description:
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Also, try to find new business models and companies that are solving the same market need that yours does. Sometimes the disruption comes from outside your industry because some new set of companies solves customer needs in a completely different way.
+          - order: 2
+            description: |
+              Ask yourself these questions in relation to the startups you find: What are these startups doing well or badly? Could they be potential partners, suppliers or acquisition targets? How can their best concepts be applied elsewhere? How do they solve a true customer problem? How are they thinking differently about customer needs? How are they trying to change the world? Does this inspire me about how we should try to change the world for the better?
+          - order: 3
+            description: |
+              Ask yourself these questions in relation to your industry: What new and different ways of doing business are shaking things up? How are traditional businesses being bypassed as startups increasingly connect directly with consumers?
+        - title: Tools
+          subtitle:
+          order: 4
+          type: Resource
+          resources:
+            - name: Disruptive business models research
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/NKi6C8esS8Om8pqomtpr/Disruptive_business_models_research_template.pdf/
+              description: Template
+              order: 1
+            - name: Disruptive business models research
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/M9cxbWyHSdObIm2F1X4s/Disruptive_business_models_research_example.pdf/
+              description: Example
+              order: 1
+      - name: Find out about new changes in your organization context
+        order: 3
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>Changes in context can be either a threat or an opportunity for your business. You need to identify those changes in order to prepare the company for disruption and generate new opportunities. You can facilitate the process of identifying potential changes in context by brainstorming about the different areas that can affect your industry or organization. Some of the potential areas:</p>
+            <p><strong>Regulation:</strong> new laws, policies, etc.</p>
+            <p><strong>Clients:</strong> new customer segments, trends, purchase behaviors, user experiences, etc.</p>
+            <p><strong>Providers:</strong> new suppliers, trends, operational models, etc.</p>
+            <p><strong>Competitors:</strong> new players, substitute products/services, etc.</p>
+            <p><strong>Environment:</strong> new events happening in your physical or digital environment that affect your business.</p>
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Remember that exponential technologies generate abundance and new business models based on that abundance. To identify external disruption, note transitions from scarcity to abundance.
+          - order: 2
+            description: |
+              There is a lot of knowledge within your organization about how context is affecting your industry and your business, so talk to people around you to get great insights.
+          - order: 3
+            description: |
+              Using traditional methods, such as the Porter’s Five Forces, will help you to do a truly comprehensive analysis for your organizations’ context.
+          - order: 4
+            description: |
+              Some of these changes in context will seem challenging, but most can become great opportunities.
+        - title: Tools
+          subtitle:
+          order: 4
+          type: Resource
+          resources:
+            - name: Context changes research
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/aMB8nIHlT1M39wKwipyA/Context_changes_research_template.pdf/
+              order: 1
+              description: Template
+            - name: Context changes research
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/gK0Yvx9aS42v17SUAPoU/Context_changes_research_example.pdf/
+              order: 1
+              description: Example
+      - name: Describe your current organization’s business model
+        order: 4
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>A business model is defined as the way that an organization creates, delivers and retains value. At this stage, you are going to describe your current organization’s business model, which will act as a framework for the ExO Initiatives. Remember that the ExO Core Stream shouldn’t change your current business model, but adapt it to external industry disruption. Use the Business Model Generation technique to describe your business model in a way that allows you to see the highlevel overview.</p>
+        - title: Resources
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>- Alex Osterwalder’s book Business Model Generation offers a guide to the Business Model Canvas.<br>- Go to the Align section and refer to the exercise for business model design.</p>
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Remember that you are describing how your current organization’s business model works, not trying to redefine it.
+          - order: 2
+            description: |
+              Identifying bottlenecks that are making the organization less agile and susceptible to disruption is key. The teams we have seen do that analysis are much better prepared for future weeks.
+        - title: Tools
+          subtitle:
+          order: 4
+          type: Resource
+          resources:
+            - name: Business model canvas
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/kR8ECu03Q6qIg5AT4ou1/BMC_template.pdf/
+              order: 1
+              description: Template
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          By the end of the week, you should have a good understanding of your own organization and the risks it faces, and start to assess the external technologies and business trends that can be leveraged for growth.
+      - order: 2
+        description: |
+          In addition to this week’s tasks, you may also want to research and gain a deeper understanding about the ExO Attributes. Make sure you have read the previous section of this book and then research companies to learn about how they are applying the ExO Attributes. Learn about exponential technologies.
+      - order: 3
+        description: |
+          Step outside your comfort and knowledge zones and explore unknown areas.
+      - order: 4
+        description: |
+          Talk to people within your organization to gain new insights.
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Exponential technologies research
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/MC2kNxOxTQS3Fxr7i81P/Exponential_technologies_research_template.pdf/
+        description: Template
+        order: 1
+      - name: Disruptive business models research
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/NKi6C8esS8Om8pqomtpr/Disruptive_business_models_research_template.pdf/
+        description: Template
+        order: 2
+      - name: Context changes research
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/aMB8nIHlT1M39wKwipyA/Context_changes_research_template.pdf/
+        description: Template
+        order: 3
+      - name: Business model canvas
+        type: Link
+        status: Available
+        link: /medialibrary/resource/redirect/jEhNF5HRWWKlV8qdDDAw/BMC_example.png/
+        description: Example
+        order: 4
+      - name: Business model canvas
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/kR8ECu03Q6qIg5AT4ou1/BMC_template.pdf/
+        description: Template
+        order: 5
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

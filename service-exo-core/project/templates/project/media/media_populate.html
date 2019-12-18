@@ -1,0 +1,17 @@
+{% extends "project/base.html" %}
+{% load bootstrap3 django_bootstrap_breadcrumbs %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Media" "project:project:media" project.id %}
+    {% breadcrumb "Populate" "" %}
+{% endblock %}
+
+{% block main %}
+	<form action="." method="POST">
+		{% csrf_token %}
+		{{form}}
+		<br>
+		<button class="btn btn-positive-choice" type="submit">Save</button>
+	</form>
+{% endblock %}

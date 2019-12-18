@@ -1,0 +1,274 @@
+---
+name: Align assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: awake_main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/287423236
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287423236" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Before starting your transformation journey, you need to master the tools and processes that will make you successful.</p>
+      <p>The goal of the Align Session is to provide you with the knowledge and confidence needed to define and develop ExO initiatives throughout the 10-week process ahead of you.</p>
+      <p>Equally important is to provide the company’s leadership team with the knowledge and training to manage disruptive innovation and new Exponential Organizations.</p>
+      <p>You can learn how to deal with the immune system of your company and build internal capabilities that will start to bring new life into your organization.</p>
+      <p>You can start your Align journey by watching the main video and then continue by going through the 4 tasks below.</p>
+      <p>Let's dive right in!</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Understand the ExO Attributes
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 0
+            type: Resource
+            resources:
+            - name: align_task_1_video
+              type: Video
+              status: Available
+              link: https://vimeo.com/287426232
+              iframe: |
+                <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287426232" frameborder="0" allowfullscreen></iframe>
+              order: 1
+              description:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>The original concept behind the Exponential Organizations book was an in-depth research among the fastest growing and most succesful companies who were able to outpferform their peers at radically lower costs. They achieved these by shfting their business model from scarcity-based to abundance-based, by leveraging expoential technologies and by tapping into 11 ExO Attributes.</p>
+              <p>Any company that wants to turn into an Exponential Organization needs to consider the value these attributes can bring and work towards embedding some of all of these in its operations.</p>
+              <p>To begin, every ExO needs an Massive Transformation Purpose or MTP which gives its existence a deeper meaning in relation to the larger world around it. MTP describes how we would like the world to be in the future where we have succeeded as a company.</p>
+              <p>Then, there are 10 other attributes - 5 outward-facing, helping us to reach 'abundance' in the market and 5 inward-facing helping to manage this abundance internally.</p>
+              <p>You can learn more about these attributes by watching this task's video and exploring the resources below.</p>
+          - title: Resources
+            subtitle: |
+              Read 'Exponential Organizations' by Salim Ismail, Yuri van Geest and Michael S. Malone
+            order: 2
+            type: Resource
+            resources:
+            - name: Salim Ismail on ExO Attributes
+              type: Link
+              status: Available
+              link: https://www.youtube.com/watch?v=JmATyVgLFVU
+              order: 1
+              description:
+          - title: Tips
+            subtitle:
+            order: 3
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                Any organization within any industry can benefit from thinking through and applying the ExO Attributes. Choose a company you came across recently and spend 15 minutes thinking through how it can implement the attributes
+            - order: 2
+              description: |
+                Research how different companies approach each of the 11 ExO Attributes. Which is most interesting and most surpirsing for you?
+            - order: 3
+              description: |
+                Experimentation attribute and MTP are almost pre-requisites for being an ExO, it is hard to do it without these 2.
+          - title: Tools
+            subtitle:
+            order: 4
+            type: Resource  
+            resources:
+            - name: ExO Canvas
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/Jorgp13wQPeVNSdUyEOp/ExO_Canvas.pdf/
+              description:
+              order: 1
+      - name: Explore the ExO Sprint Methodology
+        order: 2
+        blocks:
+        - title:
+          subtitle:
+          order: 0
+          type: Resource
+          resources:
+          - name: align_task_2_video
+            type: Video
+            status: Available
+            link: https://vimeo.com/287426364
+            iframe: |
+              <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287426364" frameborder="0" allowfullscreen></iframe>
+            order: 1
+            description:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>The ExO Sprint is a 10-week process that helps people understand, design, analyze and iterate initiatives that are based in the ExO attributes. There are 2 different kinds of ExO initiatives - ExO Core and ExO Edge. Let's watch the video and learn about the the why behind the ExO Sprint, its flow and structure as well as the Core and Edge initiatives and their relevance to the future of your organization.</p>
+        - title: Resources
+          subtitle:
+          order: 2
+          type: Text
+          text: |
+            <p>Read 'Lead and Disrupt: How to Solve the Innovator's Dilemma', by Charles A. O'Reilly III and Michael L. Tushman</p>
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Key ability for today's leaders and entrepreneurs is 'Ambidexterity' - being able to manage the current and future business at the same time
+          - order: 2
+            description: |
+              ExO Attributes are the key ingredients of an ExO but the ExO Sprint is a recipe to help your company transform
+          - order: 3
+            description: |
+              Both Core and Edge initiatives play an important role and together help to balance preservation and innovation and future-proof your organization
+      - name: Practice Business Model Design
+        order: 3
+        blocks:
+        - title:
+          subtitle:
+          order: 0
+          type: Resource
+          resources:
+          - name: align_task_3_video
+            type: Video
+            status: Available
+            link: https://vimeo.com/287426470
+            iframe: |
+              <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287426470" frameborder="0" allowfullscreen></iframe>
+            order: 1
+            description:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>A business model is the way an organizations, creates, delivers and captures value. To create a succesful and sustainable business model you will need tools that will help you rapidly pivot and iterate on all of its aspects until you find a model that works in reality.</p>
+            <p>Traditional business plan is not the best suitable tool to capture highly dynamic market situations and ongoing changes in the external and internal environment of a 21st Century organization. We will use a tool called 'Business Model Canvas' to quickly visualize business models of entire organizations. You will learn more detail in this task.</p>
+        - title: Resources
+          subtitle:
+          order: 2
+          type: Text
+          text: |
+            <p>Read 'The Startup Owner’s Manual: The Step-by-Step Guide for Building a Great Company', by Steve Blank</p>
+            <p>Read 'Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers', by Alex Osterwalder</p>
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              When creating a business model canvas, you can use colouring to better distinguish between different customer segements and corresponding value propositions
+          - order: 2
+            description: |
+              Remember that at the beginning, your Business Model Canvas will be full of hypotheses that need to first be validated
+        - title: Tools
+          subtitle:
+          order: 4
+          type: Resource
+          resources:
+            - name: Business Model Canvas
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/stiRjg0RMes5xoRX9wL4/Business_Model_Canvas.pdf/
+              order: 1
+              description:
+      - name: Learn about the Experimentation Design
+        order: 4
+        blocks:
+        - title:
+          subtitle:
+          order: 0
+          type: Resource
+          resources:
+          - name: align_task_4_video
+            type: Video
+            status: Available
+            link: https://vimeo.com/287426524
+            iframe: |
+              <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287426524" frameborder="0" allowfullscreen></iframe>
+            order: 1
+            description:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>To be able to iterate a business model, we need to understand what works and what doesn't. Experiments are very useful to evaluate whether our beliefs are empirically valid or not. They allow us to check and analyze, with gathered data, if things are as we think or not.</p>
+            <p>Get ready to understand how to design experiemts and use them to pivot and validate the hypotheses behind your brand new idea.</p>
+        - title: Resources
+          subtitle:
+          order: 2
+          type: Text
+          text: |
+            Read 'The Lean Startup: How Today’s Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses', by Eric Ries
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Experimentation in business in not so different from experimentation in science. You rely on data, evaluate hypotheses and mainly, well designed experiment brings you closer to success
+          - order: 2
+            description: |
+              You will practice experimentation extensively during the ExO Sprint
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          It would be helpful for your ExO Sprint journey to be familiar with the Build-Measure-Learn loop and the Customer Development process (Steve Blank)
+      - order: 2
+        description: |
+          It is very important to understand well the difference between ExO Core and ExO Edge initiatives
+      - order: 3
+        description: |
+          The better your management team can understand linear vs exponential mindset and the ExO Framework, the better it will be able to manage initiatives during and after the ExO Sprint
+      - order: 4
+        description: |
+          Read 'Abundance: The Future Is Better Than You Think', by Peter Diamandis
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: ExO Canvas
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/Jorgp13wQPeVNSdUyEOp/ExO_Canvas.pdf/
+        description:
+        order: 1
+      - name: Business Model Canvas
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/stiRjg0RMes5xoRX9wL4/Business_Model_Canvas.pdf/
+        description:
+        order: 2
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

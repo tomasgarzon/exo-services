@@ -1,0 +1,17 @@
+{% if perms|length > 0 %}
+<div class="ibox-tools pull-right l-h-34">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        <i class="fa fa-ellipsis-v"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-user">
+        {% if "edit_customer" in perms %}
+        <li><a href="{% url 'customer:edit' customer.pk %}">Edit</a>
+        </li>
+        {% endif %}
+        {% if global_perms.customer.remove_customer %}
+        <li><a href="{% url 'customer:delete' customer.pk %}">Remove</a>
+        </li>
+        {% endif %}
+    </ul>
+</div>
+{% endif %}

@@ -1,0 +1,37 @@
+uuid: 9c861f5f-3b8c-4d34-9fab-9effcee9d9ca
+name: Checker INC Core
+uuid_related_object: fad08896-e99d-4252-bf1b-70c62a8422b1
+created_by: !account &quality 7749ad25-5128-4644-895f-6b9a70b605bd
+_type: P
+icon: https://cdn.filestackcontent.com/kpRzP37Tw6Hdp2iqinjw
+users:
+  - user: !account &amy 1cd07dd7-4883-4838-9b5a-303ef0d6580c
+    name:  Amy Finch
+    profile_url: /public/profile/amy-finch/
+    profile_picture: /media/avatars/48_48/amy-finch.jpg
+    short_title: ExO Head Coach
+  - user: !account c2cb2a8d-d0b5-44da-8794-50a327857ae3
+    name:  Najwa Jannah Saliba
+    profile_url: /public/profile/najwa-jannah-saliba/
+    profile_picture: /media/avatars/48_48/najwa-jannah-saliba.jpg
+    short_title: ExO Sprint Coach
+  - user: !account 73d45106-23c6-4024-87fb-b2adb578205e
+    name: Mathias Schreiber
+    profile_url: /public/profile/mathias-schreiber/
+    profile_picture: /media/avatars/48_48/mathias-schreiber.jpg
+    short_title: Checker INC Core Participant
+  - user: !account &anna d074ab0e-44ec-4806-89d4-20b5f2061f94
+    name: Anna Weiss
+    profile_url: /public/profile/anna-weiss/
+    profile_picture: /media/avatars/48_48/anna-weiss.jpg
+    short_title: Checker INC Core Participant
+  - user: !account e722967c-f5ec-45ae-9a67-d49e93bb3a7e
+    name: Jennifer Papst
+    profile_url: /public/profile/jennifer-papst/
+    profile_picture: /media/avatars/48_48/jennifer-papst.jpg
+    short_title: Checker INC Core Participant
+messages:
+  - created_by: *anna
+    message: Magni officiis ex perspiciatis incidunt alias. Veniam laborum a debitis voluptates rerum adipisci. Sapiente adipisci ipsam impedit totam.
+  - created_by: *amy
+    message: Porro incidunt sed ab. Eum dignissimos architecto molestiae iusto corrupti veritatis. Officiis asperiores autem expedita. Voluptatem at totam.

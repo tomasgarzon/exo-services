@@ -1,0 +1,13 @@
+{% extends "base/base_blue_header.mjml" %}
+{% load common_mails i18n %}
+
+{% block blue-header %}
+    <mj-header-title-pretitle pre-title="OpenExO Community" title="ExO Skills Assessment" />
+{% endblock %}
+
+
+{% block content %}
+    <mj-text>Hi {{user_name}}</mj-text>
+    <mj-text>Please continue your registration for the OpenExO Network by completing the ExO Skills Assessment.</mj-text>
+    {% if description %} <mj-text>{{description}}</mj-text> {% endif %}
+{% endblock %}

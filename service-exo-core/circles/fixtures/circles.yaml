@@ -1,0 +1,7 @@
+- model: circles.Circle
+  fields:
+    name: Community
+    code: E
+    slug: ecosystem
+    type: P
+    image: https://cdn.filestackcontent.com/y05HOa9HTXmUCu3TS34z

@@ -1,0 +1,71 @@
+- model: agreement.Agreement
+  pk: 1
+  fields:
+    name: Consultant Agreement
+    description: Consultant Agreement
+    file_name: consultant_v1.html
+    document_name: OpenExO Agreement v
+    version: 1.0.0
+    recipient: C
+    status: I
+    domain: T
+
+- model: agreement.Agreement
+  pk: 2
+  fields:
+    name: OpenExO Terms of Service
+    description: OpenExO Terms of Service
+    file_name: consultant_v2.html
+    document_name: OpenExO Terms of Service v
+    version: 2.0.0
+    recipient: C
+    status: I
+    domain: T
+
+- model: agreement.Agreement
+  pk: 3
+  fields:
+    name: Consulting Services Agreement
+    description: OpenExO Consulting Agreement
+    file_name: consulting_v1.html
+    document_name: OpenExOConsultingAgreementv
+    version: 1.0.0
+    recipient: C
+    status: I
+    domain: A
+
+- model: agreement.Agreement
+  pk: 4
+  fields:
+    name: ExO Marketplace Conditions
+    description: ExO Marketplace Conditions
+    file_name: marketplace_v1.html
+    document_name: ExO-Marketplace-Conditions
+    version: 1.0.0
+    recipient: G
+    status: A
+    domain: M
+
+- model: agreement.Agreement
+  pk: 5
+  fields:
+    name: OpenExO Terms of Service
+    description: OpenExO Terms of Service
+    file_name: consultant_v3.html
+    document_name: OpenExO Terms of Service v
+    version: 3.0.0
+    recipient: C
+    status: A
+    domain: T
+
+- model: agreement.Agreement
+  pk: 6
+  fields:
+    name: ExQ Conditions
+    description: ExQ Conditions
+    file_name: exq_v1.html
+    document_name: ExQ-Conditions
+    version: 1.0.0
+    recipient: G
+    status: A
+    domain: E

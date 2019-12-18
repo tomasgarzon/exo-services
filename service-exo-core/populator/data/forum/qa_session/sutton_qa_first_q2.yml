@@ -1,0 +1,61 @@
+title: Corporate social responsilbity
+user: !consultant Naina Lavrova
+team: !team Sutton Inc Core
+date: !timedelta -3d
+qa_session: !qa_session Sutton First Swarm session
+description: |
+  <p>Which corporation has done the best at <em>CSR</em>? What organization? How did they do this/engage the community? Why was it so successful?</p>
+activities:
+  - user: !consultant Tina Weissberg
+    date: !timedelta -3570m
+    reply: |
+      <p>This article summarizes the seven areas of focus for CSR for 2018</p>
+      <ul>
+      <li>Privacy and data protection</li>
+      <li>Supply chain management</li>
+      <li>Ending workplace harassment and inequality</li>
+      <li>Diversity</li>
+      <li>Focused and forward-thinking brand activism</li>
+      <li>Climate resilience</li>
+      </ul>
+  - user: !consultant Tina Weissberg
+    date: !timedelta -3565m
+    reply: |
+      <p>As far as organizations who have been successful at CSR, in general, it’s those who integrated CSR and sustainability management into their operations, rather than having it as an add-on or solely focused on philanthropic projects. The focus is also shifting from incremental sustainability performance improvements to breakthrough improvements.</p>
+      <p><br></p>
+      <p>Here’s a Forbes article that lists the world’s most sustainable companies for 2018</p>
+      <p><a target="_blank" href="https://www.forbes.com/sites/karstenstrauss/2018/01/23/the-worlds-most-sustainable-companies-2018/#13c7e62632b0">https://www.forbes.com/sites/karstenstrauss/2018/01/23/the-worlds-most-sustainable-companies-2018/#13c7e62632b0</a></p>
+  - user: !consultant Naina Lavrova
+    date: !timedelta -3534m
+    reply: |
+      <p>Thank you both. Our company’s <em>“PURPOSE”</em> is for “Those who make the world”. I wanted to tie this into the millennial mindset of social impact and one suggestion was to reuse our old tools (that would be replaced with new technology), and allow people to go to 3rd world countries for example … and use our fastening equipment and solutions to build railroads, add solar panels, make pipelines and better the world. They could post on social media and hopefully see that we are walking the walk and talking to talk in regards to our CSR and truly trying to help the world. Thoughts? Is this crazy? Do you have a better “story” to tell around this?</p>
+  - user: !consultant Gorka Arrizabalaga
+    date: !timedelta -3521m
+    reply: |
+      <p>In my humble opinion, this may create more problems that it aims to solve. I think what CSR is boiling down to is the amount of your companies negative externalities you take responsibility for in your own operations. Doing the kind of thing you mentioned, about donating tools to improve developing countries is admirable, but may leave people very puzzled about how this relates to your core business and how it positively impacts your operational externalities.</p>
+      <p><br></p>
+      <p>CSR cannot eclipse these important critcisms. I would focus my attention on the core business, not on tangential initiatives that appear more brand building than actually doing something highly impactful.</p>
+  - user: !consultant Tina Weissberg
+    date: !timedelta -3499m
+    reply: |
+      <p>As for “making the world”, construction will continue to move toward circular economy business models to recover, reuse, remanufacture building products, components and structural materials. I have been leading the development of an international standard for design for disassembly and adaptability of buildings and civil infrastructure. Making buildings easy to deconstruct at the end of its useful life would allow recovery of vast amounts of materials that are currently sent to landfill as construction and demolition waste. This would not only reduce the need for extraction of virgin materials but also reduce the associated greenhouse gas emissions and energy and water use.</p>
+      <p><br></p>
+      <p>Fasteners designed for ease of disassembly would also allow for adaptability of a building for a variety of uses during its service life or to be converted to a new use, extending its useful service life.</p>
+      <p><br></p>
+      <p>Design for disassembly and adaptability approaches could be applied to a growing number of industries and will become increasingly important to developing nations.</p>
+  - user: !consultant Lindsey Allen
+    date: !timedelta -3492m
+    reply: |
+      <p>My favorite American company for CSR is Dr. Bronners, and their CSR report is fantastic. I had an old copy of it hanging in my office to keep us reminded why we do what we do.</p>
+      <p><br></p>
+      <p>I love how they created their website around these principles <a href="https://www.drbronner.com/about/" target="_blank">https://www.drbronner.com/about/</a></p>
+      <p><br></p>
+      <p>They also go out to where people are and use their products and give them away, everywhere. Music and arts festivals around the country are commonly sponsored by Dr. Bronners and then they create cleaning stations for people to wash hands or shower using their products, taking home samples and feeling great about the experience while knowing they used a product that didn’t leave a negative trace on the place.</p>
+      <p><br></p>
+      <p>Dr. Bronner’s not only prints out CSR posters for classrooms, they bring out their magic foam firetruck to schools to play with kids! https://www.drbronner.com/about/our-community/magic-foam-experience/</p>
+      <p><br></p>
+      <p>For more on David Bronner and the choices they’ve made as activists in business, read http://mentalfloss.com/article/82072/15-things-you-didnt-know-about-dr-bronner-and-his-magic-soap - David Bronner has been funding a ton of interesting transparency and supply chain in food efforts throughout the US.</p>
+  - user: !consultant Leticia Ferreira Dias
+    date: !timedelta -3481m
+    reply: |
+      <p>Regarding your idea, i tested it in our sprint coaching in february. Is very important that initiative as in emerging markets people cannot afford to but tools! Probably could rent or recycle. Millennials as well as small companies will be open to that. For big companies focusing in emerging countries, potential consumers and doing good, is a good equation. The important question is: what need could i solve? Help to solve or discover that is unique and different? Coca cola, nestle and unilever are best in class</p>

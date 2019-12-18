@@ -1,0 +1,24 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="{% trans 'New rating to your answer to a participant' %}" title="{{post_title}}" />
+{% endblock %}
+
+{% block wrapper-title %}
+    {% include "base/user_information.mjml" with image=created_by_profile_picture name=created_by_name user_title=created_by_role %}
+{% endblock %}
+
+{% block content %}
+    <mj-text css-class="post-body-content">{{answer_content|safe}}</mj-text>
+    <mj-image width="185px" align="center" src="https://s3.amazonaws.com/exolever/static/assets/public/ratings/{{answer_rating}}.png" alt="image" />
+{% endblock %}
+
+{% block call_to_action_out %}
+    <mj-section padding="20px 0px 0px 0px">
+    	<mj-column>
+    		{% trans "Go to post" as see_details %}
+    		{% include "base/call_to_action.mjml" with call_to_action=see_details %}	            
+        </mj-column>
+    </mj-section>    
+{% endblock %}

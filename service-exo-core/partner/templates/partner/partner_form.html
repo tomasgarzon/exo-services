@@ -1,0 +1,87 @@
+{% extends "base/content.html" %}
+{% load bootstrap_pagination bootstrap3 staticfiles django_bootstrap_breadcrumbs breadcrumb %}
+{% load images %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Partners" "partner:list" %}
+    {% if object.pk %}
+        {% breadcrumb "Edit" "partner:edit" object.pk %}
+    {% else %}
+        {% breadcrumb "Add partner" "partner:add" %}
+    {% endif %}
+{% endblock %}
+
+{% block header %}
+<div class="col-lg-10">
+    <h2>Partners</h2>
+</div>
+<div class="col-xs-12 p-r-none">
+    {% render_view_breadcrumbs "base/breadcrumb.html" %}
+</div>
+{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class='ibox float-e-margins'>
+            <div class="ibox-title">
+                <h2>{% if object.pk %}Edit{% else %}Add{% endif %} partner</h2>
+            </div>
+            <div class="ibox-content">
+                <form id='customer-form' action="." method="post" class="wizard-big wizard-step-2 styles-form" enctype='multipart/form-data' data-url-cancel="{% url 'partner:list' %}">
+                    {% csrf_token %}
+                    <h1>Company</h1>
+                    <fieldset>
+                        <p class="text_step_wizard m-l-none">Basic information about the Company</p>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                {% bootstrap_field form.name %}
+                                <label class="control-label pull-left col-xs-12 m-l-n m-b" for="id_profile_picture">Logo</label>
+                                <label title="Upload image file" for="id_profile_picture" class="btn btn-default clearfix m-t-3">
+                                        {{form.profile_picture}}
+                                        Upload logo
+                                </label>
+                                <div id="filename-logo"></div>
+                                {% if object.profile_picture %}
+                                    <div class="inline img-box pull-left m-r-sm">
+                                        <img alt="image" src="{% image_thumbnail_url object.profile_picture 24 24 %}" />
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="text-center">
+                                    <div>
+                                        <i class="fa fa-building"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <h1>Contact</h1>
+                    <fieldset>
+                        <p class="text_step_wizard m-l-none">Contact Information</p>
+                        <div class="col-lg-8">
+                            {% bootstrap_field form.location %}
+                            {% bootstrap_field form.place_id %}
+                            {% bootstrap_field form.timezone %}
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="text-center">
+                                <div>
+                                    <i class="fa fa-building"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfYpBR8NJD07Yn2NGzyj6wGRr6e6E0628&libraries=places&language=en"></script>
+<script src="{% static 'partner/js/partner_form.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,272 @@
+body {
+  background-color: rgba(70, 70, 75, 0.04);
+}
+
+
+div#card-element {
+  margin-bottom:25px;
+}
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: rgba(70,70,75, 0.08);
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.payment {
+  background-color: rgb(255, 255, 255);
+  width: 65%;
+  max-width: 700px;
+  min-width: 290px;
+  padding: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: rgba(178, 178, 178, 0.5) 0px 2px 9px 0px;
+  display: block;
+}
+
+.loading {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255, 0.5);
+  z-index: 99999;
+}
+
+.loading img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.payment_details .concept,
+.payment_details .amount,
+.error .message {
+  margin:0 0 24px;
+}
+
+.payment_details .concept p {
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+  font-family: Roboto;
+  color: #46464B;
+}
+
+.payment .payment_success {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  display: flex;
+  justify-content: center;
+  min-width: 200px;
+}
+
+.payment .payment_success .message {
+  margin-top: 32px;
+  margin-left: 30px;
+}
+
+.error .message {
+  margin-top: 20px;
+}
+
+.payment * {
+  font-family: Quicksand, Open Sans, Segoe UI, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.payment .fieldset {
+  margin: 0 0 24px;
+  padding: 0;
+  border-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: justify;
+  justify-content: left;
+}
+
+iframe input,
+.payment .field {
+  padding: 15px 20px 15px;
+  border-radius: 8px;
+  width: 100%;
+  background-color: rgba(70,70,75, 0.08);
+  color: #46464b;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Roboto;
+  height: 48px;
+  line-height: 16px;
+}
+
+.payment .field.half-width {
+  width: 384px;
+}
+
+.payment .field.third-width {
+  width: calc(33% - (5px / 3));
+}
+
+.payment .field + .field {
+  margin-top: 8px;
+}
+
+.payment .field.focus,
+.payment .field:focus {
+  color: #424770;
+  background-color: #f6f9fc;
+}
+
+.payment .field.invalid {
+  background-color: #ff7273;
+}
+
+.payment .field.invalid.focus {
+  background-color: #f6f9fc;
+}
+
+.payment .field.focus::-webkit-input-placeholder,
+.payment .field:focus::-webkit-input-placeholder {
+  color: rgba(70, 70, 75, 0.65);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Roboto;
+  line-height: 16px;
+}
+
+.payment .field.focus::-moz-placeholder,
+.payment .field:focus::-moz-placeholder {
+  color: rgba(70, 70, 75, 0.65);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Roboto;
+  line-height: 16px;
+}
+
+.payment .field.focus:-ms-input-placeholder,
+.payment .field:focus:-ms-input-placeholder {
+  color: rgba(70, 70, 75, 0.65);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Roboto;
+  line-height: 16px;
+}
+
+.payment input, .payment button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-style: none;
+}
+
+.payment input {
+  color: #46464b !important;
+}
+
+.payment input::-webkit-input-placeholder {
+  color: rgba(70, 70, 75, 0.65);
+}
+
+.payment input::-moz-placeholder {
+  color: rgba(70, 70, 75, 0.65);
+}
+
+.payment input:-ms-input-placeholder {
+  color: rgba(70, 70, 75, 0.65);
+}
+
+.payment button {
+  display: block;
+  float: right;
+  width: 96px;
+  height: 40px;
+  margin: 0 15px;
+  background-color: #6f23ff;
+  color: white;
+  border-radius: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.payment button:active {
+  background-color: #303f9f;
+}
+
+.payment button:disabled,
+.payment button[disabled]{
+  color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.payment .error svg .base {
+  fill: #ff7273;
+}
+
+.payment .error svg .glyph {
+  fill: #fff;
+}
+
+.payment .error .message {
+  color: #FF7273;
+}
+
+.payment .success .icon .border {
+  stroke: #fcd669;
+}
+
+.payment .success .icon .checkmark {
+  stroke: #fff;
+}
+
+.payment .success .title {
+  color: #fff;
+}
+
+.payment .success .message {
+  color: #9cabc8;
+}
+
+.payment .success .reset path {
+  fill: #fff;
+}
+
+@media only screen and (max-width: 640px) {
+  .payment{
+    padding: 24px;
+  }
+  .payment .field.third-width {
+    width: 100%;
+  }
+  .payment .field.second {
+  margin-left: 0px !important;
+  }
+}

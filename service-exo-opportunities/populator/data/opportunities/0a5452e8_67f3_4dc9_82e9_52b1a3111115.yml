@@ -1,0 +1,181 @@
+title: Educational Futures in Spain
+uuid: 0a5452e8-67f3-4dc9-82e9-52b1a3111115
+description: |
+  The client is a large, traditional international school in Spain. The majority of the customers (parents) are Spanish, but with international passports who travel extensively and seek the best opportunities for their children around the world, particularly in the US and UK for university. The client is keen to explore approaches to education that can increase learning efficiency through engaging parents, AI systems, blockchain for qualifications, immersive learning experiences and connection around the world. He is particularly interested in how the latest innovations in business could be applied to an educational facility to support the schools in becoming more exponential in how they connect with a larger number of students.
+status: Requested
+created: !timedelta -35d
+created_by: !account &created_by 0737a9f9-22a0-4286-8be3-34a3e19d92dc  # naina
+keywords:
+  - Drones
+start_date: !timedelta -1d
+deadline_date: !timedelta -30d
+mode: L
+location: Madrid, Spain
+location_url: https://meet.google.com
+duration_unity: H
+duration_value: 4
+exo_role: SAD
+certification_required: CFO
+entity: Taylor Jones
+virtual_budget: 500
+num_positions: 4
+questions:
+  - id: 1
+    title: Do you have experience in driving innovation in a large scale organisation using AI, blockchain or other systems?
+    type_question: B
+  - id: 2
+    title: Have you had any experience in working in Europe, particularly Spain?
+    type_question: B
+  - id: 3
+    title: Have you had any connection with innovative secondary education?
+    type_question: B
+applicants:
+  - user: !account 1cd07dd7-4883-4838-9b5a-303ef0d6580c # Amy Finch
+    summary: |
+      Hi, how are you? Your client initiative sounds interesting and full of disruptions ;)
+
+      I am working as a foresighter (helping companies build future scenarios, spot trends and transform them into business opportunities). Part of my job means a lot of (mega & consumer) trends scanning and analysis, so knowing latest innovations in terms of products / services / marketing campaigns / business models / exponential technologies for a given client / industry. I have done extensive scan on future of (purposeful) education.
+    status: Completed
+    answers:
+      - question: 1
+        response: 'True'
+      - question: 2
+        response: 'False'
+      - question: 3
+        response: 'False'
+    sow:
+      applicant_name: Amy Finch
+      requester_name: Naina Lavrova
+      title: Educational Futures in Spain
+      entity: Taylor Jones
+      start_date: !timedelta -1d
+      end_date: !timedelta -1d
+      start_time: '17:30:00'
+      timezone: Europe/Madrid
+      location: Madrid, Spain
+      mode: L
+  - user: !account ef70053f-755b-4b40-bb73-6832d16488e7 # Gorka Arrizabalaga
+    summary: |
+      Having always had involvement in education - from delivering consultant training to teaching kids to code, to architecting edtech, I am passionate about projects of this nature. I'm currently implementing something similar for a Japan audience. I've also had plenty of work experience in Spain, so should be able to relate to their target customer's needs.
+    status: FeedbackReady
+    answers:
+      - question: 1
+        response: 'True'
+      - question: 2
+        response: 'True'
+      - question: 3
+        response: 'True'
+    sow:
+      applicant_name: Gorka Arrizabalaga
+      requester_name: Naina Lavrova
+      title: Educational Futures in Spain
+      entity: Taylor Jones
+      start_date: !timedelta -1d
+      end_date: !timedelta -1d
+      start_time: '17:30:00'
+      timezone: Europe/Madrid
+      location: Madrid, Spain
+      mode: L
+    feedbacks:
+      - user: *created_by
+        status: D
+        explained: 1
+        collaboration: 2
+        communication: 2
+        recommendation: 3
+        comment: It was great
+  - user: !account &alice eb926b17-634c-477d-847c-eda5f35026a2 # Alice
+    summary: |
+      Having always had involvement in education
+    status: FeedbackDone
+    answers:
+      - question: 1
+        response: 'True'
+      - question: 2
+        response: 'False'
+      - question: 3
+        response: 'True'
+    sow:
+      applicant_name: Alice
+      requester_name: Naina Lavrova
+      title: Educational Futures in Spain
+      entity: Taylor Jones
+      start_date: !timedelta -1d
+      end_date: !timedelta -1d
+      start_time: '17:30:00'
+      timezone: Europe/Madrid
+      location: Madrid, Spain
+      mode: L
+    feedbacks:
+      - user: *alice
+        explained: 1
+        collaboration: 2
+        communication: 2
+        recommendation: 3
+        comment: It was great
+  - user: !account &julius 1eae2bfa-3b44-4e3a-8bb7-89f5e24c71a6 # Julius Emilsson
+    status: FeedbackDone
+    summary: |
+      I have also worked with McKinsey on McKinsey Academy where I was involved with launching new products/solutions both within the firm and with clients.
+    answers:
+      - question: 1
+        response: 'True'
+      - question: 2
+        response: 'True'
+      - question: 3
+        response: 'True'
+    sow:
+      applicant_name: Gorka Arrizabalaga
+      requester_name: Naina Lavrova
+      title: Educational Futures in Spain
+      entity: Taylor Jones
+      start_date: !timedelta -1d
+      end_date: !timedelta -1d
+      start_time: '17:30:00'
+      timezone: Europe/Madrid
+      location: Madrid, Spain
+      mode: L
+    feedbacks:
+      - user: *created_by
+        status: D
+        explained: 1
+        collaboration: 2
+        communication: 2
+        recommendation: 3
+        comment: It was great
+  - user: !account &cerdic 1da6e073-a525-4311-ab7e-ec8748d76100 # Cerdic Roper
+    status: FeedbackReady
+    summary: |
+      Native Chinese, double master (EE & Business) from Sweden, 10 years working experiences in Europe, followed by 6 years working experiences in China. Certified ExO coach, intensive consulting experiences in China, various type of clients, including Accenture, Covestro & TigerKid football club in Shanghai. Also a parent of international school, adding more perspective!
+    answers:
+      - question: 1
+        response: 'True'
+      - question: 2
+        response: 'False'
+      - question: 3
+        response: 'True'
+    sow:
+      applicant_name: Cerdic Roper
+      requester_name: Naina Lavrova
+      title: Educational Futures in Spain
+      entity: Taylor Jones
+      start_date: !timedelta -1d
+      end_date: !timedelta -1d
+      start_time: '17:30:00'
+      timezone: Europe/Paris
+      location: Madrid, Spain
+      mode: L
+    feedbacks:
+      - user: *created_by
+        status: D
+        explained: 1
+        collaboration: 2
+        communication: 2
+        recommendation: 3
+        comment: It was great
+      - user: *cerdic
+        explained: 1
+        collaboration: 2
+        communication: 2
+        recommendation: 3
+assigned_by: *created_by

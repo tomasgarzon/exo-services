@@ -1,0 +1,24 @@
+{% if perms|length > 0 %}
+<div class="ibox-tools pull-right l-h-34">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        <i class="fa fa-ellipsis-v"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-user">
+        {% if object.is_disabled %}
+            <li><a href="#" class="dev__reactivate_consultant" data-url="{% url 'api:consultant:reactivate' object.pk %}" data-date="{{object.modified|date}}">Activate</a>
+            </li>
+        {% else %}
+            <li><a href="#" class="dev__disable_consultant" data-url="{% url 'consultant:disable' object.pk %}">Disable</a>
+            </li>
+        {% endif %}
+        {% if not object.is_pending_validation %}
+            <li>
+                <a target="_blank" href="/ecosystem/profile/{{object.user.slug}}/edit/">Edit</a>
+            </li>
+        {% endif %}
+        <li>
+            <a href="#" class="dev__delete_consultant" data-url="{% url 'api:consultant:delete' object.pk %}">Delete</a>
+        </li>
+    </ul>
+</div>
+{% endif %}

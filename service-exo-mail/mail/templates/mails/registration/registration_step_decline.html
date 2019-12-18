@@ -1,0 +1,20 @@
+{% extends "base/base_blue_header.mjml" %}
+{% load common_mails i18n %}
+
+{% block blue-header %}
+    <mj-header-title-pretitle pre-title="OpenExO Community" title="Change in Registration process (Declined)" />
+{% endblock %}
+
+
+{% block content %}
+    {% if body_mail %}
+        <mj-text>{{ body_mail }}</mj-text>
+    {% else %}
+        <mj-text>
+            Hi, the user {{name}} ({{email}}) has declined the step: {{step_name}}. This is only an email to inform you, you have not to do anything further.
+        </mj-text>
+        {% if description %}
+        <mj-text>More info: {{description}}</mj-text>
+        {% endif %}
+    {% endif %}
+{% endblock %}

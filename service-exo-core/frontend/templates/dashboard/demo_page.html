@@ -1,0 +1,43 @@
+{% extends "base/content.html" %}
+{% load staticfiles %}
+{% load content_types slack zoomus permission_tags project %}
+
+{% block wrapper_header %}{% endblock %}
+{% block navigation %}{% endblock %}
+{% block main %}
+<div class='row'>
+    <div class='col-lg-12'>
+        <div class='ibox float-e-margins'>
+            <div class="ibox-title">
+                <h2>It works</h2>
+            </div>
+            <div class="ibox-content">
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <p>If you can see this, you can access to the platform properly.</p>
+                        <p id="dev__backend"></p>
+                        <p>{% if user %}Database access --> OK{% endif %}</p>
+                        <p id="dev__jquery"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="demorealtime">
+            <h2>Realtime Onlineusers</h2>
+            <a href="#" onclick="javascript:disconnect()">Disconnect Socket!</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'dashboard/js/demo_socket.js' %}"></script>
+    <script>
+        $(function(){
+            $('#dev__jquery').html("S3 access --> OK");
+            $.get("/api/accounts/me/", function(){
+                $('#dev__backend').html("Backend access --> OK");
+            });
+        });
+    </script>
+{% endblock %}

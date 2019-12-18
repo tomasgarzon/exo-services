@@ -1,0 +1,70 @@
+# defaultEntryPoints must be at the top
+# because it should not be in any table below
+
+defaultEntryPoints = ["http", "https"]
+
+# Entrypoints, http and https
+[entryPoints]
+
+# http should be redirected to https
+[entryPoints.http]
+address = ":80"
+[entryPoints.http.redirect]
+entryPoint = "https"
+
+# https is the default
+[entryPoints.https]
+address = ":443"
+
+
+[entryPoints.https.tls]
+# CipherSuites = [
+#       "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+#       "TLS_RSA_WITH_AES_256_GCM_SHA384"
+#     ]
+
+# Enable ACME (Let's Encrypt): automatic SSL
+[acme]
+email = "devops@exolever.com"
+storage = "/acme.json"
+entryPoint = "https"
+# onDemand = false
+# OnHostRule = false
+
+# [acme.tlsChallenge]
+
+#[acme.httpChallenge]
+#entryPoint = "http"
+[acme.dnsChallenge]
+provider = "godaddy"
+
+
+[[acme.domains]]
+main = "*.qa.exolever.com"
+sans = ["qa.exolever.com"]
+
+
+
+[docker]
+endpoint = "unix:///var/run/docker.sock"
+domain = "qa.exolever.com"
+watch = true
+
+# Expose containers by default in Traefik.
+# If set to false, containers that don't have `traefik.enable=true` will be ignored.
+#
+# Optional
+# Default: true
+#
+exposedbydefault = false
+
+# # Define a default docker network to use for connections to all containers.
+# # Can be overridden by the traefik.docker.network label.
+# #
+# # Optional
+# #
+# network = "default"
+
+[web]
+address = ":8080"
+

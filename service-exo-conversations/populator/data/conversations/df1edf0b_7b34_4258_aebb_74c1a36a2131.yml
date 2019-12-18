@@ -1,0 +1,42 @@
+uuid: df1edf0b-7b34-4258-aebb-74c1a36a2131
+name: Checker INC Edge
+uuid_related_object: fad08896-e99d-4252-bf1b-70c62a8422b1
+created_by: !account &quality 7749ad25-5128-4644-895f-6b9a70b605bd
+_type: P
+icon: https://cdn.filestackcontent.com/zmVW1DkCRzuWwYMWSO9Y
+users:
+  - user: !account &amy 1cd07dd7-4883-4838-9b5a-303ef0d6580c
+    name:  Amy Finch
+    profile_url: /public/profile/amy-finch/
+    profile_picture: /media/avatars/48_48/amy-finch.jpg
+    short_title: ExO Head Coach
+  - user: !account 8ff40e60-f7d8-4e85-8697-9bd83ace8688
+    name:  Ann Baldwin
+    profile_url: /public/profile/ann-baldwin/
+    profile_picture: /media/avatars/48_48/ann-baldwin.jpg
+    short_title: ExO Sprint Coach
+  - user: !account adca86ab-ccf2-41c8-92f5-60fb7e210962
+    name: Marco Zimmerman
+    profile_url: /public/profile/marco-zimmerman/
+    profile_picture: /media/avatars/48_48/marco-zimmerman.jpg
+    short_title: Checker INC Edge Participant
+  - user: !account &manuela 7cfd4b60-2865-4df3-a275-de72220566e8
+    name: Manuela Farber
+    profile_url: /public/profile/manuela-farber/
+    profile_picture: /media/avatars/48_48/manuela-farber.jpg
+    short_title: Checker INC Edge Participant
+  - user: !account 33d4f666-87de-4154-9bd9-cebe445ff65d
+    name: Laura Nadel
+    profile_url: /public/profile/laura-nadel/
+    profile_picture: /media/avatars/48_48/laura-nadel.jpg
+    short_title: Checker INC Edge Participant
+  - user: !account 1781d0df-313d-4a38-9348-fe545b605e51
+    name: Mike Cole
+    profile_url: /public/profile/mike-cole/
+    profile_picture: /media/avatars/48_48/mike-cole.jpg
+    short_title: Checker INC Edge Participant
+messages:
+  - created_by: *manuela
+    message: Magni officiis ex perspiciatis incidunt alias. Veniam laborum a debitis voluptates rerum adipisci. Sapiente adipisci ipsam impedit totam.
+  - created_by: *amy
+    message: Porro incidunt sed ab. Eum dignissimos architecto molestiae iusto corrupti veritatis. Officiis asperiores autem expedita. Voluptatem at totam.

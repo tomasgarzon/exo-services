@@ -1,0 +1,65 @@
+{% load guardian_tags staticfiles images project l10n %}
+
+<div class='ibox float-e-margins'>
+    <div class="ibox-title">
+        <h2>Active Projects</h2>
+    </div>
+    <div class="ibox-content">
+        <div class="table-responsive">
+             <span class="pull-right text-muted m-t-md m-b-md l-h-34">{{projects.count}} project{{ projects.count|pluralize }} found</span>
+
+            <table class="table table-hover list-detail sprints projects table-l-fix">
+                <thead>
+                    <tr>
+                        <th width="15%">Name</th>
+                        <th width="15%">Client</th>
+                        <th>Location</th>
+                        <th width="15%">Start<br>date (UTC)</th>
+                        <th width="15%">End<br>date (UTC)</th>
+                        <th>Duration</th>
+                        <th width="15%">Head Coach/<br>Head Trainer</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for object in projects %}
+                        {% get_obj_perms user for object as "perms_obj" %}
+                    <tr data-role='trigger'
+                        data-url="{% url 'project:project-detail' object.pk %}">
+                        <td>
+                            <div class='cut-text'>
+                                <a data-action="stop" href="{{object.get_absolute_url}}" title="{{object.name}}">{{object.name}}</a>
+                            </div>
+                        </td>
+                        <td>
+                            {% include "tags/link_customer.html" with customer=object.customer %}
+                        </td>
+                        <td>{{object.location|default:"-"}}</td>
+                        <td>
+                            <span class='block cut-text'>{{object.start|date|localize|capfirst|default:"-"}}
+                            </span>
+                        </td>
+                        <td>
+                            <span class='block cut-text'>
+                            {% if object.end %}
+                                {{object.end|date|localize|capfirst}}
+                            {% else %}
+                                {{object.last_day|date|localize|capfirst}}
+                            {% endif %}</span>
+                        </td>
+                        <td>{{object.duration}} {{object.get_lapse_display}}{{ object.duration|pluralize }}</td>
+                        <td>
+                            {% if object.project_manager %}
+                            {% include "tags/link_user2.html" with member=object.project_manager.user %}
+                            {% endif %}
+                        </td>
+                        <td data-action='stop'>
+                            {% include "project/project_action_list.html" with perms=perms_obj project=object global_perms=perms %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

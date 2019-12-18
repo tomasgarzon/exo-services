@@ -1,0 +1,9 @@
+uuid: eff36fb6-3f5a-433f-b482-e955f604fa6c
+user: !account ef70053f-755b-4b40-bb73-6832d16488e7 # Gorka Arrizabalaga
+title: Educational Futures in Spain
+start: !timedelta -1d
+end: !timedelta -1d
+category: SP
+exo_role: SAD
+status: CO
+url: /ecosystem/opportunities/1/

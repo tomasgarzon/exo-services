@@ -1,0 +1,24 @@
+name: Harris Ltd Edge
+uuid: cec77c17-3420-4e53-ad60-1d5ab2bb69d4
+stream: Edge Stream
+coach: !consultant Amy Finch
+created_by: !exo_account Quality Assurance
+project: !sprint_automated Harris LTD
+members:
+  - short_name: Guy John
+    email: guyjohn@example.com
+    uuid: 3d5e7d43-3954-4413-9bda-0150aaedf71d
+    image: man/19
+  - short_name: Vanessa Benson
+    email: vanessabenson@example.com
+    uuid: c49fe3d6-cb3d-4d0c-b21d-855e36100fb5
+    image: woman/16
+  - short_name: Sophie Ross
+    email: sophieross@example.com
+    uuid: 94338054-c489-4150-98c3-f828804cc21e
+    image: woman/17
+  - short_name: Albert Wright
+    email: albertwright@example.com
+    updated_profile: true
+    uuid: 5c6fdc9e-9cda-4313-96da-b54cd9d76b40
+    image: man/20

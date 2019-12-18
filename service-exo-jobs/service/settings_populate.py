@@ -1,0 +1,11 @@
+POPULATE_ALLOWED_DATA_FOLDERS = [
+    'accounts',
+    'jobs',
+]
+
+POPULATE_ALLOWED_POPULATE_ENTITIES = [
+    'accounts',
+    'jobs',
+]
+
+POPULATE_REQUIRED_SEQUENCE_RESET_MODELS = []

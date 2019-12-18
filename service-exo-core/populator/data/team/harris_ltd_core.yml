@@ -1,0 +1,19 @@
+name: Harris Ltd Core
+uuid: 7c71ec87-42ab-4060-a055-f80b697a451c
+stream: Core Stream
+coach: !consultant Philip Robson
+created_by: !exo_account Quality Assurance
+project: !sprint_automated Harris LTD
+members:
+  - short_name: Melissa Jones
+    email: melissajones@example.com
+    uuid: 5a2d05f3-73b7-41b7-bed4-70b2d77b5772
+    image: woman/15
+  - short_name: Marcus Moore
+    email: marcusmoore@example.com
+    uuid: 29408537-babb-4819-985c-dd49090da210
+    image: man/18
+  - short_name: Cathy Palmer
+    email: cathypalmer@example.com
+    uuid: f6d24d72-cc83-4617-b2bd-d33f9920795d
+    image: woman/15

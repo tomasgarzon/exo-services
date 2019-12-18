@@ -1,0 +1,116 @@
+{% extends "base/content.html" %}
+{% load bootstrap_pagination guardian_tags staticfiles django_bootstrap_breadcrumbs breadcrumb images %}
+{% load project l10n %}
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb_for url_list %}
+        {{type_project_plural|capfirst}}
+    {% endbreadcrumb_for %}
+{% endblock %}
+
+{% block header %}
+<div class="col-lg-10">
+    <h2>{{type_project_plural|capfirst}}</h2>
+</div>
+<div class="col-lg-2">
+    {% if perms.project.add_project %}
+        <a id="add_service" class="btn btn-primary pull-right m-t-8 m-r-md">Add {{type_project}}</a>
+    {% endif %}
+</div>
+<div class="col-xs-12 p-r-none">
+    {% render_view_breadcrumbs "base/breadcrumb.html" %}
+</div>
+{% endblock %}
+
+{% block main %}
+<div class='row project-list-detail' data-role="list-detail" id='project-list-detail' data-automated="{{perms.sprint_automated.add_sprintautomated}}">
+    <div class='col-lg-12' data-role='list' data-list="col-lg-12" data-detail='col-lg-8'>
+        <div class='ibox float-e-margins'>
+            <div class="ibox-title">
+                <h2>{{type_project_plural|capfirst}}</h2>
+            </div>
+            <div class="ibox-content">
+                <form action="." method='get'>
+                    <div class="input-group">
+                        {{form_filter.search}}
+                        <span class="input-group-btn">
+                                <button type="submit" class="btn btn btn-default"> <i class="fa fa-search"></i> Search</button>
+                        </span>
+                    </div>
+                </form>
+                <div class="table-responsive">
+                     <span class="pull-right text-muted m-t-md m-b-md l-h-34">{{paginator.count}} {{type_project}}{{ paginator.count|pluralize }} found</span>
+                     {% if object_list %}
+                    <table class="table table-hover list-detail sprints projects table-l-fix">
+                        <thead>
+                            <tr>
+                                <th width="20%">Name</th>
+                                <th width="15%">Type</th>
+                                <th width="15%">Location</th>
+                                <th width="10%">Start</th>
+                                <th width="10%">End</th>
+                                <th width="20%">Client</th>
+                                <th width="5%">Status</th>
+                                <th width="5%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for object in object_list %}
+                                {% get_obj_perms user for object as "perms_obj" %}
+                            <tr data-role='trigger'
+                                data-url="{% url 'project:project-detail' object.pk %}">
+                                <td>
+                                    <div class='cut-text'>
+                                        {% next_url_project object as project_url %}
+                                        {% if project_url %}
+                                            <a data-action="stop" href="{{project_url}}" title="{{object.name}}">{{object.name}}</a>
+                                        {% else %}
+                                            {{object.name}}
+                                        {% endif %}
+                                    </div>
+                                </td>
+                                <td>{{object.type_verbose_name}}</td>
+                                <td>{{object.location|default:"-"}}</td>
+                                <td><span class='block cut-text'>{{object.start_localize|date_format:"Y-M-d"|default:'-'}}</td>
+                                <td><span class='block cut-text'>{{object.end_localize|date_format:"Y-M-d"|default:'-'}}</td>
+                                <td>
+                                    {% include "tags/link_customer.html" with customer=object.customer %}
+                                </td>
+                                <td>
+                                    <span class="label label-status badge {{object.get_status_display|slugify}}">{{object.get_status_display}}</span>
+                                </td>
+                                <td data-action='stop'>
+                                    {% include "project/project_action_list.html" with perms=perms_obj project=object global_perms=perms %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <div class="pull-right">
+                        {% bootstrap_paginate page_obj range=10 %}
+                    </div>
+                    {% else %}
+                        {% if perms.project.add_project %}
+                            <div class="text-center full-width pull-left m-b-md">
+                                You don't have {{type_project_plural}} yet.<br>
+                                <a id="add_service" class="btn btn-primary pull-right m-t-sm">Add {{type_project}}</a>
+                            </div>
+                        {% else %}
+                            <div class="text-center full-width pull-left m-b-md">
+                                <i class="fa fa-circle f-24" aria-hidden="true"></i><br>
+                                You don't have {{type_project_plural}} yet.
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='col-lg-0' data-role='detail' data-list="col-lg-0" data-detail='col-lg-4'></div>
+</div>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'project/js/project_list.js' %}"></script>
+    <script src="{% static 'project/js/service_new_form.js' %}"></script>
+{% endblock %}

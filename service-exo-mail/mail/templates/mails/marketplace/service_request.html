@@ -1,0 +1,20 @@
+{% extends "base/email.html" %}
+{% load common_mails %}
+
+{% block subtitle %}
+New service request from OpenExO
+{% endblock %}
+
+{% block main %}
+<p>Name: {{name}}</p>
+<p>Email: {{email}}</p>
+<p>Company: {{company}}</p>
+<p>Position: {{position}}</p>
+<p>Who will participate?: {{participant}}</p>
+<p>What is the motivation?: {{motivation}}</p>
+<p>How many employees? {{employees}}</p>
+<p>How many inititatives? {{initiatives}}</p>
+<p>What is the goal? {{goal}}</p>
+<p>Book: {{book}}</p>
+<p>Comment: {{comment}}</p>
+{% endblock %}

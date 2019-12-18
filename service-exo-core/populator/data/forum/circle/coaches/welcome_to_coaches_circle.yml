@@ -1,0 +1,20 @@
+title: Welcome to Coaches circle
+user: !exo_account Quality Assurance
+date: !timedelta -8d
+circle: !circle Coaches
+description: |
+  <p>Hello ExO Coaches and ExO Head Coaches,</p>
+
+  <p>Welcome to your new Coaches Circle! This is a private forum for past and present ExO Coaches and ExO Head Coaches to explore, discuss and learn best practices from each other.</p>
+
+  <p>We also want to take this opportunity to recommend two videos located in the Media Library that can help you understand what Head Coaches and Coaches do.</p>
+  <ul>
+    <li>What is an ExO Sprint Head Coach?</li>
+    <li>What is an ExO Sprint Coach?</li>
+  </ul>
+
+  <p>Looking forward to seeing your collaborations and questions here!</p>
+
+activities:
+  - user: !consultant Leticia Ferreira Dias
+    date: !timedelta -8d

@@ -1,0 +1,70 @@
+{% extends 'base/master_detail_detail_view.html' %}
+{% load images permission_tags %}
+
+{% block detail_actions %}
+    {% include "project/steps/actions.html" with step=object %}
+{% endblock %}
+
+{% block detail_object %}
+    <h3 class="block cut-text">{{object.short_name}}</h3>
+    <p class="m-b-xs">
+      {% include 'project/steps/step_dates.html' with object=object %}
+    </p>
+{% endblock %}
+
+{% block detail_content %}
+    <div class="ibox-content no-padding">
+        <div class="tabs-container">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#info">Info</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="info" class="tab-pane active">
+                    <div class="panel-body">
+                        <div class="m-t-8">
+                            <div class="chat-element p-b-none">
+                                  <p class="border-bottom p-b-5">
+                                    <strong>Name</strong>
+                                  </p>
+                                  <p class="m-b-xs l-h-20">
+                                      {{ object.short_name }}
+                                  </p>
+                             </div>
+                             <div class="chat-element p-b-none">
+                                  <p class="border-bottom p-b-5">
+                                    <strong>Date</strong>
+                                  </p>
+                                  <p class="m-b-xs l-h-20">
+                                      {{ object.start }} - {{object.end}}
+                                  </p>
+                             </div>
+                             {% for step_stream in object.streams.all %}
+                              <div class="chat-element p-b-none">
+                                  <p class="border-bottom p-b-5">
+                                      <strong>{{step_stream.get_stream_display}}</strong>
+                                  </p>
+                               </div>
+                               <div class="chat-element p-b-none">
+                                    <p class="border-bottom p-b-5">
+                                      <strong>Goal</strong>
+                                    </p>
+                                    <p class="m-b-xs l-h-20">
+                                        {{ step_stream.goal|default:"" }}
+                                    </p>
+                               </div>
+                               <div class="chat-element p-b-none">
+                                    <p class="border-bottom p-b-5">
+                                      <strong>Guidelines</strong>
+                                    </p>
+                                    <p class="m-b-xs l-h-20">
+                                        {{ step_stream.guidelines|markdown|linebreaks }}
+                                    </p>
+                               </div>
+                             {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

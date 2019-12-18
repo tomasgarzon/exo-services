@@ -1,0 +1,105 @@
+{% extends "base/content.html" %}
+{% load bootstrap_pagination guardian_tags staticfiles %}
+{% load django_bootstrap_breadcrumbs breadcrumb %}
+{% load images exotemplates %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Resources" "learning:resource-list" %}
+{% endblock %}
+
+{% block header %}
+<div class="col-lg-10">
+    <h2>Resources</h2>
+</div>
+<div class="col-lg-2">
+    {% if perms.learning.add_resource %}
+        <a href="{% url 'learning:resource-add' %}" class="btn btn-primary pull-right m-t-8 m-r-md">Add resource</a>
+    {% endif %}
+
+</div>
+<div class="col-xs-12 p-r-none">
+    {% render_view_breadcrumbs "base/breadcrumb.html" %}
+</div>
+{% endblock %}
+
+{% block main %}
+<div class='row resource-list-detail' data-role="list-detail" id='resource-list-detail'>
+    <div class='col-lg-12' data-role='list' data-list="col-lg-12" data-detail='col-lg-8'>
+        <div class='ibox float-e-margins'>
+            <div class="ibox-title">
+                <h2>Resources</h2>
+            </div>
+            <div class="ibox-content">
+                <form action="." method='get'>
+                    <div class="input-group">
+                        {{form_filter.search}}
+                        <span class="input-group-btn">
+                                <button type="submit" class="btn btn btn-default"> <i class="fa fa-search"></i> Search</button>
+                        </span>
+                    </div>
+                </form>
+                <div class="table-responsive">
+                    <span class="pull-right text-muted m-t-md m-b-md l-h-34">{{paginator.count}} {{paginator.count|exo_pluralize:view.model|lower}} found</span>
+                    {% if object_list %}
+                    <table class="table table-hover list-detail text-left resource table-l-fix">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th width="25%">Name</th>
+                                <th width="25%">Description</th>
+                                <th width="25%">Tags</th>
+                                <th width="10%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for object in object_list %}
+                            <tr data-role='trigger' data-url="{% url 'learning:resource-detail' object.pk %}" class="{% if not object.active %}todo-completed{%endif%}">
+                                <td>
+                                    {{object.created|date|capfirst}}
+                                </td>
+                                <td>
+                                    <div class='cut-text' title="{{object.name}}">
+                                        {{object.name}}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class='cut-text' title="{{object.description}}">
+                                        {{object.description|default:""}}
+                                    </div>
+                                </td>
+                                <td>
+                                    {% for tag in object.tags.all %}
+                                        <span class="label label-status label-info">{{tag}}</span>
+                                    {% endfor %}
+                                </td>
+                                <td data-action='stop'>
+                                    {% include "learning/resources/action_list.html" with resource=object %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <div class="pull-right">
+                        {% bootstrap_paginate page_obj range=10 %}
+                    </div>
+                    {% else %}
+                        {% if perms.learning.add_resource %}
+                            <div class="text-center full-width pull-left m-b-md">
+                                You don't have resources yet.<br>
+                                <a href="{% url 'learning:resource-add' %}" class="btn btn-primary m-t-sm">Add resource</a>
+                            </div>
+                        {% else %}
+                            <div class="text-center full-width pull-left m-b-md">
+                                <i class="fa fa-file-text f-24" aria-hidden="true"></i><br>
+                                You don't have resources yet.
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='col-lg-0' data-role='detail' data-list="col-lg-0" data-detail='col-lg-4'></div>
+</div>
+{% endblock %}

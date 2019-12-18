@@ -1,0 +1,375 @@
+---
+name: Awake assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: awake_main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/287418032
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287418032" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p><strong>Awake—are you looking closely enough!</strong></p>
+      <p>It is time to awake your organization and realize how fast things are changing around you, at a pace never seen before. Exponential technologies generate abundance in everything and traditinal busines models based on scarcity are becaming obsolete, urging companies to evolve if they want to participate in the new upcoming world.</p>
+      <p>However, organizations are protected from change by their 'immune system' which often ends up attacking innovation and any signs of what is possible in the future.</p>
+      <p>By following this Awake assignment, you will be abe to better understand the past, present and future of exponential technologies and their potential for the future of humanity. You will hear Salim Ismail give many examples of disruption and exponential changes in the world around us and understand better how Exponential Organizations can thrive in this new world where traditional organizations often can't cope.</p>
+      <p>You will be able to understand the difference between linear vs. exponential thinking and what your organization can do to adapt to the rapidly changing world of today.</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Understand the nature of exponential change and the ‘4Ds’
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 0
+            type: Resource
+            resources:
+            - name: awake_task_1_video
+              type: Video
+              status: Available
+              link: https://vimeo.com/287419645
+              iframe: |
+                <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287419645" frameborder="0" allowfullscreen></iframe>
+              order: 1
+              description:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>Second video looks into the nature of exponential change, gives examples of solar energy and DNA sequencing and introduces the ‘4Ds’ of exponential change.</p>
+          - title: Tips
+            subtitle:
+            order: 2
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                Watch the video in a quiet place where you won't be disturbed
+            - order: 2
+              description: |
+                Take note of all the things you hear but note also where your mind takes you as a result
+            - order: 3
+              description: |
+                Continue your own search online for any follow up thoughts and topics
+      - name: Get to know the first 2 Ds - Digitize and Disrupt
+        order: 2
+        blocks:
+        - title:
+          subtitle:
+          order: 0
+          type: Resource
+          resources:
+          - name: awake_task_2_video
+            type: Video
+            status: Available
+            link: https://vimeo.com/287419994
+            iframe: |
+              <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287419994" frameborder="0" allowfullscreen></iframe>
+            order: 1
+            description:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>This video dives deeper into the first 2 Ds - Digitize and Disrupt. It provides definition and examples for both concepts.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Watch the video in a quiet place where you won't be disturbed
+          - order: 2
+            description: |
+              Take note of all the things you hear but note also where your mind takes you as a result
+          - order: 3
+            description: |
+              Continue your own search online for any follow up thoughts and topics
+      - name: Get to know second 2 Ds - Demonetize and Democratize
+        order: 3
+        blocks:
+        - title:
+          subtitle:
+          order: 0
+          type: Resource
+          resources:
+          - name: awake_task_3_video
+            type: Video
+            status: Available
+            link: https://vimeo.com/287420300
+            iframe: |
+              <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287420300" frameborder="0" allowfullscreen></iframe>
+            order: 1
+            description:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>This video dives deeper into the second 2 Ds - Demonetize and Democratize. It provides definition and examples for both concepts.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Watch the video in a quiet place where you won't be disturbed
+          - order: 2
+            description: |
+              Take note of all the things you hear but note also where your mind takes you as a result
+          - order: 3
+            description: |
+              Continue your own search online for any follow up thoughts and topics
+      - name: Learn about an Exponential Organization
+        order: 4
+        blocks:
+        - title:
+          subtitle:
+          order: 0
+          type: Resource
+          resources:
+          - name: awake_task_4_video
+            type: Video
+            status: Available
+            link: https://vimeo.com/287420971
+            iframe: |
+              <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287420971" frameborder="0" allowfullscreen></iframe>
+            order: 1
+            description:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>The fifth video looks into the implications of exponential change on how we build organizations today and introduces the concept of an ‘Exponential Organization’ which can scale effortlessly and dramatically outperform its peers.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Watch the video in a quiet place where you won't be disturbed
+          - order: 2
+            description: |
+              Take note of all the things you hear but note also where your mind takes you as a result
+          - order: 3
+            description: |
+              Continue your own search online for any follow up thoughts and topics
+        - title: Resources
+          subtitle:
+          order: 3
+          type: Text
+          text: |
+            <p>Read 'Platform Revolution': How Networked Markets Are Transforming the Economy, by Parker, Van Allstyne, Choudary</p>
+      - name: Understand the ExO Attributes
+        order: 5
+        blocks:
+        - title:
+          subtitle:
+          order: 0
+          type: Resource
+          resources:
+          - name: awake_task_5_video
+            type: Video
+            status: Available
+            link: https://vimeo.com/287421356
+            iframe: |
+              <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287421356" frameborder="0" allowfullscreen></iframe>
+            order: 1
+            description:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>This video dives deeper into the 11 ingredients of Exponential. There are 10 ExO Attributes + a Massive Transformative Purpose (MTP) which have been extracted from successful ExO&#39;s disrupting industries today.</p>
+            <p>The SCALE attributes help you to reach abundance outside of your organization and IDEAS attributes help you to manage this abundance internally:</p>
+            <p><strong>S.C.A.L.E.:</strong></p>
+            <p>- Staff on Demand<br>- Community<br>- Algorithm<br>- Leverage Assets<br>- Engagement</p>
+            <p><strong>I.D.E.A.S.:</strong></p>
+            <p>- Interfaces<br>- Dashboards<br>- Experimentation<br>- Autonomy<br>- Social Technologies</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Watch the video in a quiet place where you won't be disturbed
+          - order: 2
+            description: |
+              Take note of all the things you hear but note also where your mind takes you as a result
+          - order: 3
+            description: |
+              Continue your own search online for any follow up thoughts and topics
+        - title: Resources
+          subtitle:
+          order: 3
+          type: Text
+          text: |
+            <p>Read 'Exponential Organizations' by Salim Ismail, Yuri van Geest and Michael S. Malone</p>
+      - name: Examine the 9 implications of ExOs
+        order: 6
+        blocks:
+        - title:
+          subtitle:
+          order: 0
+          type: Resource
+          resources:
+          - name: awake_task_6_video
+            type: Video
+            status: Available
+            link: https://vimeo.com/287421431
+            iframe: |
+              <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287421431" frameborder="0" allowfullscreen></iframe>
+            order: 1
+            description:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>This video examines 9 key implications of the business world shaped by Exponential Organizations and looks into how this changes what organizations need to focus on today in order to succeed.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Watch the video in a quiet place where you won't be disturbed
+          - order: 2
+            description: |
+              Take note of all the things you hear but note also where your mind takes you as a result
+          - order: 3
+            description: |
+              Continue your own search online for any follow up thoughts and topics
+      - name: Explore how to transform an existing company into ExO
+        order: 7
+        blocks:
+        - title:
+          subtitle:
+          order: 0
+          type: Resource
+          resources:
+          - name: awake_task_7_video
+            type: Video
+            status: Available
+            link: https://vimeo.com/287421491
+            iframe: |
+              <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287421491" frameborder="0" allowfullscreen></iframe>
+            order: 1
+            description:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>This video looks into how an existing legacy business can be transformed into an Exponential Organization and outlines the 4 key steps to make it happen.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Watch the video in a quiet place where you won't be disturbed
+          - order: 2
+            description: |
+              Take note of all the things you hear but note also where your mind takes you as a result
+          - order: 3
+            description: |
+              Continue your own search online for any follow up thoughts and topics
+      - name: Do an exercise on linear vs exponential thinking
+        order: 8
+        blocks:
+        - title:
+          subtitle:
+          order: 0
+          type: Resource
+          resources:
+          - name: awake_task_8_video
+            type: Video
+            status: Available
+            link: https://vimeo.com/287421571
+            iframe: |
+              <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287421571" frameborder="0" allowfullscreen></iframe>
+            order: 1
+            description:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>Last video of the Awake part features an exercise to help understand the difference between linear and exponential thinking. Once you complete this task, you can proceed onto the ‘Align’ set of videos.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Watch the video in a quiet place where you won't be disturbed
+          - order: 2
+            description: |
+              Take note of all the things you hear but note also where your mind takes you as a result
+          - order: 3
+            description: |
+              Continue your own search online for any follow up thoughts and topics
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          Recommend the entire leadership team to read the book Exponential Organizations from Salim Ismail
+      - order: 2
+        description: |
+          Subscribe to regular updates from websites such as Singularity Hub, Diamandis.com and Wired.com
+      - order: 3
+        description: |
+          Look for exponential signs in major technological developments around you
+      - order: 4
+        description: |
+          Become part of a community of people who have exopential mindset
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Exponential thinking exercise
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/JYZQyvwVSq2RO04WdYa8/Exponential_thinking_exercise.pdf/
+        description:
+        order: 1
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

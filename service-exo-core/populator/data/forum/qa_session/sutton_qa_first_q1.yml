@@ -1,0 +1,52 @@
+title: How many vehicles in 10 years
+user: !exo_account Mary Campbell
+team: !team Sutton Inc Core
+date: !timedelta -8d
+qa_session: !qa_session Sutton First Swarm session
+description: |
+  <p>Will the <strong>automotive/EV industry</strong> produce more cars in <em>10 years</em> or less? (Units)</p>
+  <p><br></p>
+  <p>Or will trends like autonomous driving and the rise of on demand mobility <strong>reduce the need for as many cars as today</strong>?</p>
+  <p><br></p>
+  <p>What about goods and human transport drones? Any market figures on that?</p>
+activities:
+  - user: !consultant Gorka Arrizabalaga
+    date: !timedelta -180h
+    reply: |
+      <p>My expectation is the number will go up due to developing economies building better roads and therefore more cars can be supported. In developed countries, there will a gradual switch from standard to autonomous cars, but they won't be supported everywhere so...</p>
+      <p>Elon Musk actually said in an interview once that autonomous cars will make traffic worse initially as they try to figure out/optimize the trip algorithms (a la Uber)</p>
+  - user: !consultant Gorka Arrizabalaga
+    date: !timedelta -179h
+    reply: |
+      Regarding drones market figures, here you have some insights:
+      <p><a href="https://www.businessinsider.com/commercial-uav-market-analysis-2017-8?IR=T" target="_blank">https://www.businessinsider.com/commercial-uav-market-analysis-2017-8?IR=T</a></p>
+  - user: !consultant Tina Weissberg
+    date: !timedelta -172h
+    reply: |
+      <p>I agree with Gorka.</p>
+      <p><br></p>
+      <p>Global demand is going up, mostly driven by China and India, where we are seeing the rapid emergence of cars as a service model (eg Uber, Didi, etc) which temporarily makes cars accessible on demand for a part of the population that can not afford to buy a car themselves.</p>
+      <p>EV and autonomous cars may take over but for the next ten years o would expect growth and a massive replacement cycle before the benefits of autonomous kicks in (medium to long term collapse down to 10-20pct of current fleet)</p>
+  - user: !consultant Lindsey Allen
+    date: !timedelta -161h
+    reply: |
+      <p>Unfortunately, the full report is a paid report, but the summary provides some <em>useful information</em>.</p>
+      <p><br></p>
+      <a href="https://www.grandviewresearch.com/industry-analysis/driverless-cars-market" target="_blank">https://www.grandviewresearch.com/industry-analysis/driverless-cars-market</a>
+  - user: !consultant Naina Lavrova
+    date: !timedelta -159h
+    reply: |
+      <p>Drones and autonomous delivery</p>
+      <p><br></p>
+      <p><a href="https://www.scmp.com/tech/e-commerce/article/2113266/drones-self-driving-vans-chinas-version-amazon-jdcom-continues-drive">https://www.scmp.com/tech/e-commerce/article/2113266/drones-self-driving-vans-chinas-version-amazon-jdcom-continues-drive" target="_blank">https://www.scmp.com/tech/e-commerce/article/2113266/drones-self-driving-vans-chinas-version-amazon-jdcom-continues-drive">https://www.scmp.com/tech/e-commerce/article/2113266/drones-self-driving-vans-chinas-version-amazon-jdcom-continues-drive</a></p>
+      <p><br></p>
+      <p><a href="https://www.zdnet.com/article/this-pint-sized-autonomous-delivery-vehicle-is-coming-to-city-streets-this-year/">https://www.zdnet.com/article/this-pint-sized-autonomous-delivery-vehicle-is-coming-to-city-streets-this-year/" target="_blank">https://www.zdnet.com/article/this-pint-sized-autonomous-delivery-vehicle-is-coming-to-city-streets-this-year/</a></p>
+  - user: !consultant Leticia Ferreira Dias
+    date: !timedelta -141h
+    reply: |
+      <p><a href="http://www.worldometers.info/cars/" target="_blank">http://www.worldometers.info/cars/</a></p>
+      <p><br></p>
+      <p>The trend is growth, and by more than a little bit!<p>
+      <p><br></p>
+      <p>Over <strong>70 million</strong> last year.</p>
+  - user: !consultant Gorka Arrizabalaga

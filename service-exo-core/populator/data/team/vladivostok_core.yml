@@ -1,0 +1,22 @@
+name: Vladivostok Core
+uuid: d0abc611-c42c-4084-b497-4bef988f062e
+stream: &stream Core Stream
+coach: !consultant Tina Weissberg
+created_by: !exo_account Quality Assurance
+project: !sprint_automated Vladivostok
+members:
+  - short_name: Yuri Sergeyev
+    email: yurisergeyev@example.com
+    updated_profile: true
+    image: man/32
+    uuid: 1a55c6ba-c524-40cf-a2b4-07380dd8e66d
+  - short_name: Yekaterina Krylova
+    email: yekaterinakrylova@example.com
+    updated_profile: true
+    uuid: 146192da-9b45-4532-9268-335196e5565c
+    image: woman/26
+  - short_name: Yelenia Nazarova
+    email: yelenianazarova@example.com
+    updated_profile: true
+    uuid: 88cd36fe-c901-4f98-89b3-90e1dd41970f
+    image: woman/27

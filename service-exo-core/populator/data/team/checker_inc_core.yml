@@ -1,0 +1,20 @@
+name: Checker INC Core
+uuid: 149d2ed1-db09-4516-adad-d22db331bff0
+stream: Core Stream
+coach: !consultant Najwa Jannah Saliba
+created_by: !exo_account Quality Assurance
+project: !sprint_automated Checker INC
+members:
+  - short_name: Mathias Schreiber
+    email: mathiaschreiber@example.com
+    uuid: 73d45106-23c6-4024-87fb-b2adb578205e
+    image: man/15
+  - short_name: Anna Weiss
+    email: annaweiss@example.com
+    updated_profile: true
+    image: woman/11
+    uuid: d074ab0e-44ec-4806-89d4-20b5f2061f94
+  - short_name: Jennifer Papst
+    email: jenpapst@example.com
+    uuid: e722967c-f5ec-45ae-9a67-d49e93bb3a7e
+    image: woman/12

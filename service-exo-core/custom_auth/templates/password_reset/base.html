@@ -1,0 +1,20 @@
+{% extends "exo-backoffice/base.html" %}
+{% load bootstrap3 %}
+{% load staticfiles %}
+
+{% block content %}
+<div class='row'>
+    <div class='col-md-6 col-sm-6 col-xs-6 col-md-offset-3'>
+        <div class="x_panel">
+            <div class="x_title">
+                    <h2>{% block title %}{% endblock %}</h2>
+                    <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                {% block content_main %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

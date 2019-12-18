@@ -1,0 +1,117 @@
+{% extends "base/content.html" %}
+{% load bootstrap_pagination bootstrap3 staticfiles django_bootstrap_breadcrumbs breadcrumb %}
+{% load images %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Clients" "customer:list" %}
+    {% if object.pk %}
+        {% breadcrumb "Edit" "customer:edit" object.pk %}
+    {% else %}
+        {% breadcrumb "Add client" "customer:add" %}
+    {% endif %}
+{% endblock %}
+
+{% block header %}
+<div class="col-lg-10">
+    <h2>Clients</h2>
+</div>
+<div class="col-xs-12 p-r-none">
+    {% render_view_breadcrumbs "base/breadcrumb.html" %}
+</div>
+{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class='ibox float-e-margins'>
+            <div class="ibox-title">
+                <h2>{% if object.pk %}Edit{% else %}Add{% endif %} client</h2>
+            </div>
+            <div class="ibox-content">
+                <form id='customer-form' action="." method="post" class="wizard-big wizard-step-3 styles-form" enctype='multipart/form-data' data-url-cancel="{% url 'customer:list' %}">
+                    {% csrf_token %}
+                    <h1>Company</h1>
+                    <fieldset>
+                        <p class="text_step_wizard m-l-none">Basic information about the Company</p>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                {% bootstrap_field form.name %}
+                                {% bootstrap_field form.description %}
+                                <label class="control-label pull-left col-xs-12 m-l-n m-b" for="id_profile_picture">Logo</label>
+                                <label title="Upload image file" for="id_profile_picture" class="btn btn-default clearfix m-t-3">
+                                        {{form.profile_picture}}
+                                        Upload logo
+                                </label>
+                                <div id="filename-logo"></div>
+                                {% if object.profile_picture %}
+                                    <div class="inline img-box pull-left m-r-sm">
+                                        <img alt="image" src="{% image_thumbnail_url object.profile_picture 24 24 %}" />
+                                    </div>
+                                {% endif %}
+                                {% bootstrap_field form.partner %}
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="text-center">
+                                    <div>
+                                        <i class="fa fa-building"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <h1>Market</h1>
+                    <fieldset>
+                        <p class="text_step_wizard m-l-none">Information about the market</p>
+                        <div class="col-lg-8">
+                            <p><strong>Exponential Quotient</strong></p>
+                            <p id='dev__exq'>{{object.organization.exq|floatformat:0|default:"Pending"}}</p>
+                            {% bootstrap_field form.industry %}
+                            {% bootstrap_field form.size %}
+                            {% bootstrap_field form.annual_revenue addon_before="$" %}
+                            {% bootstrap_field form.market_value addon_before="$" %}
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="text-center">
+                                <div>
+                                    <i class="fa fa-building"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <h1>Contact</h1>
+                    <fieldset>
+                        <p class="text_step_wizard m-l-none">Contact Information</p>
+                        <div class="col-lg-8">
+                            {% bootstrap_field form.address %}
+                            {% bootstrap_field form.postcode %}
+                            {% bootstrap_field form.location %}
+                            {% bootstrap_field form.place_id %}
+                            {% bootstrap_field form.timezone %}
+                            {% bootstrap_field form.website %}
+                            {% bootstrap_field form.phone %}
+                            {% bootstrap_field form.facebook %}
+                            {% bootstrap_field form.twitter %}
+                            {% bootstrap_field form.google %}
+                            {% bootstrap_field form.linkedin %}
+                            {% bootstrap_field form.blog %}
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="text-center">
+                                <div>
+                                    <i class="fa fa-building"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfYpBR8NJD07Yn2NGzyj6wGRr6e6E0628&libraries=places&language=en"></script>
+<script src="{% static 'customer/js/customer_form.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,31 @@
+uuid: dea133cb-834b-4de6-941a-54171f401267
+short_name: Lewis
+full_name: Lewis Carol
+status: Active
+image: man/12
+place:
+  name: Liverpool, UK
+  place_id: ChIJt2BwZIrfekgRAW4XP28E3EI
+time_zone: Europe/London
+languages:
+  - English
+industries:
+  - name: Auto
+    level: Advanced
+  - name: Aviation
+    level: Intermediate
+keywords:
+  - name: Innovation Ecosystems
+    level: Can inspire
+  - name: Experimentation
+    level: Can teach
+exo_attributes:
+  - attribute: Experimentation
+    level: I have implemented this several times
+exo_activities:
+  - Advising
+  - Consulting
+personal_mtp: Make Invention Accessible
+mtp_mastery: I have implemented this several times
+availability: Weekly
+last_activity: !timedelta -25h

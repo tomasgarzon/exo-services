@@ -1,0 +1,8 @@
+concept: California Salim Talk
+amount: '100.00'
+currency: usd
+email: benjaminpowell@example.com
+full_name: Benjamin Powell
+status: A
+date_payment: !timedelta 5d
+created_by: !account 5ec7b001-37a4-4bd4-95e3-d780377ed294 # Support

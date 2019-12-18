@@ -1,0 +1,57 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+autopep8 = "*"
+coverage = "*"
+django-debug-toolbar = "*"
+django-nose = "*"
+django-pdb = "*"
+flake8 = "*"
+flake8-debugger = "*"
+flake8-print = "*"
+flake8-todo = "*"
+ipdb = "*"
+pep8 = "*"
+pycodestyle = "*"
+pylint = "*"
+pylint-Django = "<3"
+s3cmd = "*"
+tblib = "*"
+
+[packages]
+boto = "*"
+celery = {version = "*", extras = ["redis"]}
+cryptography = "*"
+dj_anonymizer = "*"
+Django = "<3.0"
+django-appconf = "*"
+django-celery-results = "*"
+django-mailer = "*"
+django-mjml = "*"
+django-redis-sessions = "*"
+django-sendgrid-v5 = "*"
+django-storages = "*"
+djangorestframework = "*"
+drf-yasg = {version = "*", extras = ["validation"]}
+exo-changelog = "*"
+Faker = "*"
+gunicorn = "*"
+health-check = "*"
+Markdown = "*"
+mock = "*"
+redis = "*"
+requests = "*"
+requests-toolbelt = "*"
+schedule = "*"
+sendgrid = "*"
+sentry-sdk = "*"
+service_identity = "*"
+simple-user = ">=0.8.0"
+
+[requires]
+python_version = "3.7"
+# Requirements installed directly in docker, leave commented please
+# psycopg2-binary = "*"

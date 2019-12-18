@@ -1,0 +1,9 @@
+code: DISC20
+certification: L2
+expiry_date: !timedelta 4w
+max_uses: 100
+uses: 16
+discount: 20
+type: Percent
+owner: !consultant Tina Weissberg
+level: level_2  # TODO: Remove after migration

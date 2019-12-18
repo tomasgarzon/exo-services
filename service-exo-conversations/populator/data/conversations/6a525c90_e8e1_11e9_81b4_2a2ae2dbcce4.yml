@@ -1,0 +1,15 @@
+uuid: 6a525c90-e8e1-11e9-81b4-2a2ae2dbcce4
+name: Philip Robson
+uuid_related_object: 2be6fe21-256e-41f5-8198-7f4b895e69eb
+created_by: !account &tina 5d640164-b7a3-4936-b37e-3ad5a23a2036  # Tina Weissberg
+_type: O
+icon: /media/avatars/48_48/tina-weissberg.jpg
+users:
+  - user: *tina
+    name: Tina Weissberg
+    profile_url: /public/profile/tina-weissberg/
+    profile_picture: /media/avatars/48_48/tina-weissberg.jpg
+  - user: !account 0737a9f9-22a0-4286-8be3-34a3e19d92dc
+    name: Naina Lavrova
+    profile_url: /public/profile/naina-lavrova/
+    profile_picture: /media/avatars/48_48/naina-lavrova.jpg

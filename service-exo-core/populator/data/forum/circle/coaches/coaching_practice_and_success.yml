@@ -1,0 +1,22 @@
+title: Coaching practice and success
+user: !consultant Naina Lavrova
+date: !timedelta -2d
+circle: !circle Coaches
+description: |
+  <p>Hi, coaches.</p>
+  <p>I’m interested to hear what you are doing that is working well and where you are most challenged. Ideas would be amazingly valuable for others who are stepping into the first Coach Sprint role. What have you done that’s worked well? What have you been most challenged with? What has most surprised you as a coach?</p>
+files:
+  - filename: animal-2923186_960_720.jpg
+    mimetype: image/jpeg
+    filestack_url: https://cdn.filestackcontent.com/CldEFMPyT2OUN26o9jo8
+activities:
+  - user: !consultant Tina Weissberg
+    date: !timedelta -1d
+  - user: !consultant Wilhelm Muller
+    date: !timedelta -8h
+    reply: |
+      <p>I have being challenged with team dynamics, as it is quite hard to expect to build a team behaivor with people that just got to know each other, they are used to work in silos, and they are oversees.</p>
+
+      <p>For example, if you talk to people inside Spotify, where there is a squad oriented celular-structure, they even try to avoid teams working separately as it is known to be highly challenging in terms of efficiency and team building…</p>
+
+      <p>There is also a human component here that is not being taking into accounts, that there is people that likes to work in groups and others that hates to work in groups. At once, in mostly every team oriented organization there is a selection process where even your future team gets involve to see how likely is that you will be a team player.</p>

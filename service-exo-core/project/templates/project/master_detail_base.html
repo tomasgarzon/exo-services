@@ -1,0 +1,66 @@
+{% extends "project/base.html" %}
+
+{% load bootstrap_pagination staticfiles exotemplates django_bootstrap_breadcrumbs class_name images %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+{% endblock %}
+
+{% block main_project %}
+    <div class='row' data-role="list-detail" id='{{object_class}}-list-detail'>
+        <div class='col-lg-12' data-role='list' data-list="col-lg-12" data-detail='col-lg-8'>
+            <div class='ibox float-e-margins'>
+                <div class="ibox-title ibox-tools col-xs-12">
+                    <h2 class="pull-left">{% block section_title %}{{view.model|verbose_name_plural}}{% endblock %}</h2>
+                </div>
+                <div class="ibox-content m-t-none">
+                    <div class="m-t-xs">
+                        {% block search_form %}
+                            <form action="." method='get' class="dev__form_filter">
+                                <div class="input-group">
+                                    {{form_filter.search}}
+                                    <span class="input-group-btn">
+                                            <button type="submit" class="btn btn btn-default"> <i class="fa fa-search"></i> Search</button>
+                                    </span>
+                                </div>
+                            </form>
+                        {% endblock %}
+                        <div class="table-responsive">
+                            <div class='pull-right full-width m-t-md m-b-md'>
+                                {% block filter_actions %}{% endblock %}
+                                <div class='pull-right l-h-34'>
+                                {% block pagination_info %}
+                                   {{paginator.count}} {{paginator.count|exo_pluralize:view.model|lower}} found
+                                {% endblock %}
+                                </div>
+                            </div>
+                            {% if object_list %}
+                                {% block master_view %}
+                                {% endblock %}
+                            {% else %}
+                                {% block empty_view %}
+                                    <div class="text-center full-width pull-left m-b-md">
+                                        <i class="fa {{view.model|verbose_name|fa_icon}} f-24" aria-hidden="true"></i><br>
+                                        You don't have {{view.model|verbose_name_plural|lower}} yet.
+                                    </div>
+                                {% endblock %}
+                            {% endif %}
+                            <div class="row">
+                                {% include "utils/bulk_actions.html" with form=form_bulk %}
+                                {% if is_paginated %}
+                                    <div class="pull-right">
+                                        {% bootstrap_paginate page_obj range=10 %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='col-lg-0' data-role='detail' data-list="col-lg-0" data-detail='col-lg-4'>
+            {% block detail_view %} {% endblock %}
+        </div>
+    </div>
+
+{% endblock %}

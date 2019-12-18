@@ -1,0 +1,52 @@
+{% load images guardian_tags consultant %}
+{% get_obj_perms user for object as "perms_obj" %}
+<div class='ibox float-e-margins'>
+    <div class="ibox-title ibox-tools col-xs-12">
+        <div class="pull-left m-r-sm">
+            <img alt="image" src="{% image_thumbnail_url object.user.profile_picture 48 48 %}" class="img-circle circle-border m-b-md"/>
+        </div>
+
+            <div class='pull-right icons-ibox-title'>
+                <a class="close-link-detail pull-right m-r-none" data-role="close-detail">
+                    <i class="fa fa-times"></i>
+                </a>
+                {% include "network/consultant_action_list.html" with perms=perms_obj customer=object global_perms=perms %}
+            </div>
+        <div class="pull-left p-n t-a-left m-r-sm title with-image">
+            <h3 class="block cut-text m-t-none" title="{{object.get_full_name}}">{{object.get_full_name}}</h3>
+            <p class="m-b-none cut-text">{{object.user.email}}</p>
+            {% if object.is_pending_validation %}
+                <span class="m-b-xs m-l-none m-t-3 label label-status requested">{% consultant_registration_status object %}</span>
+            {% endif %}
+        </div>
+    </div>
+    <div class="ibox-content">
+        <div class="tabs-container">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#skills">Skills</a></li>
+                <li class=""><a data-toggle="tab" href="#certification">Registration log</a></li>
+                <li class=""><a data-toggle="tab" href="#projects">Projects</a></li>
+            </ul>
+            <div class="tab-content consultant_details">
+                <div id="skills" class="tab-pane active">
+                    <div class="panel-body">
+                        <div class='validation_status_info m-t-md'>
+                            {% include "network/details/skills.html" with agreement_validation=agreement_validation skill_assessment_validation=skill_assessment_validation object=object %}
+                        </div>
+                    </div>
+                </div>
+                <div id="certification" class="tab-pane">
+                    <div class="panel-body">
+                        {% include "network/details/certification.html" with agreement_validation=agreement_validation skill_assessment_validation=skill_assessment_validation object=object %}
+                    </div>
+                </div>
+                <div id="projects" class="tab-pane">
+                    <div class="panel-body chat-activity-list">
+                        <div class="chat-element no-padding no-margins m-t-14">
+                            {% include "network/details/projects.html" with object=object %}
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

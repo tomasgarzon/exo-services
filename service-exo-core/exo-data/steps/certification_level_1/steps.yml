@@ -1,0 +1,12 @@
+---
+lapse: P
+total: 2
+steps:
+- name: Learn
+  index: 1
+  core_quiz_url: ""
+  edge_quiz_url: ""
+- name: Certify
+  index: 2
+  core_quiz_url: ""
+  edge_quiz_url: ""

@@ -1,0 +1,16 @@
+{% load static %}
+
+{% if form %}
+    <div id="pagination-bulk-actions" class="col-md-3">
+        <form id="bulkaction-form" action="." method='get'>
+            <div class="input-group">
+                {{form.actions}}
+                {{form.object_list}}
+                <span class="input-group-btn">
+                    <button id="submit" type="submit" class="btn btn btn-default">
+                    <i class="fa"></i> Apply</button>
+                </span>
+            </div>
+        </form>
+    </div>
+{% endif %}

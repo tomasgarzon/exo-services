@@ -1,0 +1,30 @@
+{% load images guardian_tags %}
+
+{% get_obj_perms user for object as "perms_obj" %}
+
+<div class='ibox float-e-margins'>
+    <div class="ibox-title ibox-tools col-xs-12">
+        <div class="pull-left">
+            {% block detail_object_left %} {% endblock %}
+        </div>
+        <div class='pull-right icons-ibox-title'>
+            <div class='pull-left detail-actions'>
+                {% block detail_actions %} {% endblock %}
+            </div>
+            <a class="close-link-detail pull-right m-r-none" data-role="close-detail">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+        <div class="pull-left p-n t-a-left m-r-sm title without-image">
+            {% block detail_object %} {% endblock %}
+        </div>
+    </div>
+
+    <div class="ibox-content m-t-none">
+        <div clas="tab-content">
+            <div class="panel-body p-t-none p-l-0 p-r-0 m-t-7">
+            {% block detail_content %} {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>

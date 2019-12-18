@@ -1,0 +1,15 @@
+name: ExO Trainer Certification - Athens
+course_name: ExO Training
+description: Deliver a suite of in-person and virtual ExO Workshops and other services
+type: consultantrole-exo-trainer
+certification_role: CTR
+created_by: !exo_account Quality Assurance
+instructor_name: Quality Assurance
+issued_on: !datetime Dec 12 2017
+certifications:
+  - consultant: !consultant Naina Lavrova
+    accredible_id: 11598989
+    accredible_url: https://sandbox.credential.net/3v1u7fxd
+  - consultant: !consultant Cerdic Roper
+    accredible_id: 11598990
+    accredible_url: https://sandbox.credential.net/qlnpo3ak

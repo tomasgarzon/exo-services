@@ -1,0 +1,95 @@
+---
+name: Conceptual Phase assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: False
+  enabled_reflect: False
+blocks:
+  - title:
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>This stage we will focus on the first three stages of the Design Thinking Process (Empathise - Define - Ideate).</p>
+  - title: Assignment Objectives
+    subtitle:
+    order: 2
+    type: Text
+    text: |
+      <ul><li>Examine submitted Idea Challenge proposals, research and data sources.</li><li>Brainstorm and integrate the ideas and supporting materials into potential solutions that consider the needs identified in the ALIGN Stage.</li><li>Develop initial concepts (e.g. sketches, outline specifications, or similar.)</li><li>Create a vision addressing the local challenge using exponential technologies and principles.</li></ul>
+      <p>To succeed in this phase, teams should refine the scope and significance of the problem, review the state of science/technology available solutions.</p>
+  - title: Evaluation Criteria
+    subtitle:
+    order: 3
+    type: Text
+    text: |
+      <ul><li>Research and proposals were synthesized into a coherent vision</li><li>Concept hypotheses were defined based on research into citizens’ needs</li><li>Planned experiments were clearly outlined for further evaluation</li><li>A compelling vision and approach were created to address the problem space using exponential organizations (ExO) methodology</li></ul>
+  - title: Deliverables Checklist
+    subtitle:
+    order: 4
+    type: Tasks
+    tasks:
+      - name: Live remote 15 min presentation by appointed team member
+        order: 1
+        blocks:
+      - name: Initial MTP (Massive Transformative Purpose)
+        order: 2
+        blocks:
+      - name: Integrated concepts which take into account supporting materials provided, including ALIGN workshop outcomes, team research, local region input, and more. (briefings, Flipboard)
+        order: 3
+        blocks:
+      - name: Review and integrate ideas from the Idea Challenge
+        order: 4
+        blocks:
+      - name: ExO foundations and exponential mindset incorporated into the concept
+        order: 5
+        blocks:
+      - name: Publish core concept draft document
+        order: 6
+        blocks:
+  - title: Scoring and Evaluation
+    subtitle:
+    order: 5
+    type: Text
+    text: |
+      <p>There are prize funds at stake during each phase of the SOLVE stage of the Fastrack. You will be evaluated objectively and subjectively on the evaluation criteria listed above. A combination of the Fastrack Curator and Co-Curator, Regional Advisory Board, FTI Board, FTI Core Team, members of the regional community, ExO ecosystem members and invited experts will be the evaluators. In the case of a tie, a small tie breaker committee will be convened to make the final decision.</p>
+  - title: Tips
+    subtitle:
+    order: 6
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          Join the Collaboration Meeting <a target='_blank' href='https://zoom.us/j/118780550'>here</a>
+      - order: 2
+        description: |
+          Upload the deliverables <a target='_blank' href='https://drive.google.com/drive/u/0/folders/1CjamV4QIYMVifeYxT6d1bRRe_BUcqZi0'>here</a>
+  - title: Tools
+    subtitle:
+    order: 7
+    type: Resource
+    resources:
+      - name: Justice Bogota Fastrack Google Drive
+        type: Links
+        status: Available
+        link: https://drive.google.com/open?id=1GIbEUZ2qcq-se15VL89jMxuugiKJPVCn
+        description:
+        order: 1
+      - name: Justice Bogota  Fastrack Magazine - Flipboard
+        type: Links
+        status: Available
+        link: http://flip.it/flenrn 
+        description:
+        order: 2
+      - name: Justice Bogota Fastrack FTI Academy
+        type: Links
+        status: Available
+        link: https://drive.google.com/open?id=1C23b2BWDgfiWv3eKsQ-lj_GUmr6F4_Fa
+        description:
+        order: 3
+      - name: Justice Bogota  Fastrack Forum
+        type: Links
+        status: Available
+        link: https://forums46.exolever.com/
+        description:
+        order: 4

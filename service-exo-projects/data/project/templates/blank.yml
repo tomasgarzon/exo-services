@@ -1,0 +1,23 @@
+# Blank
+---
+roles:
+- name: Admin
+  level: admin
+  code: ADM
+roles_team:
+- name: Coach
+  level: admin
+  code: COA
+- name: Participant
+  level: basic
+  code: PAR
+settings:
+  team_communication: False
+  ask_to_ecosystem: True
+  send_welcome_consultant: True
+  send_welcome_participant: True
+  default_password: 12345
+steps: null
+assignments: null
+streams:
+  - name: Unique

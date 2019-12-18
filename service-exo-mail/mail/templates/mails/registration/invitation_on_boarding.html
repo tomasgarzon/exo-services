@@ -1,0 +1,30 @@
+{% extends "base/base_blue_header.mjml" %}
+{% load common_mails i18n %}
+
+{% block blue-header %}
+    <mj-header-title-pretitle pre-title="OpenExO Community" title="A reminder to complete personal information" />
+{% endblock %}
+
+
+{% block content %}
+    <mj-text>Hi {{user_name}}</mj-text>
+    <mj-text>You have signed up in OpenExO, but your personal information seems to be incomplete.</mj-text>
+    {% if description %} <mj-text>{{description}}</mj-text> {% endif %}
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "GO TO OpenExO" as CALL_TO_ACTION %}
+    {% include "base/call_to_action.mjml" with call_to_action=CALL_TO_ACTION %}
+{% endblock %}
+
+{% block after-call-to-action %}
+    <mj-section>
+        <mj-column>
+            <mj-text>
+            {% blocktrans %}
+                To continue the process you will be required to add some basic data about yourself. Once you have completed this step you will be able to access OpenExO, the platform that supports OpenExO Community activity projects.
+            {% endblocktrans %}
+            </mj-text>
+        </mj-column>
+    </mj-section>
+{% endblock %}

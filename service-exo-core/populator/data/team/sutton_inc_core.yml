@@ -1,0 +1,51 @@
+name: Sutton Inc Core
+uuid: 93c2daf1-9c1e-4f73-a9bc-ebe795a0769f
+stream: &stream Core Stream
+coach: !consultant Philip Robson
+created_by: !exo_account Quality Assurance
+zoom_id: 790-074-7689
+project: !sprint_automated Sutton Inc
+members:
+  - short_name: Paige Jackson
+    email: paigejackson@example.com
+    updated_profile: true
+    image: man/28
+    uuid: 3aacd1ee-dc72-499c-a1d6-3cce0c4a1c3c
+    microlearnings:
+      - step: 4
+        score: 8
+      - step: 5
+        score: 8
+      - step: 6
+        score: 10
+  - short_name: Mary Campbell
+    email: marycampbell@example.com
+    updated_profile: true
+    uuid: 44d12e6e-3b0a-481d-943b-f46798e310bc
+    image: woman/23
+    microlearnings:
+      - step: 4
+        score: 2
+      - step: 5
+        score: 4
+  - short_name: Alan Lewis
+    email: alanlewis@example.com
+    uuid: 2065c30d-1a7c-4a7b-bb83-c27d738ee068
+    image: man/29
+    microlearnings:
+      - step: 4
+        score: 10
+      - step: 5
+        score: 9
+      - step: 6
+        score: 8
+  - short_name: John Spencer
+    email: johnspencer@example.com
+    updated_profile: true
+    uuid: ebb53d7f-8c51-4f1c-b2af-3f314a54cf60
+    image: man/30
+    microlearnings:
+      - step: 4
+        score: 7
+      - step: 5
+        score: 5

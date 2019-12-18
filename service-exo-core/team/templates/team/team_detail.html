@@ -1,0 +1,85 @@
+{% extends 'base/master_detail_detail_view.html' %}
+{% load images permission_tags project %}
+
+{% block detail_actions %}
+    {% has_project_perms user "crud_team" project=project as team_perms %}
+    {% include "team/team_action_list.html" with perms=team_perms team=object %}
+{% endblock %}
+
+{% block detail_object %}
+    <h3 class="block cut-text">{{object.name}}</h3>
+    <p class="m-b-xs">{{object.get_stream_display}}</p>
+{% endblock %}
+
+{% block detail_content %}
+    <div class="ibox-content no-padding">
+        <div class="tabs-container">
+            <ul class="nav nav-tabs">
+                {% if project.sprint %}
+                <li><a data-toggle="tab" href="#projects">Initiatives</a></li>
+                {% endif %}
+                <li class="active"><a data-toggle="tab" href="#members">Team</a></li>
+            </ul>
+            <div class="tab-content">
+                {% if project.sprint %}
+                <div id="projects" class="tab-pane">
+                    <div class="panel-body">
+                        <div class="m-t-8">
+                            {% for exo_project in object.exo_projects.all %}
+                                <div class="col-xs-12 no-padding">
+                                    <div class="clearfix m-b border-bottom">
+                                        <div class='pull-left'>
+                                            <strong>{{exo_project.name}}</strong>
+                                            <p class="small">{{exo_project.description}}</p>
+                                        </div>
+                                        <div class="ibox-tools pull-right icons-ibox-title">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-user">
+                                                <li><a href="" disabled="disabled">Edit</a>
+                                                </li>
+                                                <li><a href="" disabled="disabled">Remove</a>
+                                                </li>
+                                                <li><a href="" disabled="disabled">Go to initiative</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                <div id="members" class="tab-pane active">
+                    <div class="panel-body chat-activity-list">
+                        <div class="m-t-9">
+                            <div class="chat-element m-t-none">
+                                <h4 class="m-t-none m-b-10">{{object.project.team_manager_label}}</h4>
+                                <div class='chat-element'>
+                                    {% include "tags/link_user2.html" with member=object.coach.user %}
+                                </div>
+                            </div>
+                            <div class="chat-element n-b-bottom m-t-none">
+                                    <h4 class="m-t-none m-b-10">Team members</h4>
+                                    {% for member in object.team_members.all %}
+                                        <div class='m-t-xs m-b-xs chat-element'>
+                                            {% include "tags/link_user2.html" with member=member %}
+                                            {% add_project_user member object.project as project_user_info %}
+                                            <p>
+                                                <ul>
+                                                    {% for key, value in project_user_info.items %}
+                                                    <li>{{key}}: {{value}}</li>
+                                                    {% endfor %}
+                                            </p>
+                                        </div>
+                                    {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

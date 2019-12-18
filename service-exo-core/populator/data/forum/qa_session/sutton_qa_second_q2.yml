@@ -1,0 +1,28 @@
+title: Are there bolts that can fasten themselves? No impact wrench needed
+user: !consultant Philip Robson
+team: !team Sutton Inc Core
+date: !timedelta -3h
+qa_session: !qa_session Sutton Second Swarm session
+description: |
+  <p>Are there bolts that can fasten themselves? No impact wrench needed</p>
+activities:
+  - user: !consultant Lindsey Allen
+    date: !timedelta -49m
+    reply: |
+      <p>Do you think of something like this?</p>
+      <p><a href="https://www.youtube.com/watch?v=p8LGO68ZPlg" target="_blank">https://www.youtube.com/watch?v=p8LGO68ZPlg</a></p>
+  - user: !consultant Tina Weissberg
+    date: !timedelta -36m
+    reply: |
+      <p>Yes, take a look at <a href="https://www.youtube.com/watch?v=p8LGO68ZPlg" target="_blank">http://www.longlok.com/Self-Locking-and-Self-Sealing-Fasteners</a> for example</p>
+  - user: !consultant Leticia Ferreira Dias
+    date: !timedelta -18m
+    reply: |
+      <p>I came across this <strong>link</strong> today and thought it might be something of interest.</p>
+      <p><a href="https://www.albanycountyfasteners.com/Fastener-Varieties-s/1130.htm" target="_blank">https://www.albanycountyfasteners.com/Fastener-Varieties-s/1130.htm</a></p>
+  - user: !consultant Naina Lavrova
+    date: !timedelta -9m
+    reply: |
+      <p>Self-tapping screws drill their own holes when they’re screwed into materials such as wood, plastic and metal. By using a screwdriver to attach a self-tapping screw, you can create precisely fitted threads. They're ideal for combining two different types of materials or for screwing in areas where access is only one-sided. It’s helpful to use self-tapping screws for products that need to be maintained regularly, such as air-conditioning units or canopies, where you need to dissemble and reassemble the item along the same threads.</p>
+      <p><br></p>
+      <p>The two types of self-tapping screws are thread-forming and thread-cutting. Thread-forming screws are meant for plastic, deforming the material as the screw enters. Although thread-forming screws remain in the material more tightly, there is a risk of over-tightening the screw, which could cause the material to break under pressure. On the other hand, thread-cutting screws are typically used for wood and metal, literally removing some of the material and creating a threaded path for the screw. The drawback of thread-cutting screws is that the threads may strip when disassembling the fastener. If that happens, make sure to use a slightly larger self-tapping screw when reassembling the product.</p>

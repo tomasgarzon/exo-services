@@ -1,0 +1,67 @@
+{% extends "project/master_detail_base.html" %}
+
+{% load django_bootstrap_breadcrumbs breadcrumb invitation validation %}
+{% load bootstrap_pagination images permission_tags staticfiles user_project %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Validation" "project:project:validations:list" %}
+{% endblock %}
+
+{% block header_action %}
+    {% has_project_perms user "project_manager" project=project as project_manager %}
+    {% if project_manager %}
+    <div class="col-lg-3">
+        <a href="{% url 'project:project:validations:run' project.pk %}" class="btn btn-primary pull-right m-t-8 m-r-md">Check project</a>
+    </div>
+    {% endif %}
+{% endblock %}
+
+{% block master_view %}
+    <table class="table table-hover list-detail table-team table-l-fix" data-project="{{project.pk}}">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Status</th>
+                <th width="30%">Description</th>
+                <th width="30%">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for object in object_list %}
+            <tr>
+                <td>
+                    {{object.get_validation_type_display}}</td>
+                <td>
+                    {% if object.is_fixed %}
+                        <i class="fa fa-check-circle" style="color:#43a047" ></i>
+                    {% else %}
+                        <i class="fa fa-times-circle" style="color:#f57c00" ></i>
+                    {% endif %}
+                    {{object.get_status_display}}</td>
+                <td {% if object.is_fixed %}style="text-decoration:line-through"{% endif %}>
+                    {{object.subject}}
+                </td>
+                <td>
+                    <a target="_blank"
+                        data-post=""
+                        data-project="{{ object.project.pk }}"
+                        data-canfix="{{ object|can_be_fixed:user }}"
+                        href="{{object.fix_url}}"
+                        class="btn-sm success dev__fix_validation">
+                        {% if object|can_be_fixed:user %}
+                            Fix it!
+                        {% else %}
+                            Fixed
+                        {% endif %}
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'validation/js/validations.js' %}"></script>
+{% endblock %}

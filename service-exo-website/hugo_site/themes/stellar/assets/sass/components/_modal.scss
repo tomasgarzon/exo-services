@@ -1,0 +1,150 @@
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  text-align: left;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  max-width: 576px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: #fff;
+  float: right;
+  font-size: 42px;
+  font-weight: 500;
+  width: 23px;
+  height: 23px;
+  object-fit: contain;
+  margin-top: -19px;  
+  &:hover, &:focus {
+    color: rgb(134, 131, 131);
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.modal-header {
+  padding: 20px;
+  background-color: #3c1597;
+  font-size: 18px;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.modal-body {
+  padding: 30px;
+  div.title {        
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: #3c1597;
+  }
+  div.subtitle {        
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;    
+    text-align: center;
+    color: #46464b;
+  }
+  div.divider {
+    width: 100%;
+    height: 2px;
+    border: solid 1px #d4d4d4;
+    margin: 30px 0px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: #46464b;
+    margin: 30px 0px;
+  }
+  div.buttons {
+    margin-left: calc(50% - 100px);
+    margin-top: 30px;    
+  }
+}
+
+input[type='email'], input[type='text'], {
+  object-fit: contain;
+  border-radius: 8px;
+  border: solid 1px rgba(152, 166, 234, 0.5);
+  background-color: #f7f9ff;
+  margin-bottom: 20px;
+  color: #46464b;
+}
+
+input:not([type='checkbox']):not([type='submit']) {
+  width: 100%;
+  height: 49px;
+}
+
+input[type='submit'].sign-button {
+  line-height: 1em;  
+  margin: 0px;
+}
+
+.label {
+  height: 24px;
+  font-size: 16px;
+  line-height: 1.5;  
+  color: #46464b;
+  display: contents;
+}
+
+form {
+  margin: 0px;
+}
+
+#form-layer-ok, #form-layer-ko {
+  display: none;
+  text-align: center;
+  color: #46464b;
+  img {
+    margin: 40px;
+  }
+  div.title{
+    font-size: 25px;
+    font-weight: 500;
+  }
+  div.subtitle {
+    margin-top: 15px;
+    font-size: 18px;
+    margin-bottom: 70px;
+  }
+}

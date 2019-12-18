@@ -1,0 +1,49 @@
+{% extends 'base/master_detail_detail_view.html' %}
+{% load images permission_tags %}
+
+{% block detail_actions %}
+    {% include "project/qa_sessions/actions.html" with step=object %}
+{% endblock %}
+
+{% block detail_object %}
+    <h3 class="block cut-text">{{object.start_at}} - {{object.end_at}}</h3>
+{% endblock %}
+
+{% block detail_content %}
+    <div class="ibox-content no-padding">
+        <div class="tabs-container">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#info">Info</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="info" class="tab-pane active">
+                    <div class="panel-body">
+                        <div class="m-t-8">
+                            <div class="chat-element p-b-none">
+                                  <p class="border-bottom p-b-5">
+                                    <strong>Start at</strong>
+                                  </p>
+                                  <p class="m-b-xs l-h-20">
+                                      {{ object.start_at }}
+                                  </p>
+                             </div>
+                             <div class="chat-element p-b-none">
+                                  <p class="border-bottom p-b-5">
+                                    <strong>End at</strong>
+                                  </p>
+                                  <p class="m-b-xs l-h-20">
+                                      {{ object.end_at }}
+                                  </p>
+                             </div>
+                              {% for member in object.members.all %}
+                                  <div class='m-t-xs m-b-xs chat-element'>
+                                      {% include "tags/link_user2.html" with member=member.consultant.user %}
+                                  </div>
+                              {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

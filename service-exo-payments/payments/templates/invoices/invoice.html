@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin" rel="stylesheet" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <style>
+            body {
+                color: #46464b;
+                font-family: Roboto;
+                font-size: 14px;
+                line-height: 1.5;
+                margin-left: 75px;
+                margin-right: 75px;
+            }
+            .header td{
+                border-left: 1px;
+                border-right: 1px;
+                border-top: 2px;
+                border-bottom: 2px;
+                border-color: black;
+                border-style: solid;
+
+            }
+            table {
+                border-spacing: 0px;
+            }
+            table.detail td{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+    <table>
+    <tr>
+        <td align="left">
+            <strong>EXO WORKS EUROPE, S.L.U.</strong><br>
+            C/Parque de las Ciencias, 1, 1ª planta<br>
+            18006 Granada, España<br>
+            <strong>ES-B19634187</strong>
+        </td>
+        <td align="right" width="20%">
+            <img align='right' src="https://s3.amazonaws.com/exolever/static/assets/openexo-logo-rgb.png" width='100%'>
+        </td>
+    </tr>
+    <tr>
+    <td colspan="2" align="left" style="padding-top:30px;">
+        <strong>INVOICE NUMBER: {{object.invoice_id}} </strong><br>
+        <p>
+            <strong>ISSUED DATE: {{object.created|date:"d/m/Y"}}</strong><br>
+            <strong>DUE DATE: {{object.created|date:"d/m/Y"}}</strong>
+        </p>
+    </td>
+    </tr>
+    <tr>
+        <td  colspan="2" align="left" style="padding-top:90px;">
+            <strong>Bill To:</strong><br>
+            {{object.full_name}}<br>
+            {{object.address}}, {{object.country}}<br>
+            {{object.tax_id}}
+        </td>
+    </tr>
+    </table>
+    <table style="width:100%;margin-top:30px;" cellpadding="7" class='detail'>
+    <tr class='header'>
+        <td width="50%" align="center">
+            <strong>DESCRIPTION</strong>
+        </td>
+        <td width="15%" align="center">
+            <strong>RATE</strong>
+        </td>
+        <td width="15%" align="center">
+            <strong>CURRENCY</strong>
+        </td>
+        <td width="20%" align="center">
+            <strong>AMOUNT</strong>
+        </td>
+    </tr>
+    <tr>
+        <td style='line-height: 25px;'>
+            {{object.concept}}
+        </td>
+        <td align="center">
+            {{object.final_rate|floatformat:2}}
+        </td>
+        <td align="center">
+            {{object.amount_str}}
+        </td>
+        <td align="center" style='line-height: 25px;'>
+            € {{object.amount_eur|floatformat:2}} EUR
+        </td>
+    </tr>
+    {% if object.has_VAT %}
+        <tr>
+            <td colspan="3"  align="right" style='border-left: 0;border-bottom:0'>
+                IVA {{object.vat}}%
+            </td>
+            <td align="center">€ {{object.amount_vat|floatformat:2}} EUR</td>
+        </tr>
+        {% endif %}
+    <tr>
+        <td colspan="3"  align="right" style='border-left: 0;border-bottom:0;border-top:0;'>
+            <strong>TOTAL</strong>
+        </td>
+        <td align="center">
+            <strong>€ {{object.amount_total|floatformat:2}} EUR</strong>
+        </td>
+    </tr>
+    </table>
+    {% if object.is_european %}
+    <p>Intra-EU reverse charge supplies</p>
+    {% endif %}
+    </body>
+</html>

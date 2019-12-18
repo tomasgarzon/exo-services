@@ -1,0 +1,28 @@
+created_by: !account 299c8c8a-4e4a-4c6b-904a-1b801b7227f1
+created_by_full_name: Philip Robson
+status: H
+title: ExO Talks Corporate Innovation Talks
+sub_title: OpenExO Talk
+description: ExO Talk at Asias First Experiential Conference focusing on Corporate Innovation.
+start: !timedelta 1d
+end: !timedelta 1d
+category: TA
+follow_type: V
+location: Madrid, Spain
+url: http://openexo.com
+languages:
+  - Spanish
+show_price: True
+amount: 150
+currency: E
+organizers:
+  - name: Workshop Organizer
+    email: workshop@openexo.com
+    url: http://www.openexo.com/organizer
+participants:
+  - user: !account 1cd07dd7-4883-4838-9b5a-303ef0d6580c
+    user_name: Amy Finch
+    user_email: amyfinch@example.com
+    order: 0
+    role: TAS
+    status: A

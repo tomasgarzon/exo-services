@@ -1,0 +1,39 @@
+title: Repurposing Urban Spaces
+user: !exo_account Paige Jackson
+team: !team Sutton Inc Core
+date: !timedelta -14d
+description: |
+  <p>As the need for large retail spaces (due to Amazon and other online retailers) and parking structures (due to autonomous vehicles) decreases, it seems there will be additional urban space available for use in many creative ways. Certainly, some of those spaces will be converted to living space, but what are examples of other types of re-use that might make use of this transitional real estate? We’ve been thinking along the lines of urban gardens on the top of parking structures and pop-up restaurants in whatever space can be found. Are there any other trends evolving in these micro-lease ‘pop-up’ opportunities?</p>
+tags:
+  - Blockchain
+activities:
+  - user: !consultant Julius Emilsson
+    date: !timedelta -13d
+    reply: |
+      <p>New York’s HighLine could provide some inspiration: <a href="https://en.wikipedia.org/wiki/High_Line1" target="_blank">https://en.wikipedia.org/wiki/High_Line1</a></p>
+      <br>
+      <p>Also in the UK we have seen shipping container “parks” spring up on car parks and land marked for development (and permanent installations too), where pop-up shops and restaurants rent space: <a href="https://www.boxpark.co.uk/" target="_blank">https://www.boxpark.co.uk/</a></p>
+  - user: !exo_account Paige Jackson
+    date: !timedelta -10h
+  - user: !exo_account Paige Jackson
+    date: !timedelta -580m
+    reply: |
+      <p>One idea is to convert some space into vertical farming or urban farming to provide more sustainable & efficient food production,.</p>
+      <p>Currently the average American meal travels over 1,500 miles from farm to table. And, nearly half the cost of today’s meals is the travel cost.</p>
+      <p><br></p>
+      <p><em>Jonh Diamandis</em> posted a great blog about this recently:</p>
+      <p><a href="http://bit.ly/2IoVaaA" target="_blank">http://bit.ly/2IoVaaA</a></p>
+  - user: !consultant Tina Weissberg
+    date: !timedelta -487m
+    reply: |
+      <p>Some <a href="https://interestingengineering.com/13-vertical-farming-innovations-that-could-revolutionize-agriculture" target="_blank">inspiring ideas</a>.</p>
+      <p><br></p>
+      <p>However, not all that glisters is gold: <a href="https://university.upstartfarmers.com/blog/9-reasons-why-vertical-farms-fail" target="_blank">https://university.upstartfarmers.com/blog/9-reasons-why-vertical-farms-fail</a>
+  - user: !consultant Wilhelm Muller
+    date: !timedelta -3h
+    reply: |
+      <p>Did you know <a href="https://www.entrepreneur.com/article/303651">NEOM project</a>?</p>
+  - user: !consultant Tina Weissberg
+    date: !timedelta -136m
+    reply: |
+      <p>More inspiration about <a href="https://gizmodo.com/this-is-the-future-14-high-tech-farms-where-veggies-gr-513129450" target="_blank">indoors farming</a>.</p>

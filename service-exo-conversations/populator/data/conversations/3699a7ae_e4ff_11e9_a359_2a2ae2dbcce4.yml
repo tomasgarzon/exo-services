@@ -1,0 +1,24 @@
+uuid: 3699a7ae-e4ff-11e9-a359-2a2ae2dbcce4
+name: Philip Robson
+uuid_related_object: 2be6fe21-256e-41f5-8198-7f4b895e69eb
+created_by: !account &philip 299c8c8a-4e4a-4c6b-904a-1b801b7227f1  # Philip Robson
+_type: O
+icon: /media/avatars/48_48/philip-robson.jpg
+users:
+  - user: *philip
+    name: Philip Robson
+    profile_url: /public/profile/philip-robson/
+    profile_picture: /media/avatars/48_48/philip-robson.jpg
+  - user: !account &naina 0737a9f9-22a0-4286-8be3-34a3e19d92dc
+    name: Naina Lavrova
+    profile_url: /public/profile/naina-lavrova/
+    profile_picture: /media/avatars/48_48/naina-lavrova.jpg
+messages:
+  - created_by: *philip
+    message: Unfortunately, I can not apply to this opportunity, I have another appointment this day.
+    readed:
+        - user: *naina
+  - created_by: *naina
+    message: No problem! We will be in contact as soon as another opportunity is available.
+    readed:
+        - user: *philip

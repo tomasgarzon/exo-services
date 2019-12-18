@@ -1,0 +1,51 @@
+uuid: 1cd07dd7-4883-4838-9b5a-303ef0d6580c
+short_name: Amy
+full_name: Amy Finch
+status: Active
+place:
+  name: Brisbane QLD, Australia
+  place_id: ChIJM9KTrJpXkWsRQK_e81qjAgQ
+time_zone: Australia/Brisbane
+image: woman/2
+languages:
+  - English
+exo_areas:
+  - Organizations
+  - Peoples
+  - Institutions
+industries:
+  - name: Auto
+    level: Advanced
+  - name: Aviation
+    level: Intermediate
+  - name: Communications
+    level: Thought leader
+keywords:
+  - name: Innovation Ecosystems
+    level: Can inspire
+  - name: Experimentation
+    level: Can teach
+exo_attributes:
+  - attribute: Experimentation
+    level: I have implemented this several times
+exo_activities:
+  - Consulting
+  - Advising
+  - Coaching
+permissions:
+  - exq_access
+  - exo_projects_access
+personal_mtp: Ideas worth spreading
+mtp_mastery: I have implemented this several times
+availability: Weekly
+last_activity: !timedelta -24h
+contracting_data:
+  name: Amy Wendy Finch
+  tax_id: 876 543 210
+  address: 538-550 Boundary Street, Spring Hill QLD 4000
+  company_name: Queensland Consluting
+badges:
+  - code: 'CCC'
+    category: 'CC'
+    item_name: 'Book content creator'
+    item_date: !datetime Jul 04 2018

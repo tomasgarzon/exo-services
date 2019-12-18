@@ -1,0 +1,25 @@
+name: Mason LLC Edge
+uuid: 3692f876-5743-4ae2-beae-31aa109ec740
+stream: Edge Stream
+coach: !consultant Amy Finch
+created_by: !exo_account Quality Assurance
+project: !sprint_automated Mason LLC Sprint
+members:
+  - short_name: Jessica Mosler
+    email: jessicamosler@example.com
+    updated_profile: true
+    image: woman/21
+    uuid: 3c83d1bf-2f06-4769-8c8c-a64add7920e5
+  - short_name: Natasha Banks
+    email: natashabanks@example.com
+    uuid: 9792229c-21ba-466f-9ee8-fcc31dead060
+    image: woman/22
+  - short_name: Joel Dominic
+    email: joeldominic@example.com
+    uuid: bdb97682-b8cb-48fd-a6b0-29e792a1d49f
+    image: man/27
+  - short_name: Anne Boelyn
+    email: anneboelyn@example.com
+    updated_profile: true
+    uuid: 89f6253e-5c56-41da-8993-304c02a2345d
+    image: woman/23

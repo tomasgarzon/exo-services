@@ -1,0 +1,32 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="{% trans 'Payment Request' %}" title="{{concept}}" />
+{% endblock %}
+
+{% block wrapper-extra-class %}white{% endblock %}
+
+{% block wrapper-title %}
+{% endblock %}
+
+{% block content %}
+    <mj-text>Hello {{ full_name }},</mj-text>
+    <mj-text>We're excited that you will be joining us for:</mj-text>
+    {% if detail %}
+        <mj-text><b>Detail:</b></mj-text>
+        <mj-text>{{ detail|linebreaks }}</mj-text>
+    {% endif %}
+    <mj-text><b>Payment amount:</b> {{ amount }}</mj-text>
+    <mj-text>All credit card payments are processed through the Stripe platform (<a href="https://stripe.com" class="link-nostyle">https://stripe.com</a>).<br>Confidential data is used one time only and is not stored by OpenExO nor Stripe.</mj-text>
+    <mj-text>If you need more information, please, contact <a href="mailto:finance@openexo.com" class="link-nostyle">finance@openexo.com</a>.</mj-text>
+    <mj-text>Excited for your exponential growth,</mj-text>
+    <mj-text><b>Finance Team</b><br>
+    ________________________________</mj-text>
+
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "PROCEED TO PAYMENT" as see_details %}
+    {% include "base/call_to_action.mjml" with call_to_action=see_details %}
+{% endblock %}

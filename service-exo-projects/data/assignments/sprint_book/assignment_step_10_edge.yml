@@ -1,0 +1,134 @@
+---
+name: Test assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/287639893
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287639893" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>It’s time for the truth! During the past days, you have been building your first versions of your MVP, which will allow us to keep learning and improving our ExO Edge Initiatives. This week’s assignment provides experience exercising the Experiments Attribute at a deeper level by engaging early adopters with a concept they can respond to. The goal is to sell your MVPs to early adopters in order to validate that your value proposition to the market is the right one.</p>
+      <p>The experiment of building your MVP and selling to early adopters helps you evaluate the hypotheses related to the value proposition and the business model. This is what is called the Product/Market Fit. In addition to that we will evaluate the hypotheses related to the ExO Attributes, which are key to make sure we are building a truly Exponential Organization.</p>
+      <p>Getting your first client is one of the most exciting milestones for any new organization. Let’s do it!</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Find, reach and sell to early adopters
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>An “Early Adopter” is an individual or business that uses a new product or technology before others, shares your vision and is willing to try your MVP even though it may not have been perfected. Your task here is to define where to find early adopters for your MVPs and how to reach them in order to check the product and/or the sales process with them. This is considered yet another experiment, one that is focused on attaining Product/Market Fit. The technique used to find early adopters depends on the type of MVP you have developed:</p>
+              <p><strong>If you created a landing page as your MVP, focus on online channels in one of three ways:</strong></p>
+              <p>- Create online ads (e.g., using Google AdWords) and link them to your promotional sites.<br>- Promote the website with online communities populated by potential early adopters.<br>- Email the page links to potential early adopters you’ve identified.</p>
+              <p><strong>If you’ve created a sales presentation, a set of wireframes, a video or a real prototype, focus on offline channels to reach early adopters:</strong></p>
+              <p>- Promote your MVP to those people or organizations interviewed when you first tested the problem/solution hypotheses.<br>- Generate a new list of potential early adopters.<br>- Generate a list of communities that might be populated by MVP early adopters.                                                                                                                              Last, launch the different sales processes with early adopters and collect feedback. Remember that the real goal is not to sell, but to learn.</p>
+          - title: Resources
+            subtitle:
+            order: 2
+            type: Text
+            text: |
+              <p>Steve Blank’s book The Startup Owner’s Manual outlines how to find and sell to early adopters. Familiarize yourself with the section of the book that covers the Customer Validation phase of the process.</p>
+              <p>In addition to being a great way to learn about selling to early adopters, Geoffrey Moore’s Crossing the Chasm also covers how to expand your target market in the future.</p>
+          - title: Tips
+            subtitle:
+            order: 3
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                The profile of the ideal early adopter is a person or organization that:<br>- Shares your vision for the future.<br>- Has the problem you defined some weeks ago<br>- Is trying to solve this problem in some way, although unsuccessfully thus far.<br>- Is willing to pay to solve the problem.<br>- Is honest and will provide valuable feedback.
+            - order: 2
+              description: |
+                To find early adopters, try to think as they do. This will help you identify new places to locate them.
+            - order: 3
+              description: |
+                Remember we are trying to learn, so interact with your early adopters in order to do that. For online channels (websites, etc.), after each user or buyer completes the process, send an email asking for feedback on how to improve your value proposition, pricing model, etc. For offline channels (inperson meetings, calls, etc.), don’t outsource the sales process, handle it yourselves spending the week interacting with them in order to learn as much as possible by testing out your product and trying to sell them.
+      - name: Measure results and learn
+        order: 2
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>After building your MVPs and the sales process, you will have a lot of new experience and data with which to keep evaluating your key hypotheses. Remember that the main goal was to learn about the ExO Attributes and the business model, especially about the value proposition and revenue model.</p>
+            <p>After the sales process is completed, the next step is to learn from the data you’ve gathered.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Remember to analyze the qualitative data as well as the quantitative data (metrics). At this (early) stage of the game, qualitative information is more important than quantitative.
+          - order: 2
+            description: |
+              Results from experiments can sometimes produce a lot of noise, but digging into the data presents learning opportunities. 
+          - order: 3
+            description: |
+              For example, after evaluating a solution, we might find that some potential customer segments love it while others hate it.
+          - order: 4
+            description: |
+              In analyzing the results further, we may find, for example, that people under 45 years of age love it and those above 45 don’t. The learning here? Focus the solution on the customer segment under 45.
+        - title: Tools
+          subtitle:
+          order: 4
+          type: Resource
+          resources:
+            - name: Identify and evaluate key hypotheses
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/mCRyNOkRxaCJr4GdfFQw/Identify_and_evaluate_key_hypotheses_step_2_template.pdf/
+              description: Template
+              order: 1
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+    - order: 1
+      description: |
+        The goal for the week is to get enough data from the experiments to ensure valid results (and therefore additional learning). What would be even better, of course, is if you are able to sell your idea during the process. This is an outcome that would impress the panel at your final ExO Edge presentation. From nothing to real customers in less than 10 weeks…let’s do it!
+    - order: 2
+      description: |
+        Remember that early adopters are not just your first clients. They are also special people and/or companies with a specific mindset.    
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Identify and evaluate key hypotheses
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/mCRyNOkRxaCJr4GdfFQw/Identify_and_evaluate_key_hypotheses_step_2_template.pdf/
+        description: Template
+        order: 1  
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

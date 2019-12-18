@@ -1,0 +1,27 @@
+uuid: 79eea3bc-9242-43ea-9b57-f3e3212c8620
+name: Coaches
+uuid_related_object: fad08896-e99d-4252-bf1b-70c62a8422b1
+created_by: !account &quality 7749ad25-5128-4644-895f-6b9a70b605bd
+_type: P
+icon: https://cdn.filestackcontent.com/N4Ggba1IRUGib03DvTBE
+users:
+  - user: !account &amy 1cd07dd7-4883-4838-9b5a-303ef0d6580c
+    name:  Amy Finch
+    profile_url: /public/profile/amy-finch/
+    profile_picture: /media/avatars/48_48/amy-finch.jpg
+    short_title: ExO Head Coach
+  - user: !account c2cb2a8d-d0b5-44da-8794-50a327857ae3
+    name:  Najwa Jannah Saliba
+    profile_url: /public/profile/najwa-jannah-saliba/
+    profile_picture: /media/avatars/48_48/najwa-jannah-saliba.jpg
+    short_title: ExO Sprint Coach
+  - user: !account &ann 8ff40e60-f7d8-4e85-8697-9bd83ace8688
+    name:  Ann Baldwin
+    profile_url: /public/profile/ann-baldwin/
+    profile_picture: /media/avatars/48_48/ann-baldwin.jpg
+    short_title: ExO Sprint Coach
+messages:
+  - created_by: *ann
+    message: Magni officiis ex perspiciatis incidunt alias. Veniam laborum a debitis voluptates rerum adipisci. Sapiente adipisci ipsam impedit totam.
+  - created_by: *amy
+    message: Porro incidunt sed ab. Eum dignissimos architecto molestiae iusto corrupti veritatis. Officiis asperiores autem expedita. Voluptatem at totam.

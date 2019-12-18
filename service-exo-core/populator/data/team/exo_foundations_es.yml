@@ -1,0 +1,10 @@
+name: ExO Foundations Es
+stream: Edge Stream
+coach: !consultant Alice LaGrande
+created_by: !exo_account Quality Assurance
+project: !generic_project Certificacion Nivel 1 ExO Foundations
+members:
+  - short_name: Guy John
+    email: guyjohn@example.com
+  - short_name: Sophie Ross
+    email: sophieross@example.com

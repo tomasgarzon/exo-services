@@ -1,0 +1,45 @@
+{% if perms|length > 0 %}
+{% load project %}
+    <div class="ibox-tools pull-right l-h-34">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="fa fa-ellipsis-v"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-user" data-project_id="{{project.pk}}">
+            {% if "full_view" in perms %}
+                <li><a href="{{project.get_absolute_url}}">Go to project</a>
+                </li>
+            {% endif %}
+            {% if "edit_project" in perms %}
+                <li><a href="{{project.get_absolute_url}}">Edit</a>
+                </li>
+            {% endif %}
+            <li><a target="_blank" href="{% url 'project:export-participant' object.pk %}">Export participants</a>
+                </li>
+            {% if "edit_project" in perms %}
+                {% if project.can_be_finished %}
+                    <li><a data-project_id="{{ project.pk }}" class="dev__finish_sprint" href="#" data-date='{{project.end_localize|date_format:"Y-m-d H:i:s"}}'>Finish</a>
+                    </li>
+                {% endif %}
+                {% if project.can_be_started %}
+
+                    <li><a data-project_id="{{ project.pk }}" class="dev__start_sprint" href="#" data-date='{{project.start_localize|date_format:"Y-m-d H:i:s"}}'>Start</a>
+                    </li>
+                {% endif %}
+                {% if project.can_be_launch %}
+
+                    <li><a data-project_id="{{ project.pk }}" class="dev__launch_sprint" href="#" data-date='{{project.star_localize|date_format:"Y-m-d H:i:s"}}'>Launch</a>
+                    </li>
+                {% endif %}
+            {% endif %}
+            {% if global_perms.project.delete_project %}
+                <li><a href="{% url 'project:delete' project.pk %}">Remove</a>
+                </li>
+            {% endif %}
+            {% if project.is_sprint %}
+                <li>
+                    <a href="{{project.profile_url}}">See profile</a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+{% endif %}

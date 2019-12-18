@@ -1,0 +1,42 @@
+{% load mjml %}
+
+{% mjml %}
+    <mjml>
+
+      <mj-head>
+          <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto" />
+          <mj-attributes>
+              <mj-text align="left" color="#46464b" font-family="Roboto" font-size="16px" line-height="24px"/>
+          </mj-attributes>
+          <mj-style inline="inline">
+              {% include "base/base_mjml.css" %}
+          </mj-style>
+      </mj-head>
+
+      <mj-body css-class="exo-body">
+        {% include "base/header.mjml" %}
+        <mj-wrapper background-color="#fff" border="1px solid #DEE1E2" padding="0" border-radius="6px" border="1px solid rgba(70, 70, 75, 0.16)">
+          {% block blue-header %}{% endblock %}
+          {% block pre-content %}
+          {% endblock %}
+          <mj-section>
+              <mj-column>
+                  {% block content %}{% endblock %}
+              </mj-column>
+          </mj-section>
+          {% if public_url %}
+          <mj-section padding-top="0px">
+              <mj-column>
+                  {% block call_to_action %}{% endblock %}
+              </mj-column>
+          </mj-section>
+          {% endif %}
+          {% block after-call-to-action %}{% endblock %}
+          </mj-wrapper>
+        {% if public_url %}
+          {% include "base/footer.mjml" %}
+        {% endif %}
+      </mj-body>
+
+    </mjml>
+{% endmjml %}

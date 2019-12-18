@@ -1,0 +1,1026 @@
+{
+  "data": {
+    "questions": [
+      {
+        "id": "EXQ-1",
+        "primaryGroup": "Massive Transformative Purpose",
+        "key": "M",
+        "bgColor": "#F2576D",
+        "bgPicture": "/79f3cdf15818fadc5275744a656103dc.png",
+        "value": "What gives direction/sense to the organization?",
+        "options": [
+          {
+            "id": "EXQ-2",
+            "value": "A Mission and/or Vision Statement(s)",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-3",
+            "value": "Growth/strategic targets and/or technological change and competition",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-4",
+            "value": "Creating value in the world",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-5",
+            "value": "A purpose to transform the world (expressed in a short powerful statement-  not a slogan but a Massive Transformative Process)",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-6",
+        "primaryGroup": "Massive Transformative Purpose",
+        "key": "M",
+        "bgColor": "#F2576D",
+        "bgPicture": "/79f3cdf15818fadc5275744a656103dc.png",
+        "value": "Do people and stakeholders understand the Massive Transformative Purpose (MTP) of the organization?",
+        "options": [
+          {
+            "id": "EXQ-7",
+            "value": "Not applicable (The organization does not have an MTP)",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-8",
+            "value": "Not really",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-9",
+            "value": "Only when explained",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-10",
+            "value": "Yes, people understand it",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-11",
+        "primaryGroup": "Massive Transformative Purpose",
+        "key": "M",
+        "bgColor": "#F2576D",
+        "bgPicture": "/79f3cdf15818fadc5275744a656103dc.png",
+        "value": "How many initiatives in the organization are connected with the MTP?",
+        "options": [
+          {
+            "id": "EXQ-12",
+            "value": "Not applicable  (The organization does not have an MTP)",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-13",
+            "value": "None",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-14",
+            "value": "Some",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-15",
+            "value": "All of them",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-16",
+        "bgColor": "#3CC7AA",
+        "bgPicture": "/a436d5f9c31c84c8a19d460ca4edc406.png",
+        "primaryGroup": "Staff on-demand",
+        "key": "S",
+        "value": "To what extent is the organization using Staff on Demand to carry out its key activities?",
+        "options": [
+          {
+            "id": "EXQ-17",
+            "value": "Not applicable/Never (The organization does not use Staff on Demand)",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-18",
+            "value": "Marginally (Sometimes things are outsourced)",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-19",
+            "value": "Partially (Sometimes core/main activities are outsourced)",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-20",
+            "value": "The majority of the key activities most of the time (e.g.: Waze, Uber)",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-21",
+        "bgColor": "#3CC7AA",
+        "bgPicture": "/a436d5f9c31c84c8a19d460ca4edc406.png",
+        "primaryGroup": "Staff on-demand",
+        "key": "S",
+        "value": "How does the organization manage or grow the participation of its Staff on Demand on its key activities?",
+        "options": [
+          {
+            "id": "EXQ-22",
+            "value": "Not applicable",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-23",
+            "value": "Use of social media channels",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-24",
+            "value": "Use of a database and reaching out via email or any other direct channel",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-25",
+            "value": "Managing involvement through a fully automated platform/marketplace (e.g.: Fivver, Lyft)",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-26",
+        "bgColor": "#3CC7AA",
+        "bgPicture": "/a436d5f9c31c84c8a19d460ca4edc406.png",
+        "primaryGroup": "Staff on-demand",
+        "key": "S",
+        "value": "How is the database of the Staff on Demand of the organization curated and classified (managed) ?",
+        "options": [
+          {
+            "id": "EXQ-27",
+            "value": "Not applicable",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-28",
+            "value": "Manual tagging",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-29",
+            "value": "Certifications",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-30",
+            "value": "Automated through customer and peer review and gamified achievements (e.g.: Kaggle, Github)",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-31",
+        "bgColor": "#6128FF",
+        "bgPicture": "/c1b07078c4e9cad748a9d30130ed8e04.png",
+        "primaryGroup": "Community & Crowd",
+        "key": "C",
+        "value": "To what extent does the community get involved in key activities of the organization?",
+        "options": [
+          {
+            "id": "EXQ-32",
+            "value": "Not applicable/ Never (The organization does not engage a community of fans, followers, or direct or indirect supporters)",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-33",
+            "value": "Marginally (The organization has sporadically conducted some campaigns involving the community)",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-34",
+            "value": "Sometimes (For example, the organization collects feedback or ideas for new products from its  community of users)",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-35",
+            "value": "The majority of the key activities most of the time (e.g.: Wikipedia- the community develop its content)",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-36",
+        "bgColor": "#6128FF",
+        "bgPicture": "/c1b07078c4e9cad748a9d30130ed8e04.png",
+        "primaryGroup": "Community & Crowd",
+        "key": "C",
+        "value": "Does the organization leverage its community to be or act smarter and/or faster?",
+        "options": [
+          {
+            "id": "EXQ-37",
+            "value": "Not applicable (The organization does not have a community of fans, followers, or direct or indirect supporters)",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-38",
+            "value": "Not really",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-39",
+            "value": "Sometimes",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-40",
+            "value": "Most of the time (e.g.: crowdsource ideas, insights and/or products, new leads, contacts, and/or whatever is possible from the community almost all the time)",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-41",
+        "bgColor": "#6128FF",
+        "bgPicture": "/c1b07078c4e9cad748a9d30130ed8e04.png",
+        "primaryGroup": "Community & Crowd",
+        "key": "C",
+        "value": "Does the community have an clear sense of belonging to the organization’s ecosystem/brand?",
+        "options": [
+          {
+            "id": "EXQ-42",
+            "value": "Not applicable",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-43",
+            "value": "Not really",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-44",
+            "value": "Partially (yes, but not strongly)",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-45",
+            "value": "Yes, Greatly (e.g.: the people in the community are “ambassadors” of the organization, they feel proud or enthusiastic about being part of it,  they feel represented and/or connect to the ecosystem almost daily because it represents a part of their routine (e.g.: Instagram’s users)",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-46",
+        "bgColor": "#2193D1",
+        "bgPicture": "/93b5d4957e366eaf6099333b2c3b8a78.png",
+        "primaryGroup": "Algorithms and Data",
+        "key": "A",
+        "value": "To what extent are repeatable, time-intensive key activities or decision-making processes automated/supported by the use of algorithms or machine learning?",
+        "options": [
+          {
+            "id": "EXQ-47",
+            "value": "Not applicable",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-48",
+            "value": "Marginally",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-49",
+            "value": "Partially",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-50",
+            "value": "The majority of the key activities (e.g. Netflix or Spotify use algorithms to make recommendations on what to watch or listen according to own preferences and other users’ activity and preferences)",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-51",
+        "bgColor": "#2193D1",
+        "bgPicture": "/93b5d4957e366eaf6099333b2c3b8a78.png",
+        "primaryGroup": "Algorithms and Data",
+        "key": "A",
+        "value": "How are the algorithms and machine learning models fed with data?",
+        "options": [
+          {
+            "id": "EXQ-52",
+            "value": "Not applicable",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-53",
+            "value": "Manually (e.g.: Consultants or people hired for data collection and/or hardware owned by the organization)",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-54",
+            "value": "Semi-automatically with user’s interactions and/or through infrastructure owned by a third party (with some internal curation of the data)",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-55",
+            "value": "Data collection is done automatically (curation of the data is done—for example by community & crowd of experts) and use of sensors and data channels well defined and abundant)",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-56",
+        "bgColor": "#2193D1",
+        "bgPicture": "/93b5d4957e366eaf6099333b2c3b8a78.png",
+        "primaryGroup": "Algorithms and Data",
+        "key": "A",
+        "value": "How does the use of algorithms or machine learning make the organization’s product and services stand out in the market and/or constitute a sustainable competitive advantage?",
+        "options": [
+          {
+            "id": "EXQ-57",
+            "value": "Not applicable",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-58",
+            "value": "Only marginally (the use is pretty standard)",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-59",
+            "value": "It provides the organization a clear “unfair advantage”",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-60",
+            "value": "It makes their products and services significantly better than the rest",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-61",
+        "bgColor": "#3CC7AA",
+        "bgPicture": "/f9dbc56ca2408d50453c39b66e978903.png",
+        "primaryGroup": "Leveraged Assets",
+        "key": "L",
+        "value": "To what extent is rent or free access to third parties' assets a key resource used by the organization for conducting the key activities of the organization or create the value proposition for customers?",
+        "options": [
+          {
+            "id": "EXQ-62",
+            "value": "Not applicable (All key activities are conducted using internal assets)",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-63",
+            "value": "Marginally (Sometimes external assets are used, but these are not vital to the business of the organization)",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-64",
+            "value": "Partially (Sometimes, the organization relies on external assets)",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-65",
+            "value": "The majority of the key activities of the organization involve external assets (e.g.: Waze leverages users’ phones, Airbnb leverages users’ rooms, Wikipedia leverages contributors’  knowledge, Github leverages users’ software code)",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-66",
+        "bgColor": "#3CC7AA",
+        "bgPicture": "/f9dbc56ca2408d50453c39b66e978903.png",
+        "primaryGroup": "Leveraged Assets",
+        "key": "L",
+        "value": "Is the increase in the capacity of service or product supply of the organization and the increase in owned assets linearly correlated?",
+        "options": [
+          {
+            "id": "EXQ-67",
+            "value": "Yes, absolutely . If the organization wants to increase its capacity of supply it needs to enlarge its owned assets",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-68",
+            "value": "Yes, mostly. There are efficiencies of scale the organization can benefit from (e.g.: costs advantages by volume)",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-69",
+            "value": "No, the organization can increase its supply most of the times without the need of buying additional assets",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-70",
+            "value": "No, the organization capacity can be rapidly and significantly increased buying almost no additional assets",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-71",
+        "bgColor": "#3CC7AA",
+        "bgPicture": "/f9dbc56ca2408d50453c39b66e978903.png",
+        "primaryGroup": "Leveraged Assets",
+        "key": "L",
+        "value": "Is the asset ownership model of the organization imposing significant limitations in its flexibility to pivot the business model?",
+        "options": [
+          {
+            "id": "EXQ-72",
+            "value": "Totally",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-73",
+            "value": "Significantly",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-74",
+            "value": "Only partially— the organization is repurposing  most of the owned assets, or is leveraging from third-parties the assets relevant for its pivot",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-75",
+            "value": "Not really, limited or no ownership over assets gives great flexibility to the organization to pivot and explore other markets",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-76",
+        "bgColor": "#6128FF",
+        "bgPicture": "/af48de9948c2c652fb007a7cb9ec826c.png",
+        "primaryGroup": "E",
+        "key": "E",
+        "value": "Does the organization create or have effective levers (for example, gamified competition, peer pressure mechanisms, etc.) to increase emotional involvement and commitment and/or condition the level of engagement of its business stakeholders/clients?",
+        "options": [
+          {
+            "id": "EXQ-77",
+            "value": "Not applicable",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-78",
+            "value": "Marginally",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-79",
+            "value": "Yes, somehow",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-80",
+            "value": "Yes, very effective ones",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-81",
+        "bgColor": "#6128FF",
+        "bgPicture": "/af48de9948c2c652fb007a7cb9ec826c.png",
+        "primaryGroup": "E",
+        "key": "E",
+        "value": "Is there any reputation system for customer segments and key partners in order to have them engaged and connected to the organization activity?",
+        "options": [
+          {
+            "id": "EXQ-82",
+            "value": "Nothing",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-83",
+            "value": "There is a way to provide feedback, but only the organization can see it.",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-84",
+            "value": "There is an open reputation system that everyone can see, but the organization didn’t manage yet to have customers and key partners really engaged with it.",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-85",
+            "value": "There is an open reputation system that everyone can see and works very well in keeping high levels of engagement",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-86",
+        "bgColor": "#6128FF",
+        "bgPicture": "/af48de9948c2c652fb007a7cb9ec826c.png",
+        "primaryGroup": "E",
+        "key": "E",
+        "value": "How often do the business stakeholders of the organization evidence high levels of self-drive and motivation and/or actions that contribute to the progress of the organization?",
+        "options": [
+          {
+            "id": "EXQ-87",
+            "value": "Never",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-88",
+            "value": "Very rarely",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-89",
+            "value": "Regularly",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-90",
+            "value": "Constantly",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-91",
+        "bgColor": "#F2576D",
+        "bgPicture": "/7ad89a1b3dea4ca8863cb0c5e636e2d5.png",
+        "primaryGroup": "I",
+        "key": "I",
+        "value": "How would customers and partners value the UX (User eXperience) of the organization’s product and services?",
+        "options": [
+          {
+            "id": "EXQ-92",
+            "value": "Poorly",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-93",
+            "value": "The organization doesn’t have many complaints about it",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-94",
+            "value": "The organization is above the average in terms of UX",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-95",
+            "value": "Everyone loves using the organization’s product and services, they can’t stop using it",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-96",
+        "bgColor": "#F2576D",
+        "bgPicture": "/7ad89a1b3dea4ca8863cb0c5e636e2d5.png",
+        "primaryGroup": "I",
+        "key": "I",
+        "value": "Are the interfaces adaptive to specific profile or needs of the customer?",
+        "options": [
+          {
+            "id": "EXQ-97",
+            "value": "Not applicable",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-98",
+            "value": "No",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-99",
+            "value": "Yes, in some parts/there is manual customization",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-100",
+            "value": "Yes, always and very effectively",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-101",
+        "bgColor": "#F2576D",
+        "bgPicture": "/7ad89a1b3dea4ca8863cb0c5e636e2d5.png",
+        "primaryGroup": "I",
+        "key": "I",
+        "value": "Are business stakeholders able to connect 24/7, manage, exchange relevant information and other actions in relation to the products or services with the current interfaces the organization gives them access to?",
+        "options": [
+          {
+            "id": "EXQ-102",
+            "value": "Not applicable",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-103",
+            "value": "Marginally",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-104",
+            "value": "Yes, in most of the cases or in most parts of the process",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-105",
+            "value": "Yes, always and very effectively",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-106",
+        "bgColor": "#3CC7AA",
+        "bgPicture": "/42ac8fc2c930afeba2e0aa4c60c14834.png",
+        "primaryGroup": "D",
+        "key": "D",
+        "value": "Does the organization have monitoring, control or reporting panels (dashboards) with relevant real-time information that empowers the decision makers of the organization to learn and make sound decisions?",
+        "options": [
+          {
+            "id": "EXQ-107",
+            "value": "Not applicable (The organization does not use dashboards)",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-108",
+            "value": "No, information is gathered and analyzed case by case, depending on the decision to be made",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-109",
+            "value": "The organization has identified key indicators (most are on dashboards) that are updated at least every week or every other week",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-110",
+            "value": "Yes, dashboards are essential parts of the organization’s operations and provide key indicators that are mostly updated in real-time, if not, daily or weekly",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-111",
+        "bgColor": "#3CC7AA",
+        "bgPicture": "/42ac8fc2c930afeba2e0aa4c60c14834.png",
+        "primaryGroup": "D",
+        "key": "D",
+        "value": "How are the dashboards/indicators/reports being updated?",
+        "options": [
+          {
+            "id": "EXQ-112",
+            "value": "Not applicable (The organization does not use dashboards)",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-113",
+            "value": "Manually",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-114",
+            "value": "Semi-manually",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-115",
+            "value": "Automatically and in real-time (i.e. sensors, user interaction registry, etc.)",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-116",
+        "bgColor": "#3CC7AA",
+        "bgPicture": "/42ac8fc2c930afeba2e0aa4c60c14834.png",
+        "primaryGroup": "D",
+        "key": "D",
+        "value": "Who in the organization is empowered through dashboards to act in an informed way?",
+        "options": [
+          {
+            "id": "EXQ-117",
+            "value": "Not applicable (The organization does not use dashboards)",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-118",
+            "value": "The CEO or Executive Team",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-119",
+            "value": "The CEO, the Executive Team and middle management",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-120",
+            "value": "Almost every one, dashboards are key at all levels across the organization",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-121",
+        "bgColor": "#2193D1",
+        "bgPicture": "/e96318ebe0ff0c3a3304c91dfe7d9eb9.png",
+        "primaryGroup": "X",
+        "key": "X",
+        "value": "Does the organization articulate its innovation activities as experimentation activities with specific hypotheses to be tested and feedback/insights to be gathered and lessons to be learned?",
+        "options": [
+          {
+            "id": "EXQ-122",
+            "value": "Not applicable (The organization does not have an experimentation process/culture)",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-123",
+            "value": "No, the organization has several innovation efforts without a structured experimentation process",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-124",
+            "value": "Yes, there are several teams or projects that are structured/guided by experimentation",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-125",
+            "value": "Yes, absolutely, every team within the organization is running articulated experimentation",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-126",
+        "bgColor": "#2193D1",
+        "bgPicture": "/e96318ebe0ff0c3a3304c91dfe7d9eb9.png",
+        "primaryGroup": "X",
+        "key": "X",
+        "value": "Is the organization guided by the results or insights gathered through data-based experimentation?",
+        "options": [
+          {
+            "id": "EXQ-127",
+            "value": "Never",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-128",
+            "value": "Very rarely",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-129",
+            "value": "Regularly, data-based decisions are always more relevant than opinion-based ones",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-130",
+            "value": "Constantly, there is a strong culture of trying to experiment and gather real data before making key decisions",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-131",
+        "bgColor": "#2193D1",
+        "bgPicture": "/e96318ebe0ff0c3a3304c91dfe7d9eb9.png",
+        "primaryGroup": "X",
+        "key": "X",
+        "value": "How is the organization generating, testing new initiatives, products and services?",
+        "options": [
+          {
+            "id": "EXQ-132",
+            "value": "Discuss and validate inside the company",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-133",
+            "value": "Hire a consultant that generates a market analysis report",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-134",
+            "value": "Build quickly mockups/wireframes and test them internally",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-135",
+            "value": "Build quickly prototypes and test them with early adopters",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-136",
+        "bgColor": "#F4B56A",
+        "bgPicture": "/63e7d740a9d37dde13283b900ede5105.png",
+        "primaryGroup": "F",
+        "key": "F",
+        "value": "Is there a culture of micromanagement within the organization?",
+        "options": [
+          {
+            "id": "EXQ-137",
+            "value": "Yes, absolutely",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-138",
+            "value": "Somehow yes",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-139",
+            "value": "No, in most of the cases employees and teams are empowered to act with autonomy",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-140",
+            "value": "Not at all, employees and teams are empowered to act with complete autonomy",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-141",
+        "bgColor": "#F4B56A",
+        "bgPicture": "/63e7d740a9d37dde13283b900ede5105.png",
+        "primaryGroup": "F",
+        "key": "F",
+        "value": "Does the organization have self-organizing, multi-disciplinary teams with decentralized authority?",
+        "options": [
+          {
+            "id": "EXQ-142",
+            "value": "Not applicable",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-143",
+            "value": "Not at all",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-144",
+            "value": "Yes, there is a part of the organization working in this way",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-145",
+            "value": "Yes, the organization is almost entirely working in this way",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-146",
+        "bgColor": "#F4B56A",
+        "bgPicture": "/63e7d740a9d37dde13283b900ede5105.png",
+        "primaryGroup": "F",
+        "key": "F",
+        "value": "Does the organization provide autonomy to customer segments and key partners to establish their own conditions to operate?",
+        "options": [
+          {
+            "id": "EXQ-147",
+            "value": "Not at all",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-148",
+            "value": "Not automatically, but they can negotiate it with the organization",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-149",
+            "value": "Somehow yes",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-150",
+            "value": "Yes, absolutely",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-151",
+        "bgColor": "#6128FF",
+        "bgPicture": "/fa53420d666d3fede1873b420a7ec1df.png",
+        "primaryGroup": "O",
+        "key": "O",
+        "value": "Is instant communication enabled/facilitated within the organization (instant messages, internal news feeds, etc)?",
+        "options": [
+          {
+            "id": "EXQ-152",
+            "value": "Not applicable",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-153",
+            "value": "No, only through emails and phone calls",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-154",
+            "value": "Yes, the employees sometimes use use sometimes instant messaging and real-time collaboration tools to communicate with each other and also the business stakeholders",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-155",
+            "value": "Yes, the organization uses constantly instant messaging and real-time collaboration tools to communicate with each other and also the business stakeholders",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-156",
+        "bgColor": "#6128FF",
+        "bgPicture": "/fa53420d666d3fede1873b420a7ec1df.png",
+        "primaryGroup": "O",
+        "key": "O",
+        "value": "Is instant communication enabled/ facilitated to connect customer segments and/or key partners among them (instant messages, internal news feeds, etc.)?",
+        "options": [
+          {
+            "id": "EXQ-157",
+            "value": "Not applicable",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-158",
+            "value": "Only through the organization’s staff, so the organization is always in the middle to drive these conversations",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-159",
+            "value": "Yes, customer segments and key partners sometimes use instant messaging to communicate with each other and also the business stakeholders",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-160",
+            "value": "Yes, the organization provides social technologies to give instant messaging and real-time collaboration tools to customer segments and key partners",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-161",
+        "bgColor": "#6128FF",
+        "bgPicture": "/fa53420d666d3fede1873b420a7ec1df.png",
+        "primaryGroup": "O",
+        "key": "O",
+        "value": "How does the organization implement social technologies to connect employees and/or customer segments and key partners among them?",
+        "options": [
+          {
+            "id": "EXQ-162",
+            "value": "Not applicable",
+            "score": 0.5
+          },
+          {
+            "id": "EXQ-163",
+            "value": "With third parties tools to cover part of the communications needs",
+            "score": 1.25
+          },
+          {
+            "id": "EXQ-164",
+            "value": "With third parties tools to cover all the communication needs",
+            "score": 2.5
+          },
+          {
+            "id": "EXQ-165",
+            "value": "With the organization’s own technology/platform to cover all the communication needs",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "EXQ-166",
+        "primaryGroup": "Business Type Model",
+        "key": "B",
+        "bgColor": "#F2576D",
+        "bgPicture": "/27f132d2ea552969ad68242a2f70754a.png",
+        "value": "What’s the current business model type of the organization?",
+        "options": [
+          {
+            "id": "EXQ-167",
+            "value": "Product/Service owners: The organization develops/manufactures its own products or defines/executes its own services and provide them to its clients directly. Example: BMW.",
+            "score": 0.94
+          },
+          {
+            "id": "EXQ-168",
+            "value": "Distribution: The organization provides products and services of others to its clients. The organization selects the offering for its customer segments and negotiate with providers best conditions for them. Example: Walmart.",
+            "score": 0.96
+          },
+          {
+            "id": "EXQ-169",
+            "value": "Platform: The organization connects producers (of product/services) with consumers (clients) using a platform in the middle, which allows to automatically balance the offer/demand taking into account preferences of clients and providers. Example: AirBnB.",
+            "score": 0.99
+          },
+          {
+            "id": "EXQ-170",
+            "value": "Ecosystem/Network business model: The organization has a platform-based business model complemented with a set of entities providing additional services and products to its customers towards its purposes. Example: Google",
+            "score": 1
+          }
+        ]
+      }
+    ]
+  }
+}

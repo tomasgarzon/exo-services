@@ -1,0 +1,11 @@
+name: Sutton First Swarm session
+starts: !timedelta -10d
+ends: !timedelta -9d
+project: !sprint_automated Sutton Inc
+advisors:
+  - !consultant &consultant_tina Tina Weissberg
+  - !consultant Gorka Arrizabalaga
+  - !consultant &consultant_lindsey Lindsey Allen
+  - !consultant &consultant_leticia Leticia Ferreira Dias
+  - !consultant &consultant_naina Naina Lavrova
+  - !consultant &consultant_cerdic Cerdic Roper

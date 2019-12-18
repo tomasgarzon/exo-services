@@ -1,0 +1,26 @@
+title: Now accepting EXOS payments for ExO Master Business Course!
+user: !exo_account Quality Assurance
+date: !timedelta -13d
+description: |
+  <p>Hey all - ExO community!!!</p>
+
+  <p>Tina Weissberg here from Growth Institute.</p>
+
+  <p>I'm VERY excited to be sharing the news that We are now accepting EXOS payments for ExO Master Business Course!</p>
+
+  <p>It's first time doing this, so we have limited spots for the first 10 members only. This is exclusive for the ExO community.</p>
+tags:
+  - Blockchain
+activities:
+  - user: !consultant Naina Lavrova
+    date: !timedelta -11d
+  - user: !consultant Gorka Arrizabalaga
+    date: !timedelta -10d
+    reply: |
+      <p>Thank you Daniel and the Growth Institute team! Amazing!</p>
+
+      <p>More about EXOS is here: <a href="https://economy.openexo.com" target="_blank">https:///economy.openexo.com</a></p>
+  - user: !consultant Cerdic Roper
+    date: !timedelta -232h
+    reply: |
+      <p>Thanks for the teaser reminder.</p>

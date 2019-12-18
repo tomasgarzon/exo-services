@@ -1,0 +1,86 @@
+{% extends "project/base.html" %}
+{% load bootstrap_pagination bootstrap3 staticfiles django_bootstrap_breadcrumbs breadcrumb %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Team" "project:project:team:list" project.pk %}
+    {% if object.pk %}
+        {% breadcrumb "Edit" "project:project:team:edit" project.pk object.pk %}
+    {% else %}
+        {% breadcrumb "Add team" "project:project:team:add" project.pk %}
+    {% endif %}
+{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class='ibox float-e-margins'>
+            <div class="ibox-title">
+                <h2>{% if object.pk %}Edit{% else %}Add{% endif %} team</h2>
+            </div>
+            <div class="ibox-content">
+                <form id='form' action="." method="post" class="wizard-big wizard-step-2 styles-form wizard" enctype='multipart/form-data'
+                data-url-cancel="{% url 'project:project:team:list' project.pk %}"
+                data-url-success="{% url 'project:project:team:list' project.pk %}"
+                data-project="{{project.pk}}"
+                data-object="{{object.pk}}">
+                    <h1>General</h1>
+                    <fieldset>
+                        <p class="text_step_wizard m-l-none">General Information</p>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                {% bootstrap_field form.name %}
+                                {% bootstrap_field form.stream %}
+
+                                {% if form.zoom_id %}
+                                    {% bootstrap_field form.zoom_id %}
+                                {% endif %}
+                                {% if form.exq_survey %}
+                                    {% bootstrap_field form.exq_survey %}
+                                {% endif %}
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="text-center">
+                                    <div>
+                                        <i class="fa fa-group"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <h1>Members</h1>
+                    <fieldset>
+                        <p class="text_step_wizard m-l-none">Team Members</p>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                {% bootstrap_field form.coach %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12" id='team-members'>
+                                <p class='pull-left text_step_wizard m-l-none'>Client members</p>
+                                <div class='pull-right btn btn-default orange border-orange' id='add-item'>Add new member</div>
+                                <table class='table table-responsive table-mail all-border table-hover list-detail'>
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'team/js/team_form.js' %}"></script>
+{% endblock %}

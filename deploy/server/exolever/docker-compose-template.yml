@@ -1,0 +1,251 @@
+version: '3.5'
+services:
+
+  postgres:
+    # NOTE: ACTIVATE postgres:11-alpine when they add LC_COLLATE support to musl library
+    image: postgres:11
+    environment:
+      POSTGRES_DB: exolever
+      POSTGRES_USER: exolever
+      POSTGRES_PASSWORD: exolever
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    networks:
+      - default
+    restart: unless-stopped
+
+  pgweb:
+    image: sosedoff/pgweb
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgres://exolever:exolever@postgres:5432/service_exo_core?sslmode=disable
+    depends_on:
+      - postgres
+    networks:
+      - default
+
+  redis:
+    image: redis:5-alpine
+    networks:
+        - default
+    restart: unless-stopped
+
+  astrako:
+    image: exolever/astrako:latest
+    shm_size: 128m
+    environment:
+      DOMAIN_NAME: ${SUBDOMAIN}.${DOMAIN}
+      MASTER_PASSWORD: P2qfBG5UPYh5FhwM
+
+  service-exo-companies:
+    image: exolever/service-exo-companies:${TAG}
+    environment:
+      # DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: https://${SUBDOMAIN}.${DOMAIN}
+      SENTRY_DSN: https://24ea1d7c3c194d75a01bc00f55b48978@sentry.io/127595
+      ADMIN_EMAIL: qa@openexo.com
+      SEGMENT_WRITE_KEY: 'elxkxiBXfapCuP1o7Egak9nc3PZp6p76'
+    restart: unless-stopped
+
+  service-exo-jobs:
+    image: exolever/service-exo-jobs:${TAG}
+    environment:
+      # DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: https://${SUBDOMAIN}.${DOMAIN}
+      SENTRY_DSN: https://24ea1d7c3c194d75a01bc00f55b48978@sentry.io/127595
+      ADMIN_EMAIL: qa@openexo.com
+      SEGMENT_WRITE_KEY: 'elxkxiBXfapCuP1o7Egak9nc3PZp6p76'
+    restart: unless-stopped
+
+  service-exo-exq:
+    image: exolever/service-exo-exq:${TAG}
+    environment:
+      # DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: https://${SUBDOMAIN}.${DOMAIN}
+      SENTRY_DSN: https://24ea1d7c3c194d75a01bc00f55b48978@sentry.io/127595
+      ADMIN_EMAIL: qa@openexo.com
+      SEGMENT_WRITE_KEY: 'elxkxiBXfapCuP1o7Egak9nc3PZp6p76'
+    restart: unless-stopped
+
+  service-exo-events:
+    image: exolever/service-exo-events:${TAG}
+    environment:
+      # DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: https://${SUBDOMAIN}.${DOMAIN}
+      SENTRY_DSN: https://24ea1d7c3c194d75a01bc00f55b48978@sentry.io/127595
+      ADMIN_EMAIL: qa@openexo.com
+      SEGMENT_WRITE_KEY: 'elxkxiBXfapCuP1o7Egak9nc3PZp6p76'
+    restart: unless-stopped
+
+  service-exo-projects:
+    image: exolever/service-exo-projects:${TAG}
+    networks:
+      - default
+    environment:
+      # DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: https://${SUBDOMAIN}.${DOMAIN}
+      SENTRY_DSN: https://24ea1d7c3c194d75a01bc00f55b48978@sentry.io/127595
+      ADMIN_EMAIL: qa@openexo.com
+      SEGMENT_WRITE_KEY: 'elxkxiBXfapCuP1o7Egak9nc3PZp6p76'
+    restart: unless-stopped
+
+  service-exo-conversations:
+    image: exolever/service-exo-conversations:${TAG}
+    networks:
+      - default
+    environment:
+      # DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: https://${SUBDOMAIN}.${DOMAIN}
+      SENTRY_DSN: https://24ea1d7c3c194d75a01bc00f55b48978@sentry.io/127595
+      ADMIN_EMAIL: qa@openexo.com
+      SEGMENT_WRITE_KEY: 'elxkxiBXfapCuP1o7Egak9nc3PZp6p76'
+    restart: unless-stopped
+
+  service-exo-broker:
+    image: exolever/service-exo-broker:${TAG}
+    networks:
+      - default
+    environment:
+      # DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: https://${SUBDOMAIN}.${DOMAIN}
+      SENTRY_DSN: https://24ea1d7c3c194d75a01bc00f55b48978@sentry.io/127595
+      ADMIN_EMAIL: qa@openexo.com
+      SEGMENT_WRITE_KEY: 'elxkxiBXfapCuP1o7Egak9nc3PZp6p76'
+    restart: unless-stopped
+    volumes:
+      - media:/projects/service-exo-broker/media
+      - static:/projects/service-exo-broker/static
+    expose:
+      - '80'
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.backend=${SUBDOMAIN}'
+      - 'traefik.frontend.rule=Host:${SUBDOMAIN}.${DOMAIN}'
+      - 'traefik.docker.network=traefik_default'
+    networks:
+      - default
+      - traefik_default
+
+  service-exo-auth:
+    image: exolever/service-exo-auth:${TAG}
+    networks:
+      - default
+    environment:
+      # DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: https://${SUBDOMAIN}.${DOMAIN}
+      SENTRY_DSN: https://24ea1d7c3c194d75a01bc00f55b48978@sentry.io/127595
+      ADMIN_EMAIL: qa@openexo.com
+      SEGMENT_WRITE_KEY: 'elxkxiBXfapCuP1o7Egak9nc3PZp6p76'
+    restart: unless-stopped
+
+  service-exo-payments:
+    image: exolever/service-exo-payments:${TAG}
+    networks:
+      - default
+    environment:
+      # DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: https://${SUBDOMAIN}.${DOMAIN}
+      SENTRY_DSN: https://24ea1d7c3c194d75a01bc00f55b48978@sentry.io/127595
+      ADMIN_EMAIL: qa@openexo.com
+      SEGMENT_WRITE_KEY: 'elxkxiBXfapCuP1o7Egak9nc3PZp6p76'
+    restart: unless-stopped
+    volumes:
+      - media-payments:/projects/service-exo-payments/media
+
+  service-exo-opportunities:
+    image: exolever/service-exo-opportunities:${TAG}
+    networks:
+      - default
+    environment:
+      # DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: https://${SUBDOMAIN}.${DOMAIN}
+      SENTRY_DSN: https://24ea1d7c3c194d75a01bc00f55b48978@sentry.io/127595
+      ADMIN_EMAIL: qa@openexo.com
+      SEGMENT_WRITE_KEY: 'elxkxiBXfapCuP1o7Egak9nc3PZp6p76'
+    restart: unless-stopped
+
+  service-exo-mail:
+    image: exolever/service-exo-mail:${TAG}
+    networks:
+      - default
+    environment:
+      # DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: https://${SUBDOMAIN}.${DOMAIN}
+      SENTRY_DSN: https://24ea1d7c3c194d75a01bc00f55b48978@sentry.io/127595
+      ADMIN_EMAIL: qa@openexo.com
+      SEGMENT_WRITE_KEY: 'elxkxiBXfapCuP1o7Egak9nc3PZp6p76'
+    restart: unless-stopped
+
+  service-exo-website:
+    image: exolever/service-exo-website:${TAG}
+    networks:
+      - default
+    environment:
+      # DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: https://${SUBDOMAIN}.${DOMAIN}
+      EXO_WEBSITE_DOMAIN: https://${SUBDOMAIN}.${DOMAIN}/website
+      SENTRY_DSN: https://24ea1d7c3c194d75a01bc00f55b48978@sentry.io/127595
+      ADMIN_EMAIL: qa@openexo.com
+      SEGMENT_WRITE_KEY: 'elxkxiBXfapCuP1o7Egak9nc3PZp6p76'
+    restart: unless-stopped
+
+  service-exo-medialibrary:
+    image: exolever/service-exo-medialibrary:${TAG}
+    networks:
+      - default
+    environment:
+      # DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: https://${SUBDOMAIN}.${DOMAIN}
+      SENTRY_DSN: https://24ea1d7c3c194d75a01bc00f55b48978@sentry.io/127595
+      ADMIN_EMAIL: qa@openexo.com
+      SEGMENT_WRITE_KEY: 'elxkxiBXfapCuP1o7Egak9nc3PZp6p76'
+    restart: unless-stopped
+
+  exo-backoffice:
+    image: exolever/exo-backoffice:${TAG}
+    volumes:
+      - exo-backoffice:/exo-backoffice
+    command: cp -r /projects/service-exo-core/exo-backoffice /
+    networks:
+      - default
+
+  service-exo-core:
+    image: exolever/service-exo-core:${TAG}
+    depends_on:
+      - postgres
+      - redis
+      - exo-backoffice
+    environment:
+      # DB_DUMP_URL: ${DB_DUMP_URL}
+      DEBUG: 'False'
+      ALLOWED_HOSTS: '*'
+      DEBUG_GRAPHQL: 'True'
+      MASTER_PASSWORD: P2qfBG5UPYh5FhwM
+      ADMIN_EMAIL: qa@openexo.com
+      DOMAIN_NAME: https://${SUBDOMAIN}.${DOMAIN}
+      INTERCOM_SECRET_KEY: giCzj6_jNpoI_a8NyfSS_A9XJtwccBLazPS6nxRc
+      EMAIL_NEW_POST_DELAY: 30
+      SENTRY_DSN: https://24ea1d7c3c194d75a01bc00f55b48978@sentry.io/127595
+      SEGMENT_WRITE_KEY: 'elxkxiBXfapCuP1o7Egak9nc3PZp6p76'
+    volumes:
+      - exo-backoffice:/projects/service-exo-core/exo-backoffice
+      - media:/projects/service-exo-core/media
+      - static:/projects/service-exo-core/static
+    restart: unless-stopped
+    networks:
+      - default
+
+
+volumes:
+  static: null
+  media-payments: null
+  media: null
+  exo-backoffice: null
+  postgres: null
+
+networks:
+  default:
+  traefik_default:
+    external:
+      name: traefik_default
+

@@ -1,0 +1,19 @@
+{% if circle.code == 'A' %}
+	{% include 'mail_images/circle_alumni_base64.html' %}
+{% elif circle.code == 'C' %}
+	{% include 'mail_images/circle_coaches_base64.html' %}
+{% elif circle.code == 'T' %}
+	{% include 'mail_images/circle_consultant_base64.html' %}
+{% elif circle.code == 'E' %}
+	{% include 'mail_images/circle_ecosystem_base64.html' %}
+{% elif circle.code == 'B' %}
+	{% include 'mail_images/circle_ambassadors_base64.html' %}
+{% elif circle.code == 'P' %}
+	{% include 'mail_images/circle_developers_base64.html' %}
+{% elif circle.code == 'C' %}
+	{% include 'mail_images/circle_book_collaborators_base64.html' %}
+{% elif circle.code == 'M' %}
+	{% include 'mail_images/circle_marketplace_base64.html' %}
+{% else %}
+	{% include 'mail_images/circle_generic_base64.html' %}
+{% endif %}

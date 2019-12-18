@@ -1,0 +1,145 @@
+{% load images guardian_tags %}
+{% load money %}
+
+{% get_obj_perms user for object as "perms_obj" %}
+<div class='ibox float-e-margins'>
+    <div class="ibox-title ibox-tools col-xs-12">
+        <div class="pull-left m-r-sm">
+            <img alt="image" src="{% image_thumbnail_url object.profile_picture 48 48 %}" />
+        </div>
+        <div class='pull-right icons-ibox-title'>
+            <a class="close-link-detail pull-right m-r-none" data-role="close-detail">
+                <i class="fa fa-times"></i>
+            </a>
+            {% include "customer/customer_action_list.html" with perms=perms_obj customer=object global_perms=perms %}
+        </div>
+        <div class="pull-left p-n t-a-left m-r-sm title with-image">
+            <h3 class="block cut-text" title="{{object.name}}">{{object.name}}</h3>
+            <p class="m-b-xs">{{object.timezone}}</p>
+        </div>
+    </div>
+    <div class="ibox-content">
+        <div id="tabs-customer" class="tabs-container details">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#market">Market</a></li>
+                <li class=""><a data-toggle="tab" href="#members">Members</a></li>
+                <li class=""><a data-toggle="tab" href="#contact">Contact</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="market" class="tab-pane active">
+                    <div class="panel-body">
+                        {% if object.training %}
+                            <div class='alert alert-warning'>
+                                <i class='fa fa-exclamation-circle'></i> It's a client for training</div>
+                        {% endif %}
+                        <table class="table table-detail-right todo-list">
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>ExQ</strong>
+                                </th>
+                                <td class="">
+                                    {{object.organization.exq|floatformat:0|default:"Pending"}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Industry</strong>
+                                </th>
+                                <td class="">
+                                    {{object.industry}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Annual revenue</strong>
+                                </th>
+                                <td class="">
+                                    {{object.annual_revenue|amount|default:"Not Filled"}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Market value</strong>
+                                </th>
+                                <td class="">
+                                    {{object.market_value|amount|default:"No filled"}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Company size</strong>
+                                </th>
+                                <td>
+                                    {{object.get_size_display}}
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id='members' class="tab-pane">
+                    <div class="panel-body chat-activity-list">
+                        <div class="chat-element no-padding no-margins m-t-14">
+                            {% for u in customer.users_roles.actives.users %}
+                                <div class='m-t-xs m-b-xs'>
+                                    {% include "tags/link_user2.html" with member=u %}
+                                </div>
+                            {% empty %}
+                                <div class="chat-element">
+                                    <div class="row">
+                                        <div class="col-md-12">Not users yet</div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div id="contact" class="tab-pane">
+                    <div class="panel-body">
+                        <table class="table table-detail-right todo-list">
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Address</strong>
+                                </th>
+                                <td class="">
+                                    {{object.address|default:"Not filled"}}
+                                </td>
+                            </tr>
+                            {% if object.website %}
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Website</strong>
+                                </th>
+                                <td class="">
+                                    <a href="{{object.website}}" target="_blank">{{object.website}}</a>
+                                </td>
+                            </tr>
+                            {% endif %}
+                            {% if object.phone %}
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Phone</strong>
+                                </th>
+                                <td>
+                                    {{object.phone}}
+                                </td>
+                            </tr>
+                            {% endif %}
+                        </table>
+                        <div class="row  m-t p-t m-l-none m-r-none">
+                            <div class='col-xs-12 m-t'>
+                                {% include "customer/social_network.html" with value=object.facebook name="facebook" %}
+                                {% include "customer/social_network.html" with value=object.twitter name="twitter" %}
+                                {% include "customer/social_network.html" with value=object.google name="google" %}
+                                {% include "customer/social_network.html" with value=object.linkedin name="linkedin" %}
+                                {% include "customer/social_network.html" with value=object.blog name="bold" %}
+                            </div>
+                        </div>
+                        {% if object.empty_contact_info %}
+                            <p class="col-xs-12">No contact information</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

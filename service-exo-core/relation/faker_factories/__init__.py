@@ -1,0 +1,11 @@
+from .faker_factory_role_factory import FactoryRoleFactory  # noqa
+from .faker_factory_consultant_role_group import FakeConsultantRoleGroupFactory  # noqa
+from .faker_factory_customer_user_role import FakeCustomerUserRoleFactory  # noqa
+from .faker_factory_partner_user_role import FakePartnerUserRoleFactory  # noqa
+from .faker_factory_partner_project_role import FakePartnerProjectRoleFactory  # noqa
+from .faker_factory_consultant_project_role import FakeConsultantProjectRoleFactory  # noqa
+from .faker_factory_user_project_role import FakeUserProjectRoleFactory  # noqa
+from .faker_factory_consultant_trained import FakeConsultantTrainedFactory  # noqa
+from .faker_factory_consultant_role import FakeConsultantRoleFactory  # noqa
+from .faker_factory_organization_user_role import FakeInternalOrganizationUserRoleFactory  # noqa
+from .faker_factory_hub_user import FakeHubUserFactory  # noqa

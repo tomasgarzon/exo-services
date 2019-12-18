@@ -1,0 +1,61 @@
+{% extends "project/master_detail_base.html" %}
+
+{% load django_bootstrap_breadcrumbs breadcrumb %}
+{% load bootstrap_pagination images permission_tags staticfiles %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Assignments" "project:project:assignment:list" project.id %}
+{% endblock %}
+
+{% block header_action %}
+    <div class="col-lg-3">
+        <a href="{% url 'project:project:assignment:add' project.pk %}" class="btn btn-primary pull-right m-t-8 m-r-md">Add assignment</a>
+    </div>
+{% endblock %}
+
+{% block master_view %}
+    <table class="table table-hover list-detail table-team table-l-fix">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Stream</th>
+                <th width="30%">{{project.get_lapse_display}}</th>
+                <th width="10%">Public</th>
+                <th width="5%"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for object in object_list %}
+            <tr data-role='trigger' data-url="{% url 'project:project:assignment:detail' project.pk object.pk %}">
+                <td><div class='cut-text'>{{object.name}}</div></td>
+                <td>{{object.get_stream_display}}</td>
+                <td>
+                    {% if not object.day %}
+                        Not assigned to {{project.get_lapse_display}}
+                    {% else %}
+                        {{object.day}}
+                    {% endif %}
+                </td>
+                <td data-action='stop'>
+                    <input type="checkbox" class="js-switch" data-id="{{object.pk}}" data-project="{{project.pk}}" {% if object.is_enabled %}checked{% endif %} {% if not object.can_be_enabled %}disabled{% endif %}/>
+                </td>
+                <td data-action='stop'>
+                    {% include "assignment/project/action_list.html" with assignment=object %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
+{% block empty_view %}
+        <div class="text-center full-width pull-left m-b-md">
+            You don't have assignment yet.<br>
+            <a href="{% url 'project:project:assignment:add' project.pk %}" class="btn btn-primary m-t-sm">Add assignment</a>
+        </div>
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'assignment/js/assignment_list.js' %}"></script>
+{% endblock %}

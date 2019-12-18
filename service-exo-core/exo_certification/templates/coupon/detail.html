@@ -1,0 +1,149 @@
+
+<div class='ibox float-e-margins'>
+    <div class="ibox-title ibox-tools col-xs-12">
+        <div class="pull-left m-r-sm">
+
+        </div>
+        <div class='pull-right icons-ibox-title'>
+            <a class="close-link-detail pull-right m-r-none" data-role="close-detail">
+                <i class="fa fa-times"></i>
+            </a>
+            {% include "coupon/action_list.html" %}
+        </div>
+        <div class="pull-left p-n t-a-left m-r-sm title with-image">
+            <h3 class="block cut-text" title="{{object.code}}">{{object.code}}</h3>
+            <p class="m-b-xs">{{object.certification}}</p>
+        </div>
+    </div>
+    <div class="ibox-content">
+        <div id="tabs-customer" class="tabs-container details">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#info">Info</a></li>
+                <li class=""><a data-toggle="tab" href="#users">Users</a></li>
+                <li class=""><a data-toggle="tab" href="#logs">Log</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="info" class="tab-pane active">
+                    <div class="panel-body">
+                        <table class="table table-detail-right todo-list">
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Created by</strong>
+                                </th>
+                                <td class="">
+                                    {{object.created_by.get_full_name}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Code</strong>
+                                </th>
+                                <td class="">
+                                    {{object.code}} ({{object.certification }})
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Comment</strong>
+                                </th>
+                                <td class="">
+                                    {{object.comment}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Created at</strong>
+                                </th>
+                                <td class="">
+                                    {{object.created|date}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Type</strong>
+                                </th>
+                                <td class="">
+                                    {{object.get_type_display}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Owner</strong>
+                                </th>
+                                <td class="">
+                                    {{object.owner.get_full_name}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Fixed email</strong>
+                                </th>
+                                <td class="">
+                                    {{object.fixed_email|default:'open'}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Discount</strong>
+                                </th>
+                                <td class="">
+                                    {{object.total_discount}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Uses</strong>
+                                </th>
+                                <td class="">
+                                    {{object.uses}} / {{object.max_uses}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="no-top-border">
+                                    <strong>Expiry date</strong>
+                                </th>
+                                <td class="">
+                                    {{object.expiry_date|date}}
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id='users' class="tab-pane">
+                    <div class="panel-body chat-activity-list">
+                        <div class="chat-element no-padding no-margins m-t-14">
+                            {% for u in object.certification_requests.all %}
+                                <div class='m-t-xs m-b-xs'>
+                                    {{u.user.get_full_name}}: {{u.cohort}} - {{u.get_status_display}}
+                                </div>
+                            {% empty %}
+                                <div class="chat-element">
+                                    <div class="row">
+                                        <div class="col-md-12">Not users yet</div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div id="logs" class="tab-pane">
+                    <div class="panel-body chat-activity-list">
+                        <div class="chat-element no-padding no-margins m-t-14">
+                        {% for u in object.logs.all %}
+                                <div class='m-t-xs m-b-xs'>
+                                    {% include "tags/link_user2.html" with member=u.user %}
+                                </div>
+                            {% empty %}
+                                <div class="chat-element">
+                                    <div class="row">
+                                        <div class="col-md-12">Not users yet</div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

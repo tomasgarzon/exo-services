@@ -1,0 +1,11 @@
+{% extends 'payments/base.html' %}
+{% block main %}
+    <script>
+        var stripe = Stripe('{{ stripe_public_key }}');
+
+        stripe.redirectToCheckout({
+            sessionId: '{{ stripe_session }}'
+        });
+    </script>
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base/content.html" %}
+{% load django_bootstrap_breadcrumbs breadcrumb %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb_for url_list %}
+        {{type_project_plural|capfirst}}
+    {% endbreadcrumb_for %}
+    {% breadcrumb "Remove" "project:delete" object.pk %}
+{% endblock %}
+
+{% block header %}
+<div class="col-lg-10">
+    <h2>{{ type_project }}</h2>
+</div>
+<div class="col-xs-12 p-r-none">
+    {% render_view_breadcrumbs "base/breadcrumb.html" %}
+</div>
+{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox">
+            <div class="ibox-content">
+                <form action="" method="post">{% csrf_token %}
+                    <p>Are you sure you want to remove "{{ object }}"?</p>
+                    <a href="{{url_cancel}}" class='btn btn-default'>Cancel</a>
+                    <input type="submit" class='btn btn-positive-choice' value="Yes, remove" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

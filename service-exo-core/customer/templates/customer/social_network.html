@@ -1,0 +1,8 @@
+{% load profile %}
+{% if value %}
+    <div class='pull-left m-r-sm'>
+        <a href="{{value|http}}" target="_blank" class='text-default all-border p-xs b-radius-4'>
+        <i class="fa fa-{{name}}" aria-hidden="true" class="color-grey-700"></i>
+        </a>
+    </div>
+{% endif %}

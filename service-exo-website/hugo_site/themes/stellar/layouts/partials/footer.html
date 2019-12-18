@@ -1,0 +1,12 @@
+<footer id="footer">
+  <section>
+    <h2>Share this workshop</h2>
+        {{ partial "addthis" . }}
+   </section>
+   <section>
+        <!--<p class="copyright"><a href="{{ .Site.Data.sections.root }}" target="_blank">{{.Site.Params.Footer.copyright }}.</a></p>-->
+        <p class="copyright">Transforming the world for a better future - OpenExO® 2018 | 2019</p>
+        <span class="logo"><a href="https://www.openexo.com/" target="_blank"><img src= "images/logo-openexo-white.png" alt="" /></a></span>
+   </section>
+    {{ partial "addthis-script" . }}
+</footer>

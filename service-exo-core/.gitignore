@@ -1,0 +1,77 @@
+# Python object files
+/media/
+/bds/
+*.pyc
+# .po compiled files
+*.mo
+*~
+# OSX meta files
+.DS_Store
+service/*.sh
+node_modules/
+*.log
+*.sublime-project
+*.sublime-workspace
+/static/
+/run/
+/protected/
+components
+bower_components
+script_gunicorn.sh
+script_daphne.sh
+__pycache__
+*.sqlite3
+frontend/static
+.tmp
+frontend/templates/base.html
+frontend/templates/index.html
+frontend/templates/dist
+exo-frontend_old/
+exo-backoffice_old/
+*.patch
+xapian_index/
+test_utils/pytest/test__xapian_index
+
+# Ignore Angular2 Application
+angular2
+exo-frontend_old
+# Coverage files
+.coverage
+*.xml
+htmlcov/*
+.sonar
+sonar-project.*
+/data/
+.env
+gunicorn-script.sh
+
+#Visual Code files
+.vscode/
+
+.idea/
+
+# locales
+locale/
+
+# Lock file for package.json
+angular/package-lock.json
+
+exo-frontend/
+exo-frontend-react/
+exo-backoffice/
+
+# Redis file backup
+dump.rdb
+celerybeat-schedule.db
+celerybeat.pid
+script_update_exofrontend.sh
+
+*.dump
+*/management/commands/*.log
+*/management/commands/*.csv
+*/management/commands/*.zip
+
+script_update_exo_backoffice\.sh
+
+index.html
+Pipfile.lock

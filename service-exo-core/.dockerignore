@@ -1,0 +1,17 @@
+.git
+*.pyc
+*~
+__pycache__
+
+# OSX meta files
+.DS_Store
+
+*.log
+*.sublime-project
+*.sublime-workspace
+
+Dockerfile
+Dockerfile.test
+bitbucket-pipelines.yml
+.gitlab-ci.yml
+.github/

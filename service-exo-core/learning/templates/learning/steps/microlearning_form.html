@@ -1,0 +1,43 @@
+{% extends "project/base.html" %}
+{% load bootstrap_pagination bootstrap3 staticfiles django_bootstrap_breadcrumbs breadcrumb %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Steps" "project:project:steps" project.pk %}
+    {% breadcrumb "Edit" "project:project:steps-edit" project.pk object.pk %}
+{% endblock %}
+
+{% block main_project %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class='ibox float-e-margins'>
+            <div class="ibox-title">
+                <h2>{% if object.pk %}Microlearning for step "{{object}}"{% endif %}</h2>
+            </div>
+            <div class="ibox-content">
+                <form id='form' action="." method="post"
+                        class="styles-form"
+                        enctype='multipart/form-data'
+                        >
+                            <div class="content clearfix p-m m-t-none">
+                                <div class='col-xs-12 col-lg-8 col-md-12'>
+                                {% csrf_token %}
+                                {{ form.management_form }}
+                                {% for f1 in form %}
+                                    <h3>{{f1.instance.step_stream.get_stream_display}}</h3>
+                                    {{ f1.id }}
+                                    {% bootstrap_field f1.description %}
+                                    {% bootstrap_field f1.typeform_url %}
+                                    {% bootstrap_field f1.video %}
+                                {% endfor %}
+                                </div>
+                            </div>
+                            <div class="full-width pull-right m-r-xs m-b-xs text-right">
+                                <button class="btn btn-positive-choice" type="submit">Save</button>
+                            </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

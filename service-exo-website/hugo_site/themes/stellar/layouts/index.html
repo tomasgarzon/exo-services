@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+
+    <!-- Wrapper -->
+      <div id="wrapper">
+        <!-- Header -->
+          {{ partial "header.html" . }}
+
+        <!-- Nav -->
+          {{ partial "navigation.html" . }}
+
+        <!-- Main -->
+          <div id="main">
+
+            <!-- Introduction -->
+            <!-- Sections -->
+              {{ $list := .Site.Data.sections.sections }}
+              {{ $speakers := $.Site.Data.sections.speakers }}
+              {{ range $index, $section := $list }}
+                <section id="{{ $section.name | urlize }}" class="main special">
+                  <header class="major">
+                    <h2>{{ $section.name }}</h2>
+                    {{ if $section.description }}
+                      <h3>{{ $section.description }}</h3>
+                    {{ end }}
+                  </header>
+                  <!-- section content -->
+                  {{ $section.content | safeHTML }}</p>
+
+                  </section>
+                  {{ if eq $section.name "Agenda" }}
+                    {{ partial "speakers.html" (dict "context"  . "speakers" $speakers) }}
+                  {{ end }}
+                {{ end }}
+              {{ "<!-- Contact -->" | safeHTML}}
+                {{ if .Site.Params.Contact.enable }}
+                  {{ partial "contact.html" . }}
+                {{ end }}
+          </div>
+
+        <!-- Footer -->
+          {{ partial "footer.html" . }}
+
+      </div>
+
+    <!-- Scripts -->
+      {{ partial "scripts.html" . }}
+      {{- partial "footer_custom.html" . }}
+  </body>
+</html>

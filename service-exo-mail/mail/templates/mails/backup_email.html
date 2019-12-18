@@ -1,0 +1,17 @@
+{% extends "base/email2.html" %}
+{% load common_mails %}
+{% block title %}
+{% endblock %}
+
+{% block subtitle %}
+{% endblock %}
+
+{% block content %}
+    <p>Here is your backup:</p>
+    <p><a href="{{domain}}{{s3_file}}">{{domain}}{{s3_file}}</a></p>
+    <p>Thank you</p>
+
+{% endblock %}
+{% block text_under_button %}{% endblock %}
+{% block main_button %}{% endblock %}
+{% block main_text %}{% endblock %}

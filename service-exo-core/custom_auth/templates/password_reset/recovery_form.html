@@ -1,0 +1,12 @@
+{% extends "password_reset/base.html" %}
+{% load i18n %}
+
+{% block title %}Password recovery{% endblock %}
+
+{% block content_main %}
+    <form method="post" action="{{ url }}" class='form form-horizontal'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p><input class="btn subtmit" type="submit" value="{% trans "Recover my password" %}"></p>
+    </form>
+{% endblock %}

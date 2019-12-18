@@ -1,0 +1,53 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="New opportunities" title="Marketplace" />
+{% endblock %}
+
+{% block wrapper-extra-class %}white{% endblock %}
+
+{% block wrapper-title %}
+{% endblock %}
+
+{% block content %}
+    <mj-text>Hello {{name}},</mj-text>
+    <mj-text>
+        look at the list of {{total}} new opportunities in the OpenExO Marketplace. Click on any of them to see more detail in the OpenExO Marketplace.
+    </mj-text>
+    {% for role in roles %}
+        <mj-text font-size="20px">
+            <strong>{{role.total}} {{role.name}} opportunities</strong>
+        </mj-text>
+        <mj-text>
+            <ul>
+                {% for opp in role.opportunities %}
+                <li style="margin-bottom:20px;">
+                    <mj-text>
+                        <span style="font-size:16px;"><strong>{{opp.title}}</strong></span><br>
+                        <span style="font-size:14px;color:rgba(70, 70, 75, 0.64)"><b>{{opp.entity}}</b></span>
+                    </mj-text><br>
+                    <mj-text>
+                        <span style="font-size:14px">{% autoescape off %}{{opp.description|truncatewords_html:20}}{% endautoescape %}</span><br>
+                        <a href="{{domain}}{{opp.url}}" style="font-size:14px;color: #24a1e3;">Read more</a><br>
+                        <span style="font-size:12px;color:#46464b;"><b>Deadline date: {{opp.deadline}}</b></span>
+                    </mj-text>
+                </li>
+                {% endfor %}
+            </ul>
+        </mj-text>
+    {% endfor %}
+    {% if other_total %}
+    <mj-text font-size='20px'>
+            <strong>And {{other_total}} more new opportunities</strong>
+    </mj-text>
+    <mj-text>
+        Go to the OpenExO Marketplace to apply for any of them.
+    </mj-text>
+    {% endif %}
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "Go to marketplace" as see_details %}
+    {% include "base/call_to_action.mjml" with call_to_action=see_details %}
+{% endblock %}

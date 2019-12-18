@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <title>{% block tittle %}ExO Payments{% endblock %}</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" data-rel-css="" />
+        {% block styles %}{% endblock %}
+        <script src="https://js.stripe.com/v3/"></script>
+    </head>
+    <body class="is-preload">
+        <!-- Wrapper -->
+        <div class="lds-css ng-scope"><div class="lds-dual-ring"><div></div></div></div>
+        <div class="header"></div>
+        {% block main %}{% endblock %}
+        <div class="footer"></div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        {% block scripts %}
+        {% endblock %}
+    </body>
+</html>

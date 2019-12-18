@@ -1,0 +1,83 @@
+{% extends "base/content.html" %}
+{% load guardian_tags staticfiles images bio_package %}
+{% load django_bootstrap_breadcrumbs breadcrumb %}
+
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Network" "consultant:list" %}
+    {% breadcrumb "Export bio packages" "consultant:export-bio-packages" %}
+{% endblock %}
+
+{% block header %}
+<div class="col-lg-10">
+    <h2>Bio packages</h2>
+</div>
+<div class="col-xs-12 p-r-none">
+    {% render_view_breadcrumbs "base/breadcrumb.html" %}
+</div>
+{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-xs-12">
+        <div class='ibox float-e-margins'>
+            <div class="ibox-content m-xs row content clearfix">
+                {% for consultant in object_list %}
+
+                    <div class="row m-b p-b border-bottom">
+                        <div class="col-xs-12">
+                            <div class="col-xs-2 m-r-sm">
+                                <img id='img-user-profile' src="{% image_thumbnail_url consultant.user.profile_picture 96 96 %}" class="img-circle circle-border m-b-xs" alt="profile">
+                            </div>
+                            <div class="col-xs-7 pull-left">
+                                <h2 class="m-b-xs m-t-7">
+                                    {{consultant.get_full_name}}
+                                    </h2>
+                                {% if consultant.user.short_me %}
+                                    <h3>
+                                        {{ consultant.user.short_me|default:""|capfirst }}
+                                    </h3>
+                                {% endif %}
+                                <div class="m-t-n-xs">
+                                    <p>
+                                        {{consultant.user.ecosystem_member.location|default:""}}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ibox-tools pull-right">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li>
+                                        <a href="{{consultant.get_public_profile_v2}}">See profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{consultant.user.profile_picture.url}}" target="_blank">Download picture</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        {% for field in fields %}
+                            {% get_field field as field_obj %}
+                            <div class="col-xs-12 m-b-xs">
+                                <div class="col-xs-2">
+                                    <strong>{{field_obj.label}}:</strong>
+                                </div>
+                                <div class='col-xs-9'>
+                                    {% get_value consultant field_obj as value %}
+                                    {{value|default:"Not filled yet"}}
+                                </div>
+                            </div>
+                        {% endfor %}
+
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

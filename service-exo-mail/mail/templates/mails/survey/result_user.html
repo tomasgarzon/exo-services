@@ -1,0 +1,37 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="{% trans 'ExQ Result' %}" title="{{survey_name}}" />
+{% endblock %}
+
+{% block wrapper-extra-class %}white{% endblock %}
+
+{% block wrapper-title %}
+{% endblock %}
+
+{% block content %}
+    <mj-text>{% trans "Hello" %} {{name}},</mj-text>
+    <mj-text>
+        {% trans "Thank you for filling out the ExQ Survey" %} {{organization}}.<br>
+        {% trans "The ExQ value is" %} {{total}}
+    </mj-text>
+
+    <mj-text>
+        <p><strong>{% trans "Results per ExO Attribute" %}:</strong></p>
+        {% for result in results %}
+            {{ result.section_name }}: {{ result.score }} {% trans "out of" %} {{ result.max_score }}<br>
+        {% endfor %}
+    </mj-text>
+
+    <mj-text>
+        {% trans "Kind regards" %},<br>
+        <strong>{% trans "OpenExO Team" %}</strong>
+    </mj-text>
+
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "Go to OpenExO" as see_details %}
+    {% include "base/call_to_action.mjml" with call_to_action=see_details %}
+{% endblock %}

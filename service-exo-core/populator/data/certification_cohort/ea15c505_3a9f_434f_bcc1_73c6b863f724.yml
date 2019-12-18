@@ -1,0 +1,9 @@
+uuid: ea15c505-3a9f-434f-bcc1-73c6b863f724
+date: !timedelta 7w
+seats: 25
+price: 1500
+currency: USD
+invoice_concept: ExO Consultant Certification Program Cohort 3
+status: Open
+language: English
+certification: L2

@@ -1,0 +1,14 @@
+{% if perms %}
+<div class="ibox-tools pull-right l-h-34">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        <i class="fa fa-ellipsis-v"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-user">
+        <li><a href="{% url 'project:project:team:edit' project.id team.id %}">Edit</a>
+        </li>
+        <li><a href="{% url 'project:project:team:delete' project.id team.id %}">Remove</a>
+        </li>
+        <li><a href="" class="dev__send_email" data-team="{{team.id}}">Email the team</a>
+    </ul>
+</div>
+{% endif %}

@@ -1,0 +1,46 @@
+
+<div class='ibox float-e-margins'>
+    <div class="ibox-content">
+        <div id="tabs-customer" class="tabs-container details">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#logs">Logs</a></li>
+                {% if object.is_job %}<li class=""><a data-toggle="tab" href="#data">Items</a></li>{% endif %}
+            </ul>
+            <div class="tab-content">
+                <div id='logs' class="tab-pane active">
+                    <div class="panel-body">
+                        {% for log in object.get_logs %}
+                            <strong>{{ log.timestamp }}</strong>
+                            <li>User: {{ log.actor }}</li>
+                            <li>Action: {{ log.verb }}</li>
+                            <li>Description: {{ log.description|default:'-' }}</li>
+                            <br>
+                        {% empty %}
+                            No logs.
+                        {% endfor %}
+                    </div>
+                </div>
+                {% if object.is_job %}
+                <div id="data" class="tab-pane">
+                    <div class="panel-body">
+                        <p><strong>Items:</strong></p>
+                        {% for item in object.user_badge_items.all %}
+                            <li>
+                                <strong>{{ item.date }}</strong> - <span style="margin-right:10px">{{ item.name }}</span>
+                                <a href="{% url 'tools:badge:update-job-item' item.pk %}">
+                                    <i class="fa fa-edit"></i> Edit
+                                </a>
+                                <a href="{% url 'tools:badge:delete-item' item.pk %}">
+                                    <i class="fa fa-trash"></i> Delete
+                                </a>
+                            </li>
+                        {% empty %}
+                            No projects.
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

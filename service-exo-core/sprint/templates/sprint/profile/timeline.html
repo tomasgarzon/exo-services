@@ -1,0 +1,41 @@
+{% load range %}
+<div class='row'>
+    <div class='col-xs-12'>
+        <div class='ibox float-e-margins'>
+            <div class="ibox-title p-t-14 p-b-6">
+                <h5 class='m-b-none m-t-xs'>{{title}}</h5>
+                <div class='pull-right text-uppercase'>{{project.get_status_display|default:"in progress"}}</div>
+            </div>
+            <div class='ibox-content border-color'>
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 wizard">
+                        <ul role="tablist" id="horizontal-timeline" class="horizontal-container project-timeline">
+                        {% with current_week=project.sprint.current_week %}
+                            {% for week in project.sprint.duration|get_range %}
+                                <li class="m-t-xs pull-left horizontal-timeline-block" aria-disabled="false" aria-selected="true">
+                                    <div class='ball {% if current_week == week|add:1 %}current{% endif %}'>
+                                        {% if current_week > week|add:1 or project.is_finished %}
+                                            <i class="fa fa-check text-success" aria-hidden="true"></i>
+                                        {% endif %}
+                                    </div>
+                                    <span class="week font-little">
+                                        Week {{week|add:1}}
+                                    </span>
+                                </li>
+                            {% endfor %}
+                        {% endwith %}
+                        </ul>
+
+                    {% if project.sprint.current_week %}
+                        <p>
+                            <strong>Week {{project.sprint.current_week}}:</strong><br>
+                            <strong>ExO Lite: </strong> {{project.sprint.get_week_description.0}}<br>
+                            <strong>Startup Ecosystems: </strong> {{project.sprint.get_week_description.1}}<br>
+                        </p>
+                    {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

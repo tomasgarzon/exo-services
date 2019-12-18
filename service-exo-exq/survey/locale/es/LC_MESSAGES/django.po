@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-23 07:03+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: conf.py:38
+msgid "Massive Transformative Purpose"
+msgstr "Propósito transformador masivo"
+
+#: conf.py:39
+msgid "Staff on-demand"
+msgstr "Personal bajo demanda"
+
+#: conf.py:40
+msgid "Community & Crowd"
+msgstr "Comunidad y seguidores"
+
+#: conf.py:41
+msgid "Algorithms"
+msgstr "Algoritmos"
+
+#: conf.py:42
+msgid "Leveraged Assets"
+msgstr "Activos apalancados"
+
+#: conf.py:43
+msgid "Engagement"
+msgstr "Compromiso"
+
+#: conf.py:44
+msgid "Interfaces"
+msgstr "Interfaces"
+
+#: conf.py:45
+msgid "Dashboards"
+msgstr "Tableros de instrumentos"
+
+#: conf.py:46
+msgid "Experimentation"
+msgstr "Experimentación"
+
+#: conf.py:47
+msgid "Autonomy"
+msgstr "Autonomía"
+
+#: conf.py:48
+msgid "Social"
+msgstr "Social"
+
+#: conf.py:49
+msgid "Business Type Model"
+msgstr "Tipo de modelo de negocio"
+
+#: templates/survey/survey_filled_pdf.html:41
+msgid "Data"
+msgstr "Información"
+
+#: templates/survey/survey_filled_pdf.html:43
+msgid "Name"
+msgstr "Nombre"
+
+#: templates/survey/survey_filled_pdf.html:44
+msgid "Email"
+msgstr "Email"
+
+#: templates/survey/survey_filled_pdf.html:45
+msgid "Organization"
+msgstr "Organización"
+
+#: templates/survey/survey_filled_pdf.html:46
+msgid "Industry"
+msgstr "Industria"
+
+#: templates/survey/survey_filled_pdf.html:50
+msgid "Total"
+msgstr "Total"
+
+#: templates/survey/survey_filled_pdf.html:51
+#: templates/survey/survey_filled_pdf.html:59
+#: templates/survey/survey_filled_pdf.html:75
+msgid "out of"
+msgstr "sobre"
+
+#: templates/survey/survey_filled_pdf.html:55
+msgid "Results per ExO Attribute"
+msgstr "Resultados por atributo"
+
+#: templates/survey/survey_filled_pdf.html:72
+msgid "Results for Business model"
+msgstr "Resultados para el modelo de negocio"

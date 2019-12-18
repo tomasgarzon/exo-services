@@ -1,0 +1,64 @@
+---
+name: Certify
+settings:
+  enabled_learn: True
+  enabled_deliver: False
+  enabled_reflect: False
+typeforms:
+  - slug: exo_certification_certification_quiz_en
+  - slug: exo_certification_certification_assessment_en
+  - slug: exo_certification_teaching_assignment_en
+    url: https://learn.openexo.com/teach/
+  - slug: exo_certification_feedback_en
+blocks:
+  - title: Certification section overview
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: video_level1_c01
+      type: Video
+      status: Available
+      link: https://vimeo.com/347543655
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/347543655" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title:
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Welcome to the Certification section of your Level 1 Foundations programme. The purpose of this section is to help us understand the knowledge you have gained by going through the learning part of this programme and gain relevant information we need for being able to award you your Level 1 Certificate.</p>
+  - title:
+    subtitle:
+    order: 2
+    type: Text
+    text: |
+      <p>The Certification section has 4 tasks to complete:</p>
+      <ul>
+      <li><strong>Certification quiz</strong> which you can find <a data-popup="typeform" href="api/typeform/get/exo_certification_certification_quiz_en/" target="_blank">here</a>. It should take around 10 minutes of your time to complete.</li>
+      <li><strong>Certification assessment</strong> with open questions which you can find <a data-popup="typeform" href="api/typeform/get/exo_certification_certification_assessment_en/" target="_blank">here</a>. It should take around 30 minutes of your time to complete.</li>
+      <li><strong>Teaching assignment</strong> - as mentioned in the introduction video, we would like you to pick one colleague or friend and spend 10 minutes summarizing key concepts you have learned in this course. Once completed, please confirm by clicking <a href="typeform/generic/exo_certification_teaching_assignment_en/" target="_blank">here</a></li>
+      <li><strong>Feedback</strong> - Your opinion is of great importance to us and it helps us improve. That’s why we kindly ask you to tell us how your experience was once you’ve completed the above tasks, clicking <a data-popup="typeform" href="api/typeform/get/exo_certification_feedback_en/" target="_blank">here</a></li>
+      </ul>
+  - title: Final video
+    subtitle:
+    order: 3
+    type: Resource
+    resources:
+    - name: video_level1_c02
+      type: Video
+      status: Available
+      link: https://vimeo.com/347543676
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/347543676" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title:
+    subtitle:
+    order: 4
+    type: Text
+    text: |
+      <p>Congratulations on completing all the sections of your Level 1 Certification programme - we will be in touch shortly with the certification decision. </p>
+      <p>Thank you!</p>

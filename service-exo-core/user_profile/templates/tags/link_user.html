@@ -1,0 +1,15 @@
+{% load images user %}
+<div class="row">
+    <div class="col-md-12 m-t-none l-h-32">
+        <div class='m-r-sm pull-left'>
+            <div class="inline img-box">
+                <img alt="{{member.get_full_name}}" title="{{member.get_full_name}}" class="img-circle" src="{% image_thumbnail_url member.profile_picture 24 24 %}" />
+            </div>
+        </div>
+        <div class='media-body pull-left l-h-32 cut-text'>
+            <a title="{{member.get_full_name}}" href="{% user_profile_url member %}" class="cut-text block pull-left">
+                {{member.get_full_name|capfirst}}
+            </a>
+        </div>
+    </div>
+</div>

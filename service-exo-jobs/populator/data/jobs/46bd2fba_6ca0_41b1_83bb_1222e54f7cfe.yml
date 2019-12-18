@@ -1,0 +1,9 @@
+uuid: 46bd2fba-6ca0-41b1-83bb-1222e54f7cfe
+user: !account 47b10a71-d011-48c2-b359-2a2027191fd8  # Lindsey Allen
+title: Looking for a virtual Disruptor for the Robertson - Lewis Online ExO Sprint
+start: !timedelta -10d
+end: !timedelta -6d
+category: DS
+exo_role: DSD
+status: CO
+url: /ecosystem/opportunities/3/

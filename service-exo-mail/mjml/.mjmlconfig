@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "./lib/MjBasicComponent.js",
+    "./lib/MjHeaderTicket.js",
+    "./lib/MjHeaderTitlePretitle.js",
+    "./lib/MjImageText.js",
+    "./lib/MjLayout.js",
+    "./lib/MjTagElement.js",
+    "./lib/MjTagList.js"]
+}

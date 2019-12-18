@@ -1,0 +1,66 @@
+uuid: fce099d0-d70d-4c3e-bb6e-4056708f8808
+short_name: Leticia
+full_name: Leticia Ferreira Dias
+status: Active
+place:
+  name: Salvador, Brazil
+  place_id: ChIJvS5CUCARFgcRndtzlTaEHPc
+time_zone: America/Fortaleza
+image: woman/4
+languages:
+  - Portuguese
+  - English
+exo_areas:
+  - Organizations
+industries:
+  - name: Specialty Drugs
+    level: Intermediate
+  - name: Transport
+    level: Advanced
+  - name: Video Game
+    level: Thought leader
+keywords:
+  - name: A/B Testing
+    level: Can inspire
+  - name: Agile Framework
+    level: Can teach
+exo_attributes:
+  - attribute: Dashboards
+    level: I have implemented this several times
+exo_activities:
+  - Advising
+  - Coaching
+personal_mtp: Ideas worth spreading
+mtp_mastery: I have implemented this several times
+availability: Fulltime
+marketplace_agreement_signed: true
+last_activity: !timedelta -17h
+badges:
+  - code: 'CCC'
+    category: 'CC'
+    item_name: 'Book content creator'
+    item_date: !datetime Jul 04 2018
+  - code: 'CCB'
+    category: 'CC'
+    item_name: 'Community builder'
+    item_date: !datetime Jul 22 2018
+  - code: 'CSC'
+    category: 'CM'
+    item_name: 'Summit collaborator'
+    item_date: !datetime May 12 2018
+  - code: 'CSS'
+    category: 'CM'
+    item_name: 'Summit speaker'
+    item_date: !datetime Oct 22 2018
+  - code: 'CSF'
+    category: 'CM'
+    item_name: 'Summit facilitator'
+    item_date: !datetime Sept 04 2017
+  - code: 'CSO'
+    category: 'CM'
+    item_name: 'Summit organizer'
+    item_date: !datetime Aug 30 2019
+  - code: 'EF'
+    category: 'CT'
+    item_name: 'Advisor for private company'
+    item_date: !datetime Sept 10 2019

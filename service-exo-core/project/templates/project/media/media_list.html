@@ -1,0 +1,64 @@
+{% extends "project/master_detail_base.html" %}
+{% load bootstrap_pagination guardian_tags staticfiles django_bootstrap_breadcrumbs breadcrumb images %}
+{% load project l10n %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Media" "project:resources" project.id %}
+    {% breadcrumb "Add" "" %}
+{% endblock %}
+
+{% block search_form %}{% endblock %}
+
+
+{% block header_action %}
+{% endblock %}
+
+
+{% block master_view %}
+
+<form action="." method="POST">
+	{% csrf_token %}
+	<table class="table table-hover list-detail sprints projects table-l-fix">
+	    <thead>
+	        <tr>
+	        	<th width="40px"></th>
+	        	<th>Name</th>
+	        	<th>Link</th>
+	        	<th>Tags</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for resource in object_list %}
+			<tr>
+				<td>
+					<input type="checkbox" name="resources" value="{{resource.pk}}" class="media-checkbox js-switch"/>
+				</td>
+				<td>
+					<div class='cut-text'>
+						{{ resource.name|default:'---' }}</td>
+					</div>
+				</td>
+				<td>
+					<div class='cut-text'>
+						<a href="{{resource.link}}" target="_blank">{{resource.link}}</a>
+					</div>
+				</td>
+				<td>
+					{% if resource.tags %}
+						{% for tag in resource.tags %}
+						<li>{{ tag.name }}</li>
+						{% endfor %}
+					{% endif %}
+				</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+	<button type="submit" class="submit btn btn-primary pull-right m-t-8 m-r-md">Save media</button>
+
+</form>
+
+{% endblock %}
+

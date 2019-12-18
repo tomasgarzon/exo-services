@@ -1,0 +1,75 @@
+import os
+from ..local import ACCREDIBLE_SANDBOX  # noqa
+
+ACCREDIBLE_PDF_HOST = 'https://pdf.credential.net'
+
+if ACCREDIBLE_SANDBOX:
+    ACCREDIBLE_API_KEY = os.environ.get('ACCREDIBLE_API_KEY', '')
+    ACCREDIBLE_SERVER_URL = 'https://sandbox.api.accredible.com/v1/'
+    ACCREDIBLE_DESIGN = {
+        'workshop': '102126',
+        'consultantrole-ambassador': '102104',
+        'consultantrole-sprint-coach': '102111',
+        'consultantrole-trainer': '102113',
+        'consultantrole-align-trainer': '102119',
+        'consultantrole-exo-trainer': '104872',
+        'consultantrole-foundations': '102208',
+        'consultantrole-consultant': '102208',
+        'consultantrole-board-advisor': '102208',
+    }
+else:
+    ACCREDIBLE_API_KEY = os.environ.get('ACCREDIBLE_API_KEY', '')
+    ACCREDIBLE_SERVER_URL = 'https://api.accredible.com/v1/'
+    ACCREDIBLE_DESIGN = {
+        'workshop': '107484',
+        'consultantrole-ambassador': '108373',
+        'consultantrole-sprint-coach': '108374',
+        'consultantrole-trainer': '109148',
+        'consultantrole-align-trainer': '109150',
+        'consultantrole-exo-trainer': '154087',
+        'consultantrole-foundations': '121349',
+        'consultantrole-consultant': '154088',
+        'consultantrole-board-advisor': '155199',
+    }
+
+CERTIFICATION_CH_GROUP_WORKSHOP = 'workshop'
+CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_AMBASSADOR = 'consultantrole-ambassador'
+CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_COACH = 'consultantrole-sprint-coach'
+CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_TRAINER = 'consultantrole-trainer'
+CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_ALIGN_TRAINER = 'consultantrole-align-trainer'
+CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_EXO_TRAINER = 'consultantrole-exo-trainer'
+CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_EXO_FOUNDATIONS = 'consultantrole-foundations'
+CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_EXO_CONSULTANT = 'consultantrole-consultant'
+CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_BOARD_ADVISOR = 'consultantrole-board-advisor'
+
+
+CERTIFICATION_CH_GROUP_CH_TYPE_AMBASSADOR = 'ConsultantRoleGroupAmbassador'
+CERTIFICATION_CH_GROUP_CH_TYPE_ALIGN_TRAINER = 'ConsultantRoleGroupAlignTrainer'
+CERTIFICATION_CH_GROUP_CH_TYPE_BOARD_ADVISOR = 'ConsultantRoleGroupBoardAdvisor'
+CERTIFICATION_CH_GROUP_CH_TYPE_COACH = 'ConsultantRoleGroupSprintCoach'
+CERTIFICATION_CH_GROUP_CH_TYPE_CONSULTANT = 'ConsultantRoleGroupConsultant'
+CERTIFICATION_CH_GROUP_CH_TYPE_EXO_FOUNDATIONS = 'ConsultantRoleGroupFoundations'
+CERTIFICATION_CH_GROUP_CH_TYPE_EXO_TRAINER = 'ConsultantRoleGroupExOTrainer'
+CERTIFICATION_CH_GROUP_CH_TYPE_TRAINER = 'ConsultantRoleGroupTrainer'
+
+
+CERTIFICATION_CH_GROUP_CH_TYPE = (
+    (CERTIFICATION_CH_GROUP_WORKSHOP, 'Workshop'),
+    (CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_AMBASSADOR, CERTIFICATION_CH_GROUP_CH_TYPE_AMBASSADOR),
+    (CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_COACH, CERTIFICATION_CH_GROUP_CH_TYPE_COACH),
+    (CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_TRAINER, CERTIFICATION_CH_GROUP_CH_TYPE_TRAINER),
+    (CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_ALIGN_TRAINER, CERTIFICATION_CH_GROUP_CH_TYPE_ALIGN_TRAINER),
+    (CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_EXO_TRAINER, CERTIFICATION_CH_GROUP_CH_TYPE_EXO_TRAINER),
+    (CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_EXO_FOUNDATIONS, CERTIFICATION_CH_GROUP_CH_TYPE_EXO_FOUNDATIONS),
+    (CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_EXO_CONSULTANT, CERTIFICATION_CH_GROUP_CH_TYPE_CONSULTANT),
+    (CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_BOARD_ADVISOR, CERTIFICATION_CH_GROUP_CH_TYPE_BOARD_ADVISOR),
+)
+
+CERTIFICATION_CH_HUB_NAME = (
+    (CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_AMBASSADOR, 'B'),
+    (CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_COACH, 'C'),
+    (CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_TRAINER, 'R'),
+    (CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_ALIGN_TRAINER, 'R'),
+    (CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_EXO_TRAINER, 'R'),
+    (CERTIFICATION_CH_GROUP_CONSULTANT_ROLE_EXO_CONSULTANT, 'T'),
+)

@@ -1,0 +1,22 @@
+uuid: 43d0b329-9d57-4fcb-bdc8-bd8b32b93ac7
+name: Philip Robson
+uuid_related_object: 9a94993d-7a78-4649-96f7-c84980ca35cb
+created_by: !account &philip 299c8c8a-4e4a-4c6b-904a-1b801b7227f1 # Philip Robson
+_type: O
+icon: /media/avatars/48_48/philip-robson.jpg
+users:
+  - user: *philip
+    name:  Philip Robson
+    profile_url: /public/profile/philip-robson/
+    profile_picture: /media/avatars/48_48/philip-robson.jpg
+  - user: !account &quality 7749ad25-5128-4644-895f-6b9a70b605bd
+    name: Quality Assurance
+    profile_url: /public/profile/quality-assurance/
+    profile_picture: /media/avatars/48_48/quality-assurance.jpg
+messages:
+  - created_by: *philip
+    message: Id adipisci cum quia. Officiis quos quis ducimus beatae.\nQuisquam tenetur iste voluptatem sint quae delectus. Soluta accusamus earum odit iste dolor. Aliquam velit dolorem adipisci.
+    readed:
+        - user: *quality
+  - created_by: *quality
+    message: Sed nam tempora.\nQuisquam sint magnam facere. Ea modi ut aliquam aliquid.\nAliquam nobis omnis architecto unde. Perferendis maiores repudiandae.

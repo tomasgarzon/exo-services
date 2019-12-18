@@ -1,0 +1,25 @@
+<div class="ibox-tools pull-right l-h-34">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        <i class="fa fa-ellipsis-v"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-user">
+
+        <li>
+            {% if project.is_version_2 %}
+            <a href="{% url 'project:project:steps-period-edit' project.id step.id %}">Edit</a>
+            {% else %}
+            <a href="{% url 'project:project:steps-edit' project.id step.id %}">Edit</a>
+            {% endif %}
+        </li>
+        <li>
+            <a href="{% url 'project:project:step-export-yml' project.id step.id %}" target="_blank">Export as yml</a>
+        </li>
+        <li>
+            <a href="{% url 'project:project:step-import-yml' project.id step.id %}" >Import yml</a>
+        </li>
+        {% if project.settings.participant_step_microlearning_enabled %}
+        <li><a href="{% url 'project:project:learning:step' project.id step.id %}">Edit Microlearning</a>
+        </li>
+        {% endif %}
+    </ul>
+</div>

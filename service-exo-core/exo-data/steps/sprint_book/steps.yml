@@ -1,0 +1,56 @@
+---
+lapse: P
+total: 13
+steps:
+- name: Pre-sprint
+  index: 1
+  core_quiz_url: ""
+  edge_quiz_url: ""
+- name: Awake
+  index: 2
+  core_quiz_url: ""
+  edge_quiz_url: ""
+- name: Align
+  index: 3
+  core_quiz_url: ""
+  edge_quiz_url: ""
+- name: 1. Explore
+  index: 4
+  core_quiz_url: "https://exolever.typeform.com/to/opOZzw"
+  edge_quiz_url: "https://exolever.typeform.com/to/Hm8uNa"
+- name: 2. Ideate
+  index: 5
+  core_quiz_url: "https://exolever.typeform.com/to/bPod2q"
+  edge_quiz_url: "https://exolever.typeform.com/to/lbwtyG"
+- name: 3. Share
+  index: 6
+  core_quiz_url: "https://exolever.typeform.com/to/EF08bz"
+  edge_quiz_url: "https://exolever.typeform.com/to/H4grJV"
+- name: 4. Select
+  index: 7
+  core_quiz_url: "https://exolever.typeform.com/to/aHascf"
+  edge_quiz_url: "https://exolever.typeform.com/to/UmAwPb"
+- name: 5. Disrupt
+  index: 8
+  core_quiz_url: "https://exolever.typeform.com/to/Yf7D2h"
+  edge_quiz_url: "https://exolever.typeform.com/to/tTU2Rs"
+- name: 6. Prototype
+  index: 9
+  core_quiz_url: "https://exolever.typeform.com/to/CmI0l0"
+  edge_quiz_url: "https://exolever.typeform.com/to/cSL8Zu"
+- name: 7. Test
+  index: 10
+  core_quiz_url: "https://exolever.typeform.com/to/QPpZN4"
+  edge_quiz_url: "https://exolever.typeform.com/to/UiOlPE"
+- name: 8. Improve
+  index: 11
+  core_quiz_url: "https://exolever.typeform.com/to/gXvEso"
+  edge_quiz_url: "https://exolever.typeform.com/to/NoLve4"
+- name: 9. Assemble
+  index: 12
+  core_quiz_url: "https://exolever.typeform.com/to/cYwLBW"
+  edge_quiz_url: "https://exolever.typeform.com/to/XxDInf"
+- name: 10. Launch
+  index: 13
+  core_quiz_url: "https://exolever.typeform.com/to/UBzjhO"
+  edge_quiz_url: "https://exolever.typeform.com/to/xkzE2O"

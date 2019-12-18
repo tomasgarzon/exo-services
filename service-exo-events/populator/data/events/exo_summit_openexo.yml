@@ -1,0 +1,28 @@
+created_by: !account 0737a9f9-22a0-4286-8be3-34a3e19d92dc
+created_by_full_name: Naina Lavrova
+status: H
+title: ExO Summit OpenExo
+sub_title: OpenExO Summit
+description: ExO Summit event about Experiential Conference focusing on Corporate Innovation.
+start: !timedelta -2d
+end: !timedelta -2d
+category: SU
+follow_type: V
+location: London, United Kingdom
+url: http://openexo.com
+languages:
+  - English
+show_price: True
+amount: 500
+currency: D
+organizers:
+  - name: Workshop Organizer
+    email: workshop@openexo.com
+    url: http://www.openexo.com/organizer
+participants:
+  - user: !account 0737a9f9-22a0-4286-8be3-34a3e19d92dc
+    user_name: Naina Lavrova
+    user_email: nainalavrova@example.com
+    order: 0
+    role: SUS
+    status: A

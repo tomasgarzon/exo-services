@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+require('mjml')
+// require your custom component here
+var core = require('mjml-core')
+var MjLayout = require('./lib/MjLayout').default
+var MjImageText = require('./lib/MjImageText').default
+var MjBasicComponent = require('./lib/MjBasicComponent').default
+var MjTagList = require('./lib/MjTagList').default
+var MjTagElement = require('./lib/MjTagElement').default
+var MjHeaderTitlePretitle = require('./lib/MjHeaderTitlePretitle').default
+var MjHeaderTicket = require('./lib/MjHeaderTicket').default
+
+core.registerComponent(MjBasicComponent)
+core.registerComponent(MjImageText)
+core.registerComponent(MjLayout)
+core.registerComponent(MjTagList)
+core.registerComponent(MjTagElement)
+core.registerComponent(MjHeaderTitlePretitle)
+core.registerComponent(MjHeaderTicket)
+require('mjml-cli')

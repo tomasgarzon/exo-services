@@ -1,0 +1,25 @@
+{% load images %}
+{% load guardian_tags %}
+{% load invitation profile user %}
+<div class="row">
+    <div class="col-md-12 m-t-none l-h-32 link-user">
+        <div class='m-r-sm pull-left'>
+            <div class="inline img-box {% if not member.is_active or not member.has_usable_password %}inactive{% endif %}">
+                <img alt="{{member.get_full_name}}" title="{{member.get_full_name}}" class="img-circle" src="{% image_thumbnail_url member.profile_picture 24 24 %}" />
+            </div>
+        </div>
+        <div class='media-body pull-left cut-text l-h-20'>
+            <a title="{{member.get_full_name}}" href="{% user_profile_url member %}" class="cut-text block pull-left full-width">
+                {{member.get_full_name|capfirst}}
+            </a><br>
+            <span class="cut-text block clear-both l-h-20 font-little" title="{{member.get_full_name}}">{% public_email member %}</span>
+            {% get_invitation_object member as invitation %}
+            {% get_obj_perms user for invitation as "invitation_user_perms" %}
+            {% if invitation.is_pending and  "resend_invitation" in invitation_user_perms %}
+                <div class="row no-margins p-xxs p-r-0 p-l-0 font-little">
+                    <button class="btn btn-white pull-left text-center dev__resend_user_invitation_btn font-default" data-email="{{member.email}}" data-pk="{{invitation.pk}}" data-href="">Re-send invitation</button>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

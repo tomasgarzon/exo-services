@@ -1,0 +1,36 @@
+{% extends "base/base_blue_header.mjml" %}
+{% load common_mails i18n %}
+
+{% block blue-header %}
+    <mj-header-title-pretitle pre-title="OpenExO Community" title="Sign Up Invitation" />
+{% endblock %}
+
+
+{% block content %}
+    <mj-text>Hi {{user_name}}</mj-text>
+    {% if user_in_waiting_list %}
+        <mj-text>The OpenExO Community is growing! Based on your expertise and interests we want to invite you to join this community of global disruptors. </mj-text>
+    {% else %}
+        <mj-text>You have been invited to join the OpenExO Community.</mj-text>
+    {% endif  %}
+    {% if description %} <mj-text>{% autoescape off %}{{description}} {% endautoescape %}</mj-text> {% endif %}
+    {% if user_in_waiting_list %}
+        <mj-text>
+            Soon we will be expanding into a new Community platform. We want you to be part of the early adopter community in preparation for our migration to the new platform.
+        </mj-text>
+        <mj-text>
+            How? First, we will introduce you to our general agreement conditions. If you agree to them you will gain access to OpenExO, the platform that supports the OpenExO Community where you can connect with inspiring like-minded people in the community and collaborate on transformative projects. Today you can start by creating your profile and very soon we will open your access to the Community.
+        </mj-text>
+        <mj-text>
+            We are so excited to welcome you. Let's unlock abundance together in the world.
+        </mj-text>
+    {% else %}
+        <mj-text> To continue the process you will be required to accept our general agreement.</mj-text>
+        <mj-text>Once you have completed this step you will be able to access OpenExO, the platform that supports the OpenExO Community activity and projects.</mj-text>
+    {% endif %}
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "JOIN" as CALL_TO_ACTION %}
+    {% include "base/call_to_action.mjml" with call_to_action=CALL_TO_ACTION %}
+{% endblock %}

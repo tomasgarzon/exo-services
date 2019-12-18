@@ -1,0 +1,15 @@
+uuid: d2da0f38-e8e1-11e9-81b4-2a2ae2dbcce4
+name: Kunivas Devari
+uuid_related_object: 2be6fe21-256e-41f5-8198-7f4b895e69eb
+created_by: !account &kunivas 0effb797-b439-4139-aaae-61bdb9cf5a79  # Kunivas Devari
+_type: O
+icon: /media/avatars/48_48/kunivas-devari.jpg
+users:
+  - user: *kunivas
+    name: Kunivas Devari
+    profile_url: /public/profile/kunivas-devari/
+    profile_picture: /media/avatars/48_48/kunivas-devari.jpg
+  - user: !account 0737a9f9-22a0-4286-8be3-34a3e19d92dc
+    name: Naina Lavrova
+    profile_url: /public/profile/naina-lavrova/
+    profile_picture: /media/avatars/48_48/naina-lavrova.jpg

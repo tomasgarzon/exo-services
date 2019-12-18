@@ -1,0 +1,160 @@
+---
+name: Share assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: explore_main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/287917530
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287917530" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:   
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Experimentation is key as part of any innovative project. By definition, any innovative idea considered is a hypothesis (or a set of them), so it should be tested prior to development. The first set of hypotheses to evaluate should be the ‘external disruption’ / ‘internal reaction’ pairs defined last week. Of the ten ExO Attributes that the ExO Framework defines, experimentation is one that must always be present. This week, you will focus on running experiments to evaluate your hypotheses. There is no better way to do this that than by asking the people involved in those ExO Core Initiatives what they think about it.</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Define the key (crux) hypotheses and run experiments
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>The innovative ideas you have previously defined are a set of hypotheses that you will need to evaluate in order to learn whether or not they are true.</p>
+              <p>However, you won’t have time to evaluate all of them, so just focus on those key hypotheses that are decisive for your ExO Initiative to succeed. We call these kind of hypotheses ‘crux’. As we know, you want to adapt the current organization to the external industry disruption by implementing the ExO Attributes and using exponential technologies. However, before doing it we need to evaluate whether the ‘external disruption’ we have thought about are a true thread/ opportunity. Also, we need to evaluate whether the ‘internal reaction’ we have defined is feasible and/or fits the market. Identify the key hypotheses and define experiments for each of them. Depending on the type of ExO Core Initiative, your approach may vary:</p>
+              <p><strong>Blue Core Initiatives</strong></p>
+              <p>These are new products and services so test with the market (real customers) whether the ideas fit the market or not. The best thing you can do is to run a version of Steve Blank’s Customer Development technique, which calls for asking people whether or not they have a specific problem and whether or not they like your product/service (Product/Solution Fit). In order to do that we will follow these steps:</p>
+              <p><strong>1. Identify the key hypotheses to evaluate at this stage:</strong> Most of them will be around whether our clients/users have the problem we think they have and whether they like the product/service we are thinking to implement. But we could also have other kind of hypotheses, such as whether it’s technically feasible to build the product/service or not.</p>
+              <p><strong>2. Design an experiment to evaluate the hypotheses:</strong> Usually we will design an interview for gathering real data about the previously defined hypotheses and the evaluation criteria we will use in order to either validate or invalidate each hypothesis.</p>
+              <p><strong>Pure Core and Edge Core Initiatives</strong></p>
+              <p>These are usually projects internal to the organization that will help it to be more agile, adaptable and/or efficient. We will need to evaluate whether the ‘external disruptions’ we have identified are realistic or not. Also, we will need to talk to the internal stakeholders in the organization that eventually will need to approve/use the ‘internal solutions’ we have defined. In order to do that, we will follow these steps:</p>
+              <p><strong>1. Identify the key hypotheses:</strong> These are the ones that are critical for the success of our ExO Core Initiative. Most of them will be around whether the ‘external disruption’ we have identified is a real threat/opportunity or not. However, the key hypotheses for ExO Core Initiatives are usually the ones related to ‘internal reactions’. We will need to make sure that those are well accepted within the organization and, of course, technically feasible.</p>
+              <p><strong>2. Design an experiment to evaluate the hypotheses:</strong> For ‘external disruption’ hypotheses we will do further research to check whether they are real or not, by reading about the topic or talking to key people. For ‘internal disruption’ hypotheses we will design interviews to talk to the internal stakeholders and/or users of the project we are thinking about. Also, we may need to talk to technology providers (or experts) to check the solution we are thinking about is feasible.</p>
+          - title: Resources
+            subtitle:               
+            order: 2
+            type: Text
+            text: |
+              <p>- Go to the Align section and refer to the exercise for experiments design.</p>
+              <p>- For the experiments focused on gathering information from other people, check Rob Fitzpatrick’s book The Mom Test and (for Blue Core Initiatives) Steve Blank’s book The Startup Owner’s Manual: The Step-By-Step Guide for Building a Great Company outlines how to conduct interviews with potential customers.</p>
+          - title: Tips
+            subtitle:
+            order: 3
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                Prioritizing experiments is key since you may have so many hypotheses to evaluate that you won’t have time to run all of them. Usually, you have to focus on evaluating the key hypotheses that are critical for the success of your ExO Initiative, such as stakeholder and user feedback and technology viability.
+            - order: 2
+              description: |
+                Ask for honest feedback. Invalidating a hypothesis is not bad; it’s just part of the innovation process. Either outcome results in great learning and progress.
+            - order: 3
+              description: |
+                Think through the design of your experiments before beginning them. Results should allow you to evaluate the external disruptions and better define the right internal reaction, not just answer the question “Is this a good idea?” How you construct the interview questions is very important. How will the results allow you to improve the initiative? How can you ask the question creatively? Clearly define what will determine the success of an experiment, including what thresholds need to be met.
+          - title: Tools
+            subtitle:
+            order: 4
+            type: Resource
+            resources:
+              - name: Define and run experiments
+                type: PDF
+                status: Available
+                link: /medialibrary/resource/redirect/24S7bHQTTmGPuUGofzzA/Define_and_run_experiments_template.pdf/
+                description: Template
+                order: 1
+      - name: Run experiments to evaluate the ExO Initiatives
+        order: 2
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>Next step is to run the experiments that you have defined. At this stage, most of these experiments will consist of further researchon external disruptions, interviewing users or potential clients (to evaluate disruptions/ reactions) or tech people (to evaluate product feasibility), so reach them to arrange calls or meetings, talk to them and gather real data from these interviews. After running experiments, it’s important to spend time analyzing and learning from the results. You will evaluate all hypotheses, improve the ExO Initiatives based on the learnings and make a final evaluation of the improved ExO Initiatives. The Build-Measure-Learn loop provides a set of useful guidelines to continually run your experiments and learn, which is the main goal at this stage.</p>
+          - title: Resources
+            subtitle:               
+            order: 2
+            type: Text
+            text: |
+              <p>Eric Ries’ The Lean Startup introduces the Build-Measure-Learn loop and is a great reference for how to run these processes.</p>
+          - title: Tips
+            subtitle:
+            order: 3
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                The best asset at this point is real data, since the goal of the Build-Measure-Learn loop is to make all your decisions based on solid data and not on opinions or intuition.
+            - order: 2
+              description: |
+                Ask for honest feedback. Invalidating a hypothesis is not bad; it’s just part of the innovation process. Remember that the main goal is to learn!
+            - order: 3
+              description: |
+                A great way to implement the Experimentation ExO Attribute is by introducing the Build-Measure-Learn loop as an ongoing process within your organization will help you to move faster and in the right direction by continually identifying and testing hypotheses and learning.
+          - title: Tools
+            subtitle:
+            order: 4
+            type: Text
+            text: |
+              <p>If needed, come back to the align section and review content on running experiments</p>
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          When you need to talk to people, interviews are always preferable to surveys, since they provide greater insight (especially when you ask open questions). But if you want to evaluate multiple ideas, surveys may be the only way to do it.
+      - order: 2
+        description: |
+          The idea is to run experiments for all the ‘external disruption’ / ‘internal reaction’ pairs you have defined. If you have two (or fewer) pairs of disruptions/ reactions per team member, we recommend assigning one or two initiatives per team member to run experiments. If you have more than two initiatives per team member, consider running a much bigger but more superficial experiment by sending surveys to potential clients rather than conducting direct interviews.
+      - order: 3
+        description: |
+          Remember that may also need to reach external advisors who are specialists in your industry or in a specific technology or methodology to evaluate different types of hypotheses.
+      - order: 4
+        description: |
+          You may have different ExO Core Initiatives that share the same group of people to be interviewed (i.e. the same internal stakeholder, the same external customer segment for a new product, etc.). In that case, remember you can group the experiment execution by asking about different ExO Core Initiatives at the same time.
+      - order: 5
+        description: |
+          Remember that getting out and talking to real customers and colleagues is the only way to turn your hypotheses into facts.
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Define and run experiments
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/MkOvnDW3T42MXAwin4zL/Define_and_run_experiments_template.pdf/
+        description: Template
+        order: 1
+      - name: Define and run experiments Eco Spaces
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/cpg4TgiTGWs4N6f31UXI/Define_and_run_experiments_eco_spaces_template.pdf/
+        description: Example
+        order: 2
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

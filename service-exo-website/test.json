@@ -1,0 +1,40 @@
+{
+	"pk": 4,
+	"slug": "pepepi",
+	"theme": "stellar",
+	"sections": [{
+		"name": "ExO Workshop",
+		"content": "<p>The following one-day workshop serves as an introduction to the disruptive forces shaping our world and a new type of an organization set to succeed in the rapidly changing marketplace \u2013 an \u2018Exponential Organization\u2019 \u2013 ExO. We will examine its foundations, characteristics and help you to look at your own organization through an ExO lens.</p> <p>The workshop is a mix of presentations, facilitated exercises, group work and personal moments of reflection. The main outcomes that participants will receive are:</p> <ul type=\"circle\">\n  <li>Understanding of the disruptive forces shaping your industry as well as business and society in general.</li>\n  <li>Seeing the clear imperative the above trends represent for businesses today and understanding the key elements they need to succeed (ExO Attributes).</li>\n  <li>Hands-on experience of applying the ExO framework to your own organization or a case study client of your choice.</li>\n  <li>Understanding of the ExO Sprint process and its potential contribution to the future of your business.</li>\n  <li>Clear set of next steps to continue applying the ExO Mindset in your business.</li>\n  <li>Receiving an official OpenExO certificate for participation in the workshop.</li>\n</ul>\n",
+		"index": 0,
+		"description": "We live in a world of exponential technologies, which accelerate our capacity to innovate. However, all our management thinking and organizational dynamics are set up for a linear, predictable age. As investor David Rose has said, \u201cAny company designed for success in the 20th century is doomed to failure in the 21st\u201d.\n"
+	}, {
+		"name": "Agenda",
+		"content": "<ul>\n    <li>9:00 \u2013 9:30</li>\n    <li>Welcome & Introductions</li>\n  </ul>\n  <ul>\n    <li>9:30 \u2013 10:30</li>\n    <li><strong>The Age of Exponential Organizations</strong><br><a href=\"type_the_exo_profile_url\" target=\"_blank\">ExO Trainer Name</a></li>\n  </ul>\n  <ul>\n    <li>10:30 \u2013 11:00</li>\n    <li>Exponential Thinking exercise</li>\n  </ul>\n  <ul>\n    <li>11:00 \u2013 11:30</li>\n    <li class=\"disabled\">Break</li>\n  </ul>\n  <ul>\n    <li>11:30 \u2013 12:15</li>\n    <li><strong>ExO Attributes and tools</strong><br><a href=\"type_the_exo_profile_url\" target=\"_blank\">ExO Trainer Name</a></li>\n  </ul>\n  <ul>\n    <li>12:15 \u2013 13:00</li>\n    <li>ExO Canvas exercise</li>\n  </ul>\n  <ul>\n    <li>13:00 \u2013 14:00</li>\n    <li class=\"disabled\">Lunch</li>\n  </ul>\n  <ul>\n    <li>14:00 \u2013 14:30</li>\n    <li><strong>ExO Sprint methodology</strong><br><a href=\"type_the_exo_profile_url\" target=\"_blank\">ExO Trainer Name</a></li>\n  </ul>\n  <ul>\n    <li>14:30 \u2013 16:00</li>\n    <li>ExO Initiatives exercise</li>\n  </ul>\n  <ul>\n    <li>16:00 \u2013 16:30</li>\n    <li class=\"disabled\">Break</li>\n  </ul>\n  <ul>\n    <li>16:30 \u2013 17:00</li>\n    <li><strong>Exponential Business Models</strong><br><a href=\"type_the_exo_profile_url\" target=\"_blank\">ExO Trainer Name</a></li>\n  </ul>\n  <ul>\n    <li>17:00 \u2013 17:30</li>\n    <li>Exponential Business Model Design exercise</li>\n  </ul>\n  <ul>\n    <li>17:30 - 18:00</li>\n    <li>Debrief and next steps</li>\n  </ul>\n",
+		"index": 1,
+		"description": null
+	}],
+	"domain": "wokshops.openexo.com",
+	"published": false,
+	"uuid": "31f9aaaf-1af0-444d-b49c-c9ea3094cab8",
+	"name": "Cleve Hickle II",
+	"start": "2017-04-25T00:00:00Z",
+	"end": "2017-04-26T13:00:00Z",
+	"location": "Shanghai, China",
+	"trainer": {
+		"username": "Tomas Garz\u00f3n Herv\u00e1s",
+		"email": "tomas@openexo.com",
+		"profileUrl": "http://localhost:8000/public/profile/tomas-garzon-hervas/"
+	},
+	"speakers": [{
+		"name": "Clare Hamilton",
+		"profileUrl": "http://localhost:8000/public/profile/clare-hamilton/",
+		"bio": "Temporibus fugit error laboriosam maxime dicta nulla facere porro. Eius cum quidem exercitationem sapiente neque possimus. Facere dolores fugit similique.",
+		"linkedin": "",
+		"profilePicture": "/media/avatars/150_150/dd5b2d8474fcc7d0ca6001fa6aeea925_lU9ELby.png",
+		"title": ""
+	}],
+	"comments": "dddd",
+	"signUpApi": "http://localhost:8000/api/project/public-project/31f9aaaf-1af0-444d-b49c-c9ea3094cab8/join/",
+	"status": "preview",
+	"root": "http://localhost:8000"
+}

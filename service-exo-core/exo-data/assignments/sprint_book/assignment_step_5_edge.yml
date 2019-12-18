@@ -1,0 +1,169 @@
+---
+name: Ideate assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: ideate_main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/286226300
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/286226300" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:   
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>You have at your fingertips the opportunity to invent the future and make the world a better place. Exponential technologies allow us to generate an abundance of anything. At the same time, there are countless global challenges that need to be addressed. In fact, the biggest business opportunities are usually related to the biggest problems that the world faces.</p>
+      <p>As Thomas Edison said, “To have a great idea, have a lot of them.” So, this week you will generate as many ExO Edge Initiative ideas as possible in order to ensure success. Let’s imagine the next generation of exponential organizations leading a variety of industries and making the world a better place, all by leveraging exponential technologies and implementing disruptive business models.</p>
+      <p>This week’s assignment allows you to unleash your creativity. It’s time to dive into the future and define the most disruptive ideas for your industry and your organization. Let those billion dollar ideas flow! Starting with an expansive list of ideas will give you both inspiration and a wealth of options as you move forward.</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Define multiple Massive Transformative Purposes (MTPs)
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>The starting point for defining an Exponential Organization is to ask yourself why you want to be in this world and then describe what the world would look like if your project were successful. Your task is to define a set of MTPs—one is not enough! Run an ideation session, using techniques such as brainstorming, “what ifs” or visual thinking.</p>
+          - title: Resources
+            subtitle:
+            order: 2
+            type: Text
+            text: |
+              <p>Review the Align section related to the MTP</p>
+          - title: Tips
+            subtitle:
+            order: 3
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                A set of sticky notes and a pen are all you need for a brainstorming session.
+            - order: 2
+              description: |
+                Remember that you are in the generation phase of the ExO Sprint. So the more ideas for MTPs you generate, the better.
+            - order: 3
+              description: |
+                The underlying purpose here is not only to transform the industry, but also to have a positive impact on the world. MTPs reflect and communicate this purpose.
+            - order: 4
+              description: |
+                Remember that the MTP should be something you can share with customers, employees, investors, etc.
+      - name: Define problem/solution pairs for each MTP
+        order: 2
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>Now that we have a set of MTPs, the next step is to think about specific problems and solutions related to these MTPs. Your task will be to identify at least ten pairs of problems/solutions relating to the previous MTPs. You can have one or more problem/solution pairs per MTP. Note that each problem/solution pair is an ExO Edge Initiative. Remember that depending on the relationship you keep with the main organization, we can think about different kind of ExO Edge Initiatives:</p>
+            <p><strong>Linked Edge:</strong> It keeps some kind of relationship with the main organization (and maybe with other similar ones), leveraging some of their assets (current clients, facilities, physical assets, data, etc.). For example, a hotel chain company launching an online portal similar to Hotels. com, where the new platform will be offering the current organization’s room to internet users, and could also offer other competitor’s rooms too.</p>
+            <p><strong>Pure Edge:</strong> It doesn’t keep any relationship with the main organization, so its growth is not constrained to the original organization’s assets. For example, a hotel chain company launching Airbnb, since this new platform doesn’t leverage its current assets but those of others (available houses and rooms of people).</p>
+        - title: Resources
+          subtitle:
+          order: 2
+          type: Text
+          text: |
+            <p>To identify the problems, take a look at the list of global grand challenges found in Week #1. To inspire solutions, look to the list of exponential technologies you found in Week #1, as well as to the 10 ExO Attributes.</p>
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              A set of sticky notes and a pen are all you need for a brainstorming session
+          - order: 2
+            description: |
+              Use your exponential mindset when thinking about idea. Try to find a disruptive, scalable solution that leverages exponential technologies
+          - order: 3
+            description: |
+              Run an ideation session, defining the problem via brainstorming and storytelling and using “what ifs” to come up with solutions
+          - order: 4
+            description: |
+              Team dynamics will quickly become apparent in the first weeks of the ExO Sprint. Ensure that everyone on the team (regardless of his or her position within the company) has the opportunity to contribute ideas during brainstorming sessions
+          - order: 5
+            description: |
+              The minimum number of problem/ solution pairs you should define is ten, but feel free to come up with more. Also, notice that a problem may have more than one solution so you can have more than one pair for it
+          - order: 6
+            description: |
+              Use this week to determine if any of the ideas your team has come up with existed previously in the organization. Avoid using the ExO Sprint as a vehicle to advance existing projects. And if you do choose to advance a pre-existing idea, leadership needs to be in agreement and, of course, the idea should meet the ExO criteria (maybe there’s an opportunity to improve it so start with a blank page and make them exponential!)
+        - title: Tools
+          subtitle:
+          order: 4
+          type: Resource
+          resources:
+            - name: Desiging the Edge Initiatives
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/Pc3PbnLbTWomFRCu2Iw0/Desiging_the_Edge_Initiatives_template.pdf/
+              order: 1
+              description: Template
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          Feel free to come up with more problem/solution pairs than requested. We have seen teams generate more than 60!
+      - order: 2
+        description: |
+          Consider the intersections of different technologies and industries to create new and original ideas
+      - order: 3
+        description: |
+          The goal of the Edge Stream is to create next generation organizations that will eventually lead their industries. Ideas you generate at this stage can be for the organization’s current industry, an adjacent industry or an industry that has yet to be created. Think beyond your own industry as you brainstorm ideas.
+      - order: 4
+        description: |
+          The key to building a successful ExO is to start with an MTP, which allows you to explore disruptive solutions for a variety of problems.
+      - order: 5
+        description: |
+          The more ExO Edge Initiatives you can generate, the better! At the disruption session you will need to present a minimum of four initiatives, so it’s better to work on as many as possible, since some may not survive the experimentation stage coming later.
+      - order: 6
+        description: |
+          We know it can be hard to develop and manage so many ExO Initiatives, so if you need to skip certain elements, it’s fine. At this stage, it’s better to generate a lot of ideas, even if they have yet to be fleshed out, rather than have a small number of highly detailed initiatives.
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Desiging the Edge Initiatives
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/Pc3PbnLbTWomFRCu2Iw0/Desiging_the_Edge_Initiatives_template.pdf/
+        description: Template
+        order: 1
+      - name: Business Model Canvas
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/aRsePzlQ8yqRV5tMI7ZA/BMC_template.pdf/
+        description: Template
+        order: 2
+      - name: ExO Canvas
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/tprAj2UgTHlt9O3USZiQ/ExO_Canvas.pdf/
+        description:
+        order: 3
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

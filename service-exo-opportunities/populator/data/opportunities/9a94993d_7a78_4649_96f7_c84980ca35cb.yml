@@ -1,0 +1,74 @@
+title: 10-week ExO Sprint in the Cybersecurity Space
+uuid: 9a94993d-7a78-4649-96f7-c84980ca35cb
+description: |
+  1 ExO Coach - Core Steam
+
+  About the Client:
+  White-Smith (US), Founded in 2006
+  2600 employees, over 50% of these are in R&D
+  Revenue: ≈ 30% CAGR for period 2014 - 2017
+  35% YOY growth target
+
+  Your role:
+  We are looking for a Certified ExO Coach to work with a Core Stream Team, that consist of senior leaders as well as more junior challengers.
+  You have significant experience from working within similar size and type of businesses in leadership or consulting roles, leading change programs.
+  You will be in the role of challenging the current thinking of the team members and the team.
+
+  The team will be more self-guided by use of the Exponential Transformation book and our online content than Sprint teams have been in the past.
+  Your weekly contribution is therefore estimated to approx 4 hours per week but we ask for your flexibility around this estimate given that we use this Sprint to improve the scope of work of the ExO Coach based our learning from previous Sprints.
+
+  Sprint language: English
+status: Requested
+created: !timedelta -14h
+created_by: !account &created_by 1cd07dd7-4883-4838-9b5a-303ef0d6580c # Amy
+keywords:
+  - Cybersegurity
+start_date: !timedelta 15d
+deadline_date: !timedelta 14d
+mode: S
+location: Ciudad Delicias, Mexico
+place_id: ChIJjRoAy7kV64YRTq8qB1cA2I8
+duration_unity: W
+duration_value: 2
+budget: 5600
+budget_currency: USD
+exo_role: OCO
+certification_required: CSC
+entity: White-Smith
+num_positions: 2
+applicants:
+  - user: !account 299c8c8a-4e4a-4c6b-904a-1b801b7227f1 # Philip Robson
+    status: Requested
+    summary: |
+      I am the right person because I have a deep knowledge of the subject and proven experience on develop, market, sell and support cybersecurity products and services all over the world.
+    answers:
+      - question: 5
+        response: 'True'
+      - question: 6
+        response: 'False'
+    sow:
+      applicant_name: Philip Robson
+      requester_name: Amy Finch
+      title: 10-week ExO Sprint in the Cybersecurity Space
+      entity: White-Smith
+      start_date: !timedelta 15d
+      end_date: !timedelta 29d
+      location: Ciudad Delicias, Mexico
+      mode: S
+  - user: !account 0737a9f9-22a0-4286-8be3-34a3e19d92dc # Naina Lavrova
+    status: Rejected
+    summary: |
+      Built multiple IT businesses into the hundreds of millions. Currently deploying cutting-edge cyber technologies to help clients make quantum leap from reactive to pre-emptive stance.
+    answers:
+      - question: 5
+        response: 'True'
+      - question: 6
+        response: 'False'
+questions:
+  - id: 5
+    title: Are you a disruptor?
+    type_question: B
+  - id: 6
+    title: Are you certified?
+    type_question: B
+assigned_by: *created_by

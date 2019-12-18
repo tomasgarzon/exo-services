@@ -1,0 +1,144 @@
+---
+name: Improve assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/287805366
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287805366" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:   
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Last week we learned so much about our Business Model and ExO Attributes by testing our MVPs with real clients. Actually, we will keep developing our MVPs further and running experiments with them during this week. At some point of this week, once we have enough data to make decisions, it will be time to embrace the truth and make the changes in our ExO Edge Initiatives necessary to maximize our opportunities for success. Let’s pivot our ExO Edge Initiatives in order to launch them in the right direction!</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Further develop your ExO Edge Initiatives
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>We are aware that building a MVP and trying to sell it to early adopters in two weeks may be too little time. Although we know you have already seen that it’s possible!</p>
+              <p>We can still use a few days of this week to keep running experiments and developing further and iterating our MVP according to the learnings we are obtaining.</p>
+          - title: Tips
+            subtitle:
+            order: 2
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                Notice that you may learn and get new insights from the experiments with early adopters that will provide you new ideas so new hypotheses. Keep the hypothesis definition and evaluation process dynamic, so you can re-define your experiments continually based on your learnings.
+            - order: 2
+              description: |
+                Remember that within the ExO Sprint process everyone is the same and there are not corporate roles. So, decisions shouldn’t be done based on the actual titles that each person has in the organization.
+          - title: Tools
+            subtitle:
+            order: 3
+            type: Resource
+            resources:
+              - name: Identify and evaluate key hypotheses
+                type: PDF
+                status: Available
+                link: /medialibrary/resource/redirect/mCRyNOkRxaCJr4GdfFQw/Identify_and_evaluate_key_hypotheses_step_2_template.pdf/
+                description: Template
+                order: 1
+      - name: Pivot, iterate or proceed!
+        order: 2
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>Once we have gathered enough information (or we don’t have time to keep running more experiments and developing further our MVPs), it’s time to make key decisions! Depending on the learnings we got, we should do the following with our ExO Edge Initiatives: Pivot (our Business Model): If we found out that both our Value Proposition and our Revenue Model don’t work for our Customer Segments, we should pivot our Business Model. Iterate (our Product/Service): If early adopters like our Value Proposition and would be willing to buy our product, but they are not really happy with the current MVP version, we should keep iterating our MVP in order to develop a version of our product/service that our clients like. Proceed (and boost our ExO Canvas): If early adopters are happy with the product and are willing to pay for it, we have really found the product/ market fit and we should start thinking about how to grow the business. Spend more time on the ExO Canvas to think about how to scale our ExO.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              There are several types of pivots. Some of them are:<br>- Customer Segment pivot: Your product/service may attract real customers but not the ones you thought at the beginning, so you should change the customer segment you want to target.<br>- Value Proposition pivot: You may find out that the value proposition should be a different one, or even the way you deliver your product so you better deliver it as a service (pivoting from a product to a service).<br>- Revenue Model pivot: You may need to change the way you charge your clients, or the pricing model.<br>- Other possible pivots are: Channel pivot, Technology pivot, Key Partners pivot, etc.
+          - order: 2
+            description: |
+              In order to iterate your product/ service, you may update your product backlog in case you are using Agile Development Methodologies (very unlikely in the course of the ExO Sprint!).
+          - order: 3
+            description: |
+              Listen to your clients and re-prioritize the features of your MVP based on their input. Don’t forget the buildmeasure- learn loop, it’s applicable to everything!
+          - order: 4
+            description: |
+              Regardless of whether you have to pivot your business model or iterate your product/service, keep spending time on your ExO Canvas to evolve it with your learnings and to think how to make a truly scalable business…an Exponential Organization.
+        - title: Tools
+          subtitle:
+          order: 3
+          type: Resource
+          resources:
+            - name: Business Model Canvas AirEco
+              type: Link
+              status: Available
+              link: /medialibrary/resource/redirect/eBRrqX8KTzynWcdalzGI/BMC_AirEco_example.png/
+              description: Example
+              order: 1
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+    - order: 1
+      description: |
+        Remember that pivoting your ExO Initiatives will be hard, but don’t become your own immune system! Just follow the key learnings you are getting and build the best ExO Initiative possible.
+    - order: 2
+      description: |
+        Remember to make data-based decisions, so you will need to avoid your own immune system (sometimes it’s difficult to change your initial ideas).
+    - order: 3
+      description: |
+        Remember that within the ExO Sprint process everyone is the same and there are not corporate roles. So, decisions shouldn’t be done based on the actual titles that each person has in the organization.
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Identify and evaluate key hypotheses
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/mCRyNOkRxaCJr4GdfFQw/Identify_and_evaluate_key_hypotheses_step_2_template.pdf/
+        description: Template
+        order: 1
+      - name: Business Model Canvas AirEco
+        type: Link
+        status: Available
+        link: /medialibrary/resource/redirect/eBRrqX8KTzynWcdalzGI/BMC_AirEco_example.png/
+        description: Example
+        order: 2
+      - name: ExO Canvas AirEco
+        type: Link
+        status: Available
+        link: /medialibrary/resource/redirect/FBOeuGINRweUHoiXZqUc/ExO_Canvas_AirEco_example.png/
+        description: Example
+        order: 3
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

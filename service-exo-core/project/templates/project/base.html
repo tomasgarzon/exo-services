@@ -1,0 +1,32 @@
+{% extends "base/content.html" %}
+{% load bootstrap_pagination guardian_tags staticfiles django_bootstrap_breadcrumbs breadcrumb %}
+{% load permission_tags %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Projects" "project:service-list" %}
+    {% breadcrumb_for project:project:dashboard project.id %}
+        {{project.name|capfirst}}
+    {% endbreadcrumb_for %}
+{% endblock %}
+
+{% block header %}
+    <div class="col-lg-9">
+        <h2>{{project}} {% if project.is_draft %}(DRAFT){% endif %}</h2>
+    </div>
+    {% block header_action %}{% endblock %}
+    <div class="col-xs-12 p-r-none">
+        {% render_view_breadcrumbs "base/breadcrumb.html" %}
+    </div>
+{% endblock %}
+
+{% block main %}
+    <div id="navbar-static-top-projets" class="m-b-md white-bg ibox">
+        <nav class="nav" role="navigation">
+            <div class="navbar-collapse collapse">
+                {% include "project/menu.html" %}
+            </div>
+        </nav>
+    </div>
+    {% block main_project %}{% endblock %}
+{% endblock %}

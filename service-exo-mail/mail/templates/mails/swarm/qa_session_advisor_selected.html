@@ -1,0 +1,48 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n tz common_dates %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="Swarm Session" title="{% trans 'ExO Advisor For Swarm Session' %}" />
+{% endblock %}
+
+{% block wrapper-title %}
+    <mj-section>
+      <mj-column >
+          <mj-text font-weight="700" line-height="39px" font-size="26px" color="#46464b">
+            {% blocktrans %}
+                Swarm Session with {{project_name}}
+            {% endblocktrans %}
+          </mj-text>
+      </mj-column>
+    </mj-section>
+{% endblock %}
+
+{% block pre-content %}
+    <mj-section>
+        <mj-column>
+            <mj-text>
+                {% trans "Hello" %} {{ short_name|capfirst}},
+            </mj-text>
+            <mj-text>
+                {% blocktrans %}
+                    You have been selected as an ExO Advisor for a Swarm Session with {{project_name}}.
+                {% endblocktrans %}
+            </mj-text>
+        </mj-column>
+    </mj-section>
+{% endblock %}
+
+{% block content %}
+    <mj-text>
+     {{location}}  (UTC {{timezone_utc}})
+    </mj-text>
+    {% include "mails/circles/common/qa_slot.html" %}
+    <mj-text font-style='italic'>
+    {% blocktrans %}
+        Access this Swarm Session from <a href="{{domain}}{{my_jobs_url}}" class="link-nostyle" style="">My jobs</a>.
+    {% endblocktrans %}
+    </mj-text>
+{% endblock %}
+
+{% block call_to_action %}
+{% endblock %}

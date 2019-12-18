@@ -1,0 +1,150 @@
+---
+name: Ideate assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: explore_main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/287870040
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287870040" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:   
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p><strong>You have at your fingertips the opportunity to (re)invent your organization and make the world better.</strong></p>
+      <p>Every industry is disrupted occasionally. However, the frequency of that disruption is accelerating as exponential technologies impact both business models and the environment in general.</p>
+      <p>As Thomas Edison said, “To have a great idea, have a lot of them.” So, this week you will generate as many ExO Core Initiative ideas as possible in order to ensure success.</p>
+      <p>Adapt your current organization to external industry disruption not only to protect yourself from the threats it poses but also to take advantage of the great opportunities that are continuously emerging.</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Define a (Massive) Transformative Purpose for the organization
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>Exponential Organizations not only have a vision and a mission, they also have purpose. In order to adapt your organization to the current environment, you need to define your Purpose. If your organization already has a global market or aims to have one, you will define a Massive Transformative Purpose (MTP). If your organization is or aims to be focused only on a local market, you will define a Transformative Purpose (TP). Running an ideation session, using techniques such as “brainstorming,” “what ifs,” or “visual thinking”. may help you.</p>
+          - title: Resources
+            subtitle:               
+            order: 2
+            type: Text
+            text: |
+              <p>Go to the Align section and review the MTP section.</p>
+          - title: Tips
+            subtitle:
+            order: 3
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                A set of sticky notes and a pen are all you need for a brainstorming session.
+            - order: 2
+              description: |
+                Remember that you are in the generation phase of the ExO Sprint. So the more ideas (MTPs / TPs) you come up with, the better. At the end of this week, we recommend picking a single MTP as part of the foundation for your next assignments, but remember that you will be able to modify it in the future.
+      - name: Define multiple ‘External Disruption’ / ‘Internal Reaction’ pairs for your MTP
+        order: 2
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>The first step is to think about the ‘external disruptions’ that are relevant to your organization and its purpose. You’ll also want to think about the ‘internal reactions’ you can create to deal with or take advantage of the external disruption. To that end, you will define a set of ‘external disruption’ / ‘internal reaction’ pairs within the domain of the Purpose outlined in the previous step. Note that each disruption/reaction pair is an ExO Core Initiative! Remember that, depending on the internal reactions you define, you can think about different kinds of ExO Core Initiatives:</p>
+            <p><strong>Pure Core:</strong> An ExO Core Initiative that is very specific to the current organization and cannot be replicated and resold to other organizations. For example, a digital transformation project or automating all the processes of an organization using AI-based technology would be unique to your organization</p>
+            <p><strong>Edge Core:</strong> An ExO Core Initiative that we could not only implement in our organization (as a first step) but could also replicate and sell to other organizations. For example, Amazon Web Services serves both Amazon and is sold to others outside Amazon.</p>
+            <p><strong>Blue Core:</strong> An ExO Core Initiative based on launching a new product/service into a new market with no competition (Blue Ocean). For example, Nintendo Wii reached new customer segments such as elderlies.</p>
+        - title: Resources
+          subtitle:
+          order: 2
+          type: Text
+          text: |
+            <p>- To identify ‘external disruptions’, take a look at the lists of exponential technologies, business models and context changes found in Week 1. Pg. xxx</p>
+            <p>- For inspiration on ‘internal reactions’, take a look at the list of exponential technologies you discovered during Week 1. In addition, revisit the ten ExO Attributes. Pg. xxx/p>
+            <p>- In addition to the ExO Attributes, for inspiration on ‘internal reactions’ for Pure Core and Edge Core Initiatives, you can also draw the Porter’s Value Chain of your organization and think about where to make improvements.</p>
+            <p>- In addition to the ExO Attributes, for inspiration on ‘internal reactions’ for Blue Core Initiatives, you can also use the Blue Ocean Strategy Canvas used during the Align section and refer to the exercise for it.</p>
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              A set of sticky notes and a pen are all you need for a brainstorming session.
+          - order: 2
+            description: |
+              Running an ideation session, using techniques such as brainstorming and storytelling can help define the external disruption. Use the “what if” techniques for the internal response.
+          - order: 3
+            description: |
+              Remember start with the external disruption and then think about the internal reaction.
+          - order: 4
+            description: |
+              Remember that the goal isn’t to change the business model of your current organization. All ExO Core Initiatives should fit into the Business Model Canvas you completed last week (or lightly improves it without doing a major change).
+          - order: 5
+            description: |
+              Remember that the minimum number of disruption/reaction pairs you should define is ten, but feel free to come up with more. Also, notice that an ‘external disruption’ may have more than one ‘internal reaction’ so you would have more than one pair for it.
+          - order: 6
+            description: |
+              Use this week to determine if any of the ideas your team has come up with existed previously in the organization. Avoid using the ExO Sprint as a vehicle to advance existing projects. If you do choose to advance a pre-existing idea, leadership needs to be in agreement and, of course, the idea should meet the ExO criteria (maybe there’s an opportunity to improve it so start with a blank page and make them exponential!)
+        - title: Tools
+          subtitle:
+          order: 4
+          type: Resource
+          resources:
+            - name: Designing the Core Initiatives
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/zeYUZQZSrqPdNl4GTAo7/Designing_the_Core_Initiatives_template.pdf/
+              order: 1
+              description: Template
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          The ideal number of disruption/reaction pairs for this week is at least ten. That said, create as many as you can. We have seen some teams generate more than 30!
+      - order: 2
+        description: |
+          The goal of the Core Stream is to adapt the current organization to industry disruption. Ideas you come up with at this stage can apply to the whole organization or just to a specific business unit. Maintain this focus as you ideate.
+      - order: 3
+        description: |
+          We know it can be hard to develop and manage so many ExO Initiatives. If you need to skip certain elements, it’s fine. At this stage, it’s better to generate a lot of ideas, even if they have yet to be fleshed out, than it is to have a small number of highly detailed initiatives.
+      - order: 4
+        description: |
+          The more ExO Core Initiatives you generate, the better! (At this point, each ExO Core Initiative includes an MTP/TP, a disruption/reaction pair and an ExO Canvas.) At the disruption session, you will need to present a minimum of four initiatives, so it’s better to work on more than that since you may decide to eliminate some of them after running the experiments next week.
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Designing the Core Initiatives
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/zeYUZQZSrqPdNl4GTAo7/Designing_the_Core_Initiatives_template.pdf/
+        description: Template
+        order: 1
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

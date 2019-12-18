@@ -1,0 +1,89 @@
+ {% load i18n %}
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin" rel="stylesheet" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <style>
+            body {
+                color: #46464b;
+                font-family: Roboto;
+                font-size: 14px;
+                line-height: 1.5;
+                margin-left: 75px;
+                margin-right: 75px;
+            }
+
+            .section-title {
+                font-size: 20px !important;
+            }
+
+            .answer {
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+    <table>
+        <tr>
+            <td align="left">
+            </td>
+            <td align="right" width="20%">
+                <img align='right' src="https://s3.amazonaws.com/exolever/static/assets/openexo-logo-rgb.png" width='100%'>
+            </td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <table>
+        <tr>
+            <td align="left">
+                <h1>{% trans "Data" %}:</h1>
+
+                <p><strong>{% trans "Name" %}:</strong> {{ object.name }}</p>
+                <p><strong>{% trans "Email" %}:</strong> {{ object.email }}</p>
+                <p><strong>{% trans "Organization" %}:</strong> {{ object.organization|default:'-' }}</p>
+                <p><strong>{% trans "Industry" %}:</strong> {{ object.industry|default:'-' }}</p>
+
+                <br>
+
+                <h1>{% trans "Total" %}:</h1>
+                <p class="section-title"><strong>{{ object.total }}</strong> {% trans "out of" %} 100</p>
+
+                <br>
+
+                <h1>{% trans "Results per ExO Attribute" %}:</h1>
+
+                {% for result in object.results.all %}
+                    {% if not result.section == 'B' %}
+                    <p class="section-title"><strong>{{ result.get_section_display }}:</strong> {{ result.score }} {% trans "out of" %} {{ result.max_score }}</p>
+                    {% endif %}
+
+                    {% for answer in object.answers.all %}
+                        {% if answer.section == result.section and not answer.section == 'B' %}
+                            <p>{{ answer.question.order_increased }}. {{ answer.question.name }}</p>
+                            <p class="answer">{{ answer.value }}</p>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+
+                <br>
+
+                <h1>{% trans "Results for Business model" %}:</h1>
+                {% for result in object.results.all %}
+                    {% if result.section == 'B' %}
+                    <p class="section-title"><strong>{{ result.get_section_display }}:</strong> {{ result.score }} {% trans "out of" %} {{ result.max_score }}</p>
+                    {% endif %}
+
+                    {% for answer in object.answers.all %}
+                        {% if answer.section == result.section and answer.section == 'B' %}
+                            <p>{{ answer.question.order_increased }}. {{ answer.question.name }}</p>
+                            <p class="answer">{{ answer.value }}</p>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            </td>
+        </tr>
+    </table>
+    </body>
+</html>

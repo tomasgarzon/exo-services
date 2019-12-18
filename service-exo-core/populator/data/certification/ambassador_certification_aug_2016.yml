@@ -1,0 +1,15 @@
+name: ExO Ambassador Certification - Virtual
+course_name: ExO Ambassador Training
+description: Guide clients seeking transformation processes through the ExO Model
+type: consultantrole-ambassador
+certification_role: CEA
+created_by: !exo_account Quality Assurance
+instructor_name: Quality Assurance
+issued_on: !datetime Aug 30 2016
+certifications:
+  - consultant: !consultant Naina Lavrova
+    accredible_id: 11598970
+    accredible_url: https://sandbox.credential.net/h5flf2nf
+  - consultant: !consultant Cerdic Roper
+    accredible_id: 11598969
+    accredible_url: https://sandbox.credential.net/cwnfkg8g

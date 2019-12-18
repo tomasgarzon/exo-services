@@ -1,0 +1,36 @@
+{% load money %}
+
+{% include "sprint/profile/timeline.html" with title="Current Status" %}
+
+{% if not user.is_customer %}
+    <div class='row '>
+        <div class='col-xs-6'>
+            <div class='ibox float-e-margins'>
+                <div class="ibox-title p-t-14 p-b-6">
+                    <h5 class='m-b-none m-t-xs'>Challenges</h5>
+                </div>
+                <div class='ibox-content border-color '>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            {{project.sprint.challenges|default:"-"}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class='ibox float-e-margins'>
+                <div class="ibox-title p-t-14 p-b-6">
+                    <h5 class='m-b-none m-t-xs'>Goals</h5>
+                </div>
+                <div class='ibox-content border-color'>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            {{project.sprint.goals|default:"-"}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}

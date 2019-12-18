@@ -1,0 +1,69 @@
+uuid: eb926b17-634c-477d-847c-eda5f35026a2
+short_name: Alice
+full_name: Alice LaGrande
+status: Active
+place:
+  name: Strasbourg, France
+  place_id: ChIJwbIYXknIlkcRHyTnGDFIGpc
+time_zone: Europe/Paris
+image: woman/1
+languages:
+  - English
+  - German
+  - French
+  - Greek
+industries:
+  - name: Health
+    level: Thought leader
+  - name: Medical
+    level: Thought leader
+  - name: Big Data
+    level: Intermediate
+  - name: Neuroscience
+    level: Thought leader
+exo_activities:
+  - Advising
+  - Consulting
+  - Training
+  - Coaching
+exo_areas:
+  - Organizations
+  - Institutions
+permissions:
+  - exq_access
+  - exo_projects_access
+exo_attributes:
+  - attribute: Interfaces
+    level: I’m considered a thought leader in this domain
+  - attribute: Community & Crowd
+    level: I’m considered a thought leader in this domain
+  - attribute: Dashboards
+    level: I have studied it in some detail
+  - attribute: Social Technologies
+    level: I’m considered a thought leader in this domain
+  - attribute: Staff on Demand
+    level: I’m considered a thought leader in this domain
+  - attribute: Algorithms
+    level: I have studied it in some detail
+  - attribute: Experimentation
+    level: I have implemented this several times
+  - attribute: Autonomy
+    level: I have implemented this several times
+  - attribute: Leveraged Assets
+    level: I have implemented this several times
+  - attribute: Engagement
+    level: I have studied it in some detail
+keywords:
+  - name: Tissue Engineering
+    level: Can speak
+  - name: Nanomedicines
+    level: Can speak
+  - name: Head Transplant
+    level: Can teach
+personal_mtp: Democratizing healthcare
+mtp_mastery: I’m considered a thought leader in this domain, and I’ve published articles/papers about it
+availability: Fulltime
+user_notifications:
+  - weekly_update
+marketplace_agreement_signed: true
+last_activity: !timedelta -11h

@@ -1,0 +1,75 @@
+---
+name: Social Phase assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: False
+  enabled_reflect: False
+blocks:
+  - title:
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>“Human-centered design is a creative approach to problem-solving, it’s a process that starts with the people you’re designing for and ends with new solutions that tailor-made to suit their needs.” - IDEO.ORG</p>
+  - title: Assignment Objectives
+    subtitle:
+    order: 2
+    type: Text
+    text: |
+      <ul><li>Iterate the concept and the ideas. Take into account local social aspects and perspectives.</li><li>Look at your solutions impact on people, society, and families. - Consider potential negative reactions from regulators and the local community.</li><li>Make sure the MTP and vision fit into the local context.</li></ul>
+      <p>To succeed you have to be able to identify patterns and opportunities for concept/idea(s) development. You should endeavor to acquire hands-on experience speaking to, prototyping for and testing solutions with potential users in target customer segments. Specific areas of evaluation are: Evaluation Criteria:</p>
+      <ul><li>Identified key stakeholders, customer segments and personas</li><li>Demonstrated deep understanding of the human aspect of the problem in a local context</li><li>Presented detailed analysis of Social Impact</li><li>Potential regulatory issues (or other risk factors) were identified</li></ul>
+  - title: Deliverables Checklist
+    subtitle:
+    order: 3
+    type: Tasks
+    tasks:
+      - name: Sociolog of the problem/solution (Customer-personas analysis)
+        order: 1
+        blocks:
+      - name: Evaluate social impact potential with the local population
+        order: 2
+        blocks:
+      - name: Defined experiments and prototypes that will help to iterate the concept from phase
+        order: 3
+        blocks:
+      - name: Live remote 15m presentation by appointed team member(s)
+        order: 4
+        blocks:
+      - name: Upload slides (ppt, google slides, etc.) to Team Deliverables Folder
+        order: 5
+        blocks:
+      - name: Next iteration of core conceptual document
+        order: 6
+        blocks:
+  - title: Scoring and Evaluation
+    subtitle:
+    order: 4
+    type: Text
+    text: |
+      <p>You will be evaluated objectively and subjectively on the criteria listed above. There are prizes funds at stake as well. A combination of the regional curator, regional advisory board, FTI Board and select members of the Regional Development Community and Global Member Organization representatives will be the evaluators. They will judge your work and complete scorecards that will be a major part of the selection process. In the case of any ties, as seems to happen sometimes, a small tie breaker committee including the regional curator and 2 other qualified, non-participating but well informed, people of their choice will be convened ​to​ ​make​ ​the​ ​final​ ​decision.</p>
+  - title: Tips
+    subtitle:
+    order: 5
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          Join the Collaboration Meeting in this <a target='_blank' href='https://zoom.us/j/118780550'>link</a>
+  - title: Tools
+    subtitle:
+    order: 6
+    type: Resource
+    resources:
+      - name: Google Drive
+        type: Links
+        status: Available
+        link: https://drive.google.com/drive/folders/1GIbEUZ2qcq-se15VL89jMxuugiKJPVCn
+        description:
+        order: 1
+      - name: Flipboard
+        type: Links
+        status: Available
+        link: https://flipboard.com/@contentfti/justice-bogota-by-fastrack-institute-eble73bky
+        description:
+        order: 2

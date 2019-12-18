@@ -1,0 +1,37 @@
+uuid: 0effb797-b439-4139-aaae-61bdb9cf5a79
+short_name: Kunivas
+full_name: Kunivas Devari
+status: Active
+image: man/11
+place:
+  name: Singapore
+  place_id: ChIJyY4rtGcX2jERIKTarqz3AAQ
+time_zone: Asia/Singapore
+languages:
+  - English
+  - Tagalog
+  - Malaysian/Indonesian
+industries:
+  - name: Accommodations
+    level: Intermediate
+  - name: Employment
+    level: Advanced
+keywords:
+  - name: A/B Testing
+    level: Can inspire
+  - name: Agile Framework
+    level: Can teach
+exo_areas:
+  - Organizations
+  - Peoples
+exo_attributes:
+  - attribute: Staff on Demand
+    level: I have implemented this several times
+exo_activities:
+  - Advising
+  - Coaching
+  - Consulting
+personal_mtp: Ideas worth spreading
+mtp_mastery: I have implemented this several times
+availability: Fulltime
+last_activity: !timedelta -18h

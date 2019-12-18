@@ -1,0 +1,39 @@
+name: Sutton Inc Edge
+uuid: db9da7f3-6463-4eda-9e84-19a573d30b7b
+stream: Edge Stream
+coach: !consultant Amy Finch
+created_by: !exo_account Quality Assurance
+project: !sprint_automated Sutton Inc
+zoom_id: 312-359-3295
+members:
+  - short_name: Jessica Murphy
+    email: jessicamurphy@example.com
+    updated_profile: true
+    uuid: 48756eba-cbe2-4ead-ab5f-2fb45cfa39f2
+    image: woman/24
+    microlearnings:
+      - step: 4
+        score: 7
+      - step: 5
+        score: 6
+      - step: 6
+        score: 9
+  - short_name: Natasha Brookes
+    email: natashabrookes@example.com
+    updated_profile: true
+    uuid: fa36197f-ec81-454e-98f5-bef1e4b5b58c
+    image: woman/25
+    microlearnings:
+      - step: 4
+        score: 10
+      - step: 5
+        score: 9
+  - short_name: Joel Davies
+    email: joeldavis@example.com
+    uuid: 919f9f83-63e9-4a81-b176-8f464104962e
+    image: man/31
+    microlearnings:
+      - step: 4
+        score: 5
+      - step: 5
+        score: 5

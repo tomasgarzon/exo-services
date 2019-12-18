@@ -1,0 +1,62 @@
+---
+name: Pre-sprint assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: False
+  enabled_reflect: False
+blocks:
+  - title:
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p><strong>“The best way to predict the future is to invent it.”</strong> - Alan Kay, Xerox PARC</p>
+      <p>It’s time to think big—to go outside your comfort zone to where the magic happens.</p>
+      <p>Innovators, particularly young innovators, are building new products and services that can disrupt entire industries, or even create new ones. Examples include Danit Peleg, who designed the first 3D printed fashion collection when she was 25, and Jack Andraka, who as a 15-year-old conducted award-winning work on a potential method to detect the early stages of pancreatic and other cancers.
+      <p>This is your first step on your ExO Sprint experience. Running a successful ExO Sprint depends on setting the right foundation. Find below several preparation tasks that can help you get ready for your ExO Sprint.</p>
+      <p>Now it’s your turn. Start dreaming...It’s the only way to achieve anything!"</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Tasks
+    tasks:
+      - name: Have a conversation with your line manager about being an ExO Sprint participant
+        order: 1
+        blocks:
+      - name: Ensure you clear space for the next 10 weeks to take part in the ExO sprint as fully as you can
+        order: 2
+        blocks:
+      - name: Review the 11 ExO Sprint guiding principles
+        order: 3
+        blocks:
+      - name: Reflect and record in a journal 5 key things you want to learn/get out of being in the ExO Sprint
+        order: 4
+        blocks:
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          Buy your own copy of the 'Exponential Transformation' book before the Sprint starts.
+      - order: 2
+        description: |
+          Speak with few ExO Sprint alumni and ask them for their advice of how to best go through an ExO Sprint.
+      - order: 3
+        description: |
+          Connect with your team members in advance and get to know them.
+      - order: 4
+        description: |
+          Ensure your OpenExO profile is properly filled in the platform
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: ExO Sprint guiding principles
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/gQAbVZw4Ssu3ha7NHteo/ExO_Sprint_Guiding_Principles.pdf/
+        description:
+        order: 1

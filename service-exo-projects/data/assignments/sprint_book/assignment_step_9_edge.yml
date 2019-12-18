@@ -1,0 +1,325 @@
+---
+name: Prototype assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/287648722
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287648722" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>It’s time to take your ExO Initiatives to the next level! This week’s assignment is to formally define the assumptions underlying your ideas and prepare to test them further.</p>
+      <p>Start by defining your ExO Edge Initiative business model (if you don’t have it yet) in order to build something that not only generates value but also retains it.</p>
+      <p>Next, you will start build a Minimum Viable Product (MVP) that allows you to keep learning about your value proposition.</p>
+      <p>Are you worried you won’t be able to accomplish all this in only one week? You can!</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Define your business model
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>A business model is defined as the way an organization creates, delivers and retains value. If you haven’t defined a business model for your ExO Edge Initiatives before, now is the time to do it. If you already have a business model, you’ll improve it now based on what you’ve learned.</p>
+              <p>Since we are working on early-stage ExO Initiatives that will change quickly as you learn more about them, use the Business Model Generation technique to define your business model.</p>
+              <p>Start defining your customer segments with sticky notes, using a different color for each customer segment. Next, define the value proposition for each customer segment, continuing with the same color-coding. Third, define your revenue model, keeping the color coding and making sure you define a clear way to make money. Do the same for the rest of the canvas blocks. For generic items (related to the business as a whole and all customer segments) use a different color.</p>
+          - title: Resources
+            subtitle:
+            order: 2
+            type: Text
+            text: |
+              <p>Go to the Align section and check the exercise about business model design.</p>
+              <p>The book Business Model Generation, by Alex Osterwalder, will help with your Business Model Canvas.</p>
+              <p>Another great book to help you further define a value proposition is Value Proposition Design, also by Alex Osterwalder, which includes the Value Proposition Canvas. Although not mandatory reading for this week, we think you’ll find it helpful.</p>
+              <p>Another great resource to further define a product is the Product-Market Fit Canvas, which was co-created by more than 150 innovators around the world: <strong>www.productmarketfitcanvas.com</strong>. Again, this is not mandatory for this week, but it will complement your efforts.</p>
+          - title: Tips
+            subtitle:
+            order: 3
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                For inspiration, review the disruptive business models you researched the first week.
+            - order: 2
+              description: |
+                Regardless of whether you are a for-profit or nonprofit organization, you will need a Business Model.
+            - order: 3
+              description: |
+                Remember that everything included in the Business Model Canvas is a hypotheses and subject to change in the future.
+            - order: 4
+              description: |
+                For ExO Linked Edge Initiatives, remember that you may need to include your organization (and maybe other similar ones) as a Key Partner.
+            - order: 5
+              description: |
+                Also, we recommend reviewing and improving your ExO Canvas based on the more recent progress of your ExO Initiatives.
+          - title: Tools
+            subtitle:
+            order: 4
+            type: Resource
+            resources:
+              - name: Business Model Canvas AirEco
+                type: Link
+                status: Available
+                link: /medialibrary/resource/redirect/YVR5roQSKpFDjQBQ4HOA/BMC_AirEco_example.png/
+                description:  Example
+                order: 1
+      - name: Identify the key hypotheses you want to evaluate with your MVP
+        order: 2
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>As defined by Eric Ries, an MVP is “a version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort”. What that means is that, before designing and building your MVP, you should think about what you would like to learn after building and testing your MVP. Next step will be to identify the key hypotheses to evaluate at this stage, which will be those ones that are critical for the success and scale of the business. At this stage, most of the hypotheses will be found in your ExO Canvas and your Business Model Canvas:</p>
+            <p><strong>ExO Attributes:</strong> whether the different ExO Attributes we have defined are the right ones or not, or even if it’s realistic to implement them.</p>
+            <p><strong>Feasibility of the product:</strong> whether our product/service will actually work in the way we think it will (especially if it’s based on new technologies).</p>
+            <p><strong>Value Proposition:</strong> whether clients like your value proposition.</p>
+            <p><strong>Revenue Model:</strong> whether clients are willing to pay for it or not.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Each ExO is different so think about the real critical factors that will make your business success or not, those should be your key hypotheses to evaluate.
+          - order: 2
+            description: |
+              To define the success criteria of the sales experiment, define meaningful metrics for the process. The right metrics are usually expressed as a percentage that reflects the conversion rate of potential customers from one phase to another. Example: percentage of visitors who buy the product. This is called Innovation Accounting.
+        - title: Tools
+          subtitle:
+          order: 3
+          type: Resource
+          resources:
+            - name: Designing the MVP
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/W7D8gzz9Su8f5ryMYvbg/Designing_the_MVP_template.pdf/
+              description: Template
+              order: 1
+      - name: Define your Minimum Viable Product (MVP)
+        order: 3
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>You don’t need to build a full product to start learning and selling. There is no need to waste your time and money building a product that no one will want to use or pay for. Instead, experiment with an MVP. Before developing a MVP, we need to think about what the minimum set of features are that it should have at the very beginning. In order to do that, we recommend following these steps:</p>
+            <p>1) Define the consumer flow using your product or service, according to the problems you detected and your defined value proposition.</p>
+            <p>2) List all features that your product or service needs in order to solve your customer’s problem.</p>
+            <p>3) Weight each feature by using the ICE approach, which is an acronym for the three factors that should be considered whenever priorities are set: Impact (in terms of value for the user), Cost (in terms of money) and Effort (in terms of time). Do this by giving a value between 2 and 0 to each of these factors, being 2 the most convenient value (the most impact, the less cost and the less effort) and 0 the less convenient one (the less impact, the highest cost and the highest effort).</p>
+            <p>4) Prioritize the features according to their total ICE value, so we will have the features with a higher ICE, which are the ones we should include in our MVP, on the top of the list.</p>
+            <p>5) Analyze the results and define what the first version of the MVP could look like according to:</p>
+            <p>- The key hypotheses you need to evaluate. Remember than the main goal of this MVP is to learn so you should take this list of hypotheses into account to define your next experiment: the MVP.</p>
+            <p>- The ICE prioritization and also to the key hypotheses to evaluate.</p>
+            <p>- Also, sometimes you will need to add or remove features of the list for the first MVP version according to links between features (e.g. some of them may be required for the basic version due to technical reasons so you need to add it, others could be too long to develop so you may need to remove them, etc.).</p>
+        - title: Resources
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            Eric Ries’ book The Lean Startup is a good source for learning about MVPs and the foundations underlying the concept.
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Remember that your goal here is not to have the best product—or even a product that clients love— but to develop a product that allows you to learn. To that end, include learning-oriented features and add-ons that will result in further feedback.
+      - name: Build your MVP!
+        order: 4
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>We already have a first approach of our business model, of the product/ service and how the first MVP version of it could look like (according to the ICE prioritization of features). Now, it’s time to build our first MVP in order to try it out with potential users and learn about their feedback, which will be super valuable. There are several techniques to build MVPs, some of them focused on building an actual product and others focused on just presenting the idea to your potential clients. You will need to pick the one that works better for your product/service according to the time ahead you have. To that end, consider combining the following techniques:</p>
+            <p>We already have a first approach of our business model, of the product/ service and how the first MVP version of it could look like (according to the ICE prioritization of features). Now, it’s time to build our first MVP in order to try it out with potential users and learn about their feedback, which will be super valuable.</p>
+            <p>There are several techniques to build MVPs, some of them focused on building an actual product and others focused on just presenting the idea to your potential clients. You will need to pick the one that works better for your product/service according to the time you have available. To that end, consider combining the following techniques:</p>
+        - title: LANDING PAGE
+          subtitle:
+          order: 2
+          type: Text
+          text: |
+            <p>This is mainly for initiatives, where we have a value proposition to evaluate with potential clients. We can develop a landing page that shows and describes your MVP (you can also describe your full version of the product/service, since you won’t really need to develop it, although we recommend focusing the landing page on the key features of the MVP). Also, it allows clients to pre-order the product. You can also run an A/B test, which consists of building two different versions of the landing page with two value propositions and seeing which ones gets better acceptance of visitors.</p>
+        - title: Resources
+          subtitle: |
+            Online landing page creators include:
+          order: 3
+          type: Resource
+          resources:
+            - name: launchrock
+              type: Link
+              status: Available
+              link: http://www.launchrock.com/
+              description:
+              order: 1
+            - name: landerapp
+              type: Link
+              status: Available
+              link: https://landerapp.com/es/
+              description:
+              order: 2
+        - title: How much you will learn
+          subtitle:
+          order: 4
+          type: Text
+          text: |
+            <p>A little bit – How the clients like the value proposition of your product/service and the price, based on the pre-orders they do on the website and the real data you will gather out of it.<p>
+        - title: VIDEO
+          subtitle:
+          order: 5
+          type: Text
+          text: |
+            <p>Create a video that shows and promotes your MVP. Again, this technique is useful when evaluating the value proposition for clients and internal supporters</p>
+        - title: Resources
+          subtitle: |
+            Use a professional video creation service or online tools such as:
+          order: 6
+          type: Resource
+          resources:
+            - name: animoto
+              type: Link
+              status: Available
+              link: https://www.animoto.com/
+              description:
+              order: 1
+            - name: goanimate
+              type: Link
+              status: Available
+              link: https://www.goanimate.com/
+              description:
+              order: 2
+        - title: How much you will learn
+          subtitle:
+          order: 7
+          type: Text
+          text: |
+            <p>Something – How the users/stakeholders like the value proposition of your ExO Edge Initiative based on the reactions after watching the video. You can also get data about the price and revenue model by asking for pre-orders (if you are trying to sell something).</p>
+        - title: WIREFRAMES
+          subtitle:
+          order: 8
+          type: Text
+          text: |
+            <p>Build a set of wireframes or digital designs that will help illustrate for clients what your product will look like. This technique is useful when evaluating the value proposition for clients and internal supporters.</p>
+        - title: Resources
+          subtitle: |
+            Use any rapid prototyping tool or even PowerPoint.
+          order: 9
+          type: Resource
+          resources:
+            - name: invisionapp
+              type: Link
+              status: Available
+              link: https://www.invisionapp.com/
+              description:
+              order: 1
+            - name: justinmind
+              type: Link
+              status: Available
+              link: https://www.justinmind.com/
+              description:
+              order: 2
+        - title: How much you will learn
+          subtitle:
+          order: 10
+          type: Text
+          text: |
+            <p>Something more – How the users like the value proposition of your ExO Edge Initiative and its details based on the reactions and interactions they do with the wireframes. You can also get data about the price and revenue model by asking for pre-orders (if you are trying to sell something).</p>
+        - title: WORKING PROTOTYPE
+          subtitle:
+          order: 11
+          type: Text
+          text: |
+            <p>Build a prototype that includes only key features that you need to learn. This is actually the real MVP, and in many cases, it’s possible to build it in a few days. Remember, it doesn’t have to be perfect; it just needs to be something that will help you learn over a several-day period.</p>
+        - title: Tips
+          subtitle:
+          order: 12
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Compiling a list of prioritized features and the number of hours that each of them will take to develop will tell you whether or not it is possible to have a prototype ready within the next week.
+        - title: How much you will learn
+          subtitle:
+          order: 13
+          type: Text
+          text: |
+            <p>A lot! – How easy/hard is to build/deliver the actual ExO Edge Initiative, how the users, clients and/or stakeholders like the value proposition and the user experience based on the interactions with the prototype. You can also get data about the price and revenue model by asking for pre-orders (if you are trying to sell something).</p>
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+    - order: 1
+      description: |
+        Build something that you can use to test your value proposition with users.
+    - order: 2
+      description: |
+        For online channels (landing pages, etc.), don’t forget to implement some mechanism to gather feedback (contact forms, etc.) and data (stats engine, etc.).
+    - order: 3
+      description: |
+        Remember that next week you will need to use whatever you build this week in order to reach potential clients, learn from them and close your first sales.
+    - order: 4
+      description: |
+        Next week you will be able to further develop your MVP, but it’s important to get a first version within the next week. If you need two weeks to have an actual prototype if you really want to do it, we recommend developing a landing page to start gathering data next week and, in parallel, start building your prototype to do experiments with it in two weeks from now.
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Business Model Canvas AirEco
+        type: Link
+        status: Available
+        link: /medialibrary/resource/redirect/YVR5roQSKpFDjQBQ4HOA/BMC_AirEco_example.png/
+        description: Example
+        order: 1
+      - name: ExO Canvas AirEco
+        type: Link
+        status: Available
+        link: /medialibrary/resource/redirect/4Wz8Py2CR0yRO3QLf5sy/ExO_Canvas_AirEco_example.png/
+        description: Example
+        order: 2
+      - name: Identify and evaluate key hypotheses
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/ZXiqjC6jSMy42LTn9gqC/Identify_and_evaluate_key_hypotheses_step_1_template.pdf/
+        description: Template
+        order: 3
+      - name: Designing the MVP
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/W7D8gzz9Su8f5ryMYvbg/Designing_the_MVP_template.pdf/
+        description: Template
+        order: 4
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

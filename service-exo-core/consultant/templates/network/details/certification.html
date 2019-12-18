@@ -1,0 +1,20 @@
+{% load registration_process %}
+
+{% for step in registration_steps.logs.all %}
+    {% registration_process_log step %}
+{% endfor %}
+
+{% if registration_steps.current_step %}
+    {% invitation_status_tag registration_steps.current_step.invitation %}
+{% endif %}
+
+{% if object.is_active %}
+    <div class="col-md-12 m-t-25 no-padding">
+        <h4 class='border-bottom p-b-5 m-b-none'>Role certifications</h4>
+        <div>
+            {% for certification_role in object.certification_roles.all %}
+                <div class="content-vertical-align p-relative p-t-10">{{certification_role.name}}</div>
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}

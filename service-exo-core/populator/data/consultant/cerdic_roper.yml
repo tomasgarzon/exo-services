@@ -1,0 +1,51 @@
+uuid: 1da6e073-a525-4311-ab7e-ec8748d76100
+short_name: Cerdic
+full_name: Cerdic Roper
+status: Active
+place:
+  name: Moncton, Canada
+  place_id: ChIJZRfUGCm5oEwRxGNOOjMKwQ0
+time_zone: Canada/Atlantic
+image: man/6
+languages:
+  - English
+  - French
+exo_areas:
+  - Institutions
+  - Peoples
+industries:
+  - name: Nanotechnology
+    level: Intermediate
+  - name: Neuroscience
+    level: Advanced
+keywords:
+  - name: Closed Ecological Systems
+    level: Can speak
+  - name: High-Temperature Superfluidity
+    level: Can inspire
+  - name: Nanomedicines
+    level: Can teach
+exo_attributes:
+  - attribute: Staff on Demand
+    level: I have implemented this several times
+  - attribute: Dashboards
+    level: I’m considered a thought leader in this domain
+  - attribute: Social Technologies
+    level: I have read about it and understand it
+exo_activities:
+  - Advising
+  - Content Generation
+personal_mtp: Nanotech develop
+mtp_mastery: I have implemented this several times
+availability: Fulltime
+marketplace_agreement_signed: true
+last_activity: !timedelta -16h
+badges:
+  - code: 'CCB'
+    category: 'CC'
+    item_name: 'Community builder'
+    item_date: !datetime Jul 22 2018
+  - code: 'CSF'
+    category: 'CM'
+    item_name: 'Summit facilitator'
+    item_date: !datetime Sept 04 2017

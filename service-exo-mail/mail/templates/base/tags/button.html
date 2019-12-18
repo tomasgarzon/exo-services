@@ -1,0 +1,13 @@
+{% load common_mails %}
+<div><!--[if mso]>
+    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{% if not absolute %}{{domain}}{% endif %}{{link}}" style="height:45px;v-text-anchor:middle;width:205px;" arcsize="15%" strokecolor="#ffffff" fillcolor="#ff6f6f">
+      <w:anchorlock/>
+      <center style="color:#ffffff;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:regular;">{{link_label}}</center>
+    </v:roundrect>
+    <![endif]-->
+    {% if absolute %}
+        <a href="{{link}}" class="button_link">{{link_label}}</a>
+    {% else %}
+        <a href="{{domain}}{{link}}" class="button_link">{{link_label}}</a>
+    {% endif %}
+</div>

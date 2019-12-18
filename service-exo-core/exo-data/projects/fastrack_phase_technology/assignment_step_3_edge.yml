@@ -1,0 +1,121 @@
+---
+name: Technology Phase assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: False
+  enabled_reflect: False
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Text
+    text: <p><img src="https://drive.google.com/uc?id=184AAEKWaiTle2-uvyTkXC1LSXnQPJsBm" width="80%"/></p>
+  - title: Assignment Objectives
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <ul>
+      <li>Determine the key technologies you will use to deliver your target results using the 10 ExO Attributes for guidance.</li>
+      <li>Show how the proposed solution leverages existing technologies and innovations within the local ecosystem.</li>
+      <li>Demonstrate technical aspects of the venture as a scalable, exponential technology-driven solution.</li>
+      <li>Develop a business model and preliminary financials based on the technological iteration of your solution.</li>
+      </ul>
+  - title: Evaluation Criteria
+    subtitle:
+    order: 2
+    type: Text
+    text: |
+      <ul>
+      <li>The solution created is scalable, using accelerating technologies in the context of the ExO attributes.</li>
+      <li>Technical feasibility of the venture or business(es) was analyzed in the context of preliminary financials.</li>
+      <li>An innovative, low-fidelity minimum viable product (MVP) of the technologies was chosen to begin validating the solution.</li>
+      <li>Local technology solutions were identified and leveraged if they exist and are applicable.</li>
+      </ul>
+  - title: Deliverables Checklist
+    subtitle:
+    order: 3
+    type: Tasks
+    tasks:
+      - name: Live remote 15-minute presentation by appointed team member(s)
+        order: 1
+        blocks:
+      - name: Technological iteration of Business Model Canvas (BMC)
+        order: 2
+        blocks:
+      - name: Technological iteration of ExO Canvas with ExQ (Exponential Quotient)
+        order: 3
+        blocks:
+      - name: Technology implementation plan incorporating local ecosystem resources and partnerships
+        order: 4
+        blocks:
+      - name: Low-fidelity MVP of the technologies chosen
+        order: 5
+        blocks:
+      - name: Preliminary financial analysis with capital and operating costs and funding needs & milestones
+        order: 6
+        blocks:
+      - name: Updated core conceptual document with the technological iteration
+        order: 7
+        blocks:
+      - name: Upload the deliverables into the Team Deliverables Folder
+        order: 8
+        blocks:
+  - title: Scoring and Evaluation
+    subtitle:
+    order: 4
+    type: Text
+    text: |
+      <p>There are prize funds at stake during each phase of the SOLVE stage of the Fastrack. You will be evaluated objectively and subjectively on the evaluation criteria listed above. A combination of the Fastrack Curator and Co-Curator, Regional Advisory Board, FTI Board, FTI Core Team, members of the regional community, ExO ecosystem members and invited experts will be the evaluators. In the case of a tie, a small tie breaker committee will be convened to make the final decision.</p>
+  - title: Tips
+    subtitle:
+    order: 5
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          Join the Collaboration Meeting <a target='_blank' href='https://zoom.us/j/118780550'>here</a>
+      - order: 2
+        description: |
+          Upload the deliverables <a target='_blank' href='https://drive.google.com/drive/u/0/folders/1CjamV4QIYMVifeYxT6d1bRRe_BUcqZi0'>here</a>
+  - title: Tools
+    subtitle:
+    order: 6
+    type: Resource
+    resources:
+      - name: ExO Canvas
+        type: Links
+        status: Available
+        link: https://drive.google.com/drive/folders/1DiYF9CW85yKORtIxdhPVSitkrQFi_GDu
+        description:
+        order: 1
+      - name: ExQ Survey
+        type: Links
+        status: Available
+        link: https://tool.openexo.com/public/assessment/welcome/fti-bogota-justice/
+        description:
+        order: 2
+      - name: Justice Bogota Fastrack Google Drive
+        type: Links
+        status: Available
+        link: https://drive.google.com/open?id=1GIbEUZ2qcq-se15VL89jMxuugiKJPVCn
+        description:
+        order: 3
+      - name: Justice Bogota  Fastrack Magazine - Flipboard
+        type: Links
+        status: Available
+        link: http://flip.it/flenrn 
+        description:
+        order: 4
+      - name: Justice Bogota Fastrack FTI Academy
+        type: Links
+        status: Available
+        link: https://drive.google.com/open?id=1C23b2BWDgfiWv3eKsQ-lj_GUmr6F4_Fa
+        description:
+        order: 5
+      - name: Justice Bogota  Fastrack Forum
+        type: Links
+        status: Available
+        link: https://forums46.exolever.com/
+        description:
+        order: 6

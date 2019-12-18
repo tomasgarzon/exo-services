@@ -1,0 +1,21 @@
+title: Aerial mapping and tophography drones
+user: !consultant Naina Lavrova
+circle: !circle Consultants
+date: !timedelta -1w
+description: |
+  <p>Need some advise on drones for tophograpy photos and aerial mapping.</p>
+tags:
+  - Flying Car
+  - Hypertelescope
+activities:
+  - user: !consultant Amy Finch
+    date: !timedelta -6d
+  - user: !consultant Tina Weissberg
+    reply: |
+      I strongly recommend Amy Finch, she has a vast knowledge about non tripulated aircrafts.
+    date: !timedelta -6d
+  - user: !consultant Amy Finch
+    reply: |
+      Thank you for your words Tina.
+      Yes, I have a big backgrounds in drones, so I might can help you.
+    date: !timedelta -108h

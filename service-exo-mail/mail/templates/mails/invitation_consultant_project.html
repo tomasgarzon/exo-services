@@ -1,0 +1,39 @@
+{% extends "base/base_blue_header.mjml" %}
+{% load common_mails i18n %}
+
+{% block blue-header %}
+    {% if is_coach %}
+        {% blocktrans asvar title %}
+            You have been invited to coach team {{team_name|capfirst}} in OpenExO.
+        {% endblocktrans %}
+    {% else %}
+        {% blocktrans asvar title %}
+            You have been invited to participate as an {{relation_name|capfirst}} in OpenExO.
+        {% endblocktrans %}
+    {% endif %}
+    <mj-header-title-pretitle pre-title="{{project_name}}" title="{{title}}" />
+{% endblock %}
+
+{% block content %}
+    <mj-text>
+       {% if is_coach %}
+        {% blocktrans %}
+            {{user}} created this team in OpenExO and has added you as an {{relation_name}}. Access is available now.
+        {% endblocktrans %}
+    {% else %}
+        {% blocktrans %}
+            {{user}} created this forum and has added you as an {{relation_name|capfirst}} in order to support Q&A from workshop participants.
+        {% endblocktrans %}
+    {% endif %}
+    </mj-text>
+{% endblock %}
+
+
+{% block call_to_action %}
+    {% if is_coach %}
+        {% trans "JOIN THE TEAM" as CALL_TO_ACTION %}
+    {% else %}
+        {% trans "JOIN THE Q&A FORUM" as CALL_TO_ACTION %}
+    {% endif %}
+    {% include "base/call_to_action.mjml" with call_to_action=CALL_TO_ACTION %}
+{% endblock %}

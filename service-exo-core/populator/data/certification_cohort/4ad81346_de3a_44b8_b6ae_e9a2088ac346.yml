@@ -1,0 +1,9 @@
+uuid: 4ad81346-de3a-44b8-b6ae-e9a2088ac346
+date: !timedelta 8w
+seats: 25
+price: 2500
+currency: USD
+invoice_concept: ExO Coach Certification Program Cohort 2
+status: Open
+language: English
+certification: L3

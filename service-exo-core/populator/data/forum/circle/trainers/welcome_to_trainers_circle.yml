@@ -1,0 +1,16 @@
+title: Welcome to Trainers circle
+user: !exo_account Quality Assurance
+date: !timedelta -10d
+circle: !circle Trainers
+description: |
+  Hello ExO Trainers,
+
+  Welcome to your new Trainers Circle! This forum is aimed at experience in workshops.
+
+  We're looking forward to sharing your success stories!
+
+activities:
+  - user: !consultant Naina Lavrova
+    date: !timedelta -9d
+  - user: !consultant Tina Weissberg
+    date: !timedelta -9d

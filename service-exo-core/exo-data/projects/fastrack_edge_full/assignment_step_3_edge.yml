@@ -1,0 +1,88 @@
+---
+name: Technology Phase assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: False
+  enabled_reflect: False
+blocks:
+  - title:
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>This stage we will focus on the first three stages of the Design Thinking Process (Empathise - Define - Ideate).</p>
+  - title: Assignment Objectives
+    subtitle:
+    order: 2
+    type: Text
+    text: |
+      <ul><li>Determine the key technologies you will use to deliver your target results using the 10 ExO Attributes for guidance.</li><li>Show how the proposed solution leverages existing technologies and innovations within the local ecosystem.</li><li>Demonstrate technical aspects of the venture as a scalable exponential technology-driven solution.</li></ul>
+  - title: Evaluation Criteria
+    subtitle:
+    order: 3
+    type: Text
+    text: |
+      <ul><li>Created a solution that scales using accelerating technologies in the context of the ExO attributes.</li><li>Technical feasibility of the venture or business(es) has been analyzed in the context of the financials.</li><li>Demonstrated an innovative, low-fidelity MVP of the technologies chosen to begin validating them.</li><li>Leveraged local technology solutions if they exist and are applicable.</li></ul>
+  - title: Deliverables Checklist
+    subtitle:
+    order: 4
+    type: Tasks
+    tasks:
+      - name: Live remote 15 minute presentation by appointed team member(s)
+        order: 1
+        blocks:
+      - name: Upload slides (ppt, google slides, etc.) to Deliverables Folder
+        order: 2
+        blocks:
+      - name: Technological iteration of Business Model Canvas (BMC)
+        order: 3
+        blocks:
+      - name: Technological iteration of ExO Canvas
+        order: 4
+        blocks:
+      - name: Technology implementation plan
+        order: 5
+        blocks:
+      - name: Low-fidelity MVP of the technologies chosen
+        order: 6
+        blocks:
+      - name: Continue developing core concept document
+        order: 7
+        blocks:
+  - title: Scoring and Evaluation
+    subtitle:
+    order: 5
+    type: Text
+    text: |
+      <p>You will be evaluated objectively and subjectively on the criteria listed above. There are prizes funds at stake as well. A combination of the regional curator, regional advisory board, FTI Board and select members of the Regional Development Community and Global Member Organization representatives will be the evaluators. They will judge your work and complete scorecards that will be a major part of the selection​ ​process. In the case of any ties, as seems to happen sometimes, a small tie breaker committee including the regional curator and 2 other qualified, non-participating but well informed, people of their choice will be convened​ ​to​ ​make​ ​the​ ​final​ ​decision.</p>
+  - title: Tips
+    subtitle:
+    order: 6
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          Join the Collaboration Meeting in this <a target='_blank' href='https://zoom.us/j/118780550'>link</a>
+  - title: Tools
+    subtitle:
+    order: 7
+    type: Resource
+    resources:
+      - name: Google Drive
+        type: Links
+        status: Available
+        link: https://drive.google.com/drive/folders/1lhX2tPrvGovVYcoYDh-2aW6ZPhYwbq2a
+        description:
+        order: 1
+      - name: Flipboard
+        type: Links
+        status: Available
+        link: https://flipboard.com/@contentfti/justice-bogota-by-fastrack-institute-eble73bky
+        description:
+        order: 2
+      - name: 10 ExO Attributes for guidance
+        type: Links
+        status: Available
+        link: https://www.growthinstitute.com/s/wp-content/uploads/2015/11/Salims-Notes-ExO-Attributes.pdf
+        description:
+        order: 3

@@ -1,0 +1,42 @@
+uuid: 0e568b20-8cc4-47df-af85-443ae40adcea
+name: Sutton Inc Core
+uuid_related_object: 0d2dbf27-8015-40e8-bf85-3cb111b68b57
+created_by: !account &quality 7749ad25-5128-4644-895f-6b9a70b605bd
+_type: P
+icon: https://cdn.filestackcontent.com/kpRzP37Tw6Hdp2iqinjw
+users:
+  - user: !account &naina 0737a9f9-22a0-4286-8be3-34a3e19d92dc
+    name:  Naina Lavrova
+    profile_url: /public/profile/naina-lavrova/
+    profile_picture: /media/avatars/48_48/naina-lavrova.jpg
+    short_title: ExO Head Coach
+  - user: !account 299c8c8a-4e4a-4c6b-904a-1b801b7227f1
+    name:  Philip Robson
+    profile_url: /public/profile/philip-robson/
+    profile_picture: /media/avatars/48_48/philip-robson.jpg
+    short_title: ExO Sprint Coach
+  - user: !account 3aacd1ee-dc72-499c-a1d6-3cce0c4a1c3c
+    name: Paige Jackson
+    profile_url: /public/profile/paige-jackson/
+    profile_picture: /media/avatars/48_48/paige-jackson.jpg
+    short_title: Sutton Inc Core Participant
+  - user: !account &mary 44d12e6e-3b0a-481d-943b-f46798e310bc
+    name: Mary Campbell
+    profile_url: /public/profile/mary-campbell/
+    profile_picture: /media/avatars/48_48/mary-campbell.jpg
+    short_title: Sutton Inc Core Participant
+  - user: !account 2065c30d-1a7c-4a7b-bb83-c27d738ee068
+    name: Alan Lewis
+    profile_url: /public/profile/alan-lewis/
+    profile_picture: /media/avatars/48_48/alan-lewis.jpg
+    short_title: Sutton Inc Core Participant
+  - user: !account adca86ab-ccf2-41c8-92f5-60fb7e210962
+    name: John Spencer
+    profile_url: /public/profile/john-spencer/
+    profile_picture: /media/avatars/48_48/john-spencer.jpg
+    short_title: Sutton Inc Core Participant
+messages:
+  - created_by: *mary
+    message: Magni officiis ex perspiciatis incidunt alias. Veniam laborum a debitis voluptates rerum adipisci. Sapiente adipisci ipsam impedit totam.
+  - created_by: *naina
+    message: Porro incidunt sed ab. Eum dignissimos architecto molestiae iusto corrupti veritatis. Officiis asperiores autem expedita. Voluptatem at totam.

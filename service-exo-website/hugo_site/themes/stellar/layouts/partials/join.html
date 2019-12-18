@@ -1,0 +1,55 @@
+<button id="join-button" class="join-button">Attend the ExO Workshop</button>
+<!-- The Modal -->
+<div id="modal-box" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      Attend the ExO Workshop<span class="close">&times;</span>        
+    </div>
+    <div class="modal-body">
+      <div class="title">{{ .Site.Data.sections.name }}</div>
+      <div class="subtitle">
+        {{ dateFormat "2 Jan"  .Site.Data.sections.start }}
+        {{ if ne .Site.Data.sections.start .Site.Data.sections.end }}
+            - {{ dateFormat "2 Jan"  .Site.Data.sections.end }}
+        {{ end }}
+        - {{ .Site.Data.sections.location }}
+      </div>
+      <div class="divider"></div>
+      <div id="form-layer">
+        <form id="form-sign-up" action="{{ .Site.Data.sections.signUpApi }}" method="post" validate>
+          <p>ExO Workshops serve as an introduction to the disruptive forces shaping our world and how you can tap into an abundance mindset.</p>
+          <div class="label">Full name *</div>
+          <div><input type="text" name="name" required/></div>
+          <div class="label">Email *</div>
+          <div><input type="email" name="email" required/></div>
+          <div class="label">
+            <input type="checkbox" name="privacy" required/>
+            I understand and agree with the 
+            <a href="https://www.openexo.com/privacy-policy" target="_blank" class="without-hover">Privacy Policy and Cookies *</a>
+          </div>
+          <div class="buttons">
+            <input type="submit" class="sign-button" id="sign-button"/>SIGN UP
+          </div>
+        </form>
+      </div>
+      <div id="form-layer-ok">
+        <img src="images/illustration-ok.svg"/>
+        <div class="title">You have signed up to attend this workshop</div>
+        <div class="subtitle">Stay tuned to your inbox for more information</div>
+        <div>
+            <button class="button-close outlined">OK</button>
+          </div>
+      </div>
+      <div id="form-layer-ko">
+        <img src="images/illustration-ko.svg"/>
+        <div class="title">Hmm, that's strange...</div>
+        <div class="subtitle">Something went wrong and your request was unable to go through. Please refresh and try again.</div>
+        <div>
+          <button class="button-close outlined">OK</button>
+          <button class="button-try sign-button">TRY AGAIN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

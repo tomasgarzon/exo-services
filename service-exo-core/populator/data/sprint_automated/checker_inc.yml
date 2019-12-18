@@ -1,0 +1,29 @@
+id: 4
+uuid: fad08896-e99d-4252-bf1b-70c62a8422b1
+name: Checker INC
+customer: !customer Checker INC
+start: !timedelta -30w
+place:
+  name: Frankfurt, Germany
+  place_id: ChIJxZZwR28JvUcRAMawKVBDIgQ
+created_by: !exo_account Quality Assurance
+launched_by: !exo_account Quality Assurance
+duration: 5
+lapse: Week
+template_assignments: Sprint Book
+password: checkerpass
+roles:
+  - consultant: !consultant Amy Finch
+    code: SHC
+  - consultant: !consultant Ann Baldwin
+    code: SSH
+  - consultant: !consultant Najwa Jannah Saliba
+    code: SSH
+  - consultant: !consultant Lindsey Allen
+    code: SAD
+  - consultant: !consultant Kunivas Devari
+    code: SAS
+  - consultant: !consultant Leticia Ferreira Dias
+    code: SDI
+  - consultant: !consultant Philip Robson
+    code: SDI

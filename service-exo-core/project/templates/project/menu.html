@@ -1,0 +1,27 @@
+{% load permission_tags %}
+{% load validation %}
+
+<ul class="nav navbar-nav">
+    {% has_project_perms user "project_assessment" project=project as assessment_perms %}
+    {% has_project_perms user "project_manage_consultant" project=project as consultant_perms %}
+    {% has_project_perms user "project_manager" project=project as manager_perms %}
+     <li data-viewname="project:project:dashboard"><a href="{% url 'project:project:dashboard' project.pk %}">General</a></li>
+    {% if consultant_perms %}
+        <li data-viewname="project:project:consultants"><a href="{% url 'project:project:consultants' project.pk %}">ExO Consultants</a></li>
+    {% endif %}
+    <li data-viewname="project:project:team:list"><a href="{% url 'project:project:team:list' project.pk %}">Teams</a></li>
+        {% if manager_perms %}
+        <li data-viewname="project:project:steps"><a href="{% url 'project:project:steps' project.pk %}">{{project.get_lapse_display|default:"Period"}}s</a></li>
+        {% if project.is_version_2 %}
+        <li data-viewname="project:project:assignment:list-assignment-steps"><a href="{% url 'project:project:assignment:list-assignment-steps' project.pk %}">Assignments</a></li>
+        <li data-viewname="project:project:swarm-session"><a href="{% url 'project:project:swarm-session' project.pk %}">Swarm Sessions</a></li>
+        {% endif %}
+        {% endif %}
+        {% if manager_perms %}
+            <li data-viewname="project:project:settings"><a href="{% url 'project:project:settings' project.pk %}">Settings</a></li>
+            <li data-viewname="project:project:validations:list"><a href="{% url 'project:project:validations:list' project.pk %}">Validator
+            {% validation_resume project %}</a>
+            </li>
+        {% endif %}
+    <li data-viewname="project:project:media"><a href="{% url 'project:project:media' project.pk %}">Media</a></li>
+</ul>

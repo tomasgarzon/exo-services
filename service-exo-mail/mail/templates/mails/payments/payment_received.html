@@ -1,0 +1,22 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="{% trans 'Payment Received' %}" title="{{concept}}" />
+{% endblock %}
+
+{% block wrapper-extra-class %}white{% endblock %}
+
+{% block wrapper-title %}
+{% endblock %}
+
+{% block content %}
+    <mj-text>Hello {{ full_name }},</mj-text>
+    <mj-text>Here you have the invoice for the certification course you recently purchased. If you have any doubts or questions, please contact us at finance@openexo.com and we will be happy to address them. </mj-text>
+    <mj-text>We want to thank you again for your trust in OpenExO. Let's keep working together for a better future!We're excited that you will be joining us for:</mj-text>
+    <mj-text>Kind regards,</mj-text>
+    <mj-text><b>OpenExO Team</b><br></mj-text>
+{% endblock %}
+
+{% block call_to_action %}
+{% endblock %}

@@ -1,0 +1,57 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+autopep8 = "*"
+factory-boy = "*"
+Faker = "*"
+flake8 = "*"
+flake8-debugger = "*"
+flake8-print = "*"
+flake8-todo = "*"
+mock = "*"
+pep8 = "*"
+pycodestyle = "*"
+pylint = "*"
+pylint-Django = "<3"
+tblib = "*"
+
+[packages]
+boto = "*"
+celery = {version = "*", extras = ["redis"]}
+dj_anonymizer = "*"
+Django = "<3.0"
+django-appconf = "*"
+django-cors-headers = "*"
+django-extensions = "*"
+django-filter = "*"
+django-model-utils = "*"
+django-storages = "*"
+django-timezone-field = "*"
+djangorestframework = "*"
+djangorestframework-camel-case = "*"
+djangorestframework-jwt = "*"
+drf-yasg = {version = "*", extras = ["validation"]}
+exo-changelog = "*"
+faker = "*"
+gunicorn = "*"
+health-check = "*"
+ipdb = "*"
+isodate = "*"
+lib-exo-populator = "*"
+packaging = "*"
+pyaml = "*"
+python-dateutil = "*"
+pyyaml = "*"
+requests-mock = "*"
+s3cmd = "*"
+schedule = "*"
+sentry-sdk = "*"
+simple-user = ">=0.8.0"
+singleton-decorator = "*"
+stringcase = "*"
+
+[requires]
+python_version = "3.7"

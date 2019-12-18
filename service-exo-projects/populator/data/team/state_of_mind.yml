@@ -1,0 +1,15 @@
+---
+uuid: 8dbd85f9-f083-4b6d-9df6-1417c1368456
+name: State of Mind
+stream: Core Stream
+image: https://cdn.filestackcontent.com/kpRzP37Tw6Hdp2iqinjw
+project: !project Dickinson Lane
+created_by: !account ef70053f-755b-4b40-bb73-6832d16488e7
+members:
+  - user: !account 0737a9f9-22a0-4286-8be3-34a3e19d92dc # Naina Lavrova
+    role: Coach
+  - user: !account a71654e1-ff04-458a-b869-af2eaa710e83
+    role: Participant
+  - user: !account 0be1c853-284a-4754-b5cf-7d4549da2351
+    role: Participant
+group_uuid: 38faac18-49cd-4b8c-9fa4-afd8617344dc

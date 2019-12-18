@@ -1,0 +1,12 @@
+uuid: 1c7458ef-2661-41f4-8e5e-9688e7df02c3
+origin: T
+related_uuid: 149d2ed1-db09-4516-adad-d22db331bff0
+total: 10
+exo_role: SAD
+certification_required: CFO
+duration_value: 1
+duration_unity: H
+entity: Checker INC
+budgets:
+  - budget: 500.0
+    currency: D

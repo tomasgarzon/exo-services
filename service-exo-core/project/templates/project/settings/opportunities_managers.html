@@ -1,0 +1,43 @@
+{% load profile %}
+<div class='col-xs-12 col-lg-12 col-md-12'>
+    <div class='pull-right btn btn-default orange border-orange'
+        id="dev__add_ticket_manager"
+        data-project="{{project.pk}}">
+            Add Delivery Manager
+    </div>
+    <div class='full-width pull-left m-t-md'>
+        <div class='row border-bottom border-top p-t-10 p-b-10'>
+            <div class='col-lg-5 col-xs-4'><strong>Name</strong></div>
+            <div class='col-lg-5 col-xs-4'><strong>Email</strong></div>
+            <div class='col-lg-1 col-xs-2 text-center'></div>
+        </div>
+        {% for delivery_manager in project.users_roles.all %}
+            {% if delivery_manager.exo_role.code == 'SDM' %}
+            <div class='p-m-10 p-t-10 border-bottom row' data-object="{{delivery_manager.pk}}">
+                <div class='col-lg-5 col-xs-4'>
+                    {{delivery_manager.user.get_full_name}}
+                </div>
+                <div class='col-lg-5 col-xs-4'>
+                     {% public_email delivery_manager.user as exo_email %}
+                     {{exo_email}}
+                </div>
+                <div class='col-lg-1 col-xs-2 text-center'>
+                    <div class="ibox-tools pull-right l-h-34 text-center" style="margin-top:-10px;">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="" class="dev__remove"
+                                data-pk="{{delivery_manager.pk}}"
+                                data-project="{{delivery_manager.project.pk}}"
+                                data-role="ExO Works Delivery Manager">
+                                Remove</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

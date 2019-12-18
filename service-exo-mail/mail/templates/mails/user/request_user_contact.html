@@ -1,0 +1,70 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="OpenExO Community" title="{% trans 'Contact Request' %}" />
+
+{% endblock %}
+
+{% block wrapper-image %}
+<mj-section>
+  <mj-column>
+    <mj-image border-radius="50%" width="84px" align="left" src="{{domain}}{{requester_profile_picture}}" />
+  </mj-column>
+</mj-section>
+{% endblock %}
+
+{% block wrapper-title %}
+{% endblock %}
+
+{% block pre-content %}
+    <mj-section>
+        <mj-column>
+            <mj-text>
+                {% trans "Hello" %} {{ short_name|capfirst}},
+            </mj-text>
+            <mj-text>
+                {% blocktrans %}
+                    {{requester_name}}, an OpenExO Community Member would like to connect with you.
+                {% endblocktrans %}
+            </mj-text>
+        </mj-column>
+    </mj-section>
+{% endblock %}
+
+{% block content %}
+    <mj-text>
+        <strong>{{requester_name}}</strong> - {{user_title}}
+    </mj-text>
+    <mj-text>
+        See <a href="{{domain}}{{requester_profile_url}}" class="text-blue link">{{requester_short_name}}'s Profile</a> in OpenExO.
+    </mj-text>
+    {% if comment %}
+    <mj-text>
+        {{comment|safe}}
+    </mj-text>
+    {% endif %}
+    {% trans "CONNECT BY EMAIL" as see_details %}
+     <mj-button
+        font-family="Roboto,Helvetica"
+        font-size="16px"
+        background-color="#6F23FF"
+        font-weight="700"
+        color="white"
+        text-transform="uppercase"
+        border-radius="20px"
+        href="mailto:{{requester_email}}">
+              {{see_details}}
+    </mj-button>
+
+    <mj-text>
+        {% blocktrans %}
+        If the button above doesn’t work, you can connect with {{requester_name}} sending a direct email to: <a class="text-blue link" href="mailto:{{requester_email}}">{{requester_email}}</a>.
+        {% endblocktrans %}
+    </mj-text>
+
+{% endblock %}
+
+{% block call_to_action %}
+
+{% endblock %}

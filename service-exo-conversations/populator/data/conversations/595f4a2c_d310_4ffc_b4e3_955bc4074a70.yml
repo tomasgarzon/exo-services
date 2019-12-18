@@ -1,0 +1,24 @@
+uuid: 595f4a2c-d310-4ffc-b4e3-955bc4074a70
+name: Amy Finch
+uuid_related_object: b7775ee3-2512-4671-8eff-5cfff6905fe5
+created_by: !account &amy 1cd07dd7-4883-4838-9b5a-303ef0d6580c
+_type: O
+icon: /media/avatars/48_48/amy-finch.jpg
+users:
+  - user: *amy
+    name: Amy Finch
+    profile_url: /public/profile/amy-finch/
+    profile_picture: /media/avatars/48_48/amy-finch.jpg
+  - user: !account &quality 7749ad25-5128-4644-895f-6b9a70b605bd
+    name: Quality Assurance
+    profile_url: /public/profile/quality-assurance/
+    profile_picture: /media/avatars/48_48/quality-assurance.jpg
+messages:
+  - created_by: *amy
+    message: Asperiores repudiandae ipsam nam qui adipisci. Sint sed debitis repudiandae.\nQuidem voluptatibus nesciunt fugiat. Fugiat amet illo id voluptatem assumenda est reiciendis
+    readed:
+        - user: *quality
+  - created_by: *amy
+    message: Fugit a repellendus commodi odit provident. A repellat mollitia sapiente expedita.\nVero soluta eaque repudiandae sit. Adipisci amet soluta ipsam. Culpa animi molestias ipsa ratione
+    readed:
+        - user: *quality

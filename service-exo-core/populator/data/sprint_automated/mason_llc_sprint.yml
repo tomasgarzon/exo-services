@@ -1,0 +1,47 @@
+id: 2
+uuid: cdab921b-9439-43a1-b25b-82a0d7274c4f
+name: Mason LLC Sprint
+customer: !customer Mason LLC
+start: !timedelta -3w
+password: masonpass
+created_by: !exo_account Quality Assurance
+launched_by: !exo_account Quality Assurance
+duration: 10
+lapse: Week
+microlearnings: true
+template_assignments: Sprint Book
+place:
+  name: Granada, Spain
+  place_id: ChIJfcIyLeb8cQ0Rcg1g0533WJI
+roles:
+  - consultant: !consultant Julius Emilsson
+    code: SHC
+  - consultant: !consultant Philip Robson
+    code: SSH
+  - consultant: !consultant Amy Finch
+    code: SSH
+  - consultant: !consultant Gorka Arrizabalaga
+    code: SAS
+  - consultant: !consultant &consultant_tina Tina Weissberg
+    code: SAD
+  - consultant: !consultant &consultant_gorka Gorka Arrizabalaga
+    code: SAD
+  - consultant: !consultant &consultant_leticia Leticia Ferreira Dias
+    code: SAD
+  - consultant: !consultant &consultant_lindsey Lindsey Allen
+    code: SAD
+  - consultant: !consultant Cerdic Roper
+    code: SRE
+observers:
+  - name: Julian Navarro
+    email: juliannavarro@example.com
+  - name: Elisa Jiménez
+    email: elisajimenez@example.com
+  - name: Jordi Savall
+    email: jordisavall@example.com
+staff:
+  - name: Elena López
+    email: elenalopez@example.com
+delivery_managers:
+  - name: Aitziber Olabarriaga
+    email: aitziberolabarriaga@example.com

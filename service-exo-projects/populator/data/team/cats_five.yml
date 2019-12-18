@@ -1,0 +1,14 @@
+---
+uuid: ce967d05-5488-4752-98fd-9ef0874f7e2f
+name: Cats Five
+stream: Edge Stream
+image: https://cdn.filestackcontent.com/zmVW1DkCRzuWwYMWSO9Y
+project: !project Nash Wilson
+created_by: !account eb926b17-634c-477d-847c-eda5f35026a2
+members:
+  - user: !account fce099d0-d70d-4c3e-bb6e-4056708f8808 # Leticia Ferreira
+    role: Coach
+  - email: rickyshort@example.com
+    role: Participant
+  - email: roycarter-woods@example.com
+    role: Participant

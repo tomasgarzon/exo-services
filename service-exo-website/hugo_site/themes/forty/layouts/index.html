@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+hola
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+	{{ partial "header.html" . }}
+	<body>
+
+	{{ "<!-- Wrapper -->" | safeHTML }}
+		<div id="wrapper">
+
+			{{ partial "nav.html" . }}
+
+			{{ partial "banner.html" . }}
+
+		{{ "<!-- Main -->" | safeHTML }}
+			<div id="main">
+
+			    <section id="one" class="tiles">
+			        {{ range .Site.Data.sections.sections }}
+			        <article>
+			            <span class="image">
+			                <img src="{{ .Site.Params.baseURL }}img/{{ .image }}" alt="" />
+			            </span>
+			            {{ .description }}
+			            <header class="major">
+			                <h3><a href="{{ .name | absURL }}" class="link">{{ .name }}</a></h3>
+			                {{ .content | safeHTML }}
+			            </header>
+			        </article>
+			        {{ end }}
+			    </section>
+
+			</div>
+
+		{{ "<!-- Contact -->" | safeHTML}}
+			{{ if .Site.Params.Contact.enable }}
+				{{ partial "contact.html" . }}
+			{{ end }}
+
+		{{ "<!-- Footer -->" | safeHTML}}
+			{{ if .Site.Params.Footer.enable }}
+				{{ partial "footer.html" . }}
+			{{ end }}
+
+		</div>
+
+	{{ "<!-- Scripts -->" | safeHTML}}
+		{{ partial "js.html" . }}
+
+	</body>
+</html>

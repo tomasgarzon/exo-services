@@ -1,0 +1,15 @@
+uuid: 0aa6cd58-c431-4a46-bf93-29516934e786
+name: Julius Emilsson
+uuid_related_object: b7775ee3-2512-4671-8eff-5cfff6905fe5
+created_by: !account &julius 1eae2bfa-3b44-4e3a-8bb7-89f5e24c71a6
+_type: O
+icon: /media/avatars/48_48/julius-emilsson.jpg
+users:
+  - user: *julius
+    name: Julius Emilsson
+    profile_url: /public/profile/julius-emilsson/
+    profile_picture: /media/avatars/48_48/julius-emilsson.jpg
+  - user: !account &quality 7749ad25-5128-4644-895f-6b9a70b605bd
+    name: Quality Assurance
+    profile_url: /public/profile/quality-assurance/
+    profile_picture: /media/avatars/48_48/quality-assurance.jpg

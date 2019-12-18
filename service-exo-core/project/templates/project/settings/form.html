@@ -1,0 +1,67 @@
+{% extends "project/base.html" %}
+
+{% load django_bootstrap_breadcrumbs staticfiles %}
+{% load bootstrap3 project %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Settings" "project:project:settings" project.id %}
+{% endblock %}
+
+{% block header_action %}
+{% endblock %}
+
+{% block main_project %}
+    <div class="row">
+        <div class="col-lg-12">
+            <div class='ibox float-e-margins'>
+                <div class="ibox-title">
+                    <h2>Settings information about the {{project.type_project|lower}}</h2>
+                </div>
+                <div class="ibox-content">
+                    <form id='form' action="." method="post"
+                        class="styles-form"
+                        enctype='multipart/form-data'
+                        >
+                        {% csrf_token %}
+                        <div class="content clearfix p-m m-t-none col-lg-6 col-xs-12">
+                             <div class='row m-b'>
+                                <div class='col-xs-12 panel-title'>
+                                    <h3>Options</h3>
+                                </div>
+                                <div class='col-xs-12 panel-body'>
+                                    {% include "project/settings/project_settings_form.html" %}
+                                </div>
+                                <div class='col-xs-12 panel-title'>
+                                    <h3>Observers</h3>
+                                </div>
+                                <div class='col-xs-12 panel-body'>
+                                    {% include "project/settings/project_observers.html" %}
+                                </div>
+                                <div class='col-xs-12 panel-title m-t'>
+                                    <h3>ExO Works Staff</h3>
+                                </div>
+                                <div class='col-xs-12 panel-body'>
+                                    {% include "project/settings/project_staff.html" %}
+                                </div>
+                                <div class='col-xs-12 panel-title m-t'>
+                                    <h3>Delivery Manager</h3>
+                                </div>
+                                <div class='col-xs-12 panel-body'>
+                                    {% include "project/settings/opportunities_managers.html" %}
+                                </div>
+                            </div>
+                            <div class="full-width pull-right m-r-xs text-right">
+                                <button class="btn btn-positive-choice" type="submit">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'project/js/project_settings.js' %}"></script>
+{% endblock %}

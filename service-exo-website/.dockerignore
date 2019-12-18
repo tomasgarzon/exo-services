@@ -1,0 +1,7 @@
+.git
+log/*
+tmp/*
+Dockerfile
+bitbucket-pipelines.yml
+README.md
+hugo_site/public/

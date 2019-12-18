@@ -1,0 +1,36 @@
+---
+name: Conceptual Phase assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: False
+  enabled_reflect: False
+blocks:
+  - title: Tools
+    subtitle:
+    order: 1
+    type: Resource
+    resources:
+      - name: Justice Bogota Fastrack Google Drive
+        type: Links
+        status: Available
+        link: https://drive.google.com/open?id=1GIbEUZ2qcq-se15VL89jMxuugiKJPVCn
+        description:
+        order: 1
+      - name: Justice Bogota  Fastrack Magazine - Flipboard
+        type: Links
+        status: Available
+        link: http://flip.it/flenrn 
+        description:
+        order: 2
+      - name: Justice Bogota Fastrack FTI Academy
+        type: Links
+        status: Available
+        link: https://drive.google.com/open?id=1C23b2BWDgfiWv3eKsQ-lj_GUmr6F4_Fa
+        description:
+        order: 3
+      - name: Justice Bogota  Fastrack Forum
+        type: Links
+        status: Available
+        link: https://forums46.exolever.com/
+        description:
+        order: 4

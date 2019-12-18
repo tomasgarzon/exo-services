@@ -1,0 +1,12 @@
+uuid: d1060be6-7bcf-4ef0-a8c2-2af8333d154e
+origin: T
+related_uuid: db9da7f3-6463-4eda-9e84-19a573d30b7b
+total: 10
+exo_role: SAD
+certification_required: CFO
+duration_value: 1
+duration_unity: H
+entity: Sutton Inc
+budgets:
+  - budget: 500.0
+    currency: D

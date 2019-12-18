@@ -1,0 +1,9 @@
+uuid: 34eca380-22e1-4931-b008-1199be543fa5
+date: !timedelta 3w
+seats: 25
+price: 1500
+currency: USD
+invoice_concept: ExO Consultant Certification Program Fastrack Cohort
+status: Open
+language: Spanish
+certification: L2A

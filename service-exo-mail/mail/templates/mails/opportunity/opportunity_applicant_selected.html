@@ -1,0 +1,59 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n tz %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="{% trans 'Opportunity Update' %}" title="{{title}}" />
+{% endblock %}
+
+{% block wrapper-extra-class %}white{% endblock %}
+
+{% block wrapper-title %}
+    {% include "base/user_information.mjml" with  name="OpenExO Team" user_title="" %}
+{% endblock %}
+
+{% block content %}
+    <mj-text>Hello {{applicant_name}},</mj-text>
+    <mj-text>
+        <strong>Congratulations! The opportunity has been assigned to you!</strong>
+    </mj-text>
+    <mj-text>
+        {{created_by_name}} selected you to move this opportunity forward, make sure you know all the details or use the chat if you have any questions.
+    </mj-text>
+    {% if comment %}
+    <mj-text>{{created_by_name}} would like to send you this message:
+    </mj-text>
+    <mj-text font-style='italic' color="grey" font-weight="600">
+        {{comment|linebreaksbr|safe}}
+    </mj-text>
+    {% endif %}
+
+    <mj-text>
+        <strong>{{ start_date_full }}</strong>
+    </mj-text>
+
+    {% if category_code == 'AC' %}
+    <mj-text>
+        Here are some guidelines to be a great Advisor (<a class="link-nostyle" href="http://help.openexo.com/en/articles/3486763-advisory-call-advisor-guidelines">English</a> | <a class="link-nostyle" href="http://help.openexo.com/en/articles/3490030-advisory-call-pautas-para-el-asesor">Spanish</a>)
+    </mj-text>
+    {% endif %}
+
+    <mj-text>
+        Kind regards,<br>
+        <strong>OpenExO Team</strong>
+    </mj-text>
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "GO TO OPPORTUNITY" as see_details %}
+    {% include "base/call_to_action.mjml" with call_to_action=see_details %}
+{% endblock %}
+
+{% block after-call-to-action %}
+    <mj-section padding-top="20px">
+        <mj-column>
+            <mj-text>
+                or you can <a href='{{domain}}{{opportunity_url}}' class="link-nostyle">chat with</a> {{created_by_name}}
+            </mj-text>
+        </mj-column>
+    </mj-section>
+{% endblock %}

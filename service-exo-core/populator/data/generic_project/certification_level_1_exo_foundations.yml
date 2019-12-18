@@ -1,0 +1,30 @@
+id: 13
+uuid: 8bedb00d-4c8d-425b-88e1-2ecdd6441a19
+name: Certification Level 1 ExO Foundations
+customer: !customer OpenExO
+template: ExO Foundations
+category: Certification
+start: !timedelta -3w
+password: level1pass
+created_by: !exo_account Quality Assurance
+launched_by: !exo_account Quality Assurance
+duration: 2
+lapse: Period
+microlearnings: false
+team_comunication: false
+ask_to_ecosystem: false
+directory: false
+template_assignments: Certification Level 1
+place:
+  name: Granada, Spain
+  place_id: ChIJfcIyLeb8cQ0Rcg1g0533WJI
+roles:
+  - consultant: !consultant Alice LaGrande
+    code: SHC
+  - consultant: !consultant Alice LaGrande
+    code: SSH
+steps:
+  - order: 1
+    name: Learn
+  - order: 2
+    name: Certify

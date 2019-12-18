@@ -1,0 +1,43 @@
+{% extends "project/base.html" %}
+{% load bootstrap_pagination bootstrap3 staticfiles django_bootstrap_breadcrumbs breadcrumb %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Swarm Sessions" "project:project:swarm-session" project.pk %}
+    {% breadcrumb "Edit" "project:project:swarm-session-edit" project.pk object.pk %}
+{% endblock %}
+
+{% block main_project %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class='ibox float-e-margins'>
+            <div class="ibox-title">
+                <h2>{% if object.pk %}Swarm session: {{start_at}}{% endif %}</h2>
+            </div>
+            <div class="ibox-content">
+                <form id='form' action="." method="post"
+                        class="styles-form"
+                        enctype='multipart/form-data'
+                        >
+                            <div class="content clearfix p-m m-t-none">
+                                <div class='col-xs-12 col-lg-8 col-md-12'>
+                                {% csrf_token %}
+                                {% bootstrap_field form.name %}
+                                {% bootstrap_field form.start_at %}
+                                {% bootstrap_field form.end_at %}
+                                {% bootstrap_field form.consultants %}
+                                </div>
+                            </div>
+                            <div class="full-width pull-right m-r-xs m-b-xs text-right">
+                                <button class="btn btn-positive-choice" type="submit">Save</button>
+                            </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'project/js/qa_session_form.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,183 @@
+[
+{
+    "fields": {
+        "group": "ask_to_ecosystem",
+        "param_type": "bool",
+        "name": "new_answer",
+        "_default_value": "False"
+    },
+    "model": "account_config.configparam",
+    "pk": 1
+},
+{
+    "fields": {
+        "group": "team_communication",
+        "param_type": "bool",
+        "name": "new_comment",
+        "_default_value": "False"
+    },
+    "model": "account_config.configparam",
+    "pk": 2
+},
+{
+    "fields": {
+        "group": "team_communication",
+        "param_type": "bool",
+        "name": "new_reply",
+        "_default_value": "False"
+    },
+    "model": "account_config.configparam",
+    "pk": 3
+},
+{
+    "fields": {
+        "group": "swarm_sessions",
+        "param_type": "bool",
+        "name": "reminder_tomorrow",
+        "_default_value": "True"
+    },
+    "model": "account_config.configparam",
+    "pk": 4
+},
+{
+    "fields": {
+        "group": "swarm_sessions",
+        "param_type": "bool",
+        "name": "reminder_one_hour_before",
+        "_default_value": "False"
+    },
+    "model": "account_config.configparam",
+    "pk": 5
+},
+{
+    "fields": {
+        "group": "swarm_sessions",
+        "param_type": "bool",
+        "name": "session_summary",
+        "_default_value": "False"
+    },
+    "model": "account_config.configparam",
+    "pk": 6
+},
+{
+    "fields": {
+        "group": "circles",
+        "param_type": "bool",
+        "name": "new_post",
+        "_default_value": "True"
+    },
+    "model": "account_config.configparam",
+    "pk": 7
+},
+{
+    "fields": {
+        "group": "circles",
+        "param_type": "bool",
+        "name": "new_question_from_project",
+        "_default_value": "True",
+        "condition_for_available": "account_config.helpers.ExOConsultingEnabled"
+    },
+    "model": "account_config.configparam",
+    "pk": 8
+},
+{
+    "fields": {
+        "group": "circles",
+        "param_type": "bool",
+        "name": "new_announcement",
+        "_default_value": "True"
+    },
+    "model": "account_config.configparam",
+    "pk": 12
+},
+{
+    "fields": {
+        "group": "circles",
+        "param_type": "bool",
+        "name": "weekly_update",
+        "_default_value": "False"
+    },
+    "model": "account_config.configparam",
+    "pk": 9
+},
+{
+    "fields": {
+        "group": "swarm_sessions",
+        "param_type": "bool",
+        "name": "advisor_selected",
+        "_default_value": "True"
+    },
+    "model": "account_config.configparam",
+    "pk": 10
+},
+{
+    "fields": {
+        "group": "opportunities",
+        "param_type": "bool",
+        "name": "new_open_ticket",
+        "_default_value": "True"
+    },
+    "model": "account_config.configparam",
+    "pk": 11
+},
+{
+    "fields": {
+        "group": "circles",
+        "param_type": "bool",
+        "name": "mention_notification",
+        "_default_value": "True"
+    },
+    "model": "account_config.configparam",
+    "pk": 13
+},
+{
+    "fields": {
+        "group": "consent",
+        "param_type": "bool",
+        "name": "image_consent",
+        "_default_value": "False"
+    },
+    "model": "account_config.configparam",
+    "pk": 14
+},
+{
+    "fields": {
+        "group": "opportunities",
+        "param_type": "bool",
+        "name": "new_open_opportunity",
+        "_default_value": "True"
+    },
+    "model": "account_config.configparam",
+    "pk": 15
+},
+{
+    "fields": {
+        "group": "chat",
+        "param_type": "bool",
+        "name": "new_conversation",
+        "_default_value": "True"
+    },
+    "model": "account_config.configparam",
+    "pk": 16
+},
+{
+    "fields": {
+        "group": "chat",
+        "param_type": "bool",
+        "name": "daily_recap_unread",
+        "_default_value": "True"
+    },
+    "model": "account_config.configparam",
+    "pk": 17
+},
+{
+    "fields": {
+        "group": "chat",
+        "param_type": "bool",
+        "name": "weekly_recap_unread",
+        "_default_value": "False"
+    },
+    "model": "account_config.configparam",
+    "pk": 18
+}
+]

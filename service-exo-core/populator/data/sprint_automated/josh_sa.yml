@@ -1,0 +1,23 @@
+id: 3
+uuid: eddd3e46-23cf-4405-9483-da9a8dfbae69
+name: Josh SA
+customer: !customer Josh SA
+start: !timedelta 2w
+place:
+  name: Granada, Spain
+  place_id: ChIJfcIyLeb8cQ0Rcg1g0533WJI
+password: joshpass
+created_by: !exo_account Quality Assurance
+launched_by: !exo_account Quality Assurance
+duration: 10
+lapse: Week
+template_assignments: Sprint Book
+roles:
+  - consultant: !consultant Kunivas Devari
+    code: SHC
+  - consultant: !consultant Leticia Ferreira Dias
+    code: SSH
+  - consultant: !consultant Amy Finch
+    code: SSH
+  - consultant: !consultant Leticia Ferreira Dias
+    code: SAS

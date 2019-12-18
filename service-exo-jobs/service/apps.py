@@ -1,0 +1,26 @@
+# Application definition
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'whitenoise.runserver_nostatic',
+    'django.contrib.staticfiles',
+    # 'debug_toolbar',
+    'django_extensions',
+    'drf_yasg',
+    'health_check',
+    'auth_uuid.apps.AuthConfig',
+    'rest_framework',
+    'corsheaders',
+    'django_celery_results',
+    'timezone_field',
+    'exo_changelog',
+    'exo_role',
+    'utils',
+    'populate',
+    'jobs',
+    'dj_anonymizer',
+]

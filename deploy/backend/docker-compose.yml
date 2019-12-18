@@ -1,0 +1,186 @@
+version: '2'
+services:
+
+  postgres:
+    image: postgres:11
+    environment:
+      POSTGRES_DB: exolever
+      POSTGRES_USER: exolever
+      POSTGRES_PASSWORD: exolever
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  pgweb:
+    image: sosedoff/pgweb
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgres://exolever:exolever@postgres:5432/service_exo_core?sslmode=disable
+    depends_on:
+      - postgres
+    networks:
+      - default
+
+  redis:
+    image: redis:5-alpine
+    ports:
+      - 6379:6379
+
+  service-exo-companies:
+    # build: ../../service-exo-companies
+    image: exolever/service-exo-companies:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      EXOLEVER_HOST: ${EXOLEVER_HOST}
+      DOMAIN_NAME: http://${SUBDOMAIN}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+    ports:
+      - 8021:8000
+
+  service-exo-jobs:
+    # build: ../../service-exo-jobs
+    image: exolever/service-exo-jobs:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      EXOLEVER_HOST: ${EXOLEVER_HOST}
+      DOMAIN_NAME: http://${SUBDOMAIN}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+
+    ports:
+      - 8020:8000
+
+  service-exo-exq:
+    # build: ../../service-exo-exq
+    image: exolever/service-exo-exq:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      EXOLEVER_HOST: ${EXOLEVER_HOST}
+      DOMAIN_NAME: http://${SUBDOMAIN}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+
+    ports:
+      - 8019:8000
+  service-exo-events:
+    # build: ../../service-exo-events
+    image: exolever/service-exo-events:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      EXOLEVER_HOST: ${EXOLEVER_HOST}
+      DOMAIN_NAME: http://${SUBDOMAIN}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+
+    ports:
+      - 8018:8000
+
+  service-exo-projects:
+    # build: ../../service-exo-projects
+    image: exolever/service-exo-projects:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      EXOLEVER_HOST: ${EXOLEVER_HOST}
+      DOMAIN_NAME: http://${SUBDOMAIN}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+
+    ports:
+      - 8017:8000
+
+  service-exo-broker:
+    # build: ../../service-exo-broker
+    image: exolever/service-exo-broker:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      EXOLEVER_HOST: ${EXOLEVER_HOST}
+      DOMAIN_NAME: http://${SUBDOMAIN}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+
+    ports:
+      - 8015:8000
+      - 8016:8001
+
+  service-exo-auth:
+    # build: ../../service-exo-auth
+    image: exolever/service-exo-auth:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      EXOLEVER_HOST: ${EXOLEVER_HOST}
+      DOMAIN_NAME: http://${SUBDOMAIN}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+
+    ports:
+      - 8014:8000
+
+  service-exo-conversations:
+    # build: ../../service-exo-conversations
+    image: exolever/service-exo-conversations:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      EXOLEVER_HOST: ${EXOLEVER_HOST}
+      DOMAIN_NAME: http://${SUBDOMAIN}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+
+    ports:
+      - 8013:8000
+
+  service-exo-payments:
+    # build: ../../service-exo-payments
+    image: exolever/service-exo-payments:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      EXOLEVER_HOST: ${EXOLEVER_HOST}
+      DOMAIN_NAME: http://${SUBDOMAIN}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+
+    ports:
+      - 8012:8000
+
+  service-exo-opportunities:
+    # build: ../../service-exo-opportunities
+    image: exolever/service-exo-opportunities:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      EXOLEVER_HOST: ${EXOLEVER_HOST}
+      DOMAIN_NAME: http://${SUBDOMAIN}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+
+    ports:
+      - 8011:8000
+
+  service-exo-mail:
+    # build: ../../service-exo-mail
+    image: exolever/service-exo-mail:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      EXOLEVER_HOST: ${EXOLEVER_HOST}
+      DOMAIN_NAME: http://${SUBDOMAIN}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+
+    ports:
+      - 8010:8000
+
+  service-exo-website:
+    # build: ../../service-exo-website
+    image: exolever/service-exo-website:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      EXOLEVER_HOST: http://${EXOLEVER_HOST}
+      DOMAIN_NAME: http://${SUBDOMAIN}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+
+    ports:
+      - 8005:80
+
+  service-exo-medialibrary:
+    # build: ../../service-exo-medialibrary
+    image: exolever/service-exo-medialibrary:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      EXOLEVER_HOST: ${EXOLEVER_HOST}
+      DOMAIN_NAME: http://${SUBDOMAIN}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+
+    ports:
+      - 8001:8000
+
+volumes:
+  postgres: null

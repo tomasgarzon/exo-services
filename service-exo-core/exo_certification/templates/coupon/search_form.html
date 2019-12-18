@@ -1,0 +1,18 @@
+{% load bootstrap3 %}
+
+<form action="." method='get' id="dev__group-search" class="group-search">
+    <div class="input-group">
+        <div class="row">
+            <div class="col-lg-10">
+                {{ form_filter.search }}
+            </div>
+            <div class="col-lg-1">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn btn-default">
+                        <i class="fa fa-search"></i>Search
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+</form>

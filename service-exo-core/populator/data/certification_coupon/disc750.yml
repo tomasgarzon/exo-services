@@ -1,0 +1,7 @@
+code: DISC750
+certification: L2
+max_uses: 10
+uses: 0
+discount: 750
+type: Fixed Amount
+level: level_2  # TODO: Remove after migration

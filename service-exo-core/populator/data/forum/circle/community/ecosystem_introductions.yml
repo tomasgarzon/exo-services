@@ -1,0 +1,26 @@
+title: Community Introductions
+user: !exo_account Quality Assurance
+date: !timedelta -12d
+circle: !circle Community
+description: |
+  <p>Hello everyone,</p>
+
+  <p>This topic thread has been created to provide an accessible place for people to introduce themselves to the ecosystem.</p>
+
+  </p>Please consider the following structure when posting your introduction:</p>
+  <ol>
+    <li>Your preferred name</li>
+    <li>Current location</li>
+    <li>LinkedIn profile/website (if applicable)</li>
+    <li>Top 3 things you can bring to the ecosystem (i.e. your super powers)</li>
+    <li>Current projects you’re working on (ExO or non-ExO)</li>
+    <li>Future projects you would like to work on (ExO or non-ExO)</li>
+    <li>1 wish for everyone in the ecosystem</li>
+    <li>Any additional comments</li>
+    <li>We look forward to getting to know you here!</li>
+  </ol>
+activities:
+  - user: !consultant Tina Weissberg
+    date: !timedelta -11d
+  - user: !consultant Amy Finch
+    date: !timedelta -11d

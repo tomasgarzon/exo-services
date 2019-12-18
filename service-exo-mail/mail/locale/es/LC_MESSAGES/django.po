@@ -1,0 +1,1873 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-04 07:36+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: mail/mailviews/accounts_change_password.py:13
+msgid "Password reset requested"
+msgstr ""
+
+#: mail/mailviews/ask_to_ecosystem_created.py:20
+msgid "New question from projects"
+msgstr ""
+
+#: mail/mailviews/ask_to_ecosystem_replied.py:21
+msgid "New Answer to your Question"
+msgstr ""
+
+#: mail/mailviews/ecosystem_weekly_summary.py:16
+msgid "Weekly update"
+msgstr ""
+
+#: mail/mailviews/invitation_consultant_project.py:19
+#, python-format
+msgid " - %(name)s invite"
+msgstr ""
+
+#: mail/mailviews/invitation_consultant_project.py:25
+msgid " - Team coach invite"
+msgstr ""
+
+#: mail/mailviews/invitation_observer_project.py:13
+msgid " - Access invite"
+msgstr ""
+
+#: mail/mailviews/invitation_user_project.py:15
+msgid " - Team participant invite"
+msgstr ""
+
+#: mail/mailviews/marketplace_service_request.py:24
+msgid "New Service Request"
+msgstr ""
+
+#: mail/mailviews/new_opportunity_created.py:30
+#: mail/templates/mails/opportunity/new_opportunity_created.html:5
+#: mail/templates/mails/ticket/applicant/ticket_new_nominated_applicant_not_signed_agreement.html:5
+msgid "New Opportunity"
+msgstr ""
+
+#: mail/mailviews/new_opportunity_created_not_signed_agreement.py:22
+msgid "New opportunity available!"
+msgstr ""
+
+#: mail/mailviews/new_payment_created.py:20
+msgid "Payment Request from OpenExO"
+msgstr ""
+
+#: mail/mailviews/opportunity_applicant_first_message.py:21
+msgid "The opportunity creator got back to you!"
+msgstr ""
+
+#: mail/mailviews/opportunity_applicant_leave_feedback.py:20
+#: mail/mailviews/opportunity_requester_leave_feedback.py:20
+msgid "Project end and closure"
+msgstr ""
+
+#: mail/mailviews/opportunity_applicant_leave_feedback_expired.py:20
+#: mail/mailviews/opportunity_requester_leave_feedback_expired.py:20
+msgid "Feedback deadline expired"
+msgstr ""
+
+#: mail/mailviews/opportunity_applicant_leave_feedback_reminder.py:20
+#: mail/mailviews/opportunity_requester_leave_feedback_reminder.py:20
+msgid "15 days left to leave your feedback "
+msgstr ""
+
+#: mail/mailviews/opportunity_applicant_not_selected.py:20
+msgid "Sorry, the opportunity has been assigned"
+msgstr ""
+
+#: mail/mailviews/opportunity_applicant_requester_left_feedback.py:20
+#: mail/mailviews/opportunity_requester_applicant_left_feedback.py:20
+msgid "Feedback received!"
+msgstr ""
+
+#: mail/mailviews/opportunity_applicant_selected.py:21
+msgid "Congratulations! The opportunity is yours"
+msgstr ""
+
+#: mail/mailviews/opportunity_closed_applicant.py:20
+msgid "Opportunity closed"
+msgstr ""
+
+#: mail/mailviews/opportunity_closed_by_deadline_requester.py:20
+msgid "Opportunity expired"
+msgstr ""
+
+#: mail/mailviews/opportunity_closed_requester.py:19
+msgid "Opportunity assigned and closed"
+msgstr ""
+
+#: mail/mailviews/opportunity_edited.py:20
+msgid "Changes in opportunity"
+msgstr ""
+
+#: mail/mailviews/opportunity_removed.py:20
+msgid "Opportunity deleted"
+msgstr ""
+
+#: mail/mailviews/opportunity_requester_first_message.py:21
+msgid "Someone is interested in your opportunity!"
+msgstr ""
+
+#: mail/mailviews/opportunity_respond_applicant.py:24
+msgid "New opportunity applicant"
+msgstr ""
+
+#: mail/mailviews/payment_received.py:14
+msgid "Here is your invoice!"
+msgstr ""
+
+#: mail/mailviews/post_announcement_created.py:20
+#: mail/templates/mails/circles/post_announcement_created.html:5
+msgid "New announcement"
+msgstr ""
+
+#: mail/mailviews/post_announcement_replied.py:21
+#: mail/templates/mails/circles/post_announcement_replied.html:5
+msgid "New Reply to an Announcement"
+msgstr ""
+
+#: mail/mailviews/post_answer_rating.py:21
+msgid "New rating"
+msgstr ""
+
+#: mail/mailviews/post_circle_created.py:21
+#, python-format
+msgid "New post from %(created_by_name)s in %(circle_name)s"
+msgstr ""
+
+#: mail/mailviews/post_mention.py:21
+msgid "New mention in post"
+msgstr ""
+
+#: mail/mailviews/post_mention_answer.py:21
+msgid "New mention in answer"
+msgstr ""
+
+#: mail/mailviews/qa_session_advisor_selected.py:22
+#: mail/templates/mails/swarm/qa_session_advisor_selected.html:5
+msgid "ExO Advisor For Swarm Session"
+msgstr ""
+
+#: mail/mailviews/qa_session_summary.py:25
+#: mail/templates/mails/swarm/qa_session_summary.html:5
+msgid "Swarm Session Summary"
+msgstr ""
+
+#: mail/mailviews/referral_reward_acquired.py:17
+msgid "New referral reward"
+msgstr ""
+
+#: mail/mailviews/reminder_advisor_one_hour_before_qa_session.py:23
+#: mail/mailviews/reminder_participant_one_hour_before_qa_session.py:22
+#: mail/templates/mails/swarm/reminder_advisor_qa_session.html:8
+#: mail/templates/mails/swarm/reminder_participant_qa_session.html:8
+msgid "Swarm Session in 1 hour"
+msgstr ""
+
+#: mail/mailviews/reminder_advisor_tomorrow_qa_session.py:23
+#: mail/mailviews/reminder_participant_tomorrow_qa_session.py:22
+#: mail/templates/mails/swarm/reminder_advisor_qa_session.html:6
+#: mail/templates/mails/swarm/reminder_participant_qa_session.html:6
+msgid "Swarm Session Tomorrow"
+msgstr ""
+
+#: mail/mailviews/request_user_contact.py:22
+msgid "Contact request"
+msgstr ""
+
+#: mail/mailviews/set_back_requested_from_open_to_target_advisor_applied.py:16
+#, python-format
+msgid "Opportunity changed: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/survey_result_user.py:22
+msgid "ExQ results"
+msgstr "Resultados de la encuesta ExQ"
+
+#: mail/mailviews/ticket_acceptance_response.py:19
+#, python-format
+msgid "%(applicant_name)s accepted your request: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_applicant_not_selected.py:14
+msgid "ExO Advisor Opportunity reply"
+msgstr ""
+
+#: mail/mailviews/ticket_back_requested_from_target_to_open.py:17
+#, python-format
+msgid "Opportunity changed to open: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_confirm_advisor.py:15
+#, python-format
+msgid "Please confirm your session for %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_declination_response.py:20
+#, python-format
+msgid "%(applicant_name)s declined your request: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_dialog_item_advisor.py:21
+#, python-format
+msgid "%(applicant_name)s’s availability update for %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_dialog_item_team.py:18
+#, python-format
+msgid "The team proposed time slots for %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_how_was_the_session_coach_and_team.py:21
+#, python-format
+msgid "Evaluate the session for %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_new_nominated_applicant.py:26
+#, python-format
+msgid "Direct Exo Advisor Request: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_new_nominated_applicant_not_signed_agreement.py:21
+msgid "Someone wants your services!"
+msgstr ""
+
+#: mail/mailviews/ticket_new_open_applicant.py:27
+#, python-format
+msgid "ExO Advisor opportunity: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_opportunity_open_again.py:25
+#, python-format
+msgid "Opportunity available again: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_recommend_someone.py:20
+msgid "Recommended Advisor for request"
+msgstr ""
+
+#: mail/mailviews/ticket_remember_request_blocked_after_ten_days.py:14
+#, python-format
+msgid "Request needs assistance: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_remember_session_verified.py:15
+#: mail/mailviews/ticket_session_verified_advisor.py:15
+#, python-format
+msgid "Session verified: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_remember_session_verify_after_four_days.py:15
+#: mail/mailviews/ticket_remember_session_verify_after_ten_days.py:15
+#, python-format
+msgid "Session not verified: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_reminder_claim_session_after_two_days.py:15
+#, python-format
+msgid "You can follow-up on your session for %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_reminder_go_to_evaluate_after_two_days.py:17
+#, python-format
+msgid "Please evaluate your session for %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_reminder_session_unverify_after_evaluate.py:16
+#, python-format
+msgid "%(applicant_name)s evaluated the session for %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_remove_accepted_applicant.py:21
+#, python-format
+msgid "%(project_name)s // ExO Advisor session has been canceled - DISCARTED"
+msgstr ""
+
+#: mail/mailviews/ticket_respond_open_applicant.py:27
+#, python-format
+msgid "%(applicant_name)s responded to your request: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_response_cancelled_by_advisor.py:15
+#, python-format
+msgid "%(applicant_name)s canceled the response for %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_session_cancelled_advisor.py:18
+#: mail/mailviews/ticket_session_cancelled_back_to_requested.py:16
+#: mail/mailviews/ticket_session_cancelled_team.py:17
+#, python-format
+msgid "Session canceled for %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_session_cancelled_team_by_advisor.py:19
+#, python-format
+msgid "%(applicant_name)s canceled the session for %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_session_claimed.py:18
+#, python-format
+msgid ""
+"%(applicant_name)s is following up on the session for %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_session_confirmed.py:20
+#, python-format
+msgid "%(applicant_name)s confirmed the session for %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_session_disconfirmed_advisor.py:16
+#, python-format
+msgid "Session verification eliminated: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_session_disconfirmed_financial.py:16
+#, python-format
+msgid "Session disconfirmed: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_session_set_advisor.py:18
+#: mail/mailviews/ticket_session_set_team.py:16
+#, python-format
+msgid "ExO Advisor session scheduled for %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_session_verified_financial.py:15
+#, python-format
+msgid "%(applicant_full_name)s’s session verified for: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_summary_feedback_advisor.py:19
+#, python-format
+msgid "Team feedback for: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/ticket_target_cancelled_advisor.py:16
+#, python-format
+msgid "Opportunity canceled: %(ticket_subject)s"
+msgstr ""
+
+#: mail/mailviews/verification_email_address.py:13
+msgid "Email Address Verification"
+msgstr ""
+
+#: mail/mailviews/workshop_creation_reminder.py:15
+#: mail/templates/mails/workshop/workshop_creation_reminder.html:5
+msgid "New workshop created"
+msgstr ""
+
+#: mail/templates/mails/accounts_change_password.html:10
+msgid "Dear"
+msgstr ""
+
+#: mail/templates/mails/accounts_change_password.html:12
+msgid ""
+"A password reset for your account has been requested. Click on the button "
+"below to set your new password:"
+msgstr ""
+
+#: mail/templates/mails/accounts_change_password.html:17
+msgid "Set new password"
+msgstr ""
+
+#: mail/templates/mails/accounts_change_password.html:20
+msgid "If you do not want to reset your password, please ignore this email."
+msgstr ""
+
+#: mail/templates/mails/ask_the_ecosystem/ask_to_ecosystem_created.html:5
+msgid "New question from participants"
+msgstr ""
+
+#: mail/templates/mails/ask_the_ecosystem/ask_to_ecosystem_created.html:19
+msgid "Answer"
+msgstr ""
+
+#: mail/templates/mails/ask_the_ecosystem/ask_to_ecosystem_replied.html:5
+msgid "New comment to your post in the community"
+msgstr ""
+
+#: mail/templates/mails/ask_the_ecosystem/ask_to_ecosystem_replied.html:19
+#: mail/templates/mails/circles/post_announcement_replied.html:38
+#: mail/templates/mails/circles/post_mention.html:19
+#: mail/templates/mails/circles/post_mention_answer.html:19
+msgid "Reply"
+msgstr ""
+
+#: mail/templates/mails/circles/common/qa_slot.html:3
+#: mail/templates/mails/ticket/confirm/ticket_confirm_advisor.html:30
+#: mail/templates/mails/ticket/confirm/ticket_session_confirmed.html:33
+#: mail/templates/mails/ticket/confirm/ticket_session_verified_advisor.html:24
+#: mail/templates/mails/ticket/confirm/ticket_session_verified_financial.html:23
+#: mail/templates/mails/ticket/feedback/ticket_how_was_the_session_coach_and_team.html:33
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verified.html:28
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verify_after_four_days.html:25
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verify_after_ten_days.html:25
+#: mail/templates/mails/ticket/reminders/ticket_reminder_claim_session_after_two_days.html:29
+#: mail/templates/mails/ticket/reminders/ticket_reminder_go_to_evaluate_after_two_days.html:31
+#: mail/templates/mails/ticket/reminders/ticket_reminder_session_unverify_after_evaluate.html:28
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_advisor.html:24
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_back_to_requested.html:24
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_team.html:24
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_team_by_advisor.html:26
+#: mail/templates/mails/ticket/session/ticket_session_claimed.html:24
+#: mail/templates/mails/ticket/session/ticket_session_disconfirmed_advisor.html:24
+#: mail/templates/mails/ticket/session/ticket_session_disconfirmed_financial.html:24
+#: mail/templates/mails/ticket/session/ticket_session_set_advisor.html:25
+#: mail/templates/mails/ticket/session/ticket_session_set_team.html:25
+msgid "When"
+msgstr ""
+
+#: mail/templates/mails/circles/ecosystem_weekly_summary.html:5
+msgid "This week in your circles"
+msgstr ""
+
+#: mail/templates/mails/circles/ecosystem_weekly_summary.html:21
+msgid "Circle"
+msgstr ""
+
+#: mail/templates/mails/circles/ecosystem_weekly_summary.html:23
+msgid "New topics"
+msgstr ""
+
+#: mail/templates/mails/circles/ecosystem_weekly_summary.html:24
+msgid "New comments"
+msgstr ""
+
+#: mail/templates/mails/circles/ecosystem_weekly_summary.html:30
+msgid "Announcements"
+msgstr ""
+
+#: mail/templates/mails/circles/ecosystem_weekly_summary.html:32
+msgid "New announcements"
+msgstr ""
+
+#: mail/templates/mails/circles/ecosystem_weekly_summary.html:38
+msgid "Questions from projects"
+msgstr ""
+
+#: mail/templates/mails/circles/ecosystem_weekly_summary.html:40
+msgid "New questions"
+msgstr ""
+
+#: mail/templates/mails/circles/ecosystem_weekly_summary.html:48
+msgid "Go to circles"
+msgstr ""
+
+#: mail/templates/mails/circles/post_announcement_created.html:22
+msgid "Comment"
+msgstr ""
+
+#: mail/templates/mails/circles/post_announcement_replied.html:24
+#: mail/templates/mails/survey/result_user.html:14
+#: mail/templates/mails/swarm/qa_session_advisor_selected.html:24
+#: mail/templates/mails/swarm/qa_session_summary.html:13
+#: mail/templates/mails/swarm/reminder_advisor_qa_session.html:28
+#: mail/templates/mails/swarm/reminder_participant_qa_session.html:16
+#: mail/templates/mails/ticket/applicant/set_back_requested_from_open_to_target_advisor_applied.html:12
+#: mail/templates/mails/ticket/applicant/ticket_applicant_not_selected.html:12
+#: mail/templates/mails/ticket/applicant/ticket_back_requested_from_target_to_open.html:12
+#: mail/templates/mails/ticket/applicant/ticket_dialog_item_team.html:12
+#: mail/templates/mails/ticket/applicant/ticket_new_nominated_applicant.html:12
+#: mail/templates/mails/ticket/applicant/ticket_opportunity_open_again.html:12
+#: mail/templates/mails/ticket/applicant/ticket_target_cancelled_advisor.html:12
+#: mail/templates/mails/ticket/confirm/ticket_confirm_advisor.html:12
+#: mail/templates/mails/ticket/confirm/ticket_session_confirmed.html:12
+#: mail/templates/mails/ticket/confirm/ticket_session_verified_advisor.html:12
+#: mail/templates/mails/ticket/confirm/ticket_session_verified_financial.html:12
+#: mail/templates/mails/ticket/feedback/ticket_how_was_the_session_coach_and_team.html:12
+#: mail/templates/mails/ticket/feedback/ticket_summary_feedback_advisor.html:12
+#: mail/templates/mails/ticket/reminders/ticket_remember_request_blocked_after_ten_days.html:12
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verified.html:12
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verify_after_four_days.html:12
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verify_after_ten_days.html:12
+#: mail/templates/mails/ticket/reminders/ticket_reminder_claim_session_after_two_days.html:12
+#: mail/templates/mails/ticket/reminders/ticket_reminder_go_to_evaluate_after_two_days.html:12
+#: mail/templates/mails/ticket/reminders/ticket_reminder_session_unverify_after_evaluate.html:12
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_advisor.html:12
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_back_to_requested.html:12
+#: mail/templates/mails/ticket/session/ticket_session_claimed.html:12
+#: mail/templates/mails/ticket/session/ticket_session_disconfirmed_advisor.html:12
+#: mail/templates/mails/ticket/session/ticket_session_disconfirmed_financial.html:12
+#: mail/templates/mails/ticket/session/ticket_session_set_advisor.html:12
+#: mail/templates/mails/user/request_user_contact.html:24
+msgid "Hello"
+msgstr "Hola"
+
+#: mail/templates/mails/circles/post_announcement_replied.html:27
+msgid "There is a new reply to the announcement:"
+msgstr ""
+
+#: mail/templates/mails/circles/post_announcement_replied.html:47
+msgid "SEE REPLY"
+msgstr ""
+
+#: mail/templates/mails/circles/post_answer_rating.html:5
+msgid "New rating to your answer to a participant"
+msgstr ""
+
+#: mail/templates/mails/circles/post_answer_rating.html:20
+msgid "Go to post"
+msgstr ""
+
+#: mail/templates/mails/circles/post_circle_created.html:5
+msgid "New post in the community"
+msgstr ""
+
+#: mail/templates/mails/circles/post_circle_created.html:19
+msgid "Read More"
+msgstr ""
+
+#: mail/templates/mails/circles/post_mention.html:5
+#: mail/templates/mails/circles/post_mention_answer.html:5
+msgid "New mention in"
+msgstr ""
+
+#: mail/templates/mails/email_team.html:15
+#, python-format
+msgid ""
+"\n"
+"                %(role_name)s in %(project_name)s\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/email_team.html:24
+#: mail/templates/mails/registration/invitation_on_boarding.html:16
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_advisor.html:30
+msgid "GO TO OpenExO"
+msgstr ""
+
+#: mail/templates/mails/invitation_consultant_project.html:6
+#, python-format
+msgid ""
+"\n"
+"            You have been invited to coach team %(team_name|capfirst)s in "
+"OpenExO.\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/invitation_consultant_project.html:10
+#, python-format
+msgid ""
+"\n"
+"            You have been invited to participate as an "
+"%(relation_name|capfirst)s in OpenExO.\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/invitation_consultant_project.html:20
+#, python-format
+msgid ""
+"\n"
+"            %(user)s created this team in OpenExO and has added you as an "
+"%(relation_name)s. Access is available now.\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/invitation_consultant_project.html:24
+#, python-format
+msgid ""
+"\n"
+"            %(user)s created this forum and has added you as an "
+"%(relation_name|capfirst)s in order to support Q&A from workshop "
+"participants.\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/invitation_consultant_project.html:34
+#: mail/templates/mails/invitation_user_project.html:21
+msgid "JOIN THE TEAM"
+msgstr ""
+
+#: mail/templates/mails/invitation_consultant_project.html:36
+msgid "JOIN THE Q&A FORUM"
+msgstr ""
+
+#: mail/templates/mails/invitation_network_member.html:11
+msgid ""
+"\n"
+"        Hi, you have been invited to join ExO-Works.\n"
+"    "
+msgstr ""
+
+#: mail/templates/mails/invitation_network_member.html:19
+#: mail/templates/mails/survey/result_user.html:35
+#: mail/templates/mails/ticket/applicant/ticket_response_cancelled_by_advisor.html:25
+#: mail/templates/mails/ticket/applicant/ticket_target_cancelled_advisor.html:25
+msgid "Go to OpenExO"
+msgstr "Ir a OpenExO"
+
+#: mail/templates/mails/invitation_observer_project.html:5
+#, python-format
+msgid ""
+"\n"
+"        You have been invited to observe the %(project_type)s "
+"%(project_name)s in OpenExO.\n"
+"    "
+msgstr ""
+
+#: mail/templates/mails/invitation_observer_project.html:13
+#, python-format
+msgid ""
+"\n"
+"            OpenExO will enable participants from the %(project_type)s to "
+"follow the agenda, communicate with ExO Advisors and work on their "
+"assignments. You will be able to watch the activity. Access is available "
+"now.\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/invitation_observer_project.html:20
+msgid "ACCESS"
+msgstr ""
+
+#: mail/templates/mails/invitation_user_project.html:5
+#, python-format
+msgid ""
+"\n"
+"        You have been invited to join %(team_name|capfirst)s in OpenExO\n"
+"    "
+msgstr ""
+
+#: mail/templates/mails/invitation_user_project.html:14
+#, python-format
+msgid ""
+"\n"
+"        OpenExO will help you follow the %(project_type)s process, "
+"communicate with your team, and work on your assignments. Access is "
+"available now.\n"
+"    "
+msgstr ""
+
+#: mail/templates/mails/opportunity/new_opportunity_created.html:28
+msgid "Go to the opportunity"
+msgstr ""
+
+#: mail/templates/mails/opportunity/new_opportunity_created_not_signed_agreement.html:5
+msgid "New opportunity"
+msgstr ""
+
+#: mail/templates/mails/opportunity/new_opportunity_created_not_signed_agreement.html:26
+#: mail/templates/mails/opportunity/opportunity_removed.html:36
+msgid "Go to marketplace"
+msgstr ""
+
+#: mail/templates/mails/opportunity/opportunity_applicant_first_message.html:5
+#: mail/templates/mails/opportunity/opportunity_applicant_not_selected.html:5
+#: mail/templates/mails/opportunity/opportunity_applicant_selected.html:5
+#: mail/templates/mails/opportunity/opportunity_closed_applicant.html:5
+#: mail/templates/mails/opportunity/opportunity_closed_by_deadline_requester.html:5
+#: mail/templates/mails/opportunity/opportunity_closed_requester.html:5
+#: mail/templates/mails/opportunity/opportunity_edited.html:5
+#: mail/templates/mails/opportunity/opportunity_reminder_close.html:5
+#: mail/templates/mails/opportunity/opportunity_requester_first_message.html:5
+msgid "Opportunity Update"
+msgstr ""
+
+#: mail/templates/mails/opportunity/opportunity_applicant_first_message.html:33
+#: mail/templates/mails/opportunity/opportunity_requester_first_message.html:33
+msgid "ANSWER IN CHAT"
+msgstr ""
+
+#: mail/templates/mails/opportunity/opportunity_applicant_leave_feedback.html:5
+#: mail/templates/mails/opportunity/opportunity_applicant_leave_feedback_expired.html:5
+#: mail/templates/mails/opportunity/opportunity_applicant_leave_feedback_reminder.html:5
+#: mail/templates/mails/opportunity/opportunity_applicant_requester_left_feedback.html:5
+#: mail/templates/mails/opportunity/opportunity_requester_applicant_left_feedback.html:5
+#: mail/templates/mails/opportunity/opportunity_requester_leave_feedback.html:5
+#: mail/templates/mails/opportunity/opportunity_requester_leave_feedback_expired.html:5
+#: mail/templates/mails/opportunity/opportunity_requester_leave_feedback_reminder.html:5
+msgid "PROJECT COMPLETION"
+msgstr ""
+
+#: mail/templates/mails/opportunity/opportunity_applicant_leave_feedback.html:28
+#: mail/templates/mails/opportunity/opportunity_applicant_leave_feedback_reminder.html:28
+#: mail/templates/mails/opportunity/opportunity_requester_leave_feedback.html:33
+#: mail/templates/mails/opportunity/opportunity_requester_leave_feedback_reminder.html:28
+msgid "LEAVE FEEDBACK"
+msgstr ""
+
+#: mail/templates/mails/opportunity/opportunity_applicant_leave_feedback_expired.html:31
+#: mail/templates/mails/opportunity/opportunity_applicant_requester_left_feedback.html:28
+#: mail/templates/mails/opportunity/opportunity_requester_applicant_left_feedback.html:28
+#: mail/templates/mails/opportunity/opportunity_requester_leave_feedback_expired.html:28
+msgid "VIEW FEEDBACK"
+msgstr ""
+
+#: mail/templates/mails/opportunity/opportunity_applicant_not_selected.html:30
+#: mail/templates/mails/opportunity/opportunity_closed_applicant.html:38
+#: mail/templates/mails/ticket/applicant/ticket_new_nominated_applicant_not_signed_agreement.html:30
+msgid "GO TO MARKETPLACE"
+msgstr ""
+
+#: mail/templates/mails/opportunity/opportunity_applicant_selected.html:37
+#: mail/templates/mails/opportunity/opportunity_closed_requester.html:30
+msgid "GO TO OPPORTUNITY"
+msgstr ""
+
+#: mail/templates/mails/opportunity/opportunity_closed_by_deadline_requester.html:33
+msgid "NEW OPPORTUNITY"
+msgstr ""
+
+#: mail/templates/mails/opportunity/opportunity_edited.html:37
+msgid "VIEW OPPORTUNITY"
+msgstr ""
+
+#: mail/templates/mails/opportunity/opportunity_reminder_close.html:31
+msgid "EDIT DEADLINE"
+msgstr ""
+
+#: mail/templates/mails/opportunity/opportunity_removed.html:5
+msgid "Opportunity update"
+msgstr ""
+
+#: mail/templates/mails/opportunity/opportunity_respond_applicant.html:5
+msgid "Opportunity Request"
+msgstr ""
+
+#: mail/templates/mails/opportunity/opportunity_respond_applicant.html:34
+msgid "Go to applicant list"
+msgstr ""
+
+#: mail/templates/mails/payments/new_payment_created.html:5
+msgid "Payment Request"
+msgstr ""
+
+#: mail/templates/mails/payments/new_payment_created.html:30
+msgid "PROCEED TO PAYMENT"
+msgstr ""
+
+#: mail/templates/mails/payments/payment_received.html:5
+msgid "Payment Received"
+msgstr ""
+
+#: mail/templates/mails/registration/invitation_agreement.html:12
+msgid ""
+"\n"
+"        You were invited to join the OpenExO Community, so we would like to "
+"remind you that access is still available.\n"
+"    "
+msgstr ""
+
+#: mail/templates/mails/registration/invitation_agreement.html:20
+msgid "SIGN UP"
+msgstr ""
+
+#: mail/templates/mails/registration/invitation_agreement.html:28
+msgid ""
+"\n"
+"                To continue the process you will be required to accept our "
+"general agreement.\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/registration/invitation_agreement.html:33
+msgid ""
+"\n"
+"                Once you have completed this step you will be able to access "
+"OpenExO, the platform that supports the OpenExO Community activity and "
+"projects.\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/registration/invitation_on_boarding.html:24
+msgid ""
+"\n"
+"                To continue the process you will be required to add some "
+"basic data about yourself. Once you have completed this step you will be "
+"able to access OpenExO, the platform that supports OpenExO Community "
+"activity projects.\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/registration/invitation_user.html:34
+msgid "JOIN"
+msgstr ""
+
+#: mail/templates/mails/survey/result_user.html:5
+msgid "ExQ Result"
+msgstr "Resultados ExQ"
+
+#: mail/templates/mails/survey/result_user.html:16
+msgid "Thank you for filling out the ExQ Survey"
+msgstr "Gracias por completar la encuesta ExQ para"
+
+#: mail/templates/mails/survey/result_user.html:17
+msgid "The ExQ value is"
+msgstr "El coeficiente exponencial es"
+
+#: mail/templates/mails/survey/result_user.html:21
+msgid "Results per ExO Attribute"
+msgstr "Resultados por atributo"
+
+#: mail/templates/mails/survey/result_user.html:23
+msgid "out of"
+msgstr "sobre"
+
+#: mail/templates/mails/survey/result_user.html:28
+msgid "Kind regards"
+msgstr "Saludos cordiales"
+
+#: mail/templates/mails/survey/result_user.html:29
+msgid "OpenExO Team"
+msgstr "El equipo de OpenExO"
+
+#: mail/templates/mails/swarm/qa_session_advisor_selected.html:12
+#: mail/templates/mails/swarm/reminder_advisor_qa_session.html:16
+#, python-format
+msgid ""
+"\n"
+"                Swarm Session with %(project_name)s\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/swarm/qa_session_advisor_selected.html:27
+#, python-format
+msgid ""
+"\n"
+"                    You have been selected as an ExO Advisor for a Swarm "
+"Session with %(project_name)s.\n"
+"                "
+msgstr ""
+
+#: mail/templates/mails/swarm/qa_session_advisor_selected.html:41
+#, python-format
+msgid ""
+"\n"
+"        Access this Swarm Session from <a href=\"%(domain)s%(my_jobs_url)s\" "
+"class=\"link-nostyle\" style=\"\">My jobs</a>.\n"
+"    "
+msgstr ""
+
+#: mail/templates/mails/swarm/qa_session_summary.html:16
+msgid ""
+"\n"
+"                    Here is a brief summary of your Swarm Session.\n"
+"                "
+msgstr ""
+
+#: mail/templates/mails/swarm/qa_session_summary.html:30
+msgid "Summary"
+msgstr ""
+
+#: mail/templates/mails/swarm/qa_session_summary.html:35
+#, python-format
+msgid ""
+"\n"
+"                    Your team asked the Advisors <strong>%(total_questions)s "
+"questions.</strong>\n"
+"                "
+msgstr ""
+
+#: mail/templates/mails/swarm/qa_session_summary.html:41
+#, python-format
+msgid ""
+"\n"
+"                    You received a total of <strong>%(your_answers)s  "
+"answers </strong> to your questions.\n"
+"                "
+msgstr ""
+
+#: mail/templates/mails/swarm/qa_session_summary.html:47
+#, python-format
+msgid ""
+"\n"
+"                    <strong>Average rating</strong> your team gave to our "
+"Advisors:  %(rating)s/5.\n"
+"                "
+msgstr ""
+
+#: mail/templates/mails/swarm/qa_session_summary.html:56
+msgid "See Swarm Session"
+msgstr ""
+
+#: mail/templates/mails/swarm/reminder_advisor_qa_session.html:32
+#, python-format
+msgid ""
+"\n"
+"                        Your <strong>Swarm Session with %(project_name)s is "
+"scheduled for tomorrow</strong>. In Swarm Sessions, you’ll be part of a "
+"group of ExO Advisors decending upon questions in real time.\n"
+"                    "
+msgstr ""
+
+#: mail/templates/mails/swarm/reminder_advisor_qa_session.html:36
+#, python-format
+msgid ""
+"\n"
+"                    Your <strong>Swarm Session with %(project_name)s will "
+"begin in 1 hour</strong>. In Swarm Sessions, you’ll be part of a group of "
+"ExO Advisors decending upon questions in real time.\n"
+"                    "
+msgstr ""
+
+#: mail/templates/mails/swarm/reminder_advisor_qa_session.html:51
+#, python-format
+msgid ""
+"\n"
+"        Prior to the session, you may have access to information on the "
+"transformation project you will be addressing. These documents will enable "
+"you to be prepared for the session.<br>\n"
+"        <p>During the session:</p>\n"
+"        <ul>\n"
+"            <li>You will be asked questions from multiple teams at once. </"
+"li>\n"
+"            <li>Answer the questions that interest you.</li>\n"
+"            <li>The others ExO Advisors will be answering the same "
+"questions. You will be able to see their responses and build on what they "
+"say.</li>\n"
+"        </ul>\n"
+"        Access this Swarm Session from <a href=\"%(domain)s%(my_jobs_url)s\" "
+"class=\"link-nostyle\" style=\"color:#1E88E5\">My jobs</a>.\n"
+"    "
+msgstr ""
+
+#: mail/templates/mails/swarm/reminder_participant_qa_session.html:20
+msgid ""
+"\n"
+"                    Your team’s <strong>Swarm Session is scheduled for "
+"tomorrow</strong>. In Swarm Sessions, your questions will be decended upon "
+"by a group of ExO Advisors working on the problem in real time.\n"
+"                    "
+msgstr ""
+
+#: mail/templates/mails/swarm/reminder_participant_qa_session.html:24
+msgid ""
+"\n"
+"                    Your team’s <strong>Swarm Session will begin in 1 hour</"
+"strong>. In Swarm Sessions, your questions will be decended upon by a group "
+"of ExO Advisors working on the problem in real time.\n"
+"                    "
+msgstr ""
+
+#: mail/templates/mails/swarm/reminder_participant_qa_session.html:39
+msgid ""
+"\n"
+"        Once the clock starts, your time is limited. To get the most out of "
+"this experience, you can prepare by:<br>\n"
+"        <ul>\n"
+"            <li>Adding your questions in advance prior to your session.</"
+"li>\n"
+"            <li>Asking more questions during the session</li>\n"
+"        </ul>\n"
+"        After the session, you will continue to have access to it.\n"
+"    "
+msgstr ""
+
+#: mail/templates/mails/swarm/reminder_participant_qa_session.html:51
+msgid "Add question"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/set_back_requested_from_open_to_target_advisor_applied.html:5
+#: mail/templates/mails/ticket/applicant/ticket_back_requested_from_target_to_open.html:5
+#: mail/templates/mails/ticket/applicant/ticket_dialog_item_advisor.html:5
+#: mail/templates/mails/ticket/applicant/ticket_dialog_item_team.html:5
+#: mail/templates/mails/ticket/applicant/ticket_new_nominated_applicant.html:5
+#: mail/templates/mails/ticket/applicant/ticket_new_open_applicant.html:5
+#: mail/templates/mails/ticket/applicant/ticket_opportunity_open_again.html:5
+#: mail/templates/mails/ticket/session/ticket_session_set_advisor.html:5
+#: mail/templates/mails/ticket/session/ticket_session_set_team.html:5
+msgid "ExO Advisor Opportunity"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/set_back_requested_from_open_to_target_advisor_applied.html:5
+msgid "This Opportunity Has Changed"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/set_back_requested_from_open_to_target_advisor_applied.html:15
+msgid ""
+"The Delivery Manager, has changed the following opportunity and you have "
+"been selected as the advisor for this session. The next step is for you and "
+"the team to schedule a session to meet."
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/set_back_requested_from_open_to_target_advisor_applied.html:22
+#: mail/templates/mails/ticket/applicant/ticket_back_requested_from_target_to_open.html:24
+#: mail/templates/mails/ticket/applicant/ticket_new_nominated_applicant.html:25
+#: mail/templates/mails/ticket/applicant/ticket_new_open_applicant.html:22
+#: mail/templates/mails/ticket/applicant/ticket_opportunity_open_again.html:22
+#: mail/templates/mails/ticket/reminders/ticket_remember_request_blocked_after_ten_days.html:29
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verified.html:22
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verify_after_four_days.html:35
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verify_after_ten_days.html:35
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_back_to_requested.html:30
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_team.html:31
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_team_by_advisor.html:39
+msgid "SEE REQUEST"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_acceptance_response.html:5
+#: mail/templates/mails/ticket/applicant/ticket_declination_response.html:5
+#: mail/templates/mails/ticket/applicant/ticket_recommend_someone.html:5
+#: mail/templates/mails/ticket/applicant/ticket_remove_accepted_applicant.html:5
+#: mail/templates/mails/ticket/applicant/ticket_respond_open_applicant.html:5
+#: mail/templates/mails/ticket/applicant/ticket_response_cancelled_by_advisor.html:5
+#: mail/templates/mails/ticket/applicant/ticket_target_cancelled_advisor.html:5
+#: mail/templates/mails/ticket/reminders/ticket_remember_request_blocked_after_ten_days.html:5
+msgid "ExO Advisor Request"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_acceptance_response.html:5
+msgid "Request accepted"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_acceptance_response.html:20
+#: mail/templates/mails/ticket/applicant/ticket_declination_response.html:20
+#: mail/templates/mails/ticket/applicant/ticket_dialog_item_advisor.html:20
+#: mail/templates/mails/ticket/applicant/ticket_respond_open_applicant.html:21
+#: mail/templates/mails/ticket/applicant/ticket_response_cancelled_by_advisor.html:12
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_team.html:12
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_team_by_advisor.html:12
+#: mail/templates/mails/ticket/session/ticket_session_set_team.html:12
+msgid "Hello team"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_acceptance_response.html:23
+#, python-format
+msgid ""
+"\n"
+"                <strong>%(applicant_full_name)s</strong> accepted your "
+"request for <strong>%(ticket_subject)s</strong>\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_acceptance_response.html:32
+msgid "CONTACT WITH COLLABORATOR"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_acceptance_response.html:38
+#: mail/templates/mails/ticket/applicant/ticket_respond_open_applicant.html:39
+msgid "Availability"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_applicant_not_selected.html:5
+msgid "ExO Advisor Opportunity Reply"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_applicant_not_selected.html:15
+msgid ""
+"\n"
+"                Thank you for applying for this opportunity.\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_applicant_not_selected.html:39
+msgid "Go to opportunity list"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_back_requested_from_target_to_open.html:5
+msgid "This Opportunity Is Now Available"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_back_requested_from_target_to_open.html:15
+#, python-format
+msgid ""
+"\n"
+"                    %(user_from_full_name)s, Delivery Manager, has changed "
+"the following opportunity and opened it to the entire ExO Advisor hub. This "
+"means that other members can respond to it too. You will receive an email in "
+"the event the team schedules the session with you.\n"
+"                "
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_declination_response.html:5
+msgid "Request declined"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_declination_response.html:23
+#, python-format
+msgid ""
+"\n"
+"                <strong>%(applicant_name)s</strong> declined your request "
+"for <strong>%(ticket_subject)s</strong>\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_dialog_item_advisor.html:5
+msgid "Availability updated"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_dialog_item_advisor.html:23
+#, python-format
+msgid ""
+"\n"
+"                <strong>%(applicant_full_name)s</strong> added time slots "
+"for <strong>%(ticket_subject)s</strong>\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_dialog_item_advisor.html:34
+msgid "New availability"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_dialog_item_advisor.html:41
+msgid "MANAGE THIS REQUEST"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_dialog_item_team.html:5
+msgid "Availability proposed"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_dialog_item_team.html:15
+#, python-format
+msgid ""
+"\n"
+"                <strong>%(team_member_full_name)s</strong> proposed new time "
+"slots for\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_dialog_item_team.html:26
+msgid "Proposed time slots"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_dialog_item_team.html:33
+msgid "MANAGE THIS OPPORTUNITY"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_dialog_item_team.html:36
+#: mail/templates/mails/ticket/applicant/ticket_new_nominated_applicant.html:28
+#: mail/templates/mails/ticket/applicant/ticket_new_open_applicant.html:25
+#: mail/templates/mails/ticket/applicant/ticket_opportunity_open_again.html:25
+msgid "Or"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_dialog_item_team.html:39
+#: mail/templates/mails/ticket/applicant/ticket_new_nominated_applicant.html:31
+#: mail/templates/mails/ticket/applicant/ticket_new_open_applicant.html:28
+#: mail/templates/mails/ticket/applicant/ticket_opportunity_open_again.html:28
+#, python-format
+msgid ""
+"\n"
+"            Contact the %(team_manager_label)s if you need more information\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_new_nominated_applicant.html:5
+msgid "You have been requested for a session"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_new_nominated_applicant.html:16
+msgid ""
+"\n"
+"                     has requested you as an ExO Advisor for a session with "
+"the Sprint team. Details are shown below:\n"
+"                "
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_new_open_applicant.html:5
+msgid "ExO Advisor Request Available"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_new_open_applicant.html:12
+msgid "Hello ExO Collaborators"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_new_open_applicant.html:15
+msgid ""
+"has launched a new ExO Advisor Opportunity. Details about the request are "
+"shown  below:"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_opportunity_open_again.html:5
+msgid "Opportunity available again"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_opportunity_open_again.html:15
+msgid ""
+"This opportunity for ExO Advisor is available again and you can apply  to it "
+"if you are interested in participating"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_recommend_someone.html:5
+msgid "New recommendation for Advisor request"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_recommend_someone.html:12
+#: mail/templates/mails/ticket/applicant/ticket_remove_accepted_applicant.html:12
+#: mail/templates/mails/user/verification_email_address.html:9
+#: mail/templates/mails/user/welcome_simple_user.html:9
+msgid "Hi"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_recommend_someone.html:14
+msgid "has recommended an advisor for the following request:"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_recommend_someone.html:21
+#, python-format
+msgid ""
+"Below are the details provided by %(referee_consultant_short_name)s below:"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_recommend_someone.html:22
+msgid "Advisor name:"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_recommend_someone.html:23
+msgid "Email:"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_recommend_someone.html:25
+msgid "LinkedIn profile:"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_recommend_someone.html:28
+msgid "Comments:"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_remove_accepted_applicant.html:5
+msgid "The ExO Advisor request you accepted has been canceled"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_remove_accepted_applicant.html:15
+msgid "This request has been canceled"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_remove_accepted_applicant.html:25
+msgid "For further information, you may reply directly to this email."
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_respond_open_applicant.html:5
+msgid "New response"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_respond_open_applicant.html:24
+#, python-format
+msgid ""
+"\n"
+"                <strong>%(applicant_full_name)s</strong> responded to your "
+"request <strong>%(ticket_subject)s</strong>\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_respond_open_applicant.html:33
+msgid "GIVE AN ANSWER"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_respond_open_applicant.html:43
+msgid "Why do you think that this Advisor is a good candidate?"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_respond_open_applicant.html:56
+msgid "Speaks"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_respond_open_applicant.html:74
+msgid "See full profile"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_response_cancelled_by_advisor.html:5
+msgid "Response Cancelled"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_response_cancelled_by_advisor.html:15
+#, python-format
+msgid ""
+"\n"
+"                <strong>%(applicant_full_name)s</strong> is no longer "
+"available for\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_response_cancelled_by_advisor.html:33
+msgid ""
+"\n"
+"        As your ExO Advisor request was unable to be fulfilled by the "
+"advisor of your choice that advisory request is available again. You can "
+"create a new ExO Advisor request for this topic in OpenExO.\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_target_cancelled_advisor.html:5
+msgid "Opportunity canceled"
+msgstr ""
+
+#: mail/templates/mails/ticket/applicant/ticket_target_cancelled_advisor.html:15
+#, python-format
+msgid ""
+"\n"
+"                <strong>%(team_member_full_name)s</strong> canceled the ExO "
+"Advisor Opportunity you had been requested for:\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/ticket/common/ticket_cancelled_reply_info.html:3
+#, python-format
+msgid ""
+"\n"
+"    You can reply directly to this email to contact %(contact_name)s or send "
+"an email to <a href=\"mailto:support@openexo.com\" class=\"link"
+"\">support@openexo.com</a> to ask for further information about this "
+"change.\n"
+"    "
+msgstr ""
+
+#: mail/templates/mails/ticket/common/ticket_due_date.html:5
+msgid "Duration"
+msgstr ""
+
+#: mail/templates/mails/ticket/common/ticket_due_date.html:13
+msgid "Needed by"
+msgstr ""
+
+#: mail/templates/mails/ticket/common/ticket_header.html:2
+#, python-format
+msgid ""
+"\n"
+"ExO %(type_project)s with %(project_name)s\n"
+msgstr ""
+
+#: mail/templates/mails/ticket/common/ticket_languages.html:4
+msgid "Languages"
+msgstr ""
+
+#: mail/templates/mails/ticket/common/ticket_project_context.html:4
+msgid "with"
+msgstr ""
+
+#: mail/templates/mails/ticket/common/ticket_project_timezone.html:6
+msgid "Project time zone"
+msgstr ""
+
+#: mail/templates/mails/ticket/common/ticket_session_details.html:6
+msgid "Session details"
+msgstr ""
+
+#: mail/templates/mails/ticket/common/ticket_session_details.html:8
+#: mail/templates/mails/ticket/session/ticket_session_set_advisor.html:48
+msgid "ExO Advisor"
+msgstr ""
+
+#: mail/templates/mails/ticket/common/ticket_session_details.html:11
+msgid "Project"
+msgstr ""
+
+#: mail/templates/mails/ticket/confirm/ticket_confirm_advisor.html:5
+#: mail/templates/mails/ticket/confirm/ticket_session_confirmed.html:5
+#: mail/templates/mails/ticket/confirm/ticket_session_verified_advisor.html:5
+#: mail/templates/mails/ticket/confirm/ticket_session_verified_financial.html:5
+#: mail/templates/mails/ticket/feedback/ticket_how_was_the_session_coach_and_team.html:5
+#: mail/templates/mails/ticket/feedback/ticket_summary_feedback_advisor.html:5
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verified.html:5
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verify_after_four_days.html:5
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verify_after_ten_days.html:5
+#: mail/templates/mails/ticket/reminders/ticket_reminder_claim_session_after_two_days.html:5
+#: mail/templates/mails/ticket/reminders/ticket_reminder_go_to_evaluate_after_two_days.html:5
+#: mail/templates/mails/ticket/reminders/ticket_reminder_session_unverify_after_evaluate.html:5
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_advisor.html:5
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_back_to_requested.html:5
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_team.html:5
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_team_by_advisor.html:5
+#: mail/templates/mails/ticket/session/ticket_session_claimed.html:5
+#: mail/templates/mails/ticket/session/ticket_session_disconfirmed_advisor.html:5
+#: mail/templates/mails/ticket/session/ticket_session_disconfirmed_financial.html:5
+msgid "ExO Advisor Session"
+msgstr ""
+
+#: mail/templates/mails/ticket/confirm/ticket_confirm_advisor.html:5
+msgid "Evaluate the Session"
+msgstr ""
+
+#: mail/templates/mails/ticket/confirm/ticket_confirm_advisor.html:15
+msgid ""
+"\n"
+"                It would be great to get your feedback on your session for:\n"
+"                "
+msgstr ""
+
+#: mail/templates/mails/ticket/confirm/ticket_confirm_advisor.html:24
+#: mail/templates/mails/ticket/reminders/ticket_reminder_go_to_evaluate_after_two_days.html:25
+msgid "GO TO EVALUATION"
+msgstr ""
+
+#: mail/templates/mails/ticket/confirm/ticket_session_confirmed.html:5
+msgid "Session Evaluated"
+msgstr ""
+
+#: mail/templates/mails/ticket/confirm/ticket_session_confirmed.html:15
+msgid "has evaluated the session for:"
+msgstr ""
+
+#: mail/templates/mails/ticket/confirm/ticket_session_confirmed.html:23
+msgid "LEAVE YOUR FEEDBACK"
+msgstr ""
+
+#: mail/templates/mails/ticket/confirm/ticket_session_confirmed.html:26
+#: mail/templates/mails/ticket/session/ticket_session_claimed.html:35
+msgid "VERIFY SESSION"
+msgstr ""
+
+#: mail/templates/mails/ticket/confirm/ticket_session_confirmed.html:36
+#, python-format
+msgid ""
+"\n"
+"            If you attended the session, please tell us about your "
+"experience with %(applicant_name)s.\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/ticket/confirm/ticket_session_confirmed.html:41
+#, python-format
+msgid ""
+"\n"
+"                <strong>OpenExO needs your verification</strong> to issue "
+"the payment for the session. Please confirm that you met with "
+"%(applicant_name)s.\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/ticket/confirm/ticket_session_verified_advisor.html:5
+#: mail/templates/mails/ticket/confirm/ticket_session_verified_financial.html:5
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verified.html:5
+msgid "Session verified"
+msgstr ""
+
+#: mail/templates/mails/ticket/confirm/ticket_session_verified_advisor.html:15
+msgid "Thank you for your collaboration."
+msgstr ""
+
+#: mail/templates/mails/ticket/confirm/ticket_session_verified_advisor.html:16
+msgid ""
+"Your session has been verified by the team. You are  almost ready for "
+"payment."
+msgstr ""
+
+#: mail/templates/mails/ticket/confirm/ticket_session_verified_advisor.html:27
+msgid ""
+"\n"
+"            Please send your invoice to <a href=\"mailto:finance@openexo.com"
+"\" class=\"link\">finance@openexo.com</a>. You can review the attached "
+"invoice and instructions before submitting.\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/ticket/confirm/ticket_session_verified_financial.html:15
+msgid ""
+"The following ExO Advisor session has been verified by the team. We will now "
+"issue payment."
+msgstr ""
+
+#: mail/templates/mails/ticket/feedback/ticket_how_was_the_session_coach_and_team.html:5
+msgid "Please give us your feedback"
+msgstr ""
+
+#: mail/templates/mails/ticket/feedback/ticket_how_was_the_session_coach_and_team.html:15
+msgid "Please give us your feedback on your experience with the session for:"
+msgstr ""
+
+#: mail/templates/mails/ticket/feedback/ticket_how_was_the_session_coach_and_team.html:23
+#: mail/templates/mails/ticket/reminders/ticket_reminder_session_unverify_after_evaluate.html:22
+msgid "Verify Session"
+msgstr ""
+
+#: mail/templates/mails/ticket/feedback/ticket_how_was_the_session_coach_and_team.html:26
+msgid "EVALUATE"
+msgstr ""
+
+#: mail/templates/mails/ticket/feedback/ticket_how_was_the_session_coach_and_team.html:37
+#, python-format
+msgid ""
+"\n"
+"            <strong>OpenExO needs your verification</strong> to issue the "
+"payment for the session. Please confirm that you met with "
+"%(applicant_name)s.\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/ticket/feedback/ticket_how_was_the_session_coach_and_team.html:43
+#, python-format
+msgid ""
+"\n"
+"            <strong>To improve the experience, OpenExO team would like your "
+"feedback on the session.</strong> Please confirm that you met with "
+"%(applicant_name)s and evaluate the session.\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/ticket/feedback/ticket_summary_feedback_advisor.html:5
+msgid "Session feedback"
+msgstr ""
+
+#: mail/templates/mails/ticket/feedback/ticket_summary_feedback_advisor.html:15
+#, python-format
+msgid ""
+"\n"
+"            Please find a summary of the latest feedback from <strong>"
+"%(team_name)s</strong> for:\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/ticket/feedback/ticket_summary_feedback_advisor.html:25
+msgid "See more in OpenExO"
+msgstr ""
+
+#: mail/templates/mails/ticket/feedback/ticket_summary_feedback_advisor.html:34
+msgid "Total respondents:"
+msgstr ""
+
+#: mail/templates/mails/ticket/feedback/ticket_summary_feedback_advisor.html:43
+msgid "Overall experience:"
+msgstr ""
+
+#: mail/templates/mails/ticket/feedback/ticket_summary_feedback_advisor.html:48
+msgid "Knowledge about the topic"
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_remember_request_blocked_after_ten_days.html:5
+msgid "This request needs assistance"
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_remember_request_blocked_after_ten_days.html:15
+msgid ""
+"The following Advisor Request was made 10 days ago and has not been "
+"fulfilled:"
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_remember_request_blocked_after_ten_days.html:24
+msgid ""
+"You may contact the requester to see if this request still remains active  "
+"or if they need any assistance finding the right ExO Advisor."
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verified.html:15
+msgid "The following session has been verified:"
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verified.html:31
+msgid ""
+"You can initiate the payment process by adding it to the financial project "
+"documentation."
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verify_after_four_days.html:5
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verify_after_ten_days.html:5
+msgid "Session not yet verified"
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verify_after_four_days.html:15
+msgid ""
+"\n"
+"                The following session was scheduled to take place "
+"<strong>four days ago</strong> and has not been yet verified:\n"
+"                "
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verify_after_four_days.html:28
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verify_after_ten_days.html:28
+msgid ""
+"\n"
+"            You might find out if the session was fulfilled or if they need "
+"help completing the process\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_remember_session_verify_after_ten_days.html:15
+msgid ""
+"\n"
+"                The following session was scheduled to take place "
+"<strong>ten days ago</strong> and has not been yet verified:\n"
+"                "
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_reminder_claim_session_after_two_days.html:5
+msgid "Follow up Session"
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_reminder_claim_session_after_two_days.html:15
+msgid ""
+"This session took place two days ago and has not been verified yet. Remember "
+"you can send a reminder message to accelerate the verification process by "
+"selecting the follow-up button found below."
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_reminder_claim_session_after_two_days.html:23
+msgid "SESSION FOLLOW-UP"
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_reminder_go_to_evaluate_after_two_days.html:5
+msgid "Evaluation of the Session"
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_reminder_go_to_evaluate_after_two_days.html:15
+msgid ""
+"\n"
+"               It would be great to know your evaluation regarding your "
+"session for:\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_reminder_session_unverify_after_evaluate.html:5
+msgid "Session evaluated"
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_reminder_session_unverify_after_evaluate.html:15
+msgid "would like to follow-up on session for:"
+msgstr ""
+
+#: mail/templates/mails/ticket/reminders/ticket_reminder_session_unverify_after_evaluate.html:31
+#, python-format
+msgid ""
+"\n"
+"        <strong>OpenExO needs your verification</strong> to issue the "
+"payment for the session. Please verify that %(applicant_name)s made it.\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_advisor.html:5
+msgid "Session has been cancelled"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_advisor.html:15
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_team.html:15
+#: mail/templates/mails/ticket/session/ticket_session_disconfirmed_advisor.html:15
+#: mail/templates/mails/ticket/session/ticket_session_disconfirmed_financial.html:15
+msgid "Delivery Manager"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_advisor.html:15
+msgid "has cancelled the session for:"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_back_to_requested.html:5
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_team.html:5
+msgid "Session canceled"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_back_to_requested.html:15
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_team.html:15
+msgid "cancelled the session for:"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_team_by_advisor.html:5
+msgid "This session has been cancelled"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_team_by_advisor.html:15
+#, python-format
+msgid ""
+"\n"
+"                    Unfortunately <strong>%(applicant_full_name)s</strong> "
+"cancelled the session for:\n"
+"                "
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_cancelled_team_by_advisor.html:31
+msgid ""
+"\n"
+"            As your ExO Advisor request was unable to be fulfilled by the "
+"advisor of your choice that ticket is available again. You can create a new "
+"ExO Advisor request for this topic in OpenExO.\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_claimed.html:5
+msgid "Session Follow-up"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_claimed.html:15
+msgid "wants to follow-up on the session for:"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_claimed.html:28
+#, python-format
+msgid ""
+"\n"
+"            <strong>OpenExO needs to verify the session</strong> in order to "
+"issue payment. Please confirm that a meeting with your team took place with "
+"%(applicant_name)s.\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_disconfirmed_advisor.html:5
+msgid "Session Verification Eliminated"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_disconfirmed_advisor.html:15
+msgid "As you may be aware"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_disconfirmed_advisor.html:15
+msgid "eliminated the verification for the session:"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_disconfirmed_financial.html:5
+msgid "Session Confirmation Eliminated"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_disconfirmed_financial.html:15
+msgid "eliminated the confirmation for the session:"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_disconfirmed_financial.html:34
+msgid ""
+"Please, do not issue the payment for this session even though you have "
+"received the invoice."
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_set_advisor.html:5
+#: mail/templates/mails/ticket/session/ticket_session_set_team.html:5
+msgid "Session scheduled"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_set_advisor.html:15
+#, python-format
+msgid ""
+"\n"
+"                <strong>%(team_member_full_name)s</strong> scheduled the "
+"session for\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_set_advisor.html:32
+#: mail/templates/mails/ticket/session/ticket_session_set_team.html:32
+msgid "ZOOM MEETING ROOM"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_set_advisor.html:41
+msgid ""
+"Please take note that the following text will act as a Statement of Work for "
+"your participation in the project mentioned  previously above."
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_set_advisor.html:44
+msgid ""
+"You will carry out consulting tasks for ExO Works Europe, SLU (“OpenExO”). "
+"The consulting services you will supply and the compensation you will "
+"receive are stated below. This message constitutes a statement of Work "
+"between you and OpenExO with respect to those services and is governed by "
+"the Consulting Agreement between you and OpenExO that you have accepted "
+"beforehand."
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_set_advisor.html:48
+msgid "Role"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_set_advisor.html:49
+msgid "Compensation"
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_set_advisor.html:59
+msgid ""
+"\n"
+"            Please attach a copy of your national identity document or "
+"passport to the invoice as required by the Spanish tax authorities. Payment "
+"should be made  within 30 days after invoice date.\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/ticket/session/ticket_session_set_team.html:15
+#, python-format
+msgid ""
+"\n"
+"                <strong>%(team_member_full_name)s</strong> set the session "
+"for\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/user/request_user_contact.html:5
+msgid "Contact Request"
+msgstr ""
+
+#: mail/templates/mails/user/request_user_contact.html:27
+#, python-format
+msgid ""
+"\n"
+"                    %(requester_name)s, an OpenExO Community Member would "
+"like to connect with you.\n"
+"                "
+msgstr ""
+
+#: mail/templates/mails/user/request_user_contact.html:47
+msgid "CONNECT BY EMAIL"
+msgstr ""
+
+#: mail/templates/mails/user/request_user_contact.html:61
+#, python-format
+msgid ""
+"\n"
+"        If the button above doesn’t work, you can connect with "
+"%(requester_name)s sending a direct email to: <a class=\"text-blue link\" "
+"href=\"mailto:%(requester_email)s\">%(requester_email)s</a>.\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/user/verification_email_address.html:11
+msgid "You have changed your email address in OpenExO."
+msgstr ""
+
+#: mail/templates/mails/user/verification_email_address.html:16
+msgid "Please verify this email by clicking the button below."
+msgstr ""
+
+#: mail/templates/mails/user/verification_email_address.html:17
+msgid "Verify email"
+msgstr ""
+
+#: mail/templates/mails/user/verification_email_address.html:25
+msgid ""
+"\n"
+"                This verification has been sent either because you have "
+"changed your email during the sign up process or you have changed it in your "
+"personal area in OpenExO.<br>\n"
+"                If you did not request this change, please contact us in "
+"support@openexo.com\n"
+"            "
+msgstr ""
+
+#: mail/templates/mails/user/verification_email_address.html:31
+msgid ""
+"If you didn't request this change, please contact us in support@openexo.com"
+msgstr ""
+
+#: mail/templates/mails/user/welcome_simple_user.html:11
+msgid "Welcome to OpenExO! "
+msgstr ""
+
+#: mail/templates/mails/user/welcome_simple_user.html:12
+msgid ""
+"Below you will find all the information you will need to start using the "
+"platform."
+msgstr ""
+
+#: mail/templates/mails/user/welcome_simple_user.html:20
+msgid "You may also recover or change your password here."
+msgstr ""
+
+#: mail/templates/mails/user/welcome_simple_user.html:22
+msgid ""
+"\n"
+"           If you have any questions or feedback simply reply to this email "
+"and we will get back to you as soon as possible.\n"
+"        "
+msgstr ""
+
+#: mail/templates/mails/user/welcome_simple_user.html:35
+msgid "Recover or change your password"
+msgstr ""
+
+#: mail/templates/mails/workshop/join_workshop_attendee.html:5
+#: mail/templates/mails/workshop/join_workshop_trainer.html:5
+msgid "Attend the ExO Workshop"
+msgstr ""
+
+#: mail/templates/mails/workshop/join_workshop_trainer.html:38
+msgid "GO TO PARTICIPANTS LIST"
+msgstr ""

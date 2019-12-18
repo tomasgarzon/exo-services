@@ -1,0 +1,11 @@
+<nav id="nav">
+  <ul>
+    {{ range $nav := .Site.Data.sections.sections }}
+      <li><a href="#{{ $nav.name | urlize}}" class="active">{{ $nav.name }}</a></li>
+      {{ if eq $nav.name "Agenda" }}
+      <li><a href="#speakers" class="active">ExO Speakers</a></li>
+      {{ end }}
+    {{ end }}
+    <li><a href="#contact" class="active" >Contact</a></li>
+  </ul>
+</nav>

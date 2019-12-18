@@ -1,0 +1,44 @@
+---
+id: 1
+uuid: 8373264e-0417-4c70-9702-95d007378593
+customer: Nash Wilson
+name: Nash Wilson
+content_template: automated
+status: D
+start: !timedelta -3d
+place:
+  name: Frankfurt, Germany
+  place_id: ChIJxZZwR28JvUcRAMawKVBDIgQ
+created_by: !account eb926b17-634c-477d-847c-eda5f35026a2 # Alice
+members:
+  - user: !account eb926b17-634c-477d-847c-eda5f35026a2 # Alice
+    role: Head Coach
+  - user: !account 8ff40e60-f7d8-4e85-8697-9bd83ace8688 # Ann Baldwin
+    role: Sprint Coach
+  - user: !account fce099d0-d70d-4c3e-bb6e-4056708f8808 # Leticia Ferreira
+    role: Sprint Coach
+  - user: !account 5d640164-b7a3-4936-b37e-3ad5a23a2036 # Tina
+    role: Awake Speaker
+  - user: !account 1da6e073-a525-4311-ab7e-ec8748d76100 # Cerdic
+    role: Align Trainer
+  - user: !account 47b10a71-d011-48c2-b359-2a2027191fd8 # Lindsey Allen
+    role: Advisor
+  - user: !account fce099d0-d70d-4c3e-bb6e-4056708f8808 # Leticia Ferreira Dias
+    role: Disruptor
+  - user: !account 299c8c8a-4e4a-4c6b-904a-1b801b7227f1 # Philip Robson
+    role: Disruptor
+  - user: !account 1eae2bfa-3b44-4e3a-8bb7-89f5e24c71a6 # Julius
+    role: Observer
+participants:
+  - name: Ricky Short
+    email: rickyshort@example.com
+  - name: Roy Carter-Woods
+    email: roycarter-woods@example.com
+  - name: Robin Mason
+    email: robinmason@example.com
+  - name: Carole Bishop
+    email: carolebishop@example.com
+  - name: George Bird
+    email: georgebird@example.com
+  - name: Lindsey Newman
+    email: lindseynewman@example.com

@@ -1,0 +1,27 @@
+uuid: 0e568b20-8cc4-47df-af85-443ae40adcea
+name: Coaches
+uuid_related_object: 0d2dbf27-8015-40e8-bf85-3cb111b68b57
+created_by: !account &quality 7749ad25-5128-4644-895f-6b9a70b605bd
+_type: P
+icon: https://cdn.filestackcontent.com/N4Ggba1IRUGib03DvTBE
+users:
+  - user: !account &naina 0737a9f9-22a0-4286-8be3-34a3e19d92dc
+    name:  Naina Lavrova
+    profile_url: /public/profile/naina-lavrova/
+    profile_picture: /media/avatars/48_48/naina-lavrova.jpg
+    short_title: ExO Head Coach
+  - user: !account &amy 1cd07dd7-4883-4838-9b5a-303ef0d6580c
+    name:  Amy Finch
+    profile_url: /public/profile/amy-finch/
+    profile_picture: /media/avatars/48_48/amy-finch.jpg
+    short_title: ExO Sprint Coach
+  - user: !account 299c8c8a-4e4a-4c6b-904a-1b801b7227f1
+    name:  Philip Robson
+    profile_url: /public/profile/philip-robson/
+    profile_picture: /media/avatars/48_48/philip-robson.jpg
+    short_title: ExO Sprint Coach
+messages:
+  - created_by: *naina
+    message: Magni officiis ex perspiciatis incidunt alias. Veniam laborum a debitis voluptates rerum adipisci. Sapiente adipisci ipsam impedit totam.
+  - created_by: *amy
+    message: Porro incidunt sed ab. Eum dignissimos architecto molestiae iusto corrupti veritatis. Officiis asperiores autem expedita. Voluptatem at totam.

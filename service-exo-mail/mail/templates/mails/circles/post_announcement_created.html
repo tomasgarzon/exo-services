@@ -1,0 +1,24 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+  <mj-header-ticket pre-title="{% trans 'New announcement' %}" title="{{post_title}}" />
+{% endblock %}
+
+{% block wrapper-extra-class %}white{% endblock %}
+
+{% block wrapper-image %}
+{% endblock %}
+
+{% block wrapper-title %}
+  {% include "base/user_information.mjml" with image=created_by_profile_picture name=created_by_name user_title=created_by_role %}
+{% endblock %}
+
+{% block content %}
+  <mj-text css-class="post-body-content">{{post_content|safe|truncatewords_html:30}}</mj-text>
+{% endblock %}
+
+{% block call_to_action %}
+  {% trans "Comment" as see_details %}
+  {% include "base/call_to_action.mjml" with call_to_action=see_details %}
+{% endblock %}

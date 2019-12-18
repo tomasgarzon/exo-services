@@ -1,0 +1,122 @@
+{% extends "project/base.html" %}
+
+{% load permission_tags %}
+{% load django_bootstrap_breadcrumbs staticfiles %}
+{% load bootstrap3 project %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "General" "project:project:dashboard" project.id %}
+{% endblock %}
+
+{% block header_action %}
+    {% has_project_perms user "project_manager" project=project as manager_perms %}
+
+    <div class="col-lg-3">
+        {% if not project.supported_version %}
+            <span class="pull-right m-t m-r-md">Not supported by OpenExO</span>
+        {% else %}
+            {% if project.can_be_launch %}
+                <a href="#" data-project_id="{{ project.pk }}" class="btn btn-primary pull-right m-t-8 m-r-md" id="dev__launch" data-date="{{project.start_localize|date_format:"Y-m-d H:i:s"}}">Launch</a>
+            {% endif %}
+            {% if project.real_type.allowed_access %}
+                <a target="_blank" href="{{project.get_frontend_index_url}}" class="pull-right m-t m-r-md text-underline">
+                    {% if project.is_draft %}
+                        Preview
+                    {% else %}
+                        View
+                    {% endif %} {{project.type_project}}
+                </a>
+            {% else %}
+                <span class="pull-right m-t m-r-md">
+                    {% if manager_perms %}
+                        <a href="{% url 'project:project:validations:list' project.pk %}">Please, fix errors</a>
+                    {% else %}
+                        Please, fix errors
+                    {% endif %}
+                </span>
+            {% endif %}
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block main_project %}
+    <div class="row">
+        <div class="col-lg-12">
+            <div class='ibox float-e-margins'>
+                <div class="ibox-title">
+                    <h2>General information about the {{project.type_project|lower}}</h2>
+                </div>
+                <div class="ibox-content">
+                    <form id='form' action="." method="post"
+                        class="styles-form"
+                        enctype='multipart/form-data'
+                        >
+                        <div class="content clearfix p-m m-t-none col-lg-6 col-xs-12">
+                            <div class='row'>
+                                <div class='col-xs-12'>
+                                    {% csrf_token %}
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            Client:
+                                        </label>
+                                        {{project.customer}}
+                                    </div>
+                                    {% if project.partner %}
+                                        <div class="form-group">
+                                            <label class="control-label">
+                                                Partner:
+                                            </label>
+                                            {{project.partner}}
+                                        </div>
+                                    {% endif %}
+                                    {% bootstrap_field form.name %}
+                                    {% bootstrap_field form.template %}
+                                    {% bootstrap_field form.category %}
+                                    {% if form.start %}
+                                        {% bootstrap_field form.start %}
+                                    {% endif %}
+                                    {% if form.description %}
+                                        {% bootstrap_field form.description %}
+                                    {% endif %}
+                                    {% if form.accomplish %}
+                                        {% bootstrap_field form.accomplish %}
+                                    {% endif %}
+                                    {% if form.transform %}
+                                        {% bootstrap_field form.transform %}
+                                    {% endif %}
+                                    {% if form.playground %}
+                                        {% bootstrap_field form.playground %}
+                                    {% endif %}
+                                    {% if form.duration %}
+                                        {% bootstrap_field form.duration %}
+                                    {% endif %}
+                                    {% bootstrap_field form.location %}
+                                    {% bootstrap_field form.place_id %}
+                                    {% bootstrap_field form.timezone %}
+                                    {% if form.agenda %}
+                                        {% bootstrap_field form.agenda %}
+                                    {% endif %}
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            UUID:
+                                        </label>
+                                        {{project.uuid}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="full-width pull-right m-r-xs text-right">
+                                <button class="btn btn-positive-choice" type="submit">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfYpBR8NJD07Yn2NGzyj6wGRr6e6E0628&libraries=places&language=en"></script>
+    <script src="{% static 'project/js/project_form.js' %}"></script>
+{% endblock %}

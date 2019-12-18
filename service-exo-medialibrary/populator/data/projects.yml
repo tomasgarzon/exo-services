@@ -1,0 +1,26 @@
+projects:
+  - uuid: 45ded106-f980-440d-accf-2b4cb22ca108
+    type: workshop
+  - uuid: 139a7ea6-d92e-46bd-890e-5dce7999613b
+    type: workshop
+  - uuid: fad08896-e99d-4252-bf1b-70c62a8422b1
+    type: sprintautomated
+    resources:
+      - name: 01 Context changes research delivery example, Eco Spaces.pdf
+      - name: 06 Business Model Experiment Prioritization example.pdf
+  - uuid: 3df987d5-ee4d-432e-ba7e-76446403a6b4
+    type: sprintautomated
+  - uuid: 9c3bdaef-40fd-4ddc-add4-6810910705e5
+    type: sprintautomated
+  - uuid: eddd3e46-23cf-4405-9483-da9a8dfbae69
+    type: sprintautomated
+  - uuid: 0d69b064-2bdb-418a-8921-086c710ddd62
+    type: sprintautomated
+  - uuid: d840348c-5f60-476c-9342-ddf6ddbb3b36
+    type: sprintautomated
+  - uuid: cdab921b-9439-43a1-b25b-82a0d7274c4f
+    type: sprintautomated
+  - uuid: 1fc57d34-ea98-4c4a-a231-eb608f1e9c85
+    type: sprintautomated
+  - uuid: 0d2dbf27-8015-40e8-bf85-3cb111b68b57
+    type: sprintautomated

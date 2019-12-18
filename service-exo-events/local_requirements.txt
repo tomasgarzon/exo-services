@@ -1,0 +1,6 @@
+# Those libraries will be installed with docker to reduce build time
+
+psycopg2-binary
+pillow
+pilkit
+requests

@@ -1,0 +1,26 @@
+{% load images %}
+{% load user_project %}
+<div class="row">
+    <div class="col-md-12 m-t-none l-h-32 link-user">
+        <div class='m-r-sm pull-left'>
+            <div class="inline img-box">
+                <img alt="{{project.customer.name}}" title="{{project.customer.name}}" src="{% image_thumbnail_url project.customer.profile_picture 24 24 %}" />
+            </div>
+        </div>
+        <div class='media-body pull-left cut-text l-h-20'>
+            <a title="{{project.name}}" href="{{project.get_absolute_url}}" class="cut-text block pull-left full-width">
+                {{project.name|capfirst}}
+            </a><br>
+            <span class="cut-text block clear-both l-h-20 font-little" title="Start-Finish">
+                {{project.start}}
+                {% if project.is_finished %}
+                    - {{project.end}}
+                {% endif %}
+                <br>
+                <span class="label label-status badge badge-rol-{{consultant_project_role.exo_role.code|slugify}}">
+                    {{consultant_project_role.exo_role.name}}
+                </span>
+            </span>
+        </div>
+    </div>
+</div>

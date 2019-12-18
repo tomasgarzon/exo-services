@@ -1,0 +1,28 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="{% trans 'NEW CHAT CONVERSATION' %}" title="{{title}}" />
+{% endblock %}
+
+{% block wrapper-extra-class %}white{% endblock %}
+
+{% block wrapper-title %}
+    {% include "base/user_information.mjml" with name=user_from_full_name user_title=user_from_title image=user_from_profile_picture %}
+{% endblock %}
+
+{% block content %}
+    <mj-wrapper>
+        <mj-section padding="0">
+            <mj-column padding="15px" background-color="#EBFBFF" border-radius="8px">
+                <mj-text>{{message}}</mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-wrapper>
+
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "REPLY" as see_details %}
+    {% include "base/call_to_action.mjml" with call_to_action=see_details %}
+{% endblock %}

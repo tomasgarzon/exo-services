@@ -1,0 +1,40 @@
+uuid: 8ff40e60-f7d8-4e85-8697-9bd83ace8688
+short_name: Ann
+full_name: Ann Baldwin
+image: woman/3
+internal_organization:
+  name: ExO Works
+  position: Chief Legal Officer
+  status: Active
+groups:
+  - delivery-manager
+permissions:
+  - exq_access
+place:
+  name: Palo Alto, USA
+  place_id: ChIJORy6nXuwj4ARz3b1NVL1Hw4
+time_zone: America/Los_Angeles
+languages:
+  - English
+  - Spanish
+exo_areas:
+  - Institutions
+industries:
+  - name: Accommodations
+    level: Intermediate
+  - name: Employment
+    level: Advanced
+keywords:
+  - name: A/B Testing
+    level: Can inspire
+  - name: Agile Framework
+    level: Can teach
+exo_attributes:
+  - attribute: Staff on Demand
+    level: I have implemented this several times
+exo_activities:
+  - Advising
+personal_mtp: Ideas worth spreading
+mtp_mastery: I have implemented this several times
+availability: Fulltime
+last_activity: !timedelta -23h

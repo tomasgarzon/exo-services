@@ -1,0 +1,13 @@
+---
+name: Disruption Session assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: False
+  enabled_reflect: False
+blocks:
+  - title: Assignment Objectives
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>No content</p>

@@ -1,0 +1,60 @@
+uuid: f52aeffb-dc89-4ef6-8d4d-cb728ab4ed5b
+short_name: Wilhelm
+full_name: Wilhelm Muller
+status: Active
+image: man/14
+place:
+  name: Berlin, Germany
+  place_id: ChIJAVkDPzdOqEcRcDteW0YgIQQ
+time_zone: Europe/Berlin
+languages:
+  - English
+  - German
+  - Polish
+exo_areas:
+  - Organizations
+  - Peoples
+industries:
+  - name: Education
+    level: Thought leader
+  - name: Music
+    level: Advanced
+  - name: Big Data
+    level: Intermediate
+  - name: Computer
+    level: Intermediate
+exo_attributes:
+  - attribute: Interfaces
+    level: I’m considered a thought leader in this domain
+  - attribute: Dashboards
+    level: I have implemented this several times
+  - attribute: Social Technologies
+    level: I’m considered a thought leader in this domain
+  - attribute: Staff on Demand
+    level: I have implemented this several times
+  - attribute: Algorithms
+    level: I’m considered a thought leader in this domain
+  - attribute: Experimentation
+    level: I have implemented this several times
+  - attribute: Autonomy
+    level: I’m considered a thought leader in this domain
+  - attribute: Leveraged Assets
+    level: I have implemented this several times
+  - attribute: Engagement
+    level: I have implemented this several times
+keywords:
+  - name: Agile Framework
+    level: Can teach
+  - name: Molecular Electronics
+    level: Can speak
+  - name: Optical Computing
+    level: Can inspire
+exo_activities:
+  - Training
+  - Consulting
+  - Advising
+personal_mtp: Spreading knowledge worldwide
+mtp_mastery: I’m considered a thought leader in this domain, and I’ve published articles/papers about it
+availability: Fulltime
+marketplace_agreement_signed: true
+last_activity: !timedelta -14h

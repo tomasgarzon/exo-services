@@ -1,0 +1,391 @@
+---
+name: Prototype assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/287870122
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287870122" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>It’s time to take your ExO Initiatives to the next level! This week’s assignment is to formally define the assumptions underlying your ideas and prepare to test them further. Start by defining your ExO Core Initiative in greater detail in order to identify the key hypotheses to test.</p>
+      <p>Next, you will start build a Minimum Viable Product (MVP) that will allow you to keep learning about your ExO Core Initiative and improving it.</p>
+      <p>Are you worried you won’t be able to accomplish all this in only one week? You can!</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Further define your ExO Core Initiatives
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>During the last weeks, we have identified external disruptions and defined internal reactions that will help us to adapt the organization to the environment. Also, we have defined what ExO Attributes may need to be implemented. Now, it’s time to think more deeply about the implementation details of the ExO Core Initiatives in order to identify key hypotheses and to test them as soon as possible. Since we may have different types of ExO Core Initiatives, such as internal projects to increase the flexibility or the efficiency of the organization, new products/services, etc. each of them will need to be further defined in a different way. Regardless of how you do it, just be sure to describe the following key aspects of your ExO Core Initiatives:</p>
+              <p><strong>USERS (OR CLIENTS)</strong></p>
+              <p>Who will use (or buy) the solution you are defining? What are the pain points or needs they have? What’s the value your solution will bring to them?</p>
+              <p><strong>STAKEHOLDERS</strong><br>Who will need to approve (or fund) your ExO Initiative internally in your organization? What’s the value you will provide to them?</p>
+              <p><strong>SOLUTION</strong><br>What does the end result of your ExO Core Initiative look like? What will be the user’s experience of it? What will you need to implement it?</p>
+              <p><strong>ECONOMICS</strong><br>What will it cost to implement? How your organization will benefit or get return on investment out of it?</p>
+          - title: Resources
+            subtitle:
+            order: 2
+            type: Text
+            text: |
+              <p>- The book Value Proposition Design, by Alex Osterwalder, will help with the Value Proposition Canvas.</p>
+              <p>- The book Blue Ocean Strategy, by Renée Mauborgne and W. Chan Kim, will help you with the Blue Ocean Strategy Canvas.</p>
+              <p>- You will find plenty of information about how to do Empathy Maps, Customer Journey Map and how to use the rest of the tools we mentioned and find new ones on the Internet.</p>
+          - title: Tips
+            subtitle:
+            order: 3
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                For Pure Core and Edge Core Initiatives, use the tool that best fits the kind of project you are thinking about. For example, if you are thinking of developing an AI-based decision support system for your staff, you may want to use an empathy map; if you are thinking about how to improve or automate the processes of your organization, you may want to base your use case on a process map.
+            - order: 2
+              description: |
+                For Blue Core Initiatives, you may want to use an Empathy Map or Value Proposition Canvas to better understand your customer and a Blue Ocean Strategy Canvas to define the innovative product/service.
+            - order: 3
+              description: |
+                If none of the suggested tools work for your ExO Core Initiative, use any other approach you may know of (or can invent or modify) to further define your ExO Core Initiative.
+            - order: 4
+              description: |
+                Don’t forget to research some numbers about the economics. This could consist of calculating the cost of the ExO Initiative and the return of investment (high accuracy is not needed at this stage) or the pricing model of your product/service and the profitability of it.
+            - order: 5
+              description: |
+                Don’t forget to get clarity about the key elements we mentioned before (users, stakeholders, solution and economics). You may need to define some information (e.g. economics) beside the tools we mentioned before.
+            - order: 6
+              description: |
+                For building ExO Core Initiatives in general, in most cases, we recommend using external technology providers and not building the technology inside the organization (we don’t want to re-invent the wheel). For an Edge Core Initiative that may become a new ExO Edge Initiative in the future, we recommend using external technology providers for a first internal prototype and considering building your own technology in the future once you launch the ExO on the Edge.
+            - order: 7
+              description: |
+                Based on the further definition of your ExO Core Initiatives, consider reviewing/improving its ExO Canvas as well.
+          - title: Tools
+            subtitle:
+            order: 4
+            type: Resource
+            resources:
+              - name: ExO Canvas
+                type: Link
+                status: Available
+                link: /medialibrary/resource/redirect/4Wz8Py2CR0yRO3QLf5sy/ExO_Canvas_AirEco_example.png/
+                description: Example
+                order: 1
+              - name: ExO Canvas
+                type: PDF
+                status: Available
+                link: /medialibrary/resource/redirect/Z3YuJNiRJyaMgQSEn5BR/ExO_Canvas_template.pdf/
+                description: Template
+                order: 2
+      - name: Frame your ExO Core Initiatives within your organization’s business model
+        order: 2
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>In order to analyze the scope and impact your ExO Core Initiatives will have within your current organization, you can include the different elements the ExO Core Initiative will add to your current Business Model (without changing its foundations). Take the Business Model Canvas you defined during the first week and add new sticky notes (with new colors) to it, in order to see how the original Business Model is being impacted (although we can’t completely change it) to fit the ExO Core Initiative.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Use a new color for those new sticky notes that you are adding into your previous Business Model Canvas related to the ExO Core Initiative, so it will be easier to identify how the organization’s Business Model is being improved.
+          - order: 2
+            description: |
+              Remember that ExO Core Initiatives can’t change the business model of the organization, but improve it without changing the way you do business. Otherwise, the idea is likely an ExO Edge Initiative.
+        - title: Tools
+          subtitle:
+          order: 3
+          type: Resource
+          resources:
+            - name: Business model canvas
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/Ux2X02v5T82nehL6GHGV/BMC_template.pdf/
+              description: Template
+              order: 1
+      - name: Identify the key hypotheses you want to evaluate with your MVP
+        order: 3
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>As defined by Eric Ries, an MVP is “a version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort”. We will use the MVP concept to build something that will help us to learn about our ExO Core Initiatives. But before designing and building your MVP, you should think about what you would like to learn after building and testing your MVP. Next step will be to identify the key hypotheses to evaluate at this stage, which will be those that are critical for the success of our ExO Core Initiatives. At this stage, most of the hypotheses will be found into the ExO Canvas, the Business Model Canvas and the further definition of our ExO Core Initiatives we just did in the previous task:</p>
+            <p>ExO Attributes: whether the different ExO Attributes we have defined are the right ones or not, or even if it’s realistic to implement them.</p>
+            <p>Value Proposition: whether your clients, users and stakeholders like our value proposition.</p>
+            <p>Feasibility of the project implementation: whether our implementation will actually work in the way we think it will (especially if it’s based on new technologies).</p>
+            <p>Investment: whether it will be worth to invest in it.</p>
+        - title: Tips
+          subtitle:
+          order: 2
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Each ExO Core Initiative is different so think about the real critical factors that will make your business success or not, those should be your key hypotheses to evaluate.
+          - order: 2
+            description: |
+              To define the success criteria of the sales experiment (especially for ExO Blue Core Initiatives), define meaningful metrics for the process. The right metrics are usually expressed as a percentage that reflects the conversion rate of potential customers from one phase to another. Example: percentage of potential clients who buy the product. This is called Innovation Accounting.
+        - title: Tools
+          subtitle:
+          order: 3
+          type: Resource
+          resources:
+            - name: Identify and evaluate key hypotheses
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/ZXiqjC6jSMy42LTn9gqC/Identify_and_evaluate_key_hypotheses_step_1_template.pdf/
+              description: Template
+              order: 1
+      - name: Define your Minimum Viable Product (MVP)
+        order: 4
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>You don’t need to implement your ExO Core Initiative to start testing it and learning about it. There is no need to waste your time and money building something that no one might want to use or pay for. Instead, experiment with an MVP. Before developing a MVP, think about what the minimum set of features are that it should have at the very beginning. In order to do that, we recommend following the next steps (notice that you may have already done something in the previous tasks):</p>
+            <p>Define the user flow and processes of your ExO Core Initiative, according to the external disruption you detected and the internal reaction you defined.</p>
+            <p>List all necessary features that your ExO Core Initiative needs to have in order to react to the external disruption.</p>
+            <p>Weight each feature by using the ICE approach, which is an acronym for the three factors that should be considered whenever priorities are set: Impact (in terms of value for the user), Cost (in terms of money) and Effort (in terms of time). The way to do it is by giving a value between 2 and 0 to each of these factors, being 2 the most convenient value (the most impact, the less cost and the less effort) and 0 the less convenient one (the less impact, the highest cost and the highest effort).</p>
+            <p>Prioritize the features according to their total ICE value, so we will have the features with a higher ICE, which are the ones we should include in our MVP, on the top of the list.</p>
+            <p>Analyze the results and define what the first version of the MVP could look like according to:</p>
+            <p>- The key hypotheses you need to evaluate. Remember than the main goal of this MVP is to learn so you should take this list of hypotheses into account to define your next experiment: the MVP.</p>
+            <p>- The ICE prioritization and also to the key hypotheses to evaluate.</p>
+            <p>- Also, sometimes you will need to add or remove features of the list for the first MVP version according to links between features (e.g. some of them may be required for the basic version due to technical reasons so you need to add it, others could be too long to develop so you may need to remove it, etc.).</p>
+        - title: Resources
+          subtitle:
+          order: 2
+          type: Text
+          text: |
+            <p>Eric Ries’ book The Lean Startup is a good source for learning about MVPs and the foundation underlying the concept.</p>
+        - title: Tips
+          subtitle:
+          order: 3
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Remember that your goal here is not to have the best implementation of your ExO Initiative, but to develop a product that allows you to learn. To that end, include learning-oriented features and add-ons that will result in further feedback.
+        - title: Tools
+          subtitle:
+          order: 4
+          type: Resource
+          resources:
+            - name: Designing the MVP
+              type: PDF
+              status: Available
+              link: /medialibrary/resource/redirect/W7D8gzz9Su8f5ryMYvbg/Designing_the_MVP_template.pdf/
+              description: Template
+              order: 1
+      - name: Build your MVP!
+        order: 5
+        blocks:
+        - title:
+          subtitle:
+          order: 1
+          type: Text
+          text: |
+            <p>We already have a better definition our ExO Core Initiative, including how the first MVP version of it could look like (according to the ICE prioritization of features). Now, it’s time to build our first MVP in order to try it out with potential users and stakeholders and learn about their feedback, which will be super valuable. There are several techniques to build MVPs, some of them focused on building an actual prototype and others focused on just presenting the idea to your potential users and stakeholders.</p>
+            <p>You will need to pick the one that works better for your ExO Initiative according to the time that you have available. To that end, consider combining the following techniques:</p>
+        - title: LANDING PAGE
+          subtitle:
+          order: 2
+          type: Text
+          text: |
+            <p>This is mainly for Blue Core Initiatives, where we have a value proposition to evaluate with potential clients. We can develop a landing page that shows and describes your MVP (you can also describe your full version of the product/service, since you won’t really need to develop it, although we recommend focusing the landing page on the key features of the MVP). Also, it allows you to allow clients to pre-order the product. You can also run an A/B test, which consists of building two different versions of the landing page with two value propositions and seeing which ones gets better acceptance of visitors.</p>
+        - title: Resources
+          subtitle: |
+            Online landing page creators include:
+          order: 3
+          type: Resource
+          resources:
+            - name: launchrock
+              type: Link
+              status: Available
+              link: http://www.launchrock.com/
+              description:
+              order: 1
+            - name: landerapp
+              type: Link
+              status: Available
+              link: https://landerapp.com/es/
+              description:
+              order: 2
+        - title: How much you will learn
+          subtitle:
+          order: 4
+          type: Text
+          text: |
+            <p>A little bit – How the clients like the value proposition of your product/service and the price, based on the pre-orders they do on the website and the real data you will gather out of it.<p>
+        - title: VIDEO
+          subtitle:
+          order: 5
+          type: Text
+          text: |
+            <p>Create a video that shows and promotes your MVP. Again, this technique is useful when evaluating the value proposition for clients and internal supporters</p>
+        - title: Resources
+          subtitle: |
+            Use a professional video creation service or online tools such as:
+          order: 6
+          type: Resource
+          resources:
+            - name: animoto
+              type: Link
+              status: Available
+              link: https://www.animoto.com/
+              description:
+              order: 1
+            - name: goanimate
+              type: Link
+              status: Available
+              link: https://www.goanimate.com/
+              description:
+              order: 2
+        - title: How much you will learn
+          subtitle:
+          order: 7
+          type: Text
+          text: |
+            <p>Something – How the users/stakeholders like the value proposition of your ExO Core Initiative based on the reactions after watching the video. You can also get data about the price and revenue model by asking for pre-orders (if you are trying to sell something).</p>
+        - title: WIREFRAMES
+          subtitle:
+          order: 8
+          type: Text
+          text: |
+            <p>Build a set of wireframes or digital designs that will help illustrate for clients what your product will look like. This technique is useful when evaluating the value proposition for clients and internal supporters.</p>
+        - title: Resources
+          subtitle: |
+            Use any rapid prototyping tool or even PowerPoint.
+          order: 9
+          type: Resource
+          resources:
+            - name: invisionapp
+              type: Link
+              status: Available
+              link: https://www.invisionapp.com/
+              description:
+              order: 1
+            - name: justinmind
+              type: Link
+              status: Available
+              link: https://www.justinmind.com/
+              description:
+              order: 2
+        - title: How much you will learn
+          subtitle:
+          order: 10
+          type: Text
+          text: |
+            <p>Something more – How the users like the value proposition of your ExO Core Initiative and its details based on the reactions and interactions they do with the wireframes. You can also get data about the price and revenue model by asking for pre-orders (if you are trying to sell something).</p>
+        - title: WORKING PROTOTYPE
+          subtitle:
+          order: 11
+          type: Text
+          text: |
+            <p>Build a prototype that includes only key features that you need to learn. This is actually the real MVP, and in many cases, it’s possible to build it in a few days. Remember, it doesn’t have to be perfect; it just needs to be something that will help you learn over a several-day period.</p>
+        - title: Tips
+          subtitle:
+          order: 12
+          type: Advice
+          advices:
+          - order: 1
+            description: |
+              Compiling a list of prioritized features and the number of hours that each of them will take to develop will tell you whether or not it is possible to have a prototype ready within the next week.
+        - title: How much you will learn
+          subtitle:
+          order: 13
+          type: Text
+          text: |
+            <p>A lot! – How easy/hard is to build/deliver the actual ExO Core Initiative, how the users, clients and/or stakeholders like the value proposition and the user experience based on the interactions with the prototype. You can also get data about the price and revenue model by asking for pre-orders (if you are trying to sell something).</p>
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+    - order: 1
+      description: |
+        Build something that you can use to test your value proposition with users.
+    - order: 2
+      description: |
+        For online channels (landing pages, etc.), don’t forget to implement some mechanism to gather feedback (contact forms, etc.) and data (stats engine, etc.)
+    - order: 3
+      description: |
+        Next week you will be able to keep developing further your MVP, but it’s important to get a first version within the next week.
+    - order: 4
+      description: |
+        Remember that next week you will need to use whatever you build this week in order to reach potential users, clients or stakeholders to learn from them.
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Identify and evaluate key hypotheses
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/ZXiqjC6jSMy42LTn9gqC/Identify_and_evaluate_key_hypotheses_step_1_template.pdf/
+        description: Template
+        order: 1
+      - name: Business model canvas
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/Ux2X02v5T82nehL6GHGV/BMC_template.pdf/
+        description: Template
+        order: 2
+      - name: Business model canvas
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/O3aH1MSuQUqetcrIlwVF/BMC_example.pdf/
+        description: Example
+        order: 3
+      - name: ExO Canvas
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/Z3YuJNiRJyaMgQSEn5BR/ExO_Canvas_template.pdf/
+        description: Template
+        order: 4
+      - name: ExO Canvas
+        type: Link
+        status: Available
+        link: /medialibrary/resource/redirect/4Wz8Py2CR0yRO3QLf5sy/ExO_Canvas_AirEco_example.png/
+        description: Example
+        order: 5
+      - name: Designing the MVP
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/W7D8gzz9Su8f5ryMYvbg/Designing_the_MVP_template.pdf/
+        description: Template
+        order: 6
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

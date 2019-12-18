@@ -1,0 +1,69 @@
+uuid: ef70053f-755b-4b40-bb73-6832d16488e7
+short_name: Gorka
+full_name: Gorka Arrizabalaga
+status: Active
+image: man/8
+bio_me: |
+  Gorka Arrizabalaga joined the ECU faculty in 1989 after nearly ten years on the graduate faculty at Oklahoma State University. Since coming to ECU, he has served on the English Department's Computer and Instructional Technology Committee for over six years and has written grant proposals collaboratively to fund computer-aided classrooms and laboratories. He currently teaches students to use electronic components in his classes in order to collaborate as well as develop information products. Together with Philip Rubens, he helped develop the post-baccalaureate online Certificate in Professional Communication. At both Oklahoma State and East Carolina University, he has served in many administrative positions.
+
+  His advising has been recognized with an ECU 1999 Outstanding Advisor Award for Undergraduate Studies and a national 2000 Outstanding Advisor Award given by the National Academic Advising Association. A Fellow of the Society for Technical Communication, he received the Jay R. Gould Award for Excellence in Teaching Technical Communication. In addition to serving actively in STC activities, he has participated in the Association of Teachers of Technical Writing and Council for Programs in Technical and Scientific Communication.
+
+  His professional career outside of academia includes writing and editing for employers such as NASA (Langley Research Center), Fire Protection Publications ("redbooks" for firefighters), and Carolinas Association of General Contractors.
+
+  An important aspect of his life is family -- his wife (another academic in linguistics and Teaching English as a Second Language), two sons (both studying psychology and philosophy, one a gourmet cook and the other a disc golf champion player), and four cats.
+place:
+  name: Hondarribia, Spain
+  place_id: ChIJ_85dU6AJUQ0RVkBpvH6oo_g
+time_zone: Europe/Madrid
+languages:
+  - Spanish
+  - English
+  - French
+exo_areas:
+  - Organizations
+  - Peoples
+  - Institutions
+industries:
+  - name: Construction
+    level: Thought leader
+  - name: Energy
+    level: Thought leader
+  - name: Biotechnology
+    level: Intermediate
+exo_attributes:
+  - attribute: Interfaces
+    level: I’m considered a thought leader in this domain
+  - attribute: Dashboards
+    level: I have implemented this several times
+  - attribute: Social Technologies
+    level: I’m considered a thought leader in this domain
+  - attribute: Staff on Demand
+    level: I have implemented this several times
+  - attribute: Algorithms
+    level: I’m considered a thought leader in this domain
+  - attribute: Experimentation
+    level: I have implemented this several times
+  - attribute: Autonomy
+    level: I’m considered a thought leader in this domain
+  - attribute: Leveraged Assets
+    level: I have implemented this several times
+  - attribute: Engagement
+    level: I have implemented this several times
+keywords:
+  - name: Ambient Intelligence
+    level: Can inspire
+  - name: Zero-Energy Building
+    level: Can inspire
+exo_activities:
+  - Training
+  - Advising
+  - Coaching
+  - Consulting
+  - Speaking
+personal_mtp: Efficient buildings for a greener world
+mtp_mastery: I’m considered a thought leader in this domain, and I’ve published articles/papers about it
+availability: Fulltime
+user_notifications:
+  - weekly_update
+marketplace_agreement_signed: true
+last_activity: !timedelta -20h

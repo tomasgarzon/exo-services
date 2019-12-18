@@ -1,0 +1,99 @@
+---
+name: Social Phase assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: False
+  enabled_reflect: False
+blocks:
+  - title: Assignment Objectives
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <ul>
+      <li>Iterate your concept and ideas, taking into account local social aspects and perspectives.</li>
+      <li>Identify patterns and opportunities for improvement by speaking to, prototyping for and testing your hypotheses with potential users.</li>
+      <li>Examine the impact of your solution on individuals, families, businesses and society at large. Consider potential negative reactions from regulators and the local community.</li>
+      <li>Make sure your MTP and vision fit the local context.</li>
+      </ul>
+  - title: Evaluation Criteria
+    subtitle:
+    order: 2
+    type: Text
+    text: |
+      <ul><li>Key stakeholders, customer segments and personas were identified.</li><li>A deep understanding of the human aspect of the problem in the local context has been demonstrated.</li><li>A detailed social impact analysis was presented.</li><li>Potential regulatory issues or other risk factors were identified.</li></ul>
+  - title: Deliverables Checklist
+    subtitle:
+    order: 3
+    type: Tasks
+    tasks:
+      - name: Live remote 15-minute presentation by appointed team member(s)
+        order: 1
+        blocks:
+      - name: Sociology of the problem/solution (Customer-personas analysis)
+        order: 2
+        blocks:
+      - name: Social impact potential, evaluated with input from the local population and FTI community
+        order: 3
+        blocks:
+      - name: Proposed customer segments and value proposition
+        order: 4
+        blocks:
+      - name: Confirmed or iterated solution MTP
+        order: 5
+        blocks:
+      - name: Defined hypothesis and experiments that will help to iterate the solution further
+        order: 6
+        blocks:
+      - name: Next iteration of the core conceptual document
+        order: 7
+        blocks:
+      - name: Upload the deliverables into the Team Deliverables Folder
+        order: 8
+        blocks:
+  - title: Scoring and Evaluation
+    subtitle:
+    order: 4
+    type: Text
+    text: |
+      <p>There are prize funds at stake during each phase of the SOLVE stage of the Fastrack. You will be evaluated objectively and subjectively on the evaluation criteria listed above. A combination of the Fastrack Curator and Co-Curator, Regional Advisory Board, FTI Board, FTI Core Team, members of the regional community, ExO ecosystem members and invited experts will be the evaluators. In the case of a tie, a small tie breaker committee will be convened to make the final decision.</p>
+  - title: Tips
+    subtitle:
+    order: 5
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          Join the Collaboration Meeting <a target='_blank' href='https://zoom.us/j/118780550'>here</a>
+      - order: 2
+        description: |
+          Upload the deliverables <a target='_blank' href='https://drive.google.com/drive/u/0/folders/1CjamV4QIYMVifeYxT6d1bRRe_BUcqZi0'>here</a>
+  - title: Tools
+    subtitle:
+    order: 6
+    type: Resource
+    resources:
+      - name: Justice Bogota Fastrack Google Drive
+        type: Links
+        status: Available
+        link: https://drive.google.com/open?id=1GIbEUZ2qcq-se15VL89jMxuugiKJPVCn
+        description:
+        order: 1
+      - name: Justice Bogota  Fastrack Magazine - Flipboard
+        type: Links
+        status: Available
+        link: http://flip.it/flenrn 
+        description:
+        order: 2
+      - name: Justice Bogota Fastrack FTI Academy
+        type: Links
+        status: Available
+        link: https://drive.google.com/open?id=1C23b2BWDgfiWv3eKsQ-lj_GUmr6F4_Fa
+        description:
+        order: 3
+      - name: Justice Bogota  Fastrack Forum
+        type: Links
+        status: Available
+        link: https://forums46.exolever.com/
+        description:
+        order: 4

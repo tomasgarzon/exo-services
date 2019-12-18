@@ -1,0 +1,12 @@
+uuid: 5805f681-d9de-4ce8-8bdf-e54971519036
+origin: T
+related_uuid: 7c71ec87-42ab-4060-a055-f80b697a451c
+total: 10
+exo_role: SAD
+certification_required: CFO
+duration_value: 1
+duration_unity: H
+entity: Harris LTD
+budgets:
+  - budget: 500.0
+    currency: D

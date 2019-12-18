@@ -1,0 +1,62 @@
+uuid: cdcf6027-34fa-4e28-8cbc-291807d328b7
+name: All Members
+uuid_related_object: 0d2dbf27-8015-40e8-bf85-3cb111b68b57
+created_by: !account &quality 7749ad25-5128-4644-895f-6b9a70b605bd
+_type: P
+icon: https://cdn.filestackcontent.com/VaLQ6i8SlaHZh9MBVLbA
+users:
+  - user: !account &naina 0737a9f9-22a0-4286-8be3-34a3e19d92dc
+    name:  Naina Lavrova
+    profile_url: /public/profile/naina-lavrova/
+    profile_picture: /media/avatars/48_48/naina-lavrova.jpg
+    short_title: ExO Head Coach
+  - user: !account &amy 1cd07dd7-4883-4838-9b5a-303ef0d6580c
+    name:  Amy Finch
+    profile_url: /public/profile/amy-finch/
+    profile_picture: /media/avatars/48_48/amy-finch.jpg
+    short_title: ExO Sprint Coach
+  - user: !account 299c8c8a-4e4a-4c6b-904a-1b801b7227f1
+    name:  Philip Robson
+    profile_url: /public/profile/philip-robson/
+    profile_picture: /media/avatars/48_48/philip-robson.jpg
+    short_title: ExO Sprint Coach
+  - user: !account 3aacd1ee-dc72-499c-a1d6-3cce0c4a1c3c
+    name: Paige Jackson
+    profile_url: /public/profile/paige-jackson/
+    profile_picture: /media/avatars/48_48/paige-jackson.jpg
+    short_title: Sutton Inc Core Participant
+  - user: !account &mary 44d12e6e-3b0a-481d-943b-f46798e310bc
+    name: Mary Campbell
+    profile_url: /public/profile/mary-campbell/
+    profile_picture: /media/avatars/48_48/mary-campbell.jpg
+    short_title: Sutton Inc Core Participant
+  - user: !account 2065c30d-1a7c-4a7b-bb83-c27d738ee068
+    name: Alan Lewis
+    profile_url: /public/profile/alan-lewis/
+    profile_picture: /media/avatars/48_48/alan-lewis.jpg
+    short_title: Sutton Inc Core Participant
+  - user: !account adca86ab-ccf2-41c8-92f5-60fb7e210962
+    name: John Spencer
+    profile_url: /public/profile/john-spencer/
+    profile_picture: /media/avatars/48_48/john-spencer.jpg
+    short_title: Sutton Inc Core Participant
+  - user: !account 48756eba-cbe2-4ead-ab5f-2fb45cfa39f2
+    name: Jessica Murphy
+    profile_url: /public/profile/jessica-murphy/
+    profile_picture: /media/avatars/48_48/jessica-murphy.jpg
+    short_title: Sutton Inc Edge Participant
+  - user: !account fa36197f-ec81-454e-98f5-bef1e4b5b58c
+    name: Natasha Brookes
+    profile_url: /public/profile/natasha-brookes/
+    profile_picture: /media/avatars/48_48/natasha-brookes.jpg
+    short_title: Sutton INC Edge Participant
+  - user: !account 919f9f83-63e9-4a81-b176-8f464104962e
+    name: Joel Davies
+    profile_url: /public/profile/joel-davies/
+    profile_picture: /media/avatars/48_48/joel-davies.jpg
+    short_title: Sutton INC Edge Participant
+messages:
+  - created_by: *mary
+    message: Magni officiis ex perspiciatis incidunt alias. Veniam laborum a debitis voluptates rerum adipisci. Sapiente adipisci ipsam impedit totam.
+  - created_by: *amy
+    message: Porro incidunt sed ab. Eum dignissimos architecto molestiae iusto corrupti veritatis. Officiis asperiores autem expedita. Voluptatem at totam.

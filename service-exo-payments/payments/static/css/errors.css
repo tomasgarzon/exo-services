@@ -1,0 +1,51 @@
+div.loading {
+    display: none;
+}
+
+div.not-found-container {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    justify-content: center;
+    line-height: 20px;
+    padding: 0px 15px;
+}
+
+div.not-found-details {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    line-height: 20px;
+}
+
+span.error-code {
+    display: block;
+    color: rgb(111, 35, 255);
+    font-size: 52px;
+    font-weight: 700;
+    height: 60px;
+    line-height: 60px;
+    width: 467.656px;
+}
+
+span.error-message {
+    display: block;
+    color: rgb(111, 35, 255);
+    font-size: 52px;
+    font-weight: 700;
+    height: 60px;
+    line-height: 60px;
+}
+
+span.error-description {
+    display: block;
+    color: rgb(70, 70, 75);
+    font-size: 26px;
+    font-weight: 700;
+    height: 69px;
+    line-height: 29px;
+    padding-top: 40px;
+}

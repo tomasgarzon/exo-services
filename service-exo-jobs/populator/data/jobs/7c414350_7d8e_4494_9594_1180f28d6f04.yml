@@ -1,0 +1,9 @@
+uuid: 7c414350-7d8e-4494-9594-1180f28d6f04
+user: !account 1eae2bfa-3b44-4e3a-8bb7-89f5e24c71a6 # Julius
+title: Educational Futures in Spain
+start: !timedelta -1d
+end: !timedelta -1d
+category: SP
+exo_role: SAD
+status: CO
+url: /ecosystem/opportunities/1/

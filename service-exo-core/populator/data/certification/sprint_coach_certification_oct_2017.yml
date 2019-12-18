@@ -1,0 +1,18 @@
+name: ExO Sprint Coach Certification - Virtual
+course_name: ExO Sprint Coach Training
+description: Guide clients seeking transformation processes through the ExO Model
+type: consultantrole-sprint-coach
+certification_role: CSC
+created_by: !exo_account Quality Assurance
+instructor_name: Quality Assurance
+issued_on: !datetime Oct 6 2017
+certifications:
+  - consultant: !consultant Alice LaGrande
+    accredible_id: 11598976
+    accredible_url: https://sandbox.credential.net/up9at4em
+  - consultant: !consultant Wilhelm Muller
+    accredible_id: 11598975
+    accredible_url: https://sandbox.credential.net/cq9vjibb
+  - consultant: !consultant Leticia Ferreira Dias
+    accredible_id: 11598974
+    accredible_url: https://sandbox.credential.net/zkidmcjp

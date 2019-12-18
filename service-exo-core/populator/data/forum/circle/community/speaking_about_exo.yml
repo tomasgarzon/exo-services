@@ -1,0 +1,21 @@
+title: Speaking about ExO
+user: !exo_account Quality Assurance
+date: !timedelta -2d
+circle: !circle Community
+description: |
+  <p>Boston Consulting group are speaking about ExO. Do they know it.</p>
+
+  <p>Good talk!</p>
+
+  <p>https://www.ted.com/talks/martin_danoesastro_what_are_you_willing_to_give_up_to_change_the_way_we_work?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare</p>
+activities:
+  - user: !consultant Naina Lavrova
+    date: !timedelta -10h
+  - user: !consultant Philip Robson
+    date: !timedelta -8h
+    reply: |
+      <p>Thanks for sharing!</p>
+  - user: !consultant Alice LaGrande
+    date: !timedelta -6h
+    reply: |
+      <p>Good news!</p>

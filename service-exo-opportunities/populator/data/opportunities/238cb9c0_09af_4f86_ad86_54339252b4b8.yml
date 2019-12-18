@@ -1,0 +1,32 @@
+title: Blockchain
+uuid: 238cb9c0-09af-4f86-ad86-54339252b4b8
+group: !group de535c88-42de-4c14-9261-bd3760f291e8
+description: Building ecosystem
+status: Requested
+created: !timedelta -40h
+created_by: !account &created_by 85227667-5866-4567-b820-57806d00932c
+keywords:
+  - Community
+  - Ecosystems
+due_date: !timedelta 1w
+deadline_date: !timedelta 1w
+exo_role: SAD
+certification_required: CFO
+mode: L
+num_positions: 1
+applicants:
+  - user: !account 5d640164-b7a3-4936-b37e-3ad5a23a2036 # Tina
+    summary: I have a strong background in blockchain
+    status: Requested
+  - user: !account 1cd07dd7-4883-4838-9b5a-303ef0d6580c  # Amy
+    status: Selected
+    summary: I'm an expert in this field, please rely on my
+    sow:
+      applicant_name: Amy Finch
+      requester_name: Naina Lavrova
+      title: ExO Consultant for Validating ExO Model
+      entity: Company under construction
+      start_date: !timedelta 30d
+      end_date: !timedelta 31d
+      location: Madrid, Spain
+      mode: S

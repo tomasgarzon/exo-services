@@ -1,0 +1,9 @@
+title: Bored of pointless 3D printer projects?
+user: !exo_account John Spencer
+team: !team Sutton Inc Core
+date: !timedelta -1h
+qa_session: !qa_session Sutton Second Swarm session
+description: |
+  <p>Like us, you’re tremendously excited by the possibilities of <strong>3D printing</strong>. Unfortunately, the landscape is cluttered with trinkets, doodads, and ornaments. We’re in danger of drowning in 3D printed objects that nobody wants or needs.</p>
+  <p><br></p>
+  <p>Fight the tide of mediocrity! Let’s make stuff that’s useful!</p>

@@ -1,0 +1,18 @@
+{% load common_dates i18n tz %}
+<mj-text font-weight="bold" font-size="16px" line-height="24px" color="#46464b">
+    {% trans "When" %}
+</mj-text>
+<mj-wrapper padding="0">
+    {% timezone timezone_name %}
+    <mj-section padding="0">
+        <mj-column width="33%">
+            <mj-text font-size="22px" font-weight="700" align='left' padding-top="15px" line-height="33px" color="#46464b">{{start_at|date_parsed|date:"m-d-Y"}}</mj-text>
+        </mj-column>
+        <mj-column width="66%">
+            <mj-tag-list>
+                <mj-tag-element font-weight="regular" border-radius="2px" {% if canceled %} text-decoration="line-through" {% endif %}>{{start_at|date_parsed|date:"H:i"}}</mj-tag-element>
+            </mj-tag-list>
+        </mj-column>
+    </mj-section>
+    {% endtimezone %}
+</mj-wrapper>

@@ -1,0 +1,18 @@
+{{ "<!-- Speakers -->" | safeHTML}}
+    <section id="speakers" class="main special">
+        <header class="major">
+            <h2>ExO Speakers</h2>
+        </header>
+        {{ range $speaker := .speakers }}
+                <img class="image profile" src="{{ $speaker.profilePicture}}">
+                <h3 class="name">{{ $speaker.name }}<br><span class="rol">{{ $speaker.title }} </span></h3>
+                <p>{{ $speaker.bio }}</p>
+                <div class="flex">
+                    {{ if ne $speaker.linkedin "" }}
+                        <a class="social" href="{{ $speaker.linkedin }}" target="_blank">Linkedin</a>
+                    {{ end }}
+                  <a class="social" href="{{ $speaker.profileUrl }}" target="_blank">ExO Profile</a>
+                </div>
+                <hr>
+        {{ end }}
+    </section>

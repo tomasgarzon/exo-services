@@ -1,0 +1,17 @@
+version: '3'
+services:
+  whoami:
+    image: emilevauge/whoami #A container that exposes an API to show it's IP address
+    labels:
+      - "traefik.enable=true"
+      - "traefik.backend=whoami"
+      - "traefik.frontend.rule=Host:whoami.qa.exolever.com"
+      - "traefik.port=80"
+      - "traefix.port=443"
+    restart: always
+    networks:
+      - traefik_default
+networks:
+  traefik_default:
+    external:
+      name: traefik_default

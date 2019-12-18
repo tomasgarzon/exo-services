@@ -1,0 +1,28 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="{% trans 'Event reviewed' %}" title="{{event_title}}" />
+{% endblock %}
+
+{% block wrapper-extra-class %}white{% endblock %}
+{% block wrapper-title %}{% endblock %}
+
+{% block content %}
+    <mj-text>Hello {{event_owner_short_name}},</mj-text>
+    <mj-text>Your {{event_type_name}}, {{event_title}} has ben reviewed.</mj-text>
+
+    {% if event_approved %}
+        <mj-text>We are happy to let you know that your event has been approved and published on our website to help you spread the word!</mj-text>
+    {% else %}
+        <mj-text>You are almost done! Please follow the below indications so we can publish your event on our website. If you have any questions, do not hesitate to contact us.</mj-text>
+    {% endif %}
+
+    <mj-text><b>Comments from reviewer, {{reviewer_user_name}}:</b></mj-text>
+    <mj-text>{{comments}}</mj-text>
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "Go to Platform" as see_details %}
+    {% include "base/call_to_action.mjml" with call_to_action=see_details %}
+{% endblock %}

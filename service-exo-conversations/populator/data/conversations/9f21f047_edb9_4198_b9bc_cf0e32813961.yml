@@ -1,0 +1,26 @@
+uuid: 9f21f047-edb9-4198-b9bc-cf0e32813961
+name: Lindsey Allen
+created_by: !account &naina 0737a9f9-22a0-4286-8be3-34a3e19d92dc # Naina Lavrova
+_type: U
+users:
+  - user: !account &lindsey 47b10a71-d011-48c2-b359-2a2027191fd8 # Lindsey Allen
+    name:  Lindsey Allen
+    profile_url: /public/profile/lindsey-allen/
+    profile_picture: /media/avatars/48_48/lindsey-allen.jpg
+  - user: *naina
+    name:  Naina Lavrova
+    profile_url: /public/profile/naina-lavrova/
+    profile_picture: /media/avatars/48_48/naina-lavrova.jpg
+messages:
+  - created_by: *lindsey
+    message: Quia quidem suscipit quibusdam dolorum possimus. Nemo quia maiores.\nMaxime nemo laborum sit. Voluptatibus porro libero vero. Cupiditate sed error quisquam aut placeat sunt.
+    readed:
+        - user: *naina
+  - created_by: *naina
+    message: Architecto ab sed tempora quaerat excepturi nisi. Quisquam amet animi ab ut soluta. Unde culpa quod commodi voluptate architecto
+    readed:
+        - user: *lindsey
+  - created_by: *lindsey
+    message: Exercitationem corrupti accusantium qui. Cumque ex quo adipisci assumenda delectus.\nIure qui corporis animi quae. Alias dignissimos omnis ipsum. Dolore officia nihil
+  - created_by: *lindsey
+    message: expedita

@@ -1,0 +1,7 @@
+name: Testing JoinCommunity
+campaign_id: 5d63bef606b0367560f6b9be
+users:
+  - user: !exo_account Quality Assurance
+    token: 2a25e905df361ddca8d9c3d0822337235db864be4f7fdb047c384638
+  - user: !exo_account Naina Lavrova
+    token: 5201522d9d8a5033cee6a0d74657c7855d662c04320f6e75886e248d

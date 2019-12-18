@@ -1,0 +1,250 @@
+---
+name: Disrupt assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: explore_main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/287919082
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287919082" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:   
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>It’s time to disrupt yourself before anyone else does it for you! This week’s assignment provides an opportunity to present your most promising ExO Initiatives to a group of disruptors, who will then provide feedback on how to improve them. Remember: failure is part of the process. If some ExO Initiatives are killed, don’t take it personally. It’s better to fail fast and cheap now then to fail later after having spent a lot of time and money. Last but not least, based on the feedback you receive, you may end up killing some of your ExO Core Initiatives or creating new ones that will complement your portfolio. Keep your eyes and ears open for new opportunities!</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Prepare the scenario and logistics
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>Create the right environment and set up the logistics for the presentations. You can deliver the presentations either in-person or online, depending on considerations such as where everyone is located or your budget. If the disruption session is in person, consider decorating the space to create a special atmosphere. If you conduct it online, test the video conferencing system in advance. Also, note that if the ExO Sprint is running both ExO Edge and ExO Core streams, the disruption session will include teams for both streams.</p>          
+          - title: Tips
+            subtitle:
+            order: 2
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                Follow an established agenda for each presentation, allowing 60 minutes for each team to present all four of its ExO Initiatives, with a short break between each of presentations. Present each of the four ExO Initiatives within five minutes, followed by five minutes of feedback.
+            - order: 2
+              description: |
+                Time management is key to presenting effectively. Communicate your agenda in advance, including the order of the ExO Initiatives presentations.            
+          - title: Tools
+            subtitle:
+            order: 4
+            type: Resource
+            resources:
+              - name: Disruption workshop agenda
+                type: Link
+                status: Available
+                link: /medialibrary/resource/redirect/SCz1d7bFQOmkWvrXaA2k/Feedback_form_template_example.png/
+                description: Example
+                order: 1
+      - name: Present!
+        order: 2
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>The big moment has arrived! It’s time to present your ExO Core Initiatives for feedback. Each team will have 60 minutes to present its ExO Initiatives and receive feedback. The presentations will be given to the company leadership, other ExO teams and a group of disruptors made up of three to five people from outside the organization who have specific experience in the industry or of innovation in general.</p>
+          - title: Tips
+            subtitle:
+            order: 2
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                After each presentation, the audience will provide a total of five minutes of feedback. We recommend limiting this part of the session to feedback only, with no questions allowed. At this stage, the goal is not to sell the initiatives but to learn.
+            - order: 2
+              description: |
+                Record all sessions.
+      - name: Gather feedback
+        order: 3
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>Take note of all feedback received from your peers and the disruptors. Everything you hear is valuable. Keep in mind that this set of presentations and the feedback you get is another aspect of the experiments you’ve been running and is included to improve your ExO Initiatives. Classify the feedback in the different categories (all may be hypotheses). Also, remember to gather feedback about potential ExO Initiatives.</p>
+          - title: Resources
+            subtitle:
+            order: 2
+            type: Text
+            text: |
+              <p>External feedback is great at this point, so share your presentation with your team and anyone else you can.</p>
+          - title: Tips
+            subtitle:
+            order: 3
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                You will likely receive two types of feedback:<br><strong>Focused on the ExO framework:</strong> Pay attention to people knowledgeable about ExO because they will have good advice about how to follow the process moving forward and gain benefit from the ExO approach. <strong>Focused on the content:</strong> The other type of feedback relates to the ideas themselves, and will sometimes include opinions about the problem you are working to solve or the solution you are trying to create. In that case, such feedback doesn’t need to affect your approach; it can simply provide additional data points for evaluating your hypotheses.
+          - title: Tools
+            subtitle:
+            order: 4
+            type: Resource
+            resources:
+              - name: Feedback form
+                type: PDF
+                status: Available
+                link: /medialibrary/resource/redirect/V9ZN4SgSuKACqtwLvj0f/Feedback_form_example.pdf/
+                description: Example
+                order: 1
+              - name: Feedback form
+                type: PDF
+                status: Available
+                link: /medialibrary/resource/redirect/tp5luuMgTY65voDa5apz/Feedback_form_template.pdf/
+                description: Template
+                order: 2
+      - name: Debrief with leadership
+        order: 4
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>You will have a debrief meeting with the management team to determine which of the ExO Core Initiatives is aligned with the general direction the leadership wants to go. Leadership may pick a MTP out of all the ExO Core teams presenting (or even define a new one based on those).</p>
+          - title: Tips
+            subtitle:
+            order: 2
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                Remember that although you may have come up with amazing initiatives, some may ultimately fall outside the scope of what the company leadership has defined for the ExO Sprint.
+            - order: 2
+              description: |
+                We recommend that the ExO Head Coach have this meeting with the leadership of the organization and orient them in order to make the best decisions.
+            - order: 3
+              description: |
+                The leadership of the company may want to select the ExO Initiatives that will move forward, but we recommend that the leadership of the company just make recommendations without forcing anything (to avoid becoming the immune system) and let the teams to make their own final decisions.
+            - order: 4
+              description: |
+                Even though the organization doesn’t yet have a defined MTP, it’s possible that itw has already been working with an unofficial version. In that case, pick the MTP that aligns most closely with the organization’s identity.
+            - order: 5
+              description: |
+                We recommend providing real data to leadership about the feedback that Disruptors provided to each ExO Initiative.For example, providing an online survey for Disruptors to complete during the in-person presentations allows further comments and feedback to be captured for later review by leadership at the debrief meeting.
+      - name: Narrow the number of initiatives down to three
+        order: 5
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>It’s now time to select the most promising initiatives and take them to the next level. Digest the feedback received in the disruption workshop and the meeting with the leadership and pick the top four ExO Initiatives (or just those ones that the leadership decided to keep).</p>
+          - title: Tips
+            subtitle:
+            order: 2
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                The leadership of the organization may have already made a decision about what initiatives to pick (or to kill). If so, accept the decision and avoid frustration if more ExO Initiatives than you expected were killed, remember that’s part of the innovation process so don’t take it personally. Just keep being awesome!
+            - order: 2
+              description: |
+                Picking the top three initiatives is not just a matter of choosing the ones with the best feedback received. There may be other reasons: alignment with the selected MTP, something strategic or perhaps just a strong sense of intuition.
+            - order: 3
+              description: |
+                Remember you can also create new ExO Core Initiatives based on the feedback of the disruption session or in order to react to some of the ExO Edge Initiatives presented by the other teams. The goal is to have three new or previous ExO Core Initiatives by the end of the week.
+      - name: Improve the selected initiatives based on the feedback received
+        order: 6
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>Review the work you’ve done on the ExO Core Initiatives so far and refine them by taking all feedback into account. If you have any new ExO Core Initiative, just draft the main elements (MTP, disruption/ reaction pair and ExO Canvas, if you can) and use the following weeks to catch up with the process. Notice that the leadership may have selected a definitive MTP for the organization, so you will need to update and align your ExO Core Initiatives with it.</p>
+          - title: Tips
+            subtitle:
+            order: 2
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                Follow the previous weeks’ assignment descriptions to refine your initiatives.
+            - order: 2
+              description: |
+                The intention of the Core Stream is to make the company more adaptable to the external environment. Do your ideas qualify?
+            - order: 3
+              description: |
+                The disruption session can highlight where participants need to do further work to fully understand the ExO model and concepts. Take time this week to address any gaps in understanding. For example, does everyone on the team have a good grasp of the ExO Attributes? Do they understand what it means for an initiative to be scalable? Do they see where their MTPs can be improved? Revisiting some of the initial concepts might have greater impact now that the team has experience applying them.
+            - order: 4
+              description: |
+                At this point of the ExO Sprint, we recommend splitting the team into subgroups and assigning each subgroup one or two initiatives. For example, if there are six team members, you can split the team into three groups of two team members and assign an ExO Core Initiative to each one. That said, no matter how you organize the groups, it’s important that all team members offer feedback on all initiatives, regardless of their involvement.
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          The main requirements for determining the right ExO Core Initiative are:<br><strong>Adaptation:</strong> We are applying the Exponential Organizations Framework to make our current organization more adaptable to external industry disruption; all initiatives should aim for this objective. <strong>Scalability:</strong> Since we will define a Massive Transformative Purpose (or at least a Transformative Purpose), we may look to increase the current organization’s reach. If so, we need to evaluate whether the ExO Core Initiatives will help us to scale our impact.
+      - order: 2
+        description: |
+          Designate one team member to be in charge of writing down all feedback. It can be a different team member for each initiative, just make sure it happens!
+      - order: 3
+        description: |
+          After the presentations, discuss your initiatives with the attendees (the management team, members of other teams and disruptors), asking for any additional feedback they may have.
+      - order: 4
+        description: |
+          As always, remember that failure is a part of the process, so don’t get upset about negative feedback you receive. It’s better to know sooner rather than later that you may need to change, hold off on or even kill one or more of your initiatives.
+      - order: 5
+        description: |
+          If some (or even all) of your ExO Initiatives are killed after the disruption session, don’t take it personally! This is just part of the process. We have seen teams that all their ExO Initiatives were killed at the disruption session and, at the end of the ExO Sprint, their ExO Initiatives were the best ones. So, just take this session as a learning exercise to keep improving!
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Feedback form
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/V9ZN4SgSuKACqtwLvj0f/Feedback_form_example.pdf/
+        description: Example
+        order: 1
+      - name: Feedback form
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/tp5luuMgTY65voDa5apz/Feedback_form_template.pdf/
+        description: Template
+        order: 2
+      - name: Disruption workshop agenda
+        type: Link
+        status: Available
+        link: /medialibrary/resource/redirect/SCz1d7bFQOmkWvrXaA2k/Disruption_workshop_agenda_template_example.png/
+        description: Example
+        order: 3
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

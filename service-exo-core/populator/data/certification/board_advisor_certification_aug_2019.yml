@@ -1,0 +1,15 @@
+name: ExO Board Advisor Certification - Virtual
+course_name: ExO Board Advisor Training
+description: ---
+type: consultantrole-board-advisor
+certification_role: CBA
+created_by: !exo_account Quality Assurance
+instructor_name: Quality Assurance
+issued_on: !datetime Aug 01 2019
+certifications:
+  - consultant: !consultant Naina Lavrova
+    accredible_id: 11598970
+    accredible_url: https://sandbox.credential.net/h5flf2nf
+  - consultant: !consultant Tina Weissberg
+    accredible_id: 11598969
+    accredible_url: https://sandbox.credential.net/cwnfkg8g

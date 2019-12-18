@@ -1,0 +1,35 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="{% trans 'PROJECT COMPLETION' %}" title="{{title}}" />
+{% endblock %}
+
+{% block wrapper-extra-class %}white{% endblock %}
+
+{% block wrapper-title %}{% endblock %}
+
+{% block content %}
+    <mj-text>Hello {{created_by_name}},</mj-text>
+    <mj-text>
+        <strong>Your project will be ending and closing today. Please leave your feedback about {{applicant_name}}'s work.</strong>
+    </mj-text>
+    <mj-text>
+    You have 7 days to leave your feedback. The system is double-blind, which means that the feedback won’t be visible until both parties provide it for each other. If you think this project requires more time, you can extend the deadline so that you and {{applicant_name}} can keep working on it.
+    </mj-text>
+    <mj-text>
+        You can view again the terms and conditions of the project here:
+        <br>
+        <a href="{{doman}}/static/agreement/ExO-Marketplace-Conditions1.pdf">ExO Marketplace Conditions</a>
+    </mj-text>
+    <mj-text>
+        Kind regards,<br>
+        <strong>OpenExO Team</strong>
+    </mj-text>
+
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "LEAVE FEEDBACK" as see_details %}
+    {% include "base/call_to_action.mjml" with call_to_action=see_details %}
+{% endblock %}

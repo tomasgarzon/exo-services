@@ -1,0 +1,131 @@
+---
+name: Test assignment
+settings:
+  enabled_learn: True
+  enabled_deliver: True
+  enabled_reflect: True
+blocks:
+  - title:
+    subtitle:
+    order: 0
+    type: Resource
+    resources:
+    - name: explore_main_video
+      type: Video
+      status: Available
+      link: https://vimeo.com/287870266
+      iframe: |
+        <iframe width="100%" height="100%" src="https://player.vimeo.com/video/287870266" frameborder="0" allowfullscreen></iframe>
+      order: 1
+      description:   
+  - title: Why this week?
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>It’s time for the truth! During these past days, you have been building your first versions of your MVP, which will allow us to keep learning and improving our ExO Edge Initiatives. This week’s assignment provides experience exercising the Experiments Attribute at a deeper level. The goal is to get acceptance of your MVPs in order to validate that your value proposition is the right one. </p>
+      <p>The experiment of building and testing your MVP helps you evaluate the key hypotheses to evaluate whether the ExO Core Initiative you are developing will really make your organization more adaptable to the external disruption Also, if some of your ExO Core Initiatives are focused on developing a new product/service, you will be able to get your first clients, which is one of the most exciting milestones for any new organization. Let’s do it!</p>
+  - title: Tasks
+    subtitle:
+    order: 2
+    type: Task
+    tasks:
+      - name: Find your Early Adopters!
+        order: 1
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>An “Early Adopter” is an individual or business that uses a new product or technology before others, shares your vision and is willing to try your MVP even though it may not have been perfected. Your job here is to define how to find those early adopters and get their buy-in for your ExO Core Initiatives. The technique used to find early adopters depends on the type of ExO Core Initiative and the MVP you have developed:</p>          
+              <p><strong>For Blue Core Initiatives (new product/services)</strong></p>
+              <p>If you created a landing page MVP, focus on online channels in one of three ways:<br>Create online ads (e.g., using Google AdWords) and link them to your promotional sites. Promote the website with online communities populated by potential early adopters. Email the page links to potential early adopters you’ve identified.</p>
+              <p>If you’ve created a sales presentation, a set of wireframes, a video or a real prototype, focus on offline channels to reach early adopters:<br>Promote your MVP to those people or organizations interviewed when you first tested the problem/solution hypotheses. Generate a new list of potential early adopters. Generate a list of communities that might be populated by MVP early adopters.</p>
+              <p><strong>For Pure Core and Edge Core Initiatives Regardless of the type of MVP, you may need to find early adopters of different types:</strong></p>
+              <p><strong>Stakeholders:</strong><br>Decision makers of your organization who will need to approve/ fund your ExO Core Initiative.</p>
+              <p><strong>Internal users:</strong><br>Employees of your organization who will benefit from/use your ExO Core Initiative.</p>
+              <p><strong>External clients/users:</strong><br>Clients of the organization who will benefit from/use your ExO Core Initiative.</p>
+          - title: Resources
+            subtitle:
+            order: 2
+            type: Text
+            text: |
+              <p>- For Blue Core Initiatives, Steve Blank’s book The Startup Owner’s Manual outlines how to find and sell to early adopters. Familiarize yourself with the section of the book that covers the Customer Validation phase of the process.</p>
+              <p>- For Blue Core Initiatives, in addition to being a great way to learn about selling to early adopters, Geoffrey Moore’s Crossing the Chasm also covers how to expand your target market in the future.</p>
+          - title: Tips
+            subtitle:
+            order: 3
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                When it comes to ExO Core Initiatives, there are two groups of early adopters:<br><br>External Clients (when our ExO Core Initiative serves to improve an existing product or service; or to create a new one):<br>- Share the vision you have about the future.<br>- Have the problem you defined some weeks ago. Are paying to solve the problem.<br>- Are trying to solve this problem in some way, although not yet successfully.<br>- Are paying to solve the problem.<br>- Are honest and will  provide valuable feedback.<br><br>Internal Supporters (when our ExO Core Initiative consists in improving the existing organization and you have internal usage/approval):<br>- Acknowledge the external disruption you are trying to manage.<br>- May already be reacting to this external disruption in some way, although not yet successfully.<br>- May be investing (or willing to invest) resources to manage this external disruption.<br>- Are honest enough to provide valuable feedback.
+            - order: 2
+              description: |
+                To find early adopters, try to think as they do.
+            - order: 3
+              description: |
+                Remember we are trying to learn, so interact with your early adopters in order to do that. <strong>For online channels</strong> (websites, etc.), after each user or buyer completes the process, send an email asking for feedback on how to improve your value proposition, pricing model, etc. <strong>For offline channels</strong> (in-person meetings, calls, etc.), don’t outsource the sales process, handle it yourselves spending the week interacting with them in order to learn as much as possible by testing out your product and trying to sell them.
+      - name: Measure results and learn
+        order: 2
+        blocks:
+          - title:
+            subtitle:
+            order: 1
+            type: Text
+            text: |
+              <p>After building and trying your MVPs, you will have a lot of new experience and data to keep evaluating your key hypotheses.</p>
+              <p>ExO Core Initiatives shouldn’t be implemented all across the organization at first. So, part of the learning exercise we want to accomplish here is to find out the right early adopters and area of the organization to start implementing the ExO Core Initiative.</p>
+              <p>After the sales process is completed, the next step is to learn from the data you’ve gathered.</p>
+          - title: Tips
+            subtitle:
+            order: 2
+            type: Advice
+            advices:
+            - order: 1
+              description: |
+                Remember to analyze the qualitative data as well as the quantitative data (metrics). At this (early) stage of the game, qualitative information is more important than quantitative.
+            - order: 2
+              description: |
+                Experimentation results sometimes produce a lot of noise, but digging into the data presents learning opportunities. For example, after evaluating a new product/service, we might find that some of potential customer segment love it while others hate it. In analyzing the results further, we find that people under 45 years of age love it and those above 45 don’t. The learning here? Focus the solution on the customer segment under 45.
+          - title: Tools
+            subtitle:
+            order: 3
+            type: Resource
+            resources:
+              - name: Identify and evaluate key hypotheses
+                type: PDF
+                status: Available
+                link: /medialibrary/resource/redirect/mCRyNOkRxaCJr4GdfFQw/Identify_and_evaluate_key_hypotheses_step_2_template.pdf/
+                description: Template
+                order: 1
+  - title: Tips
+    subtitle:
+    order: 3
+    type: Advice
+    advices:
+      - order: 1
+        description: |
+          The goal for the week is to get enough data from the experiments to ensure valid results (and thus additional learning). What would be even better, of course, is if you are able to sell your idea during the process, an outcome that would impress the panel at your final ExO Core Initiative presentation. From nothing to real customers in less than ten weeks…Let’s do it!
+      - order: 2
+        description: |
+          Remember that early adopters are not just first clients or internal supporters. They are also special people and/or companies with a specific mindset.
+  - title: Tools
+    subtitle:
+    order: 4
+    type: Resource
+    resources:
+      - name: Identify and evaluate key hypotheses
+        type: PDF
+        status: Available
+        link: /medialibrary/resource/redirect/mCRyNOkRxaCJr4GdfFQw/Identify_and_evaluate_key_hypotheses_step_2_template.pdf/
+        description: Template
+        order: 1
+  - title: Completed Assignment Tasks
+    subtitle:
+    order: 1
+    type: Text
+    text: |
+      <p>Congratulations on all your work this week! This is where you will store your team's finished assignment tasks. Ideally these should be submitted by the <strong>end of the fourth day of this week</strong> unless your team has discussed a different day. This will allow your Team Coach time to review the content before your next meeting. These documents will be available for your coach to see and for your future reference.</p>
+    section: D

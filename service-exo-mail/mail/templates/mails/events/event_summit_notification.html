@@ -1,0 +1,15 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="{% trans 'OpenExO Summits' %}" title="New ExO Summit request"/>
+{% endblock %}
+
+{% block wrapper-extra-class %}white{% endblock %}
+{% block wrapper-title %}{% endblock %}
+
+{% block content %}
+    <mj-text>Hi,</mj-text>
+    <mj-text><a href="{{user_profile_url}}" target="_blank">{{user_full_name}}</a>, a community member of OpenExO platform has requested to create an ExO Summit. Find attached his personal request:</mj-text>
+    <mj-text>{{comments}}</mj-text>
+{% endblock %}

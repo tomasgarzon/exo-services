@@ -1,0 +1,114 @@
+{% load images guardian_tags customize l10n %}
+{% get_obj_perms user for object as "perms_obj" %}
+<div class='ibox float-e-margins'>
+
+    <div class="ibox-title ibox-tools col-xs-12">
+        <div class='pull-right m-t-xs icons-ibox-title'>
+            <a class="close-link-detail pull-right m-r-none" data-role="close-detail">
+                <i class="fa fa-times"></i>
+            </a>
+            {% include "project/project_action_list.html" with perms=perms_obj project=object global_perms=perms %}
+        </div>
+        <div class="pull-left p-n t-a-left m-r-sm title without-image">
+            <h3 class="block" title="{{object.name}}">{{object.name}}</h3>
+            <span class="label label-status badge {{object.get_status_display|slugify}}">{{object.get_status_display}}</span>
+        </div>
+    </div>
+    <div class="ibox-content m-t-none">
+        <div id="#tabs-projects" class="tabs-container m-t-3">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#information">About</a></li>
+                <li class=""><a data-toggle="tab" href="#users">Participants</a></li>
+                <li class=""><a data-toggle="tab" href="#consultants">ExO Consultants</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="information" class="tab-pane active">
+                    <div class="panel-body">
+                        <table class="table table-detail-right todo-list">
+                            <tr>
+                                <th class='no-top-border'>
+                                    <strong>Client:</strong>
+                                </th>
+                                <td class="border-bottom">
+                                    {{object.customer|default:"No client"}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Start Date</strong></td>
+                                <td>{{object.start|default:"-"}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>End Date</strong></td>
+                                <td>
+                                    {% if object.end %}
+                                        {{object.end|default:"-"}}
+                                    {% else %}
+                                        {{object.last_day}}
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Location</strong></td>
+                                <td>{{object.location|default:"-"}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Duration</strong></td>
+                                <td>{{object.duration}} {{object.get_lapse_display}}{{ object.duration|pluralize }}</td>
+                            </tr>
+                            {% if object.sprint %}
+                                {% include 'sprint/sprint_detail.html' %}
+                            {% endif %}
+                        </table>
+                    </div>
+                </div>
+                <div id="users" class="tab-pane">
+                    <div class="panel-body chat-activity-list">
+                        <div class="chat-element no-padding no-margins m-t-14">
+                            <table class="table table-detail-right">
+                                {% regroup object.users_roles.actives|dictsortreversed:"exo_role.code" by role as roles_list %}
+                                {% for role in roles_list %}
+                                    <tr><td><strong>{{ role.grouper|capfirst}}</strong></td></tr>
+                                    {% for u in role.list %}
+                                    <tr>
+                                        <td class="border-bottom">
+                                            {% include "tags/link_user2.html" with member=u.user %}
+                                        </td>
+                                    </tr>
+                                    {% empty %}
+                                        <div class="chat-element">
+                                            <div class="row">
+                                                <div class="col-md-12">Not users yet</div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="consultants" class="tab-pane">
+                    <div class="panel-body chat-activity-list">
+                        <div class="m-t-14">
+                            {% regroup object.consultants_roles.actives|dictsortreversed:"certification_role.id" by role as consultant_list %}
+                            {% for role in consultant_list %}
+                            <div class="chat-element no-padding {% if forloop.counter0 == 0 %}no-margins {% endif %}">
+                                <h3 class="m-t-none m-b-10"><strong>{{role.grouper|role_by_project:object}}</strong></h3>
+                                {% for u in role.list %}
+                                    <div class='m-t-xs m-b-xs'>
+                                        {% include "tags/link_user2.html" with member=u.consultant.user %}
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            {% empty %}
+                            <div class="chat-element">
+                                <div class="row">
+                                    <div class="col-md-12">Not consultants yet</div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

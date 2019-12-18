@@ -1,0 +1,53 @@
+{% load guardian_tags staticfiles images project l10n %}
+
+<div class="row">
+    {% regroup finished_projects by type_verbose_name as grouped_projects %}
+    
+    {% for type_project in grouped_projects %}
+        <div class="col-md-6">
+            <div class='ibox float-e-margins'>
+                <div class="ibox-title">
+                    <h2>Completed {{ type_project.grouper }}s</h2>
+                </div>
+                <div class="ibox-content">
+                    <div class="table-responsive">
+                        <span class="pull-right text-muted m-t-md m-b-md l-h-34">
+                            {{ type_project.list|length }} {{ type_project.grouper }}{{ type_project.list|length|pluralize }} found</span>
+
+                        <table class="table table-hover sprints projects table-l-fix">
+                            <thead>
+                                <tr>
+                                    <th width="30%">Name</th>
+                                    <th width="30%">Client</th>
+                                    <th width="30%">End (UTC)</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for object in type_project.list %}
+                                    {% get_obj_perms user for object as "perms_obj" %}
+                                    <tr>
+                                        <td>
+                                            <div class='cut-text help-tooltip' title="{{object.name}}">
+                                                <a data-action="stop" href="{{object.get_absolute_url}}" title="{{object.name}}">{{object.name}}</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            {% include "tags/link_customer.html" with customer=object.customer %}
+                                        </td>
+                                        <td>
+                                            <span class='block cut-text class-tooltip' title="{{object.end_localize|date_format:"Y-m-d H:i:s"}}">{{object.end_localize|date_format:"Y-m-d H:i:s"}}</span>
+                                        </td>
+                                        <td data-action='stop'>
+                                            {% include "project/project_action_list.html" with perms=perms_obj project=object global_perms=perms %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

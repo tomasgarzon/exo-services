@@ -1,0 +1,46 @@
+{% extends "project/master_detail_base.html" %}
+
+{% load django_bootstrap_breadcrumbs breadcrumb %}
+{% load bootstrap_pagination images permission_tags staticfiles %}
+
+{% block breadcrumbs %}
+    {{block.super}}
+    {% breadcrumb "Assignments" "project:project:assignment:list-assignment-steps" project.id %}
+{% endblock %}
+
+{% block search_form %}{% endblock %}
+
+{% block master_view %}
+    <table class="table table-hover list-detail table-team table-l-fix">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Step</th>
+                <th>Streams</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for object in object_list %}
+            <tr>
+                <td>{{ object.name }}</td>
+                <td>{{ object.step.name }}</td>
+                <td>
+                	{% for stream in object.streams %}
+	           <li>
+                            {% if stream == 'S' %}
+                                {% if project.teams.filter_by_stream_edge.exists %}
+                                <a target="_blank" href="/platform/service/{{project.pk}}/team/{{project.teams.filter_by_stream_edge.first.pk}}/step/{{object.step.pk}}/learn/">Edge</a>
+                                {% else %}Edge{%endif%}
+                            {% elif stream == 'T' %}
+                                {% if project.teams.filter_by_stream_core.exists %}
+                                <a target="_blank" href="/platform/service/{{project.pk}}/team/{{project.teams.filter_by_stream_core.first.pk}}/step/{{object.step.pk}}/learn/">Core</a>
+                                {% else %}Core{%endif%}
+                            {% endif %}
+                        </li>
+                	{% endfor %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

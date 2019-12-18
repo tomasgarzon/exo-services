@@ -1,0 +1,15 @@
+{% load images %}
+<div class="row customer-tag">
+    <div class="col-md-12 m-t-none l-h-32">
+        {% if partner %}
+        <div class='m-r-sm pull-left'>
+            <div class="inline img-box">
+                <img alt="{{partner.name}}" title="{{partner.name}}" src="{% image_thumbnail_url partner.profile_picture 24 24 %}" />
+            </div>
+        </div>
+        {% endif %}
+        <div class='media-body pull-left l-h-32 cut-text customer-name'>
+            <span class='block cut-text' title="{{partner.name|capfirst}}">{{partner.name|capfirst}}</span>
+        </div>
+    </div>
+</div>

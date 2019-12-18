@@ -1,0 +1,36 @@
+{% extends "base/base_circles.mjml" %}
+{% load common_mails i18n %}
+
+{% block circle-header %}
+    <mj-header-ticket pre-title="{% trans 'Opportunity Request' %}" title="{{title}}" />
+{% endblock %}
+
+{% block wrapper-extra-class %}white{% endblock %}
+
+{% block wrapper-title %}
+    {% include "base/user_information.mjml" with image=applicant_profile_picture name=applicant_name user_title=applicant_role %}
+{% endblock %}
+
+{% block content %}
+    <mj-text>{{summary|linebreaksbr|safe}}</mj-text>
+    <mj-text><strong><a class="link-nostyle" href='{{domain}}{{applicant_profile_url}}'>See OpenExO Profile</a></strong></mj-text>
+
+    {% if answers %}
+        <mj-spacer height="20px"/>
+        <mj-text><strong>Screening Questions</strong></mj-text>
+        {% for answer in answers %}
+            <mj-text>{{ answer.question }}</mj-text>
+            <mj-text padding-left="37px">Applicant's answer: <strong>{{ answer.response_text }}</strong></mj-text>
+        {% endfor %}
+
+        <mj-text>Anything else you would like to add?</mj-text>
+        <mj-text padding-left="37px">Applicant's answer: <strong>{{ questions_extra_info }}</strong></mj-text>
+
+    {% endif %}
+
+{% endblock %}
+
+{% block call_to_action %}
+    {% trans "Go to applicant list" as see_details %}
+    {% include "base/call_to_action.mjml" with call_to_action=see_details %}
+{% endblock %}

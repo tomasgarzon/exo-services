@@ -1,0 +1,14 @@
+---
+uuid: 20a3fc78-23f5-43f1-88e5-bcfabc94b79f
+name: Dancing Dolls
+stream: Core Stream
+image: https://cdn.filestackcontent.com/kpRzP37Tw6Hdp2iqinjw
+project: !project Nash Wilson
+created_by: !account eb926b17-634c-477d-847c-eda5f35026a2 # Alice
+members:
+  - user: !account 8ff40e60-f7d8-4e85-8697-9bd83ace8688 # Ann
+    role: Coach
+  - email: robinmason@example.com
+    role: Participant
+  - email: carolebishop@example.com
+    role: Participant

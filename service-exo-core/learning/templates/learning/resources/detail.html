@@ -1,0 +1,67 @@
+{% load images guardian_tags %}
+{% load money %}
+
+
+<div class='ibox float-e-margins'>
+    <div class="ibox-title ibox-tools col-xs-12">
+        <div class='pull-right icons-ibox-title'>
+            <a class="close-link-detail pull-right m-r-none" data-role="close-detail">
+                <i class="fa fa-times"></i>
+            </a>
+            {% include "learning/resources/action_list.html" with resource=object %}
+        </div>
+        <div class="pull-left m-t-sm p-n t-a-left m-r-sm title without-image">
+            <h3 class="block" title="{{object.name}}">{{object.name}}</h3>
+        </div>
+    </div>
+    <div class="ibox-content">
+        <table class="table table-detail-right todo-list">
+            <tr>
+                <th class="no-top-border">
+                    <strong>Name</strong>
+                </th>
+                <td class="border-bottom">
+                    {{object.name}}
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>Description</strong>
+                </th>
+                <td class="border-bottom">
+                    {{object.description}}
+                </td>
+            </tr>
+            <tr>
+                <th class="border-bottom">
+                    <strong>Tags</strong>
+                </th>
+                <td class="border-bottom">
+                    {% for tag in object.tags.all %}
+                        <span class="label label-status label-info">{{tag}}</span>
+                    {% endfor %}
+                </td>
+            </tr>
+            {% if object.link %}
+            <tr>
+                <th class="border-bottom">
+                    <strong>Link</strong>
+                </th>
+                <td class="border-bottom">
+                    <a href="{{object.link}}" target="_blank">{{object.link}}</a>
+                </td>
+            </tr>
+            {% endif %}
+            {% if object.file %}
+            <tr>
+                <th class="border-bottom">
+                    <strong>File</strong>
+                </th>
+                <td class="border-bottom">
+                    <a href="{{object.file.url}}" target="_blank">{{object.file}}</a>
+                </td>
+            </tr>
+            {% endif %}
+        </table>
+    </div>
+</div>

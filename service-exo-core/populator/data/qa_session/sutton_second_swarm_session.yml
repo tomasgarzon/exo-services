@@ -1,0 +1,9 @@
+name: Sutton Second Swarm session
+starts: !timedelta -1h
+ends: !timedelta 23h
+project: !sprint_automated Sutton Inc
+advisors:
+  - !consultant &consultant_tina Tina Weissberg
+  - !consultant &consultant_lindsey Lindsey Allen
+  - !consultant &consultant_leticia Leticia Ferreira Dias
+  - !consultant &consultant_naina Naina Lavrova

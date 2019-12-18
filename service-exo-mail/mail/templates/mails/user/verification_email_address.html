@@ -1,0 +1,35 @@
+{% extends "base/base_blue_header.mjml" %}
+{% load common_mails i18n %}
+
+{% block blue-header %}
+<mj-header-title-pretitle pre-title="OpenExO Community" title="Email verification" />
+{% endblock %}
+
+{% block content %}
+    <mj-text>{% trans "Hi" %} {{user_name}}</mj-text>,
+    <mj-text>
+        {% trans "You have changed your email address in OpenExO." %}
+    </mj-text>
+{% endblock %}
+
+{% block call_to_action %}
+    <mj-text>{% trans "Please verify this email by clicking the button below." %}</mj-text>
+    {% trans "Verify email" as CALL_TO_ACTION %}
+    {% include "base/call_to_action.mjml" with call_to_action=CALL_TO_ACTION %}
+{% endblock %}
+
+{% block after-call-to-action %}
+    <mj-section>
+        <mj-column>
+            <mj-text>
+            {% blocktrans %}
+                This verification has been sent either because you have changed your email during the sign up process or you have changed it in your personal area in OpenExO.<br>
+                If you did not request this change, please contact us in support@openexo.com
+            {% endblocktrans %}
+            </mj-text>
+            <mj-text>
+                {% trans "If you didn't request this change, please contact us in support@openexo.com" %}
+            </mj-text>
+        </mj-column>
+    </mj-section>
+{% endblock %}
