@@ -27,6 +27,17 @@ services:
     ports:
       - 6379:6379
 
+  service-exo-forum:
+    # build: ../../service-exo-forum
+    image: exolever/service-exo-forum:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      EXOLEVER_HOST: ${EXOLEVER_HOST}
+      DOMAIN_NAME: http://${SUBDOMAIN}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+    ports:
+      - 8022:8000
+
   service-exo-companies:
     # build: ../../service-exo-companies
     image: exolever/service-exo-companies:${TAG}

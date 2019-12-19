@@ -1,6 +1,26 @@
 version: '3.3'
 services:
 
+  service-exo-forum:
+    image: exolever/service-exo-forum:${TAG}
+    environment:
+      DOMAIN_NAME: ${DOMAIN_NAME}
+      REDIS_HOST: ${REDIS_HOST}
+      DB_HOST: ${DB_HOST}
+      BITBUCKET_BRANCH: ${BITBUCKET_BRANCH}
+      IS_PRODUCTION: 'True'
+      SENTRY_DSN: ${SENTRY_DSN}
+      SEGMENT_WRITE_KEY: ${SEGMENT_WRITE_KEY}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY}
+      SECRET_KEY: ${SERVICE_EXO_FORUM_KEY}
+    volumes:
+      - ./logs/service-exo-forum:/var/log
+      - ./.root/service-exo-forum/:/root/
+      - ./data_exchange:/projects/service-exo-forum/data_exchange
+    restart: unless-stopped
+
   service-exo-companies:
     image: exolever/service-exo-companies:${TAG}
     environment:

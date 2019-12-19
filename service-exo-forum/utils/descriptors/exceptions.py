@@ -1,0 +1,3 @@
+
+class CustomFilterDescriptorError(Exception):
+    pass

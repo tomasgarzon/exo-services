@@ -37,6 +37,16 @@ services:
       DOMAIN_NAME: ${SUBDOMAIN}.${DOMAIN}
       MASTER_PASSWORD: P2qfBG5UPYh5FhwM
 
+  service-exo-forum:
+    image: exolever/service-exo-forum:${TAG}
+    environment:
+      # DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: https://${SUBDOMAIN}.${DOMAIN}
+      SENTRY_DSN: https://24ea1d7c3c194d75a01bc00f55b48978@sentry.io/127595
+      ADMIN_EMAIL: qa@openexo.com
+      SEGMENT_WRITE_KEY: 'elxkxiBXfapCuP1o7Egak9nc3PZp6p76'
+    restart: unless-stopped
+
   service-exo-companies:
     image: exolever/service-exo-companies:${TAG}
     environment:

@@ -30,6 +30,14 @@ services:
   #     DOMAIN_NAME: ${SUBDOMAIN}:8000
   #     MASTER_PASSWORD: '${MASTER_PASSWORD}'
 
+  service-exo-forum:
+    image: exolever/service-exo-forum:${TAG}
+    environment:
+      DB_DUMP_URL: ${DB_DUMP_URL}
+      DOMAIN_NAME: http://${SUBDOMAIN}:8000
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      DEBUG: 'False'
+
   service-exo-companies:
     image: exolever/service-exo-companies:${TAG}
     environment:

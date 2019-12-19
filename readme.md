@@ -9,6 +9,7 @@ This repo stores all the backend services for the platform.
 - service-exo-core [see more]()
 - service-exo-events [see more]()
 - service-exo-exq [see more]()
+- service-exo-forum [see more]()
 - service-exo-jobs [see more]()
 - service-exo-mail [see more]()
 - service-exo-medialibrary [see more]()
